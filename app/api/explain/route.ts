@@ -35,9 +35,9 @@ export async function POST(request: Request) {
   };
 
   try {
-    const result = await withModel((model) =>
+    const result = await withModel((call) =>
       generateText({
-        model,
+        ...call,
         system: RULES,
         output: Output.object({ schema: outputSchema }),
         prompt: `The rule-based check said "${parsed.data.status}" with these reasons: ${JSON.stringify(parsed.data.reasons)}.

@@ -18,7 +18,7 @@ export function FindMore() {
   const [profile] = useStored(STORAGE.profile, EMPTY_PROFILE);
   const [topic, setTopic] = useState("");
   const [items, setItems] = useState<Found[] | null>(null);
-  const [state, setState] = useState<"idle" | "loading" | "error">("idle");
+  const [state, setState] = useState<"idle" | "loading" | "error" | "quota">("idle");
 
   async function search() {
     if (!topic.trim()) return;
@@ -29,6 +29,10 @@ export function FindMore() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic, country: profile.nationality || undefined }),
       });
+      if (res.status === 429) {
+        setState("quota");
+        return;
+      }
       if (!res.ok) throw new Error();
       const data = (await res.json()) as { items: Found[] };
       setItems(data.items);
@@ -55,6 +59,7 @@ export function FindMore() {
         </button>
       </div>
       {state === "error" && <p className="text-sm text-rose-700">The AI search is unavailable right now. Try again in a minute.</p>}
+      {state === "quota" && <p className="text-sm text-rose-700">The web search quota for today is used up. The checked opportunities above are not affected.</p>}
       {items && items.length === 0 && <p className="text-sm text-slate-600">Nothing with a source link was found.</p>}
       {items && items.length > 0 && (
         <div className="space-y-2">

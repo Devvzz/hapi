@@ -30,9 +30,9 @@ export async function POST(request: Request) {
 
   try {
     // Step 1: grounded web search.
-    const search = await withModel((model) =>
+    const search = await withModel((call) =>
       generateText({
-        model,
+        ...call,
         system: RULES,
         tools: { google_search: google.tools.googleSearch({}) },
         prompt: `Find up to 5 current student opportunities about "${topic}"${country ? ` that students from ${country} can apply to` : ""}: competitions, hackathons, scholarships, programmes, internships or certificates. For each, give the name, the organiser, the deadline and the cost as stated on the official page. Prefer official pages.`,
@@ -45,9 +45,9 @@ export async function POST(request: Request) {
     if (sources.length === 0) return Response.json({ items: [] });
 
     // Step 2: structure the findings; every item must point at one of the grounding sources.
-    const structured = await withModel((model) =>
+    const structured = await withModel((call) =>
       generateText({
-        model,
+        ...call,
         system: RULES,
         output: Output.object({ schema: itemsSchema }),
         prompt: `Search findings:\n${search.text}\n\nNumbered sources:\n${sources.map((s) => `${s.index}: ${s.title}`).join("\n")}\n\nTurn the findings into items. Only include an item if one numbered source supports it, and give its index. Use null for anything not stated.`,
@@ -62,7 +62,10 @@ export async function POST(request: Request) {
       .filter((item) => item !== null);
 
     return Response.json({ items });
-  } catch {
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error("find-more failed:", message);
+    if (/quota/i.test(message)) return Response.json({ error: "quota" }, { status: 429 });
     return Response.json({ error: "AI search unavailable" }, { status: 503 });
   }
 }
