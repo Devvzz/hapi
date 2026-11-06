@@ -26,7 +26,7 @@ function countryCheck(o: Opportunity, nationality: string): { ok: boolean | null
   return { ok: null, reason: `Limited to: ${list.join("; ")}` };
 }
 
-export function matchOpportunity(o: Opportunity, p: Profile, now = new Date()): Match {
+export function matchOpportunity(o: Opportunity, p: Profile, now: Date): Match {
   const reasons: string[] = [];
   let blocked = false;
   let unsure = false;

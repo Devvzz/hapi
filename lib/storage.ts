@@ -37,6 +37,21 @@ function read<T>(key: string, fallback: T): T {
   return value;
 }
 
+// Current time, read in the browser only (null while prerendering), refreshed once a minute.
+let nowCache: { minute: number; date: Date } | null = null;
+function readNow(): Date {
+  const minute = Math.floor(Date.now() / 60_000);
+  if (!nowCache || nowCache.minute !== minute) nowCache = { minute, date: new Date(minute * 60_000) };
+  return nowCache.date;
+}
+function subscribeMinute(listener: () => void) {
+  const timer = window.setInterval(listener, 60_000);
+  return () => window.clearInterval(timer);
+}
+export function useNow(): Date | null {
+  return useSyncExternalStore(subscribeMinute, readNow, () => null);
+}
+
 export function useStored<T>(key: string, fallback: T): [T, (next: T | ((prev: T) => T)) => void] {
   const value = useSyncExternalStore(
     subscribe,

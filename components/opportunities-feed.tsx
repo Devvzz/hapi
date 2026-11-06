@@ -6,7 +6,7 @@ import { opportunities } from "@/lib/data";
 import { formatDate } from "@/lib/dates";
 import { matchOpportunity, type Match } from "@/lib/match";
 import { EMPTY_LOG, EMPTY_PLAN, EMPTY_PROFILE, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
-import { useStored } from "@/lib/storage";
+import { useNow, useStored } from "@/lib/storage";
 import type { Opportunity, OpportunityType } from "@/lib/types";
 import { FindMore } from "./find-more";
 
@@ -55,12 +55,14 @@ export function OpportunitiesFeed() {
   const [limit, setLimit] = useState(30);
   const [why, setWhy] = useState<Record<string, string>>({});
   const [whyState, setWhyState] = useState<"idle" | "loading" | "error">("idle");
+  const now = useNow();
 
   const ranked = useMemo(() => {
+    if (!now) return [];
     const q = query.trim().toLowerCase();
     const max = Number(maxPrice);
     return opportunities
-      .map((o) => ({ o, m: matchOpportunity(o, profile) }))
+      .map((o) => ({ o, m: matchOpportunity(o, profile, now) }))
       .filter(({ o, m }) => {
         if (type !== "all" && o.type !== type) return false;
         if (cost === "free" && o.costType !== "free") return false;
@@ -76,7 +78,7 @@ export function OpportunitiesFeed() {
         return true;
       })
       .sort((a, b) => b.m.score - a.m.score || (a.m.daysLeft ?? 9999) - (b.m.daysLeft ?? 9999));
-  }, [profile, type, cost, maxPrice, travelOnly, certOnly, onlineOnly, eligibleOnly, soonOnly, hideClosed, query]);
+  }, [now, profile, type, cost, maxPrice, travelOnly, certOnly, onlineOnly, eligibleOnly, soonOnly, hideClosed, query]);
 
   const visible = ranked.slice(0, limit);
   const profileEmpty = !profile.nationality && profile.age === null && profile.interests.length === 0;
@@ -158,7 +160,7 @@ export function OpportunitiesFeed() {
       </div>
 
       <div className="flex flex-wrap items-center gap-3 text-sm">
-        <span className="text-slate-600">{ranked.length} results</span>
+        <span className="text-slate-600">{now ? `${ranked.length} results` : "Loading…"}</span>
         <button onClick={explainTop} disabled={whyState === "loading" || visible.length === 0} className="rounded bg-teal-700 px-3 py-1.5 text-white disabled:opacity-50">
           {whyState === "loading" ? "Writing…" : "Why do my top matches fit me?"}
         </button>

@@ -31,15 +31,15 @@ export async function POST(request: Request) {
     .map((id) => opportunities.find((o) => o.id === id))
     .filter((o) => o !== undefined)
     .map((o) => {
-      const m = matchOpportunity(o, profile);
+      const m = matchOpportunity(o, profile, new Date());
       return { id: o.id, title: o.title, type: o.type, cost: o.costType, travel: o.travelPaid, deadline: o.deadline, tags: o.tags, ruleReasons: m.reasons };
     });
   if (items.length === 0) return Response.json({ lines: [] });
 
   try {
-    const result = await withModel((model) =>
+    const result = await withModel((call) =>
       generateText({
-        model,
+        ...call,
         system: RULES,
         output: Output.object({ schema: outputSchema }),
         prompt: `Student profile: ${JSON.stringify({ ...profile, nationality: profile.nationality || "unknown" })}
