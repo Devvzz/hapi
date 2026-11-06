@@ -1,0 +1,5927 @@
+[
+  {
+    "id": "paypal-ai",
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon",
+    "provider": "PayPal / Devpost",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": false,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all except Brazil, Quebec, Russia, Crimea, Cuba, Iran, North Korea and other sanctioned places"
+      ],
+      "students": false
+    },
+    "applyOpens": "2026-10-01",
+    "deadline": "2026-11-12T21:00+01:00",
+    "eventDates": null,
+    "resultsDate": "2026-12-21",
+    "tags": [
+      "ai",
+      "payments",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://paypalaihackathon.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Must be at the age of majority where you live."
+  },
+  {
+    "id": "icehacks",
+    "type": "hackathon",
+    "title": "IceHacks 2026",
+    "provider": "CodeStarters",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-11-09T04:00+01:00",
+    "deadline": "2026-11-16T03:00+01:00",
+    "eventDates": "2026-11-08/2026-11-15 PT",
+    "resultsDate": "2026-11-18",
+    "tags": [
+      "ai",
+      "beginner"
+    ],
+    "sourceUrl": "https://icehacks.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Prizes are credits and subscriptions, despite the cash figure in the header. Winners 17 Nov 8 PM PT."
+  },
+  {
+    "id": "stemergent",
+    "type": "hackathon",
+    "title": "STEMergent Hacks 2026",
+    "provider": "STEMergent",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-30",
+    "deadline": "2026-11-16T02:00+01:00",
+    "eventDates": "2026-10-30/2026-11-15",
+    "resultsDate": null,
+    "tags": [
+      "community",
+      "internship-prize"
+    ],
+    "sourceUrl": "https://stemergent-hacks.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Devpost shows 04:30 Albania, the rules give 7 PM CST. Earlier time used."
+  },
+  {
+    "id": "accessed",
+    "type": "hackathon",
+    "title": "AccessED Hacks",
+    "provider": "AccessED",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-17",
+    "deadline": "2026-11-20T23:00+01:00",
+    "eventDates": null,
+    "resultsDate": "2026-11-23",
+    "tags": [
+      "education",
+      "accessibility"
+    ],
+    "sourceUrl": "https://accessed-hacks.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Must be above the age of majority."
+  },
+  {
+    "id": "launchpad",
+    "type": "hackathon",
+    "title": "LaunchPad Hacks",
+    "provider": "Hack4TodayOrg",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-16",
+    "deadline": "2026-11-20T23:00+01:00",
+    "eventDates": "2026-10-16/2026-11-20",
+    "resultsDate": null,
+    "tags": [
+      "beginner",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://launchpad-hacks.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Must be above the age of majority."
+  },
+  {
+    "id": "stem2connect",
+    "type": "hackathon",
+    "title": "STEM2Connect AI Hackathon",
+    "provider": "STEM2Connect",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": "2026-10-11",
+    "deadline": "2026-11-22T05:59+01:00",
+    "eventDates": "2026-10-11/2026-11-21",
+    "resultsDate": "2026-11-24",
+    "tags": [
+      "ai",
+      "mentorship"
+    ],
+    "sourceUrl": "https://stem2connect-online-hackathon.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Demo Day required. Participation certificate on request."
+  },
+  {
+    "id": "csc-spark",
+    "type": "hackathon",
+    "title": "CSC Winter Sparkathon",
+    "provider": "The Webb Schools CSC",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": 18,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-29",
+    "deadline": "2026-11-30T09:00+01:00",
+    "eventDates": "2026-10-29/2026-11-29",
+    "resultsDate": null,
+    "tags": [
+      "community",
+      "high-school"
+    ],
+    "sourceUrl": "https://csc-winter-sparkathon.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "High school only. Devpost shows 09:00 Albania, the rules give 12 PM PT. Earlier time used."
+  },
+  {
+    "id": "arbiter",
+    "type": "hackathon",
+    "title": "Arbiter Hacks V1",
+    "provider": "Arbiter",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-20",
+    "deadline": "2026-12-21T06:00+01:00",
+    "eventDates": null,
+    "resultsDate": "2026-12-31",
+    "tags": [
+      "open-theme",
+      "credits"
+    ],
+    "sourceUrl": "https://arbiter-hacks-v1.devpost.com/details/dates",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "first-ai-app",
+    "type": "hackathon",
+    "title": "Build Your First AI App",
+    "provider": "Yasir Insights",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": null
+    },
+    "applyOpens": "2026-10-27",
+    "deadline": "2026-11-27T23:00+01:00",
+    "eventDates": "2026-10-27/2026-11-27",
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "beginner"
+    ],
+    "sourceUrl": "https://build-your-first-ai-app.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Must be above the age of majority. Student requirement unclear."
+  },
+  {
+    "id": "code-humanity",
+    "type": "hackathon",
+    "title": "Code for Humanity",
+    "provider": "Code for Humanity",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-07-16",
+    "deadline": "2027-01-15T13:00+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "social-good"
+    ],
+    "sourceUrl": "https://code-for-humanity.devpost.com/rules",
+    "lastChecked": "2026-10-31",
+    "note": "Must be above the age of majority."
+  },
+  {
+    "id": "junction-2026",
+    "type": "hackathon",
+    "title": "Junction 2026",
+    "provider": "Junction",
+    "mode": "onsite",
+    "location": "Espoo, Finland",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-10-25T23:00+01:00",
+    "eventDates": "2026-11-13/2026-11-15",
+    "resultsDate": null,
+    "tags": [
+      "large-event",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://2026.hackjunction.com/",
+    "lastChecked": "2026-10-31",
+    "note": "Closed for 2026: applications ended midnight 25 Oct (GMT+3), travel grant deadline was 6 Sept. Limited grants for the strongest applications. Use as a template for the next edition."
+  },
+  {
+    "id": "start-hack-2027",
+    "type": "hackathon",
+    "title": "START Hack 2027",
+    "provider": "START Global",
+    "mode": "onsite",
+    "location": "St. Gallen, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "finance",
+      "ai",
+      "student-led"
+    ],
+    "sourceUrl": "https://www.startglobal.org/start-hack",
+    "lastChecked": "2026-10-31",
+    "note": "Partial travel refund was offered for the 2025 edition per its old FAQ, which is now offline. Not confirmed for 2027. Applications not dated on the page. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "hackupc",
+    "type": "hackathon",
+    "title": "HackUPC (next edition TBA)",
+    "provider": "HackUPC",
+    "mode": "onsite",
+    "location": "Barcelona, Spain",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Free for accepted hackers.",
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-04-24/2026-04-26",
+    "resultsDate": null,
+    "tags": [
+      "student-led",
+      "travel"
+    ],
+    "sourceUrl": "https://hackupc.com/",
+    "lastChecked": "2026-10-31",
+    "note": "Dates are the 2026 edition, already past. 2026 rule: pays half of travel, up to EUR 120 from Europe. Check yourself for 2027."
+  },
+  {
+    "id": "jugend-innovativ",
+    "type": "competition",
+    "title": "Jugend Innovativ 2026/27",
+    "provider": "aws (Austria)",
+    "mode": "onsite",
+    "location": "Austria",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 15,
+      "maxAge": 20,
+      "countries": [
+        "pupils at Austrian schools or Austrian schools abroad"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-01",
+    "deadline": "2026-11-30",
+    "eventDates": "2027-05-31/2027-06-03",
+    "resultsDate": "2027-03-30",
+    "tags": [
+      "ict",
+      "cash-prize",
+      "german"
+    ],
+    "sourceUrl": "https://www.jugendinnovativ.at/fileadmin/user_upload/TN-Bedingungen_JI.pdf",
+    "lastChecked": "2026-10-31",
+    "note": "Teacher signature and German report required. Report due 30 Jan 2027. Results date is for the jury round."
+  },
+  {
+    "id": "discover-citadel",
+    "type": "competition",
+    "title": "Discover Citadel EMEA",
+    "provider": "Citadel",
+    "mode": "onsite",
+    "location": "London, UK",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": null,
+      "countries": [
+        "residents of Europe"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-29",
+    "eventDates": "End of March 2027",
+    "resultsDate": "2027-02-05",
+    "tags": [
+      "finance",
+      "travel"
+    ],
+    "sourceUrl": "https://www.citadel.com/careers/programs-and-events/discover-citadel/emea-apply/",
+    "lastChecked": "2026-10-31",
+    "note": "Undergraduates only, graduating Dec 2028 to June 2030. Not open before university."
+  },
+  {
+    "id": "imagine-cup-2027",
+    "type": "competition",
+    "title": "Imagine Cup 2027",
+    "provider": "Microsoft",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "ai"
+    ],
+    "sourceUrl": "https://imaginecup.microsoft.com/en-us",
+    "lastChecked": "2026-10-31",
+    "note": "Listed as coming soon. Dates and rules not published when checked. Cost: check yourself."
+  },
+  {
+    "id": "hult-prize",
+    "type": "competition",
+    "title": "EF Hult Prize",
+    "provider": "Hult Prize",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "1m-prize"
+    ],
+    "sourceUrl": "https://www.hultprize.org/",
+    "lastChecked": "2026-10-31",
+    "note": "Winner receives 1M USD seed funding. Next-cycle dates not on the page. Cost: check yourself."
+  },
+  {
+    "id": "cs50-cert",
+    "type": "certificate",
+    "title": "CS50 Certificate (CS50x)",
+    "provider": "Harvard",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Free CS50 certificate at 70% or above. edX verified certificate is separate.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "programming"
+    ],
+    "sourceUrl": "https://cs50.harvard.edu/x/certificate/",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "fcc-python",
+    "type": "certificate",
+    "title": "Python Certification",
+    "provider": "freeCodeCamp",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "programming",
+      "python"
+    ],
+    "sourceUrl": "https://www.freecodecamp.org/learn",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "fcc-js",
+    "type": "certificate",
+    "title": "JavaScript Certification",
+    "provider": "freeCodeCamp",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "programming",
+      "web"
+    ],
+    "sourceUrl": "https://www.freecodecamp.org/learn",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "fcc-rwd",
+    "type": "certificate",
+    "title": "Responsive Web Design Certification",
+    "provider": "freeCodeCamp",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "web",
+      "design"
+    ],
+    "sourceUrl": "https://www.freecodecamp.org/learn",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "cisco-intro-cyber",
+    "type": "certificate",
+    "title": "Introduction to Cybersecurity",
+    "provider": "Cisco Networking Academy",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "security"
+    ],
+    "sourceUrl": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+    "lastChecked": "2026-10-31",
+    "note": "Free self-paced course. Whether a certificate is included was not confirmed."
+  },
+  {
+    "id": "ccna",
+    "type": "certificate",
+    "title": "CCNA 200-301 exam",
+    "provider": "Cisco",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "networking",
+      "exam"
+    ],
+    "sourceUrl": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "aws-ccp",
+    "type": "certificate",
+    "title": "AWS Certified Cloud Practitioner exam",
+    "provider": "AWS",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cloud",
+      "exam"
+    ],
+    "sourceUrl": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "az-900",
+    "type": "certificate",
+    "title": "Microsoft Azure Fundamentals exam",
+    "provider": "Microsoft",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 99,
+      "currency": "USD"
+    },
+    "discountNote": "Price varies by the exam country. Students schedule through Certiport.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cloud",
+      "exam"
+    ],
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "elements-ai",
+    "type": "course",
+    "title": "Elements of AI",
+    "provider": "Elements of AI",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "beginner"
+    ],
+    "sourceUrl": "https://www.elementsofai.com/",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "cern-summer",
+    "type": "internship",
+    "title": "CERN Summer Studentship",
+    "provider": "CERN",
+    "mode": "onsite",
+    "location": "Geneva area",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid: 94 CHF per day allowance plus health insurance.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "science",
+      "paid"
+    ],
+    "sourceUrl": "https://careers.cern/programmes/summer-studentship/",
+    "lastChecked": "2026-10-31",
+    "note": "Needs 6 completed university semesters. Check the Member State rule on the page."
+  },
+  {
+    "id": "jetbrains-intern",
+    "type": "internship",
+    "title": "JetBrains Internships",
+    "provider": "JetBrains",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid internship.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "software",
+      "paid"
+    ],
+    "sourceUrl": "https://www.jetbrains.com/careers/internships/",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "iaeste",
+    "type": "internship",
+    "title": "IAESTE Internships",
+    "provider": "IAESTE",
+    "mode": "onsite",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": "Paid internships, per IAESTE.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "abroad"
+    ],
+    "sourceUrl": "https://iaeste.org/",
+    "lastChecked": "2026-10-31",
+    "note": "The site lists Albania, showing 0 internships when checked. Cost: check yourself."
+  },
+  {
+    "id": "czech-albania",
+    "type": "scholarship",
+    "title": "Czech Government study stays for Albanian students",
+    "provider": "Czech Ministry of Education",
+    "mode": "onsite",
+    "location": "Czechia",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-10-01",
+    "deadline": "2027-02-19",
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "albania"
+    ],
+    "sourceUrl": "https://studyin.gov.cz/en/scholarships/scholarship-detail/?id=2",
+    "lastChecked": "2026-10-31",
+    "note": "Application attachments in Czech."
+  },
+  {
+    "id": "erasmus-mundus",
+    "type": "scholarship",
+    "title": "Erasmus Mundus Joint Masters",
+    "provider": "European Commission",
+    "mode": "onsite",
+    "location": "Europe and beyond",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "masters",
+      "study-abroad"
+    ],
+    "sourceUrl": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters",
+    "lastChecked": "2026-10-31",
+    "note": "Each master sets its own deadline. Full scholarships for top applicants."
+  },
+  {
+    "id": "stipendium-hungaricum",
+    "type": "scholarship",
+    "title": "Stipendium Hungaricum",
+    "provider": "Hungarian Government",
+    "mode": "onsite",
+    "location": "Hungary",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "study-abroad"
+    ],
+    "sourceUrl": "https://stipendiumhungaricum.hu/apply/",
+    "lastChecked": "2026-10-31",
+    "note": "Page showed the 2026/27 call. Albania's eligibility not confirmed. Check the partner list."
+  },
+  {
+    "id": "turkiye-burslari",
+    "type": "scholarship",
+    "title": "Türkiye Scholarships",
+    "provider": "YTB",
+    "mode": "onsite",
+    "location": "Türkiye",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "study-abroad"
+    ],
+    "sourceUrl": "https://www.turkiyeburslari.gov.tr/",
+    "lastChecked": "2026-10-31",
+    "note": "Free online application. 2027 dates not confirmed."
+  },
+  {
+    "id": "fulbright-al",
+    "type": "scholarship",
+    "title": "Fulbright Foreign Student Program (Albania)",
+    "provider": "US Embassy Tirana",
+    "mode": "onsite",
+    "location": "United States",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-06-30",
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "masters",
+      "closed"
+    ],
+    "sourceUrl": "https://unitir.edu.al/en/ambasada-amerikane-ne-tirane-ka-hapur-thirrjen-per-aplikim-per-programet-fulbright-per-vitin-akademik-2027-2028/",
+    "lastChecked": "2026-10-31",
+    "note": "Closed for 2027/28. For graduates, so useful for later years."
+  },
+  {
+    "id": "eye-2027",
+    "type": "conference",
+    "title": "European Youth Event 2027",
+    "provider": "European Parliament",
+    "mode": "onsite",
+    "location": "Strasbourg, France",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 30,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "politics",
+      "networking"
+    ],
+    "sourceUrl": "https://european-youth-event.europarl.europa.eu/en",
+    "lastChecked": "2026-10-31",
+    "note": "Groups can apply for a financial contribution by 13 Nov 2026. Event dates not captured."
+  },
+  {
+    "id": "alpbach-2027",
+    "type": "conference",
+    "title": "European Forum Alpbach 2027",
+    "provider": "European Forum Alpbach",
+    "mode": "onsite",
+    "location": "Alpbach, Austria",
+    "costType": null,
+    "price": null,
+    "discountNote": "About 350 scholarships a year for first-time participants.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-08-23/2027-09-03",
+    "resultsDate": null,
+    "tags": [
+      "policy",
+      "networking"
+    ],
+    "sourceUrl": "https://www.alpbach.org/blog/scholarship-programme",
+    "lastChecked": "2026-10-31",
+    "note": "Dates from alpbach.org. Scholarship page linked from the site; details for 2027 not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "web-summit-2026",
+    "type": "conference",
+    "title": "Web Summit 2026 (lowest listed ticket)",
+    "provider": "Web Summit",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 1297,
+      "currency": "EUR"
+    },
+    "discountNote": "Excludes sales tax.",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-11-09/2026-11-12",
+    "resultsDate": null,
+    "tags": [
+      "startups",
+      "networking"
+    ],
+    "sourceUrl": "https://websummit.com/tickets/attendees/",
+    "lastChecked": "2026-10-31"
+  },
+  {
+    "id": "copernicus-food",
+    "type": "hackathon",
+    "title": "Food Security and Resilience Copernicus Hackathon",
+    "provider": "University of Leicester",
+    "mode": "onsite",
+    "location": "United Kingdom",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "EU, Norway, Iceland (as stated on the travel page)"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "space",
+      "travel"
+    ],
+    "sourceUrl": "https://copernicus-hackathon.le.ac.uk/travel-grants/",
+    "lastChecked": "2026-10-31",
+    "note": "Travel grants subject to funding. Year not stated on the page. Albanian eligibility not stated, so ask first. Cost: check yourself."
+  },
+  {
+    "id": "eubic-2027",
+    "type": "hackathon",
+    "title": "EuBIC-MS Hackathon 2027",
+    "provider": "EuBIC-MS",
+    "mode": "onsite",
+    "location": "Gimo, Sweden",
+    "costType": "paid",
+    "price": null,
+    "discountNote": "Student pricing reported, exact price not captured. Check the page.",
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": "2026-09-23",
+    "deadline": "2026-12-11",
+    "eventDates": "2027-01-31/2027-02-05",
+    "resultsDate": null,
+    "tags": [
+      "bioinformatics",
+      "paid-entry"
+    ],
+    "sourceUrl": "https://eubic-ms.org/events/hackathon-2027/",
+    "lastChecked": "2026-10-31",
+    "note": "Specialist event for mass spectrometry researchers, so a poor fit for most students. Travel grants may come from outside bodies."
+  },
+  {
+    "id": "sheffield-quantum",
+    "type": "summer-school",
+    "title": "Quantum Optics and Nanophotonics Winter School",
+    "provider": "University of Sheffield",
+    "mode": "onsite",
+    "location": "Sheffield, UK",
+    "costType": "paid",
+    "price": {
+      "amount": 250,
+      "currency": "GBP"
+    },
+    "discountNote": "Student super early bird rate until 18 Nov 2026.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-15",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "physics",
+      "winter-school"
+    ],
+    "sourceUrl": "https://quantumschool.sheffield.ac.uk/registration-and-fee",
+    "lastChecked": "2026-10-31",
+    "note": "Winter school. Check who it is aimed at."
+  },
+  {
+    "id": "uva-summer",
+    "type": "summer-school",
+    "title": "UvA Summer School",
+    "provider": "University of Amsterdam",
+    "mode": "onsite",
+    "location": "Amsterdam, Netherlands",
+    "costType": "paid",
+    "price": null,
+    "discountNote": "Summer and winter scholarships exist; check eligibility.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "summer-school"
+    ],
+    "sourceUrl": "https://www.uva.nl/en/education/summer-school/uva-summer-school.html",
+    "lastChecked": "2026-10-31",
+    "note": "Fees vary by programme and were not captured."
+  },
+  {
+    "id": "utrecht-summer",
+    "type": "summer-school",
+    "title": "Utrecht Summer School 2027",
+    "provider": "Utrecht Summer School",
+    "mode": "onsite",
+    "location": "Utrecht, Netherlands",
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "summer-school"
+    ],
+    "sourceUrl": "https://utrechtsummerschool.nl/",
+    "lastChecked": "2026-10-31",
+    "note": "2027 edition mentioned. Dates and fees not captured."
+  },
+  {
+    "id": "yeys-2027",
+    "type": "conference",
+    "title": "Your Europe, Your Say! 2027",
+    "provider": "EESC",
+    "mode": "onsite",
+    "location": "Brussels, Belgium",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 18,
+      "countries": [
+        "EU, candidate countries including Albania, UK (2026 rules)"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "politics",
+      "travel",
+      "schools"
+    ],
+    "sourceUrl": "https://www.eesc.europa.eu/en/agenda/our-events/events/your-europe-your-say-2026/rules",
+    "lastChecked": "2026-10-31",
+    "note": "All terms are from the 2026 edition: travel and hotel covered, 16 to 18 via a school. 2026 call closed 30 Nov 2025 and the event ran 19 to 20 Mar 2026. 2027 call not found. Check yourself soon."
+  },
+  {
+    "id": "youthdig-2027",
+    "type": "conference",
+    "title": "YOUthDIG 2027",
+    "provider": "EuroDIG",
+    "mode": "onsite",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Fully funded per EuroDIG. All parts must be completed for grants.",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 30,
+      "countries": [
+        "Europe"
+      ],
+      "students": null
+    },
+    "applyOpens": "2027-01",
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "internet-governance",
+      "travel"
+    ],
+    "sourceUrl": "https://www.eurodig.org/get-involved/youthdig/",
+    "lastChecked": "2026-10-31",
+    "note": "2027 applications start in January. 2026 window was 26 Jan to 16 Feb. Location and dates for 2027 not confirmed."
+  },
+  {
+    "id": "isoc-youth-2027",
+    "type": "conference",
+    "title": "Internet Society Youth Ambassador Program 2027",
+    "provider": "Internet Society",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 30,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "internet-governance"
+    ],
+    "sourceUrl": "https://www.internetsociety.org/policy-programs/youth-ambassadors/",
+    "lastChecked": "2026-10-31",
+    "note": "2027 cycle not found. Official page showed 18 Nov 2025 for the last cycle; other sites say 2 Dec. Applicants must be able to travel, but I could not confirm that travel is funded. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "eu-civic-tech",
+    "type": "hackathon",
+    "title": "EU Civic Tech Hackathon",
+    "provider": "European Commission",
+    "mode": "onsite",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-06-05",
+    "eventDates": "2026-06-22/2026-06-23",
+    "resultsDate": null,
+    "tags": [
+      "civic-tech",
+      "travel"
+    ],
+    "sourceUrl": "https://commission.europa.eu/get-involved/events/eu-civic-tech-hackathon-22-23-june-2026-2026-06-22_en",
+    "lastChecked": "2026-10-31",
+    "note": "2026 edition, closed. Travel and accommodation covered by the Commission. Albanian eligibility and a 2027 edition not confirmed. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "junctionx-tirana",
+    "type": "hackathon",
+    "title": "JunctionX Tirana",
+    "provider": "Junction / Albania Tech",
+    "mode": "onsite",
+    "location": "Tirana, Albania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 35,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-06-19/2026-06-21",
+    "resultsDate": null,
+    "tags": [
+      "albania",
+      "cash-prize",
+      "golden-ticket"
+    ],
+    "sourceUrl": "https://upt.edu.al/wp-content/uploads/2026/05/Junction-X-Presentation.pdf",
+    "lastChecked": "2026-10-31",
+    "note": "2026 edition, past: EUR 5,000, 3,000 and 2,000 prizes, 3 Golden Tickets to Junction Finland. What a Golden Ticket pays for and 2027 dates not confirmed. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "coe-democracy-hack",
+    "type": "hackathon",
+    "title": "Council of Europe Democracy Hackathon",
+    "provider": "Council of Europe",
+    "mode": "onsite",
+    "location": "Strasbourg, France",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-06-17/2026-06-19",
+    "resultsDate": null,
+    "tags": [
+      "democracy",
+      "travel"
+    ],
+    "sourceUrl": "https://democracyhackathon.coe.int/day-1/",
+    "lastChecked": "2026-10-31",
+    "note": "2026 edition, past. Travel and accommodation covered for selected teams. 2027 edition and Albanian eligibility not confirmed. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "oyw-tokyo-2027",
+    "type": "conference",
+    "title": "One Young World Summit 2027",
+    "provider": "One Young World",
+    "mode": "onsite",
+    "location": "Tokyo, Japan",
+    "costType": "paid",
+    "price": null,
+    "discountNote": "Scholarships expected, but 2027 terms and delegate fee not published.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-09-28/2027-10-01",
+    "resultsDate": null,
+    "tags": [
+      "leadership",
+      "networking"
+    ],
+    "sourceUrl": "https://oywj.org/tag/2027/",
+    "lastChecked": "2026-10-31",
+    "note": "Check yourself for scholarship dates and fee."
+  },
+  {
+    "id": "eagxberlin-2026",
+    "type": "conference",
+    "title": "EAGxBerlin 2026",
+    "provider": "Centre for Effective Altruism",
+    "mode": "onsite",
+    "location": "Urania Berlin, Germany",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-11-13/2026-11-15",
+    "resultsDate": null,
+    "tags": [
+      "effective-altruism",
+      "networking"
+    ],
+    "sourceUrl": "https://www.effectivealtruism.org/ea-global/events/eagxberlin-2026",
+    "lastChecked": "2026-10-31",
+    "note": "Travel support on request. Cost: check yourself."
+  },
+  {
+    "id": "ripe-fellowship",
+    "type": "conference",
+    "title": "RIPE Fellowship for RIPE 94 and RIPE 95",
+    "provider": "RIPE NCC",
+    "mode": "onsite",
+    "location": "Vilnius, Lithuania and Madrid, Spain",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Free ticket, travel and accommodation.",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": null,
+      "countries": [
+        "RIPE NCC service region"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-23T23:59+01:00",
+    "eventDates": "RIPE 94: 2027-05-24/2027-05-28; RIPE 95: 2027-11-15/2027-11-19",
+    "resultsDate": null,
+    "tags": [
+      "networking",
+      "internet-governance",
+      "travel"
+    ],
+    "sourceUrl": "https://www.ripe.net/community/community-initiatives/ripe-fellowship/",
+    "lastChecked": "2026-10-31",
+    "note": "Must study or work in a related field. Secondary sites say the RIPE 101 course and quiz come first. Check yourself."
+  },
+  {
+    "id": "see-15",
+    "type": "conference",
+    "title": "SEE 15",
+    "provider": "RIPE NCC",
+    "mode": "onsite",
+    "location": "Tirana, Albania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-04-13/2027-04-14",
+    "resultsDate": null,
+    "tags": [
+      "networking",
+      "albania"
+    ],
+    "sourceUrl": "https://www.ripe.net/meetings/regional-meetings/see/see-15/",
+    "lastChecked": "2026-10-31",
+    "note": "Details coming soon. Cost not published. SEE 5 in 2016 was free, not confirmed here. A SEE Fellowship page exists. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "dynatrace-2027",
+    "type": "internship",
+    "title": "Dynatrace Software Engineering Summer Internships 2027",
+    "provider": "Dynatrace",
+    "mode": "onsite",
+    "location": "Austria (Linz and Hagenberg offices mentioned)",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid: EUR 2,139 gross a month for HTL students.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "software",
+      "paid",
+      "austria"
+    ],
+    "sourceUrl": "https://www.dynatrace.com/careers/jobs/1439010100/",
+    "lastChecked": "2026-10-31",
+    "note": "This posting is for Graz. HTL from 3rd grade, full-time, minimum 4 weeks. Relocation support mentioned for Linz. Check the right location and work rights."
+  },
+  {
+    "id": "axians-summer",
+    "type": "internship",
+    "title": "Axians ICT Austria Summer of Innovation",
+    "provider": "Axians ICT Austria",
+    "mode": "onsite",
+    "location": "Austria",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "it",
+      "austria"
+    ],
+    "sourceUrl": "https://www.jobs.at/j/axians",
+    "lastChecked": "2026-10-31",
+    "note": "Only 2026 roles found (Graz, Vienna, Linz), on an aggregator. 2027 not posted when checked. Pay not confirmed. Check yourself."
+  },
+  {
+    "id": "energie-ag-2027",
+    "type": "internship",
+    "title": "Energie AG Ferialpraktikum 2027",
+    "provider": "Energie AG Oberösterreich",
+    "mode": "onsite",
+    "location": "Upper Austria",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid: from EUR 1,518 a month.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-15",
+    "eventDates": "2027-07-12/2027-08-06 or 2027-08-09/2027-09-03",
+    "resultsDate": null,
+    "tags": [
+      "austria",
+      "paid",
+      "german"
+    ],
+    "sourceUrl": "https://www.jobs.at/i/7903578",
+    "lastChecked": "2026-10-31",
+    "note": "This listing is for commercial departments, and other listings cover other areas. Age 16 by 1 July. Source is a job site, not Energie AG."
+  },
+  {
+    "id": "frequentis",
+    "type": "internship",
+    "title": "Frequentis internships",
+    "provider": "Frequentis",
+    "mode": "onsite",
+    "location": "Austria",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "austria",
+      "software"
+    ],
+    "sourceUrl": "https://www.frequentis.com/en/node/3489",
+    "lastChecked": "2026-10-31",
+    "note": "General student offer with a talent network. No summer 2027 posting found. Pay and dates not confirmed. Check yourself."
+  },
+  {
+    "id": "gsoc",
+    "type": "internship",
+    "title": "Google Summer of Code",
+    "provider": "Google",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid stipend; amount depends on country and project size.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Must be eligible to work in your country of residence"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "open-source",
+      "paid",
+      "remote"
+    ],
+    "sourceUrl": "https://developers.google.com/open-source/gsoc/faq",
+    "lastChecked": "2026-11-06",
+    "note": "2026 contributor applications ran 16 to 31 Mar 2026. 2027 dates not published yet. Age rule not confirmed on the page."
+  },
+  {
+    "id": "outreachy",
+    "type": "internship",
+    "title": "Outreachy internships",
+    "provider": "Outreachy",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid: USD 7,000 total stipend.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "open-source",
+      "paid",
+      "remote",
+      "diversity"
+    ],
+    "sourceUrl": "https://www.outreachy.org/",
+    "lastChecked": "2026-11-06",
+    "note": "For people facing under-representation or discrimination in tech where they live. May 2026 round took applications 6 to 13 Feb 2026; a December 2026 round runs to early March 2027. Next application dates not confirmed."
+  },
+  {
+    "id": "mlh-fellowship",
+    "type": "internship",
+    "title": "MLH Fellowship",
+    "provider": "Major League Hacking",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Educational stipend.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "open-source",
+      "paid",
+      "remote"
+    ],
+    "sourceUrl": "https://fellowship.mlh.com/",
+    "lastChecked": "2026-11-06",
+    "note": "12-week remote program. Application dates rolling, not listed."
+  },
+  {
+    "id": "lfx-mentorship",
+    "type": "internship",
+    "title": "LFX Mentorship",
+    "provider": "Linux Foundation",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Many programs pay a stipend.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "open-source",
+      "paid",
+      "remote"
+    ],
+    "sourceUrl": "https://mentorship.linuxfoundation.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Up to three applications per term. Term dates not captured."
+  },
+  {
+    "id": "thiel-fellowship",
+    "type": "grant",
+    "title": "Thiel Fellowship",
+    "provider": "Thiel Foundation",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "USD 250,000 over two years.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "grant"
+    ],
+    "sourceUrl": "https://thielfellowship.org/",
+    "lastChecked": "2026-11-06",
+    "note": "For young people building instead of attending university. Age limit and deadlines not shown on the page."
+  },
+  {
+    "id": "emergent-ventures",
+    "type": "grant",
+    "title": "Emergent Ventures",
+    "provider": "Mercatus Center",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "grant",
+      "ideas"
+    ],
+    "sourceUrl": "https://www.mercatus.org/emergentventures",
+    "lastChecked": "2026-11-06",
+    "note": "Grants for ambitious projects. Award size not published, and the site blocks automated checks; age rule from search results. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "diamond-challenge",
+    "type": "competition",
+    "title": "Diamond Challenge",
+    "provider": "University of Delaware Horn Entrepreneurship",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "high-school",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://diamondchallenge.org/",
+    "lastChecked": "2026-11-06",
+    "note": "High school entrepreneurship. Prizes USD 12,000, 8,000 and 4,500. Dates not captured. Cost: check yourself."
+  },
+  {
+    "id": "conrad-challenge",
+    "type": "competition",
+    "title": "Conrad Challenge 2026-2027",
+    "provider": "Conrad Foundation",
+    "mode": "online",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "discountNote": "USD 499 per team at the Innovation stage; financial aid available. Earlier stages free.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": 18,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-07",
+    "eventDates": "Finals 2027-04-21/2027-04-24",
+    "resultsDate": null,
+    "tags": [
+      "innovation",
+      "high-school",
+      "teams"
+    ],
+    "sourceUrl": "https://conrad.spacecenter.org/wp-content/uploads/2026/08/2026-2027-Conrad-Challenge-Student-Guide-Official.pdf",
+    "lastChecked": "2026-11-06",
+    "note": "Activation stage closed 29 Oct 2026. Ages from secondary sources. Open to international teams."
+  },
+  {
+    "id": "breakthrough-junior",
+    "type": "competition",
+    "title": "Breakthrough Junior Challenge",
+    "provider": "Breakthrough Prize Foundation",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "science",
+      "video",
+      "scholarship"
+    ],
+    "sourceUrl": "https://breakthroughjuniorchallenge.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Global science video competition for high school students. Winner gets a USD 250,000 scholarship. 2026 submissions closed; deadline was 15 Sept. 2027 dates not published. Cost: check yourself."
+  },
+  {
+    "id": "bl4s-2027",
+    "type": "competition",
+    "title": "Beamline for Schools 2027",
+    "provider": "CERN",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "physics",
+      "teams",
+      "cern"
+    ],
+    "sourceUrl": "https://beamlineforschools.cern/",
+    "lastChecked": "2026-11-06",
+    "note": "Teams of school students propose an experiment. Proposals for 2027 are open; deadline not captured. All eligible teams get a certificate. Cost: check yourself."
+  },
+  {
+    "id": "ggj-2027",
+    "type": "hackathon",
+    "title": "Global Game Jam 2027",
+    "provider": "Global Game Jam",
+    "mode": "hybrid",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-01-25/2027-01-31",
+    "resultsDate": null,
+    "tags": [
+      "games",
+      "beginner"
+    ],
+    "sourceUrl": "https://globalgamejam.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Local jam sites worldwide. GGJ Next is for ages 10 to 18. A 1 Dec 2026 date is shown, likely for registration. Cost depends on the site. Cost: check yourself."
+  },
+  {
+    "id": "advent-of-code-2026",
+    "type": "competition",
+    "title": "Advent of Code 2026",
+    "provider": "Advent of Code",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-12-01/2026-12-25",
+    "resultsDate": null,
+    "tags": [
+      "programming",
+      "puzzles"
+    ],
+    "sourceUrl": "https://adventofcode.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Daily puzzles unlock from 1 Dec at midnight EST. End date assumed from the format. Cost: check yourself."
+  },
+  {
+    "id": "climatelaunchpad",
+    "type": "startup-program",
+    "title": "ClimateLaunchpad",
+    "provider": "ClimateLaunchpad",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "climate"
+    ],
+    "sourceUrl": "https://climatelaunchpad.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Green business idea competition with boot camps. 2026 ran March to September. Albania participation and 2027 dates not confirmed. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "eit-jumpstarter",
+    "type": "startup-program",
+    "title": "EIT Jumpstarter",
+    "provider": "European Institute of Innovation and Technology",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "europe"
+    ],
+    "sourceUrl": "https://eitjumpstarter.eu/",
+    "lastChecked": "2026-11-06",
+    "note": "2026 deadline was 8 May 2026. Albania listed as eligible in 2025 and 2026, from secondary sources. 2027 edition not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "ioi-2027",
+    "type": "competition",
+    "title": "International Olympiad in Informatics 2027",
+    "provider": "IOI / Hasso Plattner Institute",
+    "mode": "onsite",
+    "location": "Potsdam, Germany",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-09-12/2027-09-19",
+    "resultsDate": null,
+    "tags": [
+      "olympiad",
+      "programming"
+    ],
+    "sourceUrl": "https://ioi2027.de/",
+    "lastChecked": "2026-11-06",
+    "note": "Entry only through a national team selection. Cost: check yourself."
+  },
+  {
+    "id": "ioai-2027",
+    "type": "competition",
+    "title": "International Olympiad in Artificial Intelligence 2027",
+    "provider": "IOAI",
+    "mode": "onsite",
+    "location": "Singapore",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-07-04/2027-07-10",
+    "resultsDate": null,
+    "tags": [
+      "olympiad",
+      "ai"
+    ],
+    "sourceUrl": "https://ioai-official.org/singapore-2027/",
+    "lastChecked": "2026-11-06",
+    "note": "Entry through national selection. Albania's team comes from its National Olympiad in AI (STEM Hub Albania), per the IOAI country page. Cost: check yourself."
+  },
+  {
+    "id": "seerc-2026",
+    "type": "competition",
+    "title": "ICPC Southeastern Europe Regional Contest 2026",
+    "provider": "ICPC",
+    "mode": "onsite",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Southeastern Europe, including Albania"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-12-11/2026-12-13",
+    "resultsDate": null,
+    "tags": [
+      "programming",
+      "university",
+      "teams"
+    ],
+    "sourceUrl": "https://seerc.euc.icpc.global/",
+    "lastChecked": "2026-11-06",
+    "note": "University teams. Qualifies for ICPC World Finals and Europe Championship. Venue not captured. Cost: check yourself."
+  },
+  {
+    "id": "huawei-ict-2027",
+    "type": "competition",
+    "title": "Huawei ICT Competition 2026-2027",
+    "provider": "Huawei",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "networking",
+      "cloud",
+      "university"
+    ],
+    "sourceUrl": "https://www.huawei.com/uz/news/2026/huawei-ict-competition-2026-2027-meca-registration-launch",
+    "lastChecked": "2026-11-06",
+    "note": "Registration deadlines differ by region and conflict between sources. Albania registration not confirmed. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "github-foundations",
+    "type": "certificate",
+    "title": "GitHub Foundations certification",
+    "provider": "GitHub",
+    "mode": "online",
+    "location": null,
+    "costType": "discount",
+    "price": {
+      "amount": 99,
+      "currency": "USD"
+    },
+    "discountNote": "Exam fee waived for students verified through GitHub Education.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "git",
+      "exam"
+    ],
+    "sourceUrl": "https://github.blog/news-insights/company-news/students-start-building-your-skills-with-the-github-foundations-certification",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "oracle-oci-foundations",
+    "type": "certificate",
+    "title": "Oracle Cloud Infrastructure Foundations",
+    "provider": "Oracle",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Oracle says all Foundations courses and certifications stay free.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cloud",
+      "exam"
+    ],
+    "sourceUrl": "https://blogs.oracle.com/oracleuniversity/oci-certification-learning-paths-and-exams-2026-updates-now-available",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "cisco-ccst",
+    "type": "certificate",
+    "title": "Cisco Certified Support Technician (CCST) exam",
+    "provider": "Cisco",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 125,
+      "currency": "USD"
+    },
+    "discountNote": "Price varies by region.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "networking",
+      "exam",
+      "beginner"
+    ],
+    "sourceUrl": "https://cisco.com/c/en/us/training-events/training-certifications/certifications/faq.html",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "duolingo-english",
+    "type": "certificate",
+    "title": "Duolingo English Test",
+    "provider": "Duolingo",
+    "mode": "online",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 70,
+      "currency": "USD"
+    },
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test"
+    ],
+    "sourceUrl": "https://englishtest.duolingo.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Price from secondary sources since Feb 2025. Confirm at checkout."
+  },
+  {
+    "id": "ielts-albania",
+    "type": "certificate",
+    "title": "IELTS in Albania",
+    "provider": "British Council Albania",
+    "mode": "onsite",
+    "location": "Tirana, Albania",
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test"
+    ],
+    "sourceUrl": "https://britishcouncil.al/en/exam/ielts/dates-fees-locations",
+    "lastChecked": "2026-11-06",
+    "note": "A 2026 aggregator lists EUR 226; the official fee page was not read. Price: check yourself."
+  },
+  {
+    "id": "toefl-ibt",
+    "type": "certificate",
+    "title": "TOEFL iBT",
+    "provider": "ETS",
+    "mode": "online",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test"
+    ],
+    "sourceUrl": "https://www.ets.org/toefl",
+    "lastChecked": "2026-11-06",
+    "note": "Fee varies by country; not read from ETS. Price: check yourself."
+  },
+  {
+    "id": "aws-educate",
+    "type": "course",
+    "title": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": "Free, email only, no credit card.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cloud",
+      "labs"
+    ],
+    "sourceUrl": "https://aws.amazon.com/educate",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "coursera-aid",
+    "type": "course",
+    "title": "Coursera financial aid",
+    "provider": "Coursera",
+    "mode": "online",
+    "location": null,
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Financial aid can make paid certificates free; apply per course, review takes up to about 15 days.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "courses",
+      "certificates"
+    ],
+    "sourceUrl": "https://blog.coursera.org/an-update-on-assessments-grades-and",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "uwc-albania-2027",
+    "type": "scholarship",
+    "title": "UWC Albania selection 2027-2029",
+    "provider": "UWC Albania",
+    "mode": "onsite",
+    "location": "UWC schools worldwide",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 17,
+      "countries": [
+        "Albanian citizens, Albanian descent without a national committee, or 5 years living in Albania"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-08-30",
+    "deadline": "2026-11-14T23:59+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "high-school",
+      "full-scholarship"
+    ],
+    "sourceUrl": "https://apply.uwc.org/prog/uwc_albania_application_2027-2029/",
+    "lastChecked": "2026-11-06",
+    "note": "Ages 16 or 17 on 1 Sept 2027. At least one full scholarship a year plus partial ones. Cost: check yourself."
+  },
+  {
+    "id": "chevening-2028",
+    "type": "scholarship",
+    "title": "Chevening Scholarships",
+    "provider": "UK Government",
+    "mode": "onsite",
+    "location": "United Kingdom",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania among eligible countries"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-10-06",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "masters",
+      "closed"
+    ],
+    "sourceUrl": "https://www.chevening.org/scholarship/albania/",
+    "lastChecked": "2026-11-06",
+    "note": "Closed for 2027-28. For one-year UK master's after work experience. Next round opens around August. Cost: check yourself."
+  },
+  {
+    "id": "mext-albania",
+    "type": "scholarship",
+    "title": "Japanese Government (MEXT) Scholarship",
+    "provider": "Embassy of Japan in Albania",
+    "mode": "onsite",
+    "location": "Japan",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-05-29",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "undergraduate",
+      "closed"
+    ],
+    "sourceUrl": "https://www.al.emb-japan.go.jp/itpr_ja/11_000001_01047.html",
+    "lastChecked": "2026-11-06",
+    "note": "2027 cycle closed. Past Albanian deadlines were late May, so the 2028 call is likely around April to May 2027. Cost: check yourself."
+  },
+  {
+    "id": "ernst-mach-2027",
+    "type": "scholarship",
+    "title": "Ernst Mach Scholarship Worldwide",
+    "provider": "OeAD",
+    "mode": "onsite",
+    "location": "Austria",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-12-01",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "austria"
+    ],
+    "sourceUrl": "https://studyinaustria.at/en/news/article/2026/08/ernst-mach-stipendium-weltweit-bewerbung-bis-1-dezember-2026",
+    "lastChecked": "2026-11-06",
+    "note": "For PhD students, postgraduates and researchers, not first-degree students. Cost: check yourself."
+  },
+  {
+    "id": "visegrad-scholarship",
+    "type": "scholarship",
+    "title": "Visegrad Scholarship Program",
+    "provider": "International Visegrad Fund",
+    "mode": "onsite",
+    "location": "Czechia, Hungary, Poland, Slovakia",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "masters",
+      "balkans"
+    ],
+    "sourceUrl": "https://www.visegradfund.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Master's and post-master's. Sources conflict on the 2027 deadline (15 Apr or 31 May 2027) and on eligibility. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "eiffel-2027",
+    "type": "scholarship",
+    "title": "Eiffel Excellence Scholarship",
+    "provider": "Campus France",
+    "mode": "onsite",
+    "location": "France",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-08",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "masters",
+      "phd"
+    ],
+    "sourceUrl": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence",
+    "lastChecked": "2026-11-06",
+    "note": "Deadline from one secondary source; universities apply on behalf of students. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "yygs-2027",
+    "type": "summer-school",
+    "title": "Yale Young Global Scholars 2027",
+    "provider": "Yale University",
+    "mode": "onsite",
+    "location": "New Haven, USA",
+    "costType": "paid",
+    "price": null,
+    "discountNote": "Need-based aid up to full tuition for international students. Application fee waiver available.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 18,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-06",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "summer",
+      "usa",
+      "financial-aid"
+    ],
+    "sourceUrl": "https://globalscholars.yale.edu/",
+    "lastChecked": "2026-11-06",
+    "note": "Regular deadline from secondary sources; early round closed 15 Oct 2026. Tuition about USD 7,000 to 7,500 per sources. Check yourself."
+  },
+  {
+    "id": "yes-program",
+    "type": "exchange",
+    "title": "Kennedy-Lugar YES Program",
+    "provider": "U.S. Department of State / American Councils",
+    "mode": "onsite",
+    "location": "United States",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "high-school",
+      "exchange",
+      "usa"
+    ],
+    "sourceUrl": "https://www.yesprograms.org/countries/albania",
+    "lastChecked": "2026-11-06",
+    "note": "Albania is a YES country. Year in a US high school with a host family. Albania deadline and age window not confirmed. Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "esc-volunteering",
+    "type": "exchange",
+    "title": "European Solidarity Corps volunteering",
+    "provider": "European Union",
+    "mode": "onsite",
+    "location": "Europe",
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "partial",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 30,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "volunteering",
+      "europe"
+    ],
+    "sourceUrl": "https://youth.europa.eu/solidarity/",
+    "lastChecked": "2026-11-06",
+    "note": "Each project sets its own eligibility and deadline. Listings usually provide housing, food allowance and pocket money, and reimburse travel by distance."
+  },
+  {
+    "id": "cern-openlab",
+    "type": "internship",
+    "title": "CERN openlab Summer Student Programme",
+    "provider": "CERN",
+    "mode": "onsite",
+    "location": "Geneva, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all nationalities"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "software",
+      "paid",
+      "cern"
+    ],
+    "sourceUrl": "https://openlab.cern/faqs-summer-student-programme/",
+    "lastChecked": "2026-11-06",
+    "note": "For bachelor's and master's students in computer science, maths, engineering or physics. 2026 deadline was 26 Jan 2026. 2027 dates not published. Cost: check yourself."
+  },
+  {
+    "id": "eu-blue-book",
+    "type": "internship",
+    "title": "European Commission Blue Book traineeship",
+    "provider": "European Commission",
+    "mode": "onsite",
+    "location": "Brussels and other EU sites",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Paid traineeship.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "eu",
+      "paid",
+      "graduates"
+    ],
+    "sourceUrl": "https://commission.europa.eu/news-and-media/news/become-european-commission-trainee-applications-are-now-open-2026-07-22_en",
+    "lastChecked": "2026-11-06",
+    "note": "Needs a bachelor's degree. Limited places for non-EU nationals in specific departments; Albania not confirmed. March 2027 session closed 4 Sept 2026."
+  },
+  {
+    "id": "fosdem-2027",
+    "type": "conference",
+    "title": "FOSDEM 2027",
+    "provider": "FOSDEM",
+    "mode": "onsite",
+    "location": "ULB Solbosch, Brussels, Belgium",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Free, no registration needed.",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-01-30/2027-01-31",
+    "resultsDate": null,
+    "tags": [
+      "open-source",
+      "networking"
+    ],
+    "sourceUrl": "https://fosdem.org/2027/news/fosdem-2027-dates/",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "wearedevelopers-2027",
+    "type": "conference",
+    "title": "WeAreDevelopers World Congress 2027",
+    "provider": "WeAreDevelopers",
+    "mode": "onsite",
+    "location": "Messe Berlin, Germany",
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-07-14/2027-07-16",
+    "resultsDate": null,
+    "tags": [
+      "developers",
+      "networking"
+    ],
+    "sourceUrl": "https://www.visitberlin.de/en/node/2255344",
+    "lastChecked": "2026-11-06",
+    "note": "Student ticket price not confirmed on an official page. Check yourself."
+  },
+  {
+    "id": "cambridge-c2",
+    "type": "certificate",
+    "title": "Cambridge C2 Proficiency",
+    "provider": "Cambridge University Press & Assessment",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test",
+      "c2"
+    ],
+    "sourceUrl": "https://www.cambridgeenglish.org/Images/608146-c2-proficiency-information-for-candidates-booklet.pdf",
+    "lastChecked": "2026-11-06",
+    "note": "Paper or computer, same certificate. Accepted by most UK universities. Fee set by each authorised centre. Price: check yourself."
+  },
+  {
+    "id": "cambridge-c1",
+    "type": "certificate",
+    "title": "Cambridge C1 Advanced",
+    "provider": "Cambridge University Press & Assessment",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test",
+      "c1"
+    ],
+    "sourceUrl": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/advanced/",
+    "lastChecked": "2026-11-06",
+    "note": "Digital or paper. Fee set by each authorised centre. Price: check yourself."
+  },
+  {
+    "id": "plida",
+    "type": "certificate",
+    "title": "PLIDA Italian certificate (B2, C1, C2)",
+    "provider": "Società Dante Alighieri",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italian",
+      "language-test",
+      "study-in-italy"
+    ],
+    "sourceUrl": "https://plida.dante.global/en/plida-exams",
+    "lastChecked": "2026-11-06",
+    "note": "2026 had C1 and C2 sessions in March, June and November. 2027 calendar not yet published. Centres set prices under a central maximum. Price: check yourself."
+  },
+  {
+    "id": "cils-2027",
+    "type": "certificate",
+    "title": "CILS Italian certificate 2027",
+    "provider": "Università per Stranieri di Siena",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "B2/C1: 2027-04-08, 2027-06-10, 2027-12-02",
+    "resultsDate": null,
+    "tags": [
+      "italian",
+      "language-test",
+      "study-in-italy"
+    ],
+    "sourceUrl": "https://cils.unistrasi.it/1/213/428/Le_date_degli_esami_2027.htm",
+    "lastChecked": "2026-11-06",
+    "note": "Registration deadlines: 8 Mar, 1 May and 23 Oct 2027. The 8 Apr C1 session is for medical trainees. C2 dates not captured. Price: check yourself."
+  },
+  {
+    "id": "celi-2027",
+    "type": "certificate",
+    "title": "CELI Italian certificate 2027 (CELI 4 = C1, CELI 5 = C2)",
+    "provider": "Università per Stranieri di Perugia",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 120,
+      "currency": "EUR"
+    },
+    "discountNote": "EUR 120 is the Perugia fee for standard CELI; other centres set their own.",
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-06-11 and 2027-11-16",
+    "resultsDate": null,
+    "tags": [
+      "italian",
+      "language-test",
+      "study-in-italy"
+    ],
+    "sourceUrl": "https://cvcl.unistrapg.it/notizia/calendario-celi-e-dils-pg-2027-000",
+    "lastChecked": "2026-11-06",
+    "note": "Register by 11 May or 16 Oct 2027."
+  },
+  {
+    "id": "testdaf",
+    "type": "certificate",
+    "title": "TestDaF (digital)",
+    "provider": "g.a.s.t.",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 210,
+      "currency": "EUR"
+    },
+    "discountNote": "EUR 210 at a Berlin centre; prices vary by country.",
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "Next: 2026-11-12, 2026-12-10, 2027-01-20",
+    "resultsDate": null,
+    "tags": [
+      "german",
+      "language-test",
+      "study-in-germany"
+    ],
+    "sourceUrl": "https://www.testdaf.de/de/teilnehmende/mein-testdaf/testdaf-termine-und-anmeldung/",
+    "lastChecked": "2026-11-06",
+    "note": "Recognised by all German universities, does not expire. Registration closes about 8 days before. Results in about 3 weeks."
+  },
+  {
+    "id": "osd-c1",
+    "type": "certificate",
+    "title": "ÖSD Zertifikat C1",
+    "provider": "ÖSD / Sprachenzentrum Universität Wien",
+    "mode": "onsite",
+    "location": "Vienna, Austria",
+    "costType": "paid",
+    "price": {
+      "amount": 260,
+      "currency": "EUR"
+    },
+    "discountNote": "At Uni Wien centre: EUR 175 written + EUR 85 oral (2026).",
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "german",
+      "language-test",
+      "study-in-austria"
+    ],
+    "sourceUrl": "https://sprachenzentrum.univie.ac.at/en/language-university/oesd-examinations",
+    "lastChecked": "2026-11-06",
+    "note": "Accepted by Uni Wien as C1 proof if under 3 years old. Exams four times a year. Albanian test centres not confirmed."
+  },
+  {
+    "id": "goethe-c1",
+    "type": "certificate",
+    "title": "Goethe-Zertifikat C1",
+    "provider": "Goethe-Institut",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 349,
+      "currency": "EUR"
+    },
+    "discountNote": "2026 price in Germany; other countries differ.",
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "german",
+      "language-test"
+    ],
+    "sourceUrl": "https://www.goethe.de/ins/de/en/m/prf/pre.html",
+    "lastChecked": "2026-11-06",
+    "note": "Tirana prices and dates not found. Check the local institute."
+  },
+  {
+    "id": "goethe-b2",
+    "type": "certificate",
+    "title": "Goethe-Zertifikat B2",
+    "provider": "Goethe-Institut",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 289,
+      "currency": "EUR"
+    },
+    "discountNote": "2026 price in Germany; other countries differ.",
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "german",
+      "language-test"
+    ],
+    "sourceUrl": "https://www.goethe.de/ins/de/en/m/prf/pre.html",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "dalf-c1",
+    "type": "certificate",
+    "title": "DELF B2 / DALF C1 French diplomas",
+    "provider": "France Éducation international",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "french",
+      "language-test",
+      "study-in-france"
+    ],
+    "sourceUrl": "https://www.campusfrance.org/en",
+    "lastChecked": "2026-11-06",
+    "note": "DELF B2 or DALF C1 exempts applicants from the separate French test for first-year university applications. Some programmes need C1. Price: check yourself."
+  },
+  {
+    "id": "pte-academic",
+    "type": "certificate",
+    "title": "PTE Academic",
+    "provider": "Pearson",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test"
+    ],
+    "sourceUrl": "https://www.pearsonpte.com/pte-academic/",
+    "lastChecked": "2026-11-06",
+    "note": "Pearson says almost all UK universities accept it. For UK visas use PTE Academic UKVI. Price by test centre. Price: check yourself."
+  },
+  {
+    "id": "dele-2027",
+    "type": "certificate",
+    "title": "DELE Spanish C1/C2 2027",
+    "provider": "Instituto Cervantes",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": "2026-11-18",
+    "deadline": null,
+    "eventDates": "C1: 2027-04-02, 2027-05-22, 2027-07-09, 2027-11-13; C2: 2027-05-22, 2027-11-13",
+    "resultsDate": null,
+    "tags": [
+      "spanish",
+      "language-test"
+    ],
+    "sourceUrl": "https://examenes.cervantes.es/es/dele/examenes/c1",
+    "lastChecked": "2026-11-06",
+    "note": "Registration closes about 6 to 8 weeks before each date. Price by centre. Price: check yourself."
+  },
+  {
+    "id": "aws-ai-practitioner",
+    "type": "certificate",
+    "title": "AWS Certified AI Practitioner exam",
+    "provider": "AWS",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "cloud",
+      "exam"
+    ],
+    "sourceUrl": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "google-cdl",
+    "type": "certificate",
+    "title": "Google Cloud Digital Leader exam",
+    "provider": "Google Cloud",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 99,
+      "currency": "USD"
+    },
+    "discountNote": "Plus tax where applicable.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cloud",
+      "exam"
+    ],
+    "sourceUrl": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "lfcs",
+    "type": "certificate",
+    "title": "Linux Foundation Certified System Administrator (LFCS)",
+    "provider": "Linux Foundation",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 445,
+      "currency": "USD"
+    },
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "linux",
+      "exam"
+    ],
+    "sourceUrl": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "comptia-security-plus",
+    "type": "certificate",
+    "title": "CompTIA Security+",
+    "provider": "CompTIA",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 404,
+      "currency": "USD"
+    },
+    "discountNote": "Price as of Jan 2025; student pricing exists.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "security",
+      "exam"
+    ],
+    "sourceUrl": "https://www.comptia.org/en-us/blog/how-much-does-the-comptia-security-certification-cost/",
+    "lastChecked": "2026-11-06",
+    "note": "V8 expected around 17 Nov 2026; price may change."
+  },
+  {
+    "id": "comptia-a-plus",
+    "type": "certificate",
+    "title": "CompTIA A+ (two exams)",
+    "provider": "CompTIA",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 253,
+      "currency": "USD"
+    },
+    "discountNote": "Per exam, as of Feb 2024; two exams needed.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "it-support",
+      "exam"
+    ],
+    "sourceUrl": "https://www.comptia.org/en-us/blog/how-much-does-the-comptia-a-certification-cost/",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "kaggle-learn",
+    "type": "course",
+    "title": "Kaggle Learn micro-courses",
+    "provider": "Kaggle",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "data-science",
+      "ai",
+      "python"
+    ],
+    "sourceUrl": "https://www.kaggle.com/learn",
+    "lastChecked": "2026-11-06",
+    "note": "Free short courses; completion certificates per course according to reviews. Account needed. Cost: check yourself."
+  },
+  {
+    "id": "hf-agents-course",
+    "type": "course",
+    "title": "Hugging Face Agents Course",
+    "provider": "Hugging Face",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": "Hugging Face says certification is completely free.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "agents"
+    ],
+    "sourceUrl": "https://huggingface.co/learn/agents-course/unit0/introduction",
+    "lastChecked": "2026-11-06",
+    "note": "Two certificate levels; no deadline. Cost: check yourself."
+  },
+  {
+    "id": "code-in-place",
+    "type": "course",
+    "title": "Code in Place (Stanford)",
+    "provider": "Stanford University",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "python",
+      "beginner"
+    ],
+    "sourceUrl": "https://engineering.stanford.edu/news/stanford-engineering-offers-free-online-introductory-programming-course",
+    "lastChecked": "2026-11-06",
+    "note": "Free 6-week Python course. 2026 learner deadline was 8 Apr; 2027 dates not published. Cost: check yourself."
+  },
+  {
+    "id": "padua-excellence",
+    "type": "scholarship",
+    "title": "Padua International Excellence Scholarship 2027/28",
+    "provider": "University of Padova",
+    "mode": "onsite",
+    "location": "Padova, Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": "EUR 8,000 a year plus tuition waiver; up to 76 awards.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italy",
+      "bachelor",
+      "english-taught"
+    ],
+    "sourceUrl": "https://www.unipd.it/en/padua-excellence",
+    "lastChecked": "2026-11-06",
+    "note": "For non-Italian applicants to English-taught degrees, not resident in Italy. Mostly awarded from Call One (15 Sept to 15 Nov 2026). Calls published Nov 2026. Cost: check yourself."
+  },
+  {
+    "id": "polimi-merit",
+    "type": "scholarship",
+    "title": "Politecnico di Milano Merit-Based Scholarships 2027/28",
+    "provider": "Politecnico di Milano",
+    "mode": "onsite",
+    "location": "Milan, Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": "Gold EUR 8,000 (Milan), Platinum EUR 10,000, Silver tuition waiver.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-12-15T12:00+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italy",
+      "masters",
+      "english-taught"
+    ],
+    "sourceUrl": "https://www.polimi.it/fileadmin/user_upload/futuri_studenti/borse-di-studio/Merit_Based_Call_For_Applications_a.y._2027-2028.pdf",
+    "lastChecked": "2026-11-06",
+    "note": "For international applicants to English-taught MSc who applied 1 Oct to 1 Dec 2026. English certificate due by 4 Mar 2027. Cost: check yourself."
+  },
+  {
+    "id": "polito-topolito",
+    "type": "scholarship",
+    "title": "TOPoliTO Scholarships",
+    "provider": "Politecnico di Torino",
+    "mode": "onsite",
+    "location": "Turin, Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": "EUR 8,000 a year.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italy",
+      "engineering"
+    ],
+    "sourceUrl": "https://international.polito.it/financial_aid/politecnico_international_scholarships",
+    "lastChecked": "2026-11-06",
+    "note": "Last call found was 2023/24 (deadline 14 July, GRE needed). 2027/28 call not published. Cost: check yourself."
+  },
+  {
+    "id": "bocconi-isu",
+    "type": "scholarship",
+    "title": "ISU Bocconi Scholarship 2027/28",
+    "provider": "Bocconi University",
+    "mode": "onsite",
+    "location": "Milan, Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italy",
+      "bachelor",
+      "need-based"
+    ],
+    "sourceUrl": "https://www.unibocconi.it/en/applying-bocconi/bachelor-and-law-programs/funding/isu-bocconi-scholarship-deadlines-and-procedures-ay-2027-28",
+    "lastChecked": "2026-11-06",
+    "note": "Need-based. International applicants first do Bocconi4access, window 12 to 30 Nov 2026 for the early round. ISEE limit about EUR 26,888 (not final). Cost: check yourself."
+  },
+  {
+    "id": "unibo-talents",
+    "type": "scholarship",
+    "title": "Unibo International Talents scholarships",
+    "provider": "University of Bologna",
+    "mode": "onsite",
+    "location": "Bologna, Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": "2025/26: 30 grants of EUR 6,500 a year.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italy",
+      "masters"
+    ],
+    "sourceUrl": "https://www.unibo.it/en",
+    "lastChecked": "2026-11-06",
+    "note": "Master's level. 2025/26 call closed 30 May 2025, GRE required. 2027/28 call not found. Cost: check yourself."
+  },
+  {
+    "id": "maeci-italy",
+    "type": "scholarship",
+    "title": "Italian Government (MAECI) scholarships",
+    "provider": "Italian Ministry of Foreign Affairs",
+    "mode": "onsite",
+    "location": "Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": 28,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "italy",
+      "masters",
+      "language-course"
+    ],
+    "sourceUrl": "https://www.esteri.it/en/servizi-opportunita/opportunita/borse-di-studio/per-cittadini-stranieri/borsestudio_stranieri/",
+    "lastChecked": "2026-11-06",
+    "note": "2026/27 call closed 26 Mar 2026; apply through Study in Italy. Albania on the list not confirmed. 2027/28 call expected early 2027. Cost: check yourself."
+  },
+  {
+    "id": "eth-esop",
+    "type": "scholarship",
+    "title": "ETH Zurich Excellence Scholarship & Opportunity Programme",
+    "provider": "ETH Zurich",
+    "mode": "onsite",
+    "location": "Zurich, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": "CHF 12,000 per semester (13,500 from autumn 2027) plus tuition waiver; about 60 awards.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-30T11:59+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "switzerland",
+      "masters"
+    ],
+    "sourceUrl": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+    "lastChecked": "2026-11-06",
+    "note": "Apply with the master's application in the first window, with a thesis pre-proposal. Not for those who already have a master's. Cost: check yourself."
+  },
+  {
+    "id": "eth-ssrf",
+    "type": "internship",
+    "title": "ETH Student Summer Research Fellowship (Computer Science)",
+    "provider": "ETH Zurich",
+    "mode": "onsite",
+    "location": "Zurich, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": "CHF 4,000 plus travel and visa costs.",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "all nationalities"
+      ],
+      "students": true
+    },
+    "applyOpens": "2026-11-01",
+    "deadline": "2026-12-16T13:00+01:00",
+    "eventDates": "2027-07-02/2027-08-27",
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "computer-science",
+      "paid"
+    ],
+    "sourceUrl": "https://inf.ethz.ch/studies/summer-research-fellowship.html",
+    "lastChecked": "2026-11-06",
+    "note": "Bachelor's or master's students with two years completed. Cost: check yourself."
+  },
+  {
+    "id": "eth-amgen",
+    "type": "internship",
+    "title": "Amgen Scholars Program at ETH Zurich",
+    "provider": "ETH Zurich",
+    "mode": "onsite",
+    "location": "Zurich, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-02-01T12:00+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "science"
+    ],
+    "sourceUrl": "https://ethz.ch/en/studies/non-degree-courses/summer-offers/summer-projects/amgen-scholars.html",
+    "lastChecked": "2026-11-06",
+    "note": "Summer research for undergraduates. Stipend details not captured. Cost: check yourself."
+  },
+  {
+    "id": "epfl-sv-summer",
+    "type": "internship",
+    "title": "EPFL Life Sciences Summer Research Program",
+    "provider": "EPFL",
+    "mode": "onsite",
+    "location": "Lausanne, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": "CHF 3,600 for two months.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-15",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "life-sciences",
+      "paid"
+    ],
+    "sourceUrl": "https://www.epfl.ch/schools/sv/education/summer-research-program/",
+    "lastChecked": "2026-11-06",
+    "note": "Bachelor's or first-year master's students. Cost: check yourself."
+  },
+  {
+    "id": "summer-at-epfl",
+    "type": "internship",
+    "title": "Summer@EPFL",
+    "provider": "EPFL",
+    "mode": "onsite",
+    "location": "Lausanne, Switzerland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-29",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "computer-science"
+    ],
+    "sourceUrl": "https://summer.epfl.ch/",
+    "lastChecked": "2026-11-06",
+    "note": "For computer science and electrical engineering students. Stipend not captured. Cost: check yourself."
+  },
+  {
+    "id": "oist-internship",
+    "type": "internship",
+    "title": "OIST Research Internship",
+    "provider": "Okinawa Institute of Science and Technology",
+    "mode": "onsite",
+    "location": "Okinawa, Japan",
+    "costType": "paid",
+    "price": {
+      "amount": 5000,
+      "currency": "JPY"
+    },
+    "discountNote": "JPY 5,000 application fee. Allowance JPY 2,400 per working day plus on-campus housing.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-04-15",
+    "eventDates": "2027-10-01/2028-03-31",
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "paid",
+      "japan"
+    ],
+    "sourceUrl": "https://www.oist.jp/admissions/research-internship/apply-research-internship",
+    "lastChecked": "2026-11-06",
+    "note": "Last two years of a bachelor's, any master's year, or graduates. Spring 2027 round closed 15 Oct 2026."
+  },
+  {
+    "id": "kaust-vsrp",
+    "type": "internship",
+    "title": "KAUST Visiting Student Research Program",
+    "provider": "KAUST",
+    "mode": "onsite",
+    "location": "Thuwal, Saudi Arabia",
+    "costType": null,
+    "price": null,
+    "discountNote": "About USD 1,000 a month, housing and return flights. No application fee.",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "paid"
+    ],
+    "sourceUrl": "https://vsrp.kaust.edu.sa/about-vsrp",
+    "lastChecked": "2026-11-06",
+    "note": "3rd-year undergraduates and up, GPA 3.5 or equivalent. 2 to 6 months. Cost: check yourself."
+  },
+  {
+    "id": "weizmann-kupcinet",
+    "type": "internship",
+    "title": "Kupcinet-Getz International Summer Program",
+    "provider": "Weizmann Institute of Science",
+    "mode": "onsite",
+    "location": "Rehovot, Israel",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": "2026-12-20",
+    "deadline": "2027-01-20",
+    "eventDates": "2027-06-16/2027-08-12",
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "science"
+    ],
+    "sourceUrl": "https://info.weizmann.ac.il/en/kupcinet-getz-international-summer-program/",
+    "lastChecked": "2026-11-06",
+    "note": "Undergraduate summer research. Cost and support not captured. Cost: check yourself."
+  },
+  {
+    "id": "ista-internships",
+    "type": "internship",
+    "title": "ISTA scientific internships",
+    "provider": "Institute of Science and Technology Austria",
+    "mode": "onsite",
+    "location": "Klosterneuburg, Austria",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "austria"
+    ],
+    "sourceUrl": "https://phd.ista.ac.at/internships/",
+    "lastChecked": "2026-11-06",
+    "note": "Year-round internships by contacting faculty. The ISTernship summer programme is paused for the 2027 cycle. Cost: check yourself."
+  },
+  {
+    "id": "slovak-gov",
+    "type": "scholarship",
+    "title": "Slovak Government Scholarships (full degree)",
+    "provider": "SAIA / Slovak Government",
+    "mode": "onsite",
+    "location": "Slovakia",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "bachelor",
+      "masters",
+      "phd"
+    ],
+    "sourceUrl": "https://grants.saia.sk/Pages/ProgramDetail.aspx?Program=531",
+    "lastChecked": "2026-11-06",
+    "note": "Deadline 25 May in recent rounds. Slovak B2 needed, or a 10-month language year first. Cost: check yourself."
+  },
+  {
+    "id": "slovak-nsp",
+    "type": "scholarship",
+    "title": "National Scholarship Programme of Slovakia (study stay)",
+    "provider": "SAIA",
+    "mode": "onsite",
+    "location": "Slovakia",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2027-04-30T16:00+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "exchange",
+      "semester"
+    ],
+    "sourceUrl": "https://www.scholarships.sk/en/news/call-sum-sem-acad-yr-26/27-apply-now",
+    "lastChecked": "2026-11-06",
+    "note": "One or two semesters. Deadlines 30 Apr and 31 Oct each year; 30 Apr 2027 assumed from the pattern. Cost: check yourself."
+  },
+  {
+    "id": "nawa-banach",
+    "type": "scholarship",
+    "title": "Banach NAWA Scholarship (Poland)",
+    "provider": "NAWA",
+    "mode": "onsite",
+    "location": "Poland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Western Balkans including Albania (2026 call)"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "masters",
+      "balkans"
+    ],
+    "sourceUrl": "https://nawa.gov.pl/en/students/foreign-students/the-banach-scholarship-programme",
+    "lastChecked": "2026-11-06",
+    "note": "Master's study with tuition waiver and monthly stipend. Past deadlines late June. 2027 call not published. Cost: check yourself."
+  },
+  {
+    "id": "romania-gov",
+    "type": "scholarship",
+    "title": "Romanian Government Scholarships for foreign citizens",
+    "provider": "Romanian Ministry of Foreign Affairs",
+    "mode": "onsite",
+    "location": "Romania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "non-EU citizens"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "bachelor",
+      "masters"
+    ],
+    "sourceUrl": "https://scholarships.studyinromania.gov.ro/",
+    "lastChecked": "2026-11-06",
+    "note": "2026/27 closed 31 Mar 2026. 2027/28 expected Feb to Mar 2027, not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "csc-china",
+    "type": "scholarship",
+    "title": "Chinese Government Scholarship 2027/28",
+    "provider": "China Scholarship Council",
+    "mode": "onsite",
+    "location": "China",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": 24,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "bachelor",
+      "masters"
+    ],
+    "sourceUrl": "https://www.campuschina.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Undergraduates under 25 at the deadline; CSCA test required for undergraduates. Each embassy sets its own deadline; Albania's not found. Cost: check yourself."
+  },
+  {
+    "id": "goi-ies",
+    "type": "scholarship",
+    "title": "Government of Ireland International Education Scholarships",
+    "provider": "Higher Education Authority",
+    "mode": "onsite",
+    "location": "Ireland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ireland",
+      "masters",
+      "phd"
+    ],
+    "sourceUrl": "https://hea.ie/policy/internationalisation/goi-ies/",
+    "lastChecked": "2026-11-06",
+    "note": "2026 call closed 12 Mar 2026. Next call likely early 2027. Cost: check yourself."
+  },
+  {
+    "id": "nl-scholarship",
+    "type": "scholarship",
+    "title": "NL Scholarship",
+    "provider": "Dutch Ministry of Education / Nuffic",
+    "mode": "onsite",
+    "location": "Netherlands",
+    "costType": null,
+    "price": null,
+    "discountNote": "EUR 5,000 in the first year; not full tuition.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "non-EEA nationals"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "netherlands",
+      "bachelor",
+      "masters"
+    ],
+    "sourceUrl": "https://www.studyinnl.org/finances/nl-scholarship",
+    "lastChecked": "2026-11-06",
+    "note": "Deadlines set by each participating institution for 2027-28. Cost: check yourself."
+  },
+  {
+    "id": "reach-oxford",
+    "type": "scholarship",
+    "title": "Reach Oxford Scholarship",
+    "provider": "University of Oxford",
+    "mode": "onsite",
+    "location": "Oxford, UK",
+    "costType": null,
+    "price": null,
+    "discountNote": "Course fees, living costs and one return flight a year.",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Nationals of OECD DAC aid-receiving countries"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2027-01-26",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "uk",
+      "bachelor",
+      "full-scholarship"
+    ],
+    "sourceUrl": "https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships/reach-oxford",
+    "lastChecked": "2026-11-06",
+    "note": "Undergraduate. Check that your country is on the DAC list. Cost: check yourself."
+  },
+  {
+    "id": "ucl-gus",
+    "type": "scholarship",
+    "title": "UCL Global Undergraduate Scholarship",
+    "provider": "UCL",
+    "mode": "onsite",
+    "location": "London, UK",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "uk",
+      "bachelor",
+      "need-based"
+    ],
+    "sourceUrl": "https://www.ucl.ac.uk/scholarships/ucl-global-undergraduate-scholarship",
+    "lastChecked": "2026-11-06",
+    "note": "For international students from low-income backgrounds paying overseas fees. 2026 deadline was 27 Apr 2026; 2027 not published. Cost: check yourself."
+  },
+  {
+    "id": "eric-bleumink",
+    "type": "scholarship",
+    "title": "Eric Bleumink Fellowship",
+    "provider": "University of Groningen",
+    "mode": "onsite",
+    "location": "Groningen, Netherlands",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "netherlands",
+      "masters"
+    ],
+    "sourceUrl": "https://www.rug.nl/education/scholarships/eric-bleumink-fellowship",
+    "lastChecked": "2026-11-06",
+    "note": "Master's. Need admission before February and nationality from the fund's country list (Appendix 1). Check yourself. Cost: check yourself."
+  },
+  {
+    "id": "emile-boutmy",
+    "type": "scholarship",
+    "title": "Émile Boutmy Scholarship",
+    "provider": "Sciences Po",
+    "mode": "onsite",
+    "location": "France",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "france",
+      "bachelor",
+      "masters"
+    ],
+    "sourceUrl": "https://www.sciencespo.fr/students/en/fees-funding/bursaries-financial-aid/emile-boutmy-scholarship/",
+    "lastChecked": "2026-11-06",
+    "note": "For non-EU applicants to Sciences Po degrees, with exclusions for some programmes. Amounts not captured. Cost: check yourself."
+  },
+  {
+    "id": "ceu-vienna-aid",
+    "type": "scholarship",
+    "title": "CEU Partial Tuition Awards (bachelor)",
+    "provider": "Central European University",
+    "mode": "onsite",
+    "location": "Vienna, Austria",
+    "costType": null,
+    "price": null,
+    "discountNote": "Merit-based, up to 50% of tuition (up to EUR 4,000 a year).",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "austria",
+      "bachelor"
+    ],
+    "sourceUrl": "https://www.ceu.edu/admissions/financial-aid",
+    "lastChecked": "2026-11-06",
+    "note": "Small number of awards. Master's aid also listed on the page. Cost: check yourself."
+  },
+  {
+    "id": "gates-cambridge",
+    "type": "scholarship",
+    "title": "Gates Cambridge Scholarship 2027/28",
+    "provider": "Gates Cambridge Trust",
+    "mode": "onsite",
+    "location": "Cambridge, UK",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "uk",
+      "postgraduate",
+      "full-scholarship"
+    ],
+    "sourceUrl": "https://gatescambridge.org/apply/timeline",
+    "lastChecked": "2026-11-06",
+    "note": "Postgraduate. Deadline depends on the course: 8 Dec 2026 or 6 Jan 2027 for most non-US applicants. Check the course page. Cost: check yourself."
+  },
+  {
+    "id": "boell-scholarship",
+    "type": "scholarship",
+    "title": "Heinrich Böll Foundation scholarship",
+    "provider": "Heinrich Böll Stiftung",
+    "mode": "onsite",
+    "location": "Germany",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "germany",
+      "masters",
+      "german"
+    ],
+    "sourceUrl": "https://www.boell.de/en/applying-scholarship",
+    "lastChecked": "2026-11-06",
+    "note": "Windows 15 Jan to 1 Mar and 15 Jul to 1 Sep 2027. German B2 needed. Undergraduate eligibility for international applicants unclear. Cost: check yourself."
+  },
+  {
+    "id": "rise-global",
+    "type": "grant",
+    "title": "Rise (global winners)",
+    "provider": "Schmidt Futures / Rhodes Trust",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": "Need-based scholarships, mentorship and a funded residential summit.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 15,
+      "maxAge": 17,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "fellowship",
+      "high-school"
+    ],
+    "sourceUrl": "https://www.risefortheworld.org/about",
+    "lastChecked": "2026-11-06",
+    "note": "2027 deadline not found; past deadlines Dec to Jan. Cost: check yourself."
+  },
+  {
+    "id": "atlas-fellowship",
+    "type": "grant",
+    "title": "Atlas Fellowship",
+    "provider": "Atlas Fellowship",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": "USD 10,000 scholarship reported.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "fellowship",
+      "high-school"
+    ],
+    "sourceUrl": "https://www.atlasfellowship.org/",
+    "lastChecked": "2026-11-06",
+    "note": "High school students worldwide, ages around 13 to 19 per secondary sources. 2027 deadline not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "promys-europe",
+    "type": "summer-school",
+    "title": "PROMYS Europe",
+    "provider": "PROMYS / University of Oxford",
+    "mode": "onsite",
+    "location": "Oxford, UK",
+    "costType": null,
+    "price": null,
+    "discountNote": "Needs-blind admission; full or partial aid incl. travel for European tax residents.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "maths",
+      "summer",
+      "pre-university"
+    ],
+    "sourceUrl": "https://promys-europe.org",
+    "lastChecked": "2026-11-06",
+    "note": "Applications open in January; 2026 deadline was 2 Feb 2026. Age rule for 2027 not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "ceu-summer",
+    "type": "summer-school",
+    "title": "CEU Summer University",
+    "provider": "Central European University",
+    "mode": "onsite",
+    "location": "Vienna or Budapest",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "summer",
+      "social-sciences"
+    ],
+    "sourceUrl": "https://summeruniversity.ceu.edu/",
+    "lastChecked": "2026-11-06",
+    "note": "Financial aid offered in past years. 2027 deadline not published. Cost: check yourself."
+  },
+  {
+    "id": "picoctf-2027",
+    "type": "competition",
+    "title": "picoCTF 2027",
+    "provider": "Carnegie Mellon University",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cybersecurity",
+      "ctf",
+      "beginner"
+    ],
+    "sourceUrl": "https://picoctf.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Usually in March (2026: 9 to 19 Mar). 2027 dates not announced. Cost: check yourself."
+  },
+  {
+    "id": "ecsc-2027",
+    "type": "competition",
+    "title": "European Cybersecurity Challenge 2027",
+    "provider": "ENISA",
+    "mode": "onsite",
+    "location": "Denmark",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "cybersecurity",
+      "ctf",
+      "national-team"
+    ],
+    "sourceUrl": "https://ecsc.eu/front-page",
+    "lastChecked": "2026-11-06",
+    "note": "Host reported as Denmark. Entry through national team selection; Albanian team not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "icc-2027",
+    "type": "competition",
+    "title": "International Cybersecurity Challenge 2027",
+    "provider": "ENISA and partners",
+    "mode": "onsite",
+    "location": "Ireland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "October 2027",
+    "resultsDate": null,
+    "tags": [
+      "cybersecurity",
+      "ctf"
+    ],
+    "sourceUrl": "https://www.enisa.europa.eu/news/sweden-sweeps-the-winning-title-of-the-european-cybersecurity-challenge",
+    "lastChecked": "2026-11-06",
+    "note": "Regional team selection. Cost: check yourself."
+  },
+  {
+    "id": "genius-olympiad-2027",
+    "type": "competition",
+    "title": "GENIUS Olympiad 2027",
+    "provider": "Terra Science and Education",
+    "mode": "onsite",
+    "location": "Rochester, New York, USA",
+    "costType": "paid",
+    "price": {
+      "amount": 75,
+      "currency": "USD"
+    },
+    "discountNote": "USD 75 per project to apply; USD 695 per participant if selected.",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": "2026-12",
+    "deadline": "2027-05-05",
+    "eventDates": "2027-06-07/2027-06-12",
+    "resultsDate": null,
+    "tags": [
+      "science",
+      "environment",
+      "high-school"
+    ],
+    "sourceUrl": "https://geniusolympiad.org/",
+    "lastChecked": "2026-11-06"
+  },
+  {
+    "id": "isef-2027",
+    "type": "competition",
+    "title": "Regeneron ISEF 2027",
+    "provider": "Society for Science",
+    "mode": "onsite",
+    "location": "Los Angeles, USA",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "May 2027",
+    "resultsDate": null,
+    "tags": [
+      "science",
+      "high-school"
+    ],
+    "sourceUrl": "https://www.societyforscience.org/isef/",
+    "lastChecked": "2026-11-06",
+    "note": "Entry only through a Society-affiliated fair. Over USD 7 million in awards. Cost: check yourself."
+  },
+  {
+    "id": "sjwp",
+    "type": "competition",
+    "title": "Stockholm Junior Water Prize",
+    "provider": "Stockholm Water Foundation",
+    "mode": "onsite",
+    "location": "Stockholm, Sweden",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "science",
+      "water",
+      "high-school"
+    ],
+    "sourceUrl": "https://stockholmwaterfoundation.org/stockholm-junior-water-prize/",
+    "lastChecked": "2026-11-06",
+    "note": "Entry through national competitions. Albania participation not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "eucys-2027",
+    "type": "competition",
+    "title": "EU Contest for Young Scientists 2027",
+    "provider": "European Commission",
+    "mode": "onsite",
+    "location": "Genoa, Italy",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "Q3 2027, usually September",
+    "resultsDate": null,
+    "tags": [
+      "science",
+      "young-scientists"
+    ],
+    "sourceUrl": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/eucys_en",
+    "lastChecked": "2026-11-06",
+    "note": "Entry through national contests such as Jugend Innovativ. Cost: check yourself."
+  },
+  {
+    "id": "imo-2027",
+    "type": "competition",
+    "title": "International Mathematical Olympiad 2027",
+    "provider": "IMO",
+    "mode": "onsite",
+    "location": "Budapest, Hungary",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-07-16/2027-07-26",
+    "resultsDate": null,
+    "tags": [
+      "olympiad",
+      "maths"
+    ],
+    "sourceUrl": "https://www.imo-official.org/",
+    "lastChecked": "2026-11-06",
+    "note": "National team selection. Cost: check yourself."
+  },
+  {
+    "id": "microsoft-internships",
+    "type": "internship",
+    "title": "Microsoft university internships and Explore program",
+    "provider": "Microsoft",
+    "mode": "onsite",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "software",
+      "paid",
+      "big-tech"
+    ],
+    "sourceUrl": "https://careers.microsoft.com/v2/global/en/students",
+    "lastChecked": "2026-11-06",
+    "note": "Global university internships plus Discovery and Explore programmes for early students. Locations and dates vary. Cost: check yourself."
+  },
+  {
+    "id": "bending-spoons-intern",
+    "type": "internship",
+    "title": "Bending Spoons software engineer summer intern",
+    "provider": "Bending Spoons",
+    "mode": "onsite",
+    "location": "Milan, London, Madrid or Warsaw",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "software",
+      "paid"
+    ],
+    "sourceUrl": "https://jobs.bendingspoons.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Listed as suitable for students. Pay and dates not captured. Cost: check yourself."
+  },
+  {
+    "id": "jane-street-programs",
+    "type": "internship",
+    "title": "Jane Street student programs (Europe)",
+    "provider": "Jane Street",
+    "mode": "onsite",
+    "location": "London / Amsterdam",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "finance",
+      "trading",
+      "first-year"
+    ],
+    "sourceUrl": "https://www.janestreet.com/join-jane-street/programs-and-events/",
+    "lastChecked": "2026-11-06",
+    "note": "Day-long and multi-day programs for first- and second-year university students. Dates not captured. Cost: check yourself."
+  },
+  {
+    "id": "gdg-tirana",
+    "type": "conference",
+    "title": "GDG Tirana and GDG on Campus (Epoka, Beder)",
+    "provider": "Google Developer Groups",
+    "mode": "onsite",
+    "location": "Tirana, Albania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "community",
+      "albania",
+      "meetups"
+    ],
+    "sourceUrl": "https://gdg.community.dev/gdg-tirana/",
+    "lastChecked": "2026-11-06",
+    "note": "Community meetups, workshops and DevFest. Relaunched 2026. Events usually free; check each event. Cost: check yourself."
+  },
+  {
+    "id": "eyp",
+    "type": "conference",
+    "title": "European Youth Parliament",
+    "provider": "European Youth Parliament",
+    "mode": "onsite",
+    "location": "Europe",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "debate",
+      "politics",
+      "youth"
+    ],
+    "sourceUrl": "https://eyp.org/",
+    "lastChecked": "2026-11-06",
+    "note": "National committees in about 40 countries run sessions. Whether Albania has one not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "yea-wb",
+    "type": "exchange",
+    "title": "Young European Ambassadors (Western Balkans)",
+    "provider": "EU / WeBalkans",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Western Balkans including Albania"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "youth",
+      "eu",
+      "volunteering"
+    ],
+    "sourceUrl": "https://webalkans.eu/en/webalkans-young-european-ambassadors-yea/",
+    "lastChecked": "2026-11-06",
+    "note": "Last Western Balkans call found was 2024. Age range in 2020 was 18 to 29. 2027 call not found. Cost: check yourself."
+  },
+  {
+    "id": "kiroween-2026",
+    "type": "hackathon",
+    "title": "Kiroween 2026",
+    "provider": "Kiro / Devpost",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Some countries excluded"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-12-04T23:00+01:00",
+    "eventDates": "2026-10-30/2026-12-04",
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "cash-prize",
+      "beginner"
+    ],
+    "sourceUrl": "https://kiroween.devpost.com/",
+    "lastChecked": "2026-11-06",
+    "note": "USD 100,000 in cash prizes. 18+ (age of majority), some countries excluded: check the rules for Albania."
+  },
+  {
+    "id": "meta-vr-start-2026",
+    "type": "hackathon",
+    "title": "Meta VR Start Developer Competition 2026",
+    "provider": "Meta / Devpost",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Some countries excluded"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-18T21:00+01:00",
+    "eventDates": "2026-09-24/2026-11-18",
+    "resultsDate": null,
+    "tags": [
+      "vr",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://start-developer-competition-26.devpost.com/",
+    "lastChecked": "2026-11-06",
+    "note": "USD 1,000,000 in cash prizes. 18+ (age of majority), some countries excluded: check the rules for Albania."
+  },
+  {
+    "id": "codegeist-2026",
+    "type": "hackathon",
+    "title": "Codegeist 2026",
+    "provider": "Atlassian / Devpost",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Some countries excluded"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-12-22T21:00+01:00",
+    "eventDates": "2026-10-27/2026-12-22",
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "enterprise",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://codegeist2026.devpost.com/",
+    "lastChecked": "2026-11-06",
+    "note": "USD 120,000 in prizes; build on Atlassian Forge. 18+ (age of majority), some countries excluded: check the rules for Albania."
+  },
+  {
+    "id": "ugreen-hackathon-2026",
+    "type": "hackathon",
+    "title": "UGREEN Hackathon 2026 on AI NAS",
+    "provider": "UGREEN / Devpost",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Some countries excluded"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-16T08:45+01:00",
+    "eventDates": "2026-10-22/2026-11-16",
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://ugreenhackathon.devpost.com/",
+    "lastChecked": "2026-11-06",
+    "note": "USD 46,000 in prizes. 18+ (age of majority), some countries excluded: check the rules for Albania."
+  },
+  {
+    "id": "qnx-hackathon-2026",
+    "type": "hackathon",
+    "title": "QNX Global Hackathon",
+    "provider": "QNX / Devpost",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Some countries excluded"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": "2026-12-15T20:00+01:00",
+    "eventDates": "2026-11-02/2026-12-15",
+    "resultsDate": null,
+    "tags": [
+      "iot",
+      "embedded",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://qnx.devpost.com/",
+    "lastChecked": "2026-11-06",
+    "note": "USD 50,000 in prizes. 18+ (age of majority), some countries excluded: check the rules for Albania."
+  },
+  {
+    "id": "dsh-hacks-v2",
+    "type": "hackathon",
+    "title": "DSH Hacks V2",
+    "provider": "STEMise",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": null,
+      "countries": [
+        "all except standard exceptions"
+      ],
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-15T08:45+01:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "healthcare",
+      "beginner"
+    ],
+    "sourceUrl": "https://dsh-hacks-v2.devpost.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Non-cash prizes."
+  },
+  {
+    "id": "mlh-ghw-builders",
+    "type": "hackathon",
+    "title": "MLH Global Hack Week: Builders Week",
+    "provider": "Major League Hacking",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "anyone, anywhere"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-11-06/2026-11-12",
+    "resultsDate": null,
+    "tags": [
+      "beginner",
+      "online",
+      "monthly"
+    ],
+    "sourceUrl": "https://ghw.mlh.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Free monthly online hack weeks."
+  },
+  {
+    "id": "mlh-ghw-open-source",
+    "type": "hackathon",
+    "title": "MLH Global Hack Week: Open Source Week",
+    "provider": "Major League Hacking",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "anyone, anywhere"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-12-04/2026-12-10",
+    "resultsDate": null,
+    "tags": [
+      "open-source",
+      "online"
+    ],
+    "sourceUrl": "https://ghw.mlh.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Free."
+  },
+  {
+    "id": "amd-ai-league",
+    "type": "hackathon",
+    "title": "AMD AI League (lablab)",
+    "provider": "AMD / lablab",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026-09-01/2026-12-01",
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "leaderboard"
+    ],
+    "sourceUrl": "https://lablab.build/ai-hackathons/amd-lablab-ai-academy-challenge",
+    "lastChecked": "2026-11-06",
+    "note": "Six matches, one leaderboard. lablab's site terms require 18+. Prizes not captured. Cost: check yourself."
+  },
+  {
+    "id": "kaggle-competitions",
+    "type": "competition",
+    "title": "Kaggle competitions",
+    "provider": "Kaggle",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "data-science",
+      "ai",
+      "cash-prize"
+    ],
+    "sourceUrl": "https://www.kaggle.com/competitions",
+    "lastChecked": "2026-11-06",
+    "note": "Ongoing featured competitions with cash prizes plus free Playground and Getting Started rounds. Each competition has its own rules and deadline. Cost: check yourself."
+  },
+  {
+    "id": "full-stack-open",
+    "type": "course",
+    "title": "Full Stack Open",
+    "provider": "University of Helsinki",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "web",
+      "javascript",
+      "university"
+    ],
+    "sourceUrl": "https://fullstackopen.com/en/",
+    "lastChecked": "2026-11-06",
+    "note": "Free University of Helsinki course. Certificate or credit options not captured."
+  },
+  {
+    "id": "mooc-fi",
+    "type": "course",
+    "title": "MOOC.fi courses",
+    "provider": "University of Helsinki",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "programming",
+      "ai",
+      "university"
+    ],
+    "sourceUrl": "https://www.mooc.fi/en/",
+    "lastChecked": "2026-11-06",
+    "note": "Open courses for everyone (e.g. Java, Python, AI)."
+  },
+  {
+    "id": "odin-project",
+    "type": "course",
+    "title": "The Odin Project",
+    "provider": "The Odin Project",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "web",
+      "full-stack"
+    ],
+    "sourceUrl": "https://www.theodinproject.com/",
+    "lastChecked": "2026-11-06",
+    "note": "Free open-source full-stack curriculum."
+  },
+  {
+    "id": "deeplearning-ai-short",
+    "type": "course",
+    "title": "DeepLearning.AI short courses",
+    "provider": "DeepLearning.AI",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "llm"
+    ],
+    "sourceUrl": "https://www.deeplearning.ai/courses",
+    "lastChecked": "2026-11-06",
+    "note": "Short AI courses; most short courses are free. Check each course. Cost: check yourself."
+  },
+  {
+    "id": "google-ml-crash-course",
+    "type": "course",
+    "title": "Google Machine Learning Crash Course",
+    "provider": "Google",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "ai",
+      "machine-learning"
+    ],
+    "sourceUrl": "https://developers.google.com/machine-learning/crash-course",
+    "lastChecked": "2026-11-06",
+    "note": "Free modules with videos and exercises."
+  },
+  {
+    "id": "mit-ocw",
+    "type": "course",
+    "title": "MIT OpenCourseWare",
+    "provider": "MIT",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "university",
+      "maths",
+      "cs"
+    ],
+    "sourceUrl": "https://ocw.mit.edu/",
+    "lastChecked": "2026-11-06",
+    "note": "Free MIT lecture notes, exams and videos. No certificate."
+  },
+  {
+    "id": "yc-startup-school",
+    "type": "startup-program",
+    "title": "Startup School (Y Combinator)",
+    "provider": "Y Combinator",
+    "mode": "online",
+    "location": null,
+    "costType": "free",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "online"
+    ],
+    "sourceUrl": "https://www.startupschool.org/",
+    "lastChecked": "2026-11-06",
+    "note": "Free online course on starting a startup, with weekly progress and co-founder matching."
+  },
+  {
+    "id": "aws-activate",
+    "type": "startup-program",
+    "title": "AWS Activate credits",
+    "provider": "Amazon Web Services",
+    "mode": "online",
+    "location": null,
+    "costType": null,
+    "price": null,
+    "discountNote": "Up to USD 200,000 in AWS credits for eligible startups.",
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "cloud",
+      "credits"
+    ],
+    "sourceUrl": "https://aws.amazon.com/startups/credits/",
+    "lastChecked": "2026-11-06",
+    "note": "Founders tier for early-stage startups; eligibility rules on the page. Cost: check yourself."
+  },
+  {
+    "id": "startup-albania-grant",
+    "type": "startup-program",
+    "title": "Startup Albania Grant",
+    "provider": "Albanian Ministry of Economy / Startup Albania",
+    "mode": "online",
+    "location": "Albania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "albania",
+      "grant"
+    ],
+    "sourceUrl": "https://mia.gov.al/en/winners-of-the-2026-grant-programme-announced-minister-ibrahimaj-says-e16-5-million-invested-in-startups-over-four-years/",
+    "lastChecked": "2026-11-06",
+    "note": "2026 round: EUR 6 million, 1,219 applications, winners announced. Focus on green and digital. 2027 call not published. Cost: check yourself."
+  },
+  {
+    "id": "ivanaj-youth-accelerator",
+    "type": "startup-program",
+    "title": "Ivanaj Youth Startup Accelerator",
+    "provider": "Ivanaj Foundation",
+    "mode": "online",
+    "location": "Albania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "n/a",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albania"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "albania",
+      "youth"
+    ],
+    "sourceUrl": "https://ivanaj-foundations.org/en/?p=24351",
+    "lastChecked": "2026-11-06",
+    "note": "For young Albanians starting a business. Dates and terms not captured. Cost: check yourself."
+  },
+  {
+    "id": "rsi-2027",
+    "type": "summer-school",
+    "title": "Research Science Institute (RSI) 2027",
+    "provider": "Center for Excellence in Education / MIT",
+    "mode": "onsite",
+    "location": "MIT, USA",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": "2026-12-11T23:59-05:00",
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "research",
+      "summer",
+      "high-school"
+    ],
+    "sourceUrl": "https://www.cee.org/programs/research-science-institute",
+    "lastChecked": "2026-11-06",
+    "note": "Highly selective summer research programme. International eligibility and costs not captured. Cost: check yourself."
+  },
+  {
+    "id": "susi-student-leaders",
+    "type": "exchange",
+    "title": "Study of the U.S. Institutes (SUSI) for Student Leaders",
+    "provider": "U.S. Department of State / U.S. Embassy Tirana",
+    "mode": "onsite",
+    "location": "United States",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 25,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "exchange",
+      "usa",
+      "leadership"
+    ],
+    "sourceUrl": "https://exchanges.state.gov/non-us/program/study-us-institutes-student-leaders",
+    "lastChecked": "2026-11-06",
+    "note": "Five- to six-week academic programmes for undergraduates, nominated by embassies. Past Albanian calls closed in November. 2027 Albanian call not found. Cost: check yourself."
+  },
+  {
+    "id": "summer-work-travel",
+    "type": "job",
+    "title": "Summer Work and Travel USA (J-1)",
+    "provider": "U.S. Department of State sponsors",
+    "mode": "onsite",
+    "location": "United States",
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "job",
+      "summer",
+      "usa"
+    ],
+    "sourceUrl": "https://j1visa.state.gov/programs/summer-work-travel",
+    "lastChecked": "2026-11-06",
+    "note": "University students work up to 3 months and travel one month. Apply through a designated sponsor and local partner; programme fees vary. Albania's current partners not confirmed."
+  },
+  {
+    "id": "aadf-mip",
+    "type": "internship",
+    "title": "AADF Master's and Internship Program",
+    "provider": "Albanian-American Development Foundation / IREX",
+    "mode": "onsite",
+    "location": "United States",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": [
+        "Albanian passport holders resident in Albania"
+      ],
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "albania",
+      "usa",
+      "professional"
+    ],
+    "sourceUrl": "https://www.irex.org/node/9617",
+    "lastChecked": "2026-11-06",
+    "note": "Six-month US professional internships for emerging Albanian leaders; cohorts planned 2026 to 2028. Application timing not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "undp-albania-interns",
+    "type": "internship",
+    "title": "UNDP Albania internships",
+    "provider": "UNDP",
+    "mode": "onsite",
+    "location": "Tirana, Albania",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "un",
+      "albania",
+      "policy"
+    ],
+    "sourceUrl": "https://www.impactpool.org/jobs/351668",
+    "lastChecked": "2026-11-06",
+    "note": "Interns recruited periodically; listings found were closed or undated. Check the UNDP jobs portal. Cost: check yourself."
+  },
+  {
+    "id": "slush-volunteer",
+    "type": "conference",
+    "title": "Slush volunteering",
+    "provider": "Slush",
+    "mode": "onsite",
+    "location": "Helsinki, Finland",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "startup",
+      "volunteering",
+      "networking"
+    ],
+    "sourceUrl": "https://slush.org/audience/volunteers",
+    "lastChecked": "2026-11-06",
+    "note": "About 1,800 volunteers help run Slush. Dates and perks not captured. Cost: check yourself."
+  },
+  {
+    "id": "first-global-2027",
+    "type": "competition",
+    "title": "FIRST Global Challenge 2027",
+    "provider": "FIRST Global",
+    "mode": "onsite",
+    "location": "Madrid, Spain",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027-10-20/2027-10-23",
+    "resultsDate": null,
+    "tags": [
+      "robotics",
+      "national-team"
+    ],
+    "sourceUrl": "https://first.global/host",
+    "lastChecked": "2026-11-06",
+    "note": "One national team per country, up to 5 students. Albania's team not confirmed. Cost: check yourself."
+  },
+  {
+    "id": "ipho-2027",
+    "type": "competition",
+    "title": "International Physics Olympiad 2027",
+    "provider": "IPhO",
+    "mode": "onsite",
+    "location": "Saudi Arabia",
+    "costType": null,
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "Reported 2027-07-04/2027-07-12, Riyadh",
+    "resultsDate": null,
+    "tags": [
+      "olympiad",
+      "physics"
+    ],
+    "sourceUrl": "https://fastcompanyme.com/news/saudi-arabia-to-host-international-physics-olympiad-in-2027/",
+    "lastChecked": "2026-11-06",
+    "note": "Host confirmed by news reports; dates not on the official site yet. National selection. Cost: check yourself."
+  },
+  {
+    "id": "gre-general",
+    "type": "certificate",
+    "title": "GRE General Test",
+    "provider": "ETS",
+    "mode": null,
+    "location": null,
+    "costType": "paid",
+    "price": {
+      "amount": 249,
+      "currency": "USD"
+    },
+    "discountNote": "Standard fee; China and some countries differ.",
+    "travelPaid": "n/a",
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": null,
+    "resultsDate": null,
+    "tags": [
+      "admissions-test",
+      "masters"
+    ],
+    "sourceUrl": "https://www.ets.org/gre/test-takers/general-test/register/fees.html",
+    "lastChecked": "2026-11-06",
+    "note": "Needed by some master's programmes and scholarships (e.g. TOPoliTO)."
+  }
+]
