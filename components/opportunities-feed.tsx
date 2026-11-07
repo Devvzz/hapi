@@ -4,9 +4,10 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { opportunities } from "@/lib/data";
 import { formatDate } from "@/lib/dates";
-import { matchOpportunity, type Match } from "@/lib/match";
-import { EMPTY_LOG, EMPTY_PLAN, EMPTY_PROFILE, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
+import { compareMatches, matchOpportunity, type Match, type SortKey } from "@/lib/match";
+import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
 import { useNow, useStored } from "@/lib/storage";
+import { useProfile } from "@/lib/use-profile";
 import type { Opportunity, OpportunityType } from "@/lib/types";
 import { FindMore } from "./find-more";
 
@@ -37,18 +38,19 @@ function travelLabel(o: Opportunity): string | null {
 }
 
 export function OpportunitiesFeed() {
-  const [profile] = useStored(STORAGE.profile, EMPTY_PROFILE);
+  const [profile] = useProfile();
   const [saved, setSaved] = useStored(STORAGE.saved, EMPTY_SAVED);
   const [plan, setPlan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [, setLog] = useStored(STORAGE.log, EMPTY_LOG);
 
   const [type, setType] = useState<string>("all");
   const [cost, setCost] = useState<"all" | "free" | "paid">("all");
-  const [maxPrice, setMaxPrice] = useState<string>("");
+  const [sortKey, setSortKey] = useState<SortKey>("match");
+  const [budgetOnly, setBudgetOnly] = useState(false);
   const [travelOnly, setTravelOnly] = useState(false);
   const [certOnly, setCertOnly] = useState(false);
   const [onlineOnly, setOnlineOnly] = useState(false);
-  const [eligibleOnly, setEligibleOnly] = useState(false);
+  const [eligibleOnly, setEligibleOnly] = useState(true);
   const [soonOnly, setSoonOnly] = useState(false);
   const [hideClosed, setHideClosed] = useState(true);
   const [query, setQuery] = useState("");
@@ -60,14 +62,13 @@ export function OpportunitiesFeed() {
   const ranked = useMemo(() => {
     if (!now) return [];
     const q = query.trim().toLowerCase();
-    const max = Number(maxPrice);
     return opportunities
       .map((o) => ({ o, m: matchOpportunity(o, profile, now) }))
       .filter(({ o, m }) => {
         if (type !== "all" && o.type !== type) return false;
         if (cost === "free" && o.costType !== "free") return false;
         if (cost === "paid" && o.costType !== "paid" && o.costType !== "discount") return false;
-        if (maxPrice && max > 0 && o.price && o.price.amount > max) return false;
+        if (budgetOnly && m.overBudget) return false;
         if (travelOnly && o.travelPaid !== "full" && o.travelPaid !== "partial") return false;
         if (certOnly && !o.certificateIncluded) return false;
         if (onlineOnly && o.mode !== "online") return false;
@@ -77,8 +78,8 @@ export function OpportunitiesFeed() {
         if (q && !`${o.title} ${o.provider} ${o.tags.join(" ")} ${o.location ?? ""}`.toLowerCase().includes(q)) return false;
         return true;
       })
-      .sort((a, b) => b.m.score - a.m.score || (a.m.daysLeft ?? 9999) - (b.m.daysLeft ?? 9999));
-  }, [now, profile, type, cost, maxPrice, travelOnly, certOnly, onlineOnly, eligibleOnly, soonOnly, hideClosed, query]);
+      .sort((a, b) => compareMatches(a, b, sortKey));
+  }, [now, profile, type, cost, sortKey, budgetOnly, travelOnly, certOnly, onlineOnly, eligibleOnly, soonOnly, hideClosed, query]);
 
   const visible = ranked.slice(0, limit);
   const profileEmpty = !profile.nationality && profile.age === null && profile.interests.length === 0;
@@ -143,12 +144,17 @@ export function OpportunitiesFeed() {
           <option value="free">Free only</option>
           <option value="paid">Paid or discounted</option>
         </select>
-        <input className="rounded border border-slate-300 px-2 py-1" type="number" min={0} placeholder="Max price" value={maxPrice} onChange={(e) => setMaxPrice(e.target.value)} />
+        <select className="rounded border border-slate-300 px-2 py-1" value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)}>
+          <option value="match">Sort: best match</option>
+          <option value="deadline">Sort: deadline soonest</option>
+          <option value="cost">Sort: cheapest</option>
+        </select>
         {([
           [travelOnly, setTravelOnly, "Travel paid"],
           [certOnly, setCertOnly, "Certificate included"],
           [onlineOnly, setOnlineOnly, "Online"],
-          [eligibleOnly, setEligibleOnly, "Eligible for me"],
+          [eligibleOnly, setEligibleOnly, "Only what I can apply to"],
+          [budgetOnly, setBudgetOnly, "Within my budget"],
           [soonOnly, setSoonOnly, "Deadline in 30 days"],
           [hideClosed, setHideClosed, "Hide closed"],
         ] as const).map(([value, setter, label]) => (
