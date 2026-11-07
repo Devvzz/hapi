@@ -10,14 +10,17 @@ PayPal runs in **sandbox mode**. No real money moves.
 
 | Feature | What it does |
 |---|---|
-| Opportunities feed | 191 checked opportunities, each with its source link, every known date and the real price. Unknown dates show "TBA". Filters for type, free or paid, max price, travel paid, certificate, online, eligibility and closing soon. |
-| Matching | Code scores each opportunity against the student's profile (age, country, student status, interests, deadline). Gemini then writes one "why this fits you" line, using only those facts. |
+| Profile first | Nationality (with spelling help, so "Alllbaniii" or "shqiperi" becomes Albania), age, 13 education stages from middle school and HTL to PhD and working, Austrian school abroad, languages with CEFR levels, a university budget and a budget per opportunity. Then the student chooses universities or opportunities. |
+| Opportunities feed | 191 checked opportunities, each with its source link, every known date and the real price. Unknown dates show "TBA". Sort by best match, deadline or price; filters for type, free or paid, within my budget, travel paid, certificate, online and closing soon. |
+| Matching | Code first applies the hard rules: age, nationality (worldwide, EU, Western Balkans, single-country and other rules) and who can apply (school pupils, bachelor, master, PhD, graduates). Items above the student's budget are flagged. Only then does it score interests and deadlines, so what the student can apply to always comes first. Gemini writes one "why this fits you" line from those facts only. |
 | Find more with AI | Gemini with Google Search suggests more. Each result must point to one of the search sources, and stays marked "unverified". |
-| University eligibility | 555 bachelor programmes at universities in Austria, Germany and Italy. Code checks language level and non-EU tuition against the budget, and flags data that still needs checking. |
+| Universities | 555 bachelor programmes, mostly in Austria, Germany and Italy, grouped by university. Each shows the fee this student would pay: EU or non-EU by nationality, equal status for Austrian schools abroad, income-based fees in Italy. Code checks language level and that fee against the budget, and flags data that still needs checking. |
+| Scholarships | A separate view per country: scholarships the student applies to directly, checked against their profile, plus the scholarship notes for each university. |
 | Cost plan | An editable AG Grid table with totals per currency and a sponsored progress bar. A paid opportunity, or a university's one-off fees, can be added with one click. |
 | Family sponsorship | The student describes the request in their own words. Gemini drafts a PayPal invoice, and an approval card shows exactly what will be sent. Only the Approve button sends it. The status (sent, paid) can be refreshed. |
-| Hapi Premium | A €2.99/month PayPal subscription. The server checks that the subscription is ACTIVE before the coach answers. |
+| Hapi Premium | A €2.99/month PayPal subscription. The server checks that the subscription is ACTIVE before the coach or the CV AI answers. |
 | Weekly coach | Up to 5 steps for this week, built only from checked opportunities that the student is eligible for, their saved items and their unpaid costs. Every step links to its official page. |
+| Europass CV | A CV builder in the structure of the EU's Europass CV: personal information, work experience, education with EQF levels, languages on the CEFR self-assessment grid, digital skills and more. "Improve with AI" rewrites the student's own words without adding facts, and asks what could be added. Print or save as PDF. Premium only, checked on the server. |
 | What changed this week | Every Saturday a Vercel Cron job re-reads the official page of a few open opportunities and reports changed dates, closed rounds and new editions. |
 
 ## How it works

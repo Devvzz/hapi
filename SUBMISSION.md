@@ -16,13 +16,16 @@ Then I saw that most young people around me had the same problem. They didn't kn
 ## What it does
 
 - **Opportunities feed:** 191 checked opportunities, free and paid, each with its source link, dates and price. Unknown dates show "TBA".
-- **Matching:** code scores each item against the student's profile, then Gemini writes a short "why this fits you" line from those facts only.
+- **Profile first:** nationality with spelling help, 13 education stages from middle school and HTL to PhD and working, languages, and two budgets. Then the student chooses universities or opportunities.
+- **Matching:** code applies the hard rules first (age, nationality, who can apply, budget), so what the student can really apply to comes first. Then Gemini writes a short "why this fits you" line from those facts only.
 - **Find more with AI:** Gemini with Google Search suggests more, always tied to a source and marked "unverified".
-- **University eligibility:** 555 bachelor programmes in Austria, Germany and Italy, checked against language level and budget.
+- **Universities:** 555 bachelor programmes, mostly in Austria, Germany and Italy, grouped by university, each with the fee this student would pay (EU or non-EU, Austrian school abroad, income-based in Italy), checked against language level and budget.
+- **Scholarships:** a view per country with scholarships the student can apply to, plus each university's scholarship notes.
 - **Real total cost:** an editable AG Grid plan with totals and a sponsored progress bar.
 - **Family sponsorship with PayPal:** the student asks in their own words, Gemini drafts the invoice, and an approval card shows exactly what will be sent. Only the Approve button sends it through the PayPal Agent Toolkit. The status (sent, paid) updates in the plan.
-- **Hapi Premium:** a €2.99/month PayPal subscription. The server checks that it is ACTIVE before the weekly coach answers.
+- **Hapi Premium:** a €2.99/month PayPal subscription. The server checks that it is ACTIVE before the weekly coach or the CV AI answers.
 - **Weekly coach:** up to 5 steps for this week, built only from checked opportunities the student is eligible for, their saved items and unpaid costs, each linked to its official page.
+- **Europass CV (Premium):** a CV in the structure of the EU's Europass CV, with EQF levels and the CEFR language grid. AI polishes the student's own words without adding facts. Print or save as PDF.
 - **What changed this week:** a Saturday Vercel Cron job re-reads official pages and reports changed dates, closed rounds and new editions.
 
 ## How it's built
