@@ -8,7 +8,7 @@ import type { PlanRow, Profile } from "./types";
 export const DEMO_KEY = "hapi.demo";
 const BACKUP_KEY = "hapi.backup";
 export const DEMO_SUBSCRIPTION = "DEMO";
-const KEYS = [STORAGE.profile, STORAGE.plan, STORAGE.saved, STORAGE.premium, STORAGE.coach];
+const KEYS = [STORAGE.profile, STORAGE.plan, STORAGE.saved, STORAGE.premium, STORAGE.coach, STORAGE.cv];
 
 const DEMO_PROFILE: Profile = {
   nationality: "Germany",

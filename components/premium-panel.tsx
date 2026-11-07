@@ -86,6 +86,12 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
         <ul className="list-disc space-y-1 pl-5 text-sm text-slate-700">
           <li>A weekly AI coach: your next steps, built only from the checked opportunities, your profile and your cost plan.</li>
           <li>Every step links to its official source and deadline.</li>
+          <li>
+            A CV builder in the Europass structure, with AI that polishes your own words ·{" "}
+            <a href="/cv" className="text-teal-700 underline">
+              open it
+            </a>
+          </li>
           <li>The free parts of Hapi stay free.</li>
         </ul>
 

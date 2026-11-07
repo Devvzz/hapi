@@ -6,11 +6,12 @@ const LINKS = [
   { href: "/opportunities", label: "Opportunities" },
   { href: "/plan", label: "Cost plan" },
   { href: "/premium", label: "Premium" },
+  { href: "/cv", label: "CV" },
 ];
 
 export function Nav() {
   return (
-    <header className="border-b border-slate-200 bg-white">
+    <header className="border-b border-slate-200 bg-white print:hidden">
       <nav className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3">
         <Link href="/" className="text-lg font-bold text-teal-700">
           Hapi

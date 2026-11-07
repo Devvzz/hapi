@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
+      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 print:bg-white">
         <Suspense fallback={null}>
           <DemoBanner />
         </Suspense>
         <Nav />
-        <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">{children}</main>
-        <footer className="border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+        <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 print:max-w-none print:p-0">{children}</main>
+        <footer className="border-t border-slate-200 py-6 text-center text-xs text-slate-500 print:hidden">
           Hapi uses checked data with source links. Values marked &quot;check yourself&quot; are not confirmed. PayPal runs in sandbox mode: no real money moves.
         </footer>
       </body>
