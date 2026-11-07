@@ -2,7 +2,7 @@
 
 Hapi is one place for students to find opportunities abroad and plan the money for them. It covers hackathons, competitions, scholarships, certificates, courses, internships and events, free and paid. It also checks which bachelor programmes in Austria, Germany and Italy a student can apply to, and shows the real total cost in one plan. A family member can sponsor any cost through a PayPal invoice, and nothing is sent until the student approves it.
 
-**Live app:** https://hapi-gold.vercel.app · **Try everything at once:** add `?demo=1` to any page (a made-up sample student; your own data comes back when you leave demo mode).
+**Live app:** https://hapi-abroad.vercel.app · **Try everything at once:** add `?demo=1` to any page (a made-up sample student; your own data comes back when you leave demo mode).
 
 PayPal runs in **sandbox mode**. No real money moves.
 

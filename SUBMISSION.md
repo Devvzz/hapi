@@ -2,7 +2,7 @@
 
 Code built 7–12 Nov 2026; dataset researched before the event (31 Oct – 6 Nov); assisted by AI in coding.
 
-- **Live app:** https://hapi-gold.vercel.app (try everything with a sample student: https://hapi-gold.vercel.app/?demo=1)
+- **Live app:** https://hapi-abroad.vercel.app (try everything with a sample student: https://hapi-abroad.vercel.app/?demo=1)
 - **Repository:** https://github.com/Devvzz/hapi (MIT)
 - **Video:** [after recording]
 - **PayPal:** sandbox only, no real money moves
