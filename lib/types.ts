@@ -63,6 +63,8 @@ export type Program = {
   deadline?: string | null;
   deadlineCycle?: string | null;
   scholarships?: string | null;
+  feeRule?: string | null;
+  type?: string;
   fixes?: string[] | null;
 };
 

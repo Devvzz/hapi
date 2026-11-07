@@ -1,3 +1,4 @@
+import { formatPrice, priceFor, type Price } from "./price";
 import { LEVELS } from "./profile";
 import type { Profile, Program } from "./types";
 
@@ -5,6 +6,7 @@ export type Eligibility = {
   status: "ok" | "warn" | "no";
   reasons: string[];
   tuitionPerYear: { min: number | null; max: number | null } | null;
+  price: Price;
 };
 
 const LANGS = ["English", "German", "Italian", "French", "Spanish", "Czech", "Hungarian", "Dutch", "Portuguese", "Lithuanian", "Korean", "Japanese", "Greek", "Polish", "Finnish", "Croatian", "Estonian", "Latvian"];
@@ -20,13 +22,6 @@ function requiredLanguages(text: string): { anyOf: boolean; needs: { language: s
   const explicit = text.match(/\b([ABC][12])\b/);
   const needs = found.map((language) => ({ language, level: found.length === 1 && explicit ? explicit[1] : DEFAULT_LEVEL[language] ?? "B2" }));
   return { anyOf: /\/|\bor\b/i.test(text), needs };
-}
-
-export function nonEuTuition(p: Program): { min: number | null; max: number | null } | null {
-  if (p.tuitionNonEuPerYear) return { min: p.tuitionNonEuPerYear.min, max: p.tuitionNonEuPerYear.max };
-  if (p.tuitionPerYear?.amount != null) return { min: p.tuitionPerYear.amount, max: p.tuitionPerYear.amount };
-  if (p.tuitionPerSemester?.amount != null) return { min: p.tuitionPerSemester.amount * 2, max: p.tuitionPerSemester.amount * 2 };
-  return null;
 }
 
 export function checkProgram(p: Program, profile: Profile): Eligibility {
@@ -57,25 +52,22 @@ export function checkProgram(p: Program, profile: Profile): Eligibility {
     }
   }
 
-  // Tuition against budget (tuition only; living costs come on top)
-  const tuition = nonEuTuition(p);
-  const extra = p.otherFeesPerYear ?? 0;
-  if (tuition && tuition.min !== null) {
-    const low = tuition.min + extra;
-    const high = (tuition.max ?? tuition.min) + extra;
-    const label = low === high ? `€${low.toLocaleString("en-GB")}` : `€${low.toLocaleString("en-GB")}–${high.toLocaleString("en-GB")}`;
-    if (profile.budgetPerYear !== null && low > profile.budgetPerYear) {
+  // Tuition against budget, using the fee this student would pay (living costs come on top)
+  const price = priceFor(p, profile);
+  const label = formatPrice(price);
+  if (price.min !== null) {
+    if (profile.budgetPerYear !== null && price.min > profile.budgetPerYear) {
       worsen("no");
-      reasons.push(`Non-EU fees ${label}/year are above your budget`);
-    } else if (profile.budgetPerYear !== null && high > profile.budgetPerYear) {
+      reasons.push(`Your fee (${price.basis}) ${label}/year is above your budget`);
+    } else if (profile.budgetPerYear !== null && (price.max ?? price.min) > profile.budgetPerYear) {
       worsen("warn");
-      reasons.push(`Non-EU fees ${label}/year may be above your budget`);
+      reasons.push(`Your fee (${price.basis}) ${label}/year may be above your budget`);
     } else {
-      reasons.push(`Non-EU fees about ${label}/year (living costs not included)`);
+      reasons.push(`Your fee (${price.basis}): about ${label}/year, living costs not included`);
     }
   } else {
     worsen("warn");
-    reasons.push("Non-EU tuition: check yourself");
+    reasons.push("Tuition: check yourself");
   }
 
   const confidence = p.tuitionNonEuPerYear?.confidence;
@@ -87,8 +79,5 @@ export function checkProgram(p: Program, profile: Profile): Eligibility {
     worsen("warn");
     reasons.push("Deadline is from the previous cycle");
   }
-  if (profile.austrianSchool && p.country === "Austria") {
-    reasons.push("Graduates of Austrian schools abroad can ask for EU-equal tuition status: confirm with the university");
-  }
-  return { status, reasons, tuitionPerYear: tuition };
+  return { status, reasons, tuitionPerYear: price.min === null ? null : { min: price.min, max: price.max }, price };
 }

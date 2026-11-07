@@ -7,7 +7,7 @@ export default function UniversitiesPage() {
       <header>
         <h1 className="text-2xl font-bold">Universities</h1>
         <p className="text-sm text-slate-600">
-          Rules check language and non-EU fees against your profile first. The AI only explains the result in plain English. It never changes facts.
+          Grouped by university, with the fee you would pay. Rules check language and budget first; the AI only explains the result.
         </p>
       </header>
       <ProfileGate what="universities">

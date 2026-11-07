@@ -2,12 +2,16 @@ import { generateText, Output } from "ai";
 import { z } from "zod";
 import { RULES, withModel } from "@/lib/ai";
 import { programs } from "@/lib/data";
+import { priceFor } from "@/lib/price";
+import { normalizeProfile } from "@/lib/profile";
+import { profileSchema } from "@/lib/schemas";
+import type { Profile } from "@/lib/types";
 
 const bodySchema = z.object({
   programId: z.string(),
   status: z.enum(["ok", "warn", "no"]),
   reasons: z.array(z.string()).max(12),
-  profile: z.record(z.string(), z.unknown()),
+  profile: profileSchema,
 });
 
 const outputSchema = z.object({
@@ -29,7 +33,8 @@ export async function POST(request: Request) {
     admission: program.admission,
     deadline: program.deadline ?? program.nonEuWindow ?? null,
     deadlineCycle: program.deadlineCycle ?? null,
-    nonEuTuition: program.tuitionNonEuPerYear ?? program.tuitionPerYear ?? program.tuitionPerSemester ?? null,
+    yourTuitionPerYear: priceFor(program, normalizeProfile(parsed.data.profile as Profile)),
+    feeRule: program.feeRule ?? null,
     scholarships: program.scholarships ?? null,
     checkYourself: program.checkYourself,
   };
