@@ -2,13 +2,14 @@ import { generateText, Output } from "ai";
 import { z } from "zod";
 import { RULES, withModel } from "@/lib/ai";
 import { opportunities } from "@/lib/data";
+import { DEMO_SUBSCRIPTION } from "@/lib/demo";
 import { matchOpportunity } from "@/lib/match";
 import { getSubscriptionStatus } from "@/lib/paypal";
 import { profileSchema } from "@/lib/schemas";
 import type { Profile } from "@/lib/types";
 
 const bodySchema = z.object({
-  subscriptionId: z.string().regex(/^I-[A-Z0-9]{10,}$/),
+  subscriptionId: z.union([z.literal(DEMO_SUBSCRIPTION), z.string().regex(/^I-[A-Z0-9]{10,}$/)]),
   profile: profileSchema,
   savedIds: z.array(z.string().max(80)).max(100),
   plan: z
@@ -44,14 +45,19 @@ export async function POST(request: Request) {
   const { subscriptionId, savedIds, plan } = parsed.data;
   const profile = parsed.data.profile as Profile;
 
-  // Premium check on the server: the coach only answers for an ACTIVE PayPal subscription.
-  let status = "UNKNOWN";
-  try {
-    status = await getSubscriptionStatus(subscriptionId);
-  } catch {
-    return Response.json({ error: "PayPal is unavailable right now" }, { status: 503 });
+  // Premium check on the server: the coach only answers for an ACTIVE PayPal subscription,
+  // or for demo mode while HAPI_DEMO is not "off" (judges can try it without a sandbox buyer account).
+  if (subscriptionId === DEMO_SUBSCRIPTION) {
+    if (process.env.HAPI_DEMO === "off") return Response.json({ error: "Demo mode is off" }, { status: 402 });
+  } else {
+    let status = "UNKNOWN";
+    try {
+      status = await getSubscriptionStatus(subscriptionId);
+    } catch {
+      return Response.json({ error: "PayPal is unavailable right now" }, { status: 503 });
+    }
+    if (status !== "ACTIVE") return Response.json({ error: "Premium is not active", status }, { status: 402 });
   }
-  if (status !== "ACTIVE") return Response.json({ error: "Premium is not active", status }, { status: 402 });
 
   const now = new Date();
   const candidates = opportunities

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { DEMO_SUBSCRIPTION } from "@/lib/demo";
 import { EMPTY_LOG, EMPTY_PREMIUM, STORAGE, logEntry } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 
@@ -90,7 +91,9 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
 
         {cancelled && !active && <p className="text-sm text-amber-700">You cancelled on PayPal. Nothing was charged.</p>}
 
-        {premium.subscriptionId ? (
+        {premium.subscriptionId === DEMO_SUBSCRIPTION ? (
+          <p className="text-sm text-amber-700">Demo mode: Premium is unlocked without a PayPal subscription.</p>
+        ) : premium.subscriptionId ? (
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <span className={`rounded px-2 py-0.5 ${active ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-800"}`}>
               {STATUS_TEXT[premium.status ?? ""] ?? premium.status ?? "Status unknown"}
