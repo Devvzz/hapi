@@ -114,8 +114,8 @@ The data is for all students. No user data is stored on a server: the profile, p
 Code built 7–12 Nov 2026; dataset researched before the event (31 Oct – 6 Nov); assisted by AI in coding.
 
 - **Inside the app:** Google Gemini through the Vercel AI SDK (matching lines, Find more, invoice drafts, the coach, reading pages in the Saturday job).
-- **While building:** [fill in: which AI coding tools you used and what for]
-- **What I did myself:** [fill in from your own work log]
+- **While building:** an AI coding assistant, used to save time: drafting code, rechecking dates and prices in the data, and researching event rules. It assisted; it didn't build Hapi on its own.
+- **What I did myself:** the idea, every product decision (audience, countries, features, PayPal sponsorship with approval, "rules first, AI second", pricing, data staying in the browser), the original data, and the review. I read through all of the code, found logic mistakes and fixed them, and checked the data and the app myself.
 
 ## License
 
