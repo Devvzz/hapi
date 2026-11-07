@@ -1,0 +1,66 @@
+{
+  "ranAt": "2026-11-07T12:59:05.541Z",
+  "checked": [
+    {
+      "id": "paypal-ai",
+      "title": "PayPal AI Hackathon",
+      "sourceUrl": "https://paypalaihackathon.devpost.com/rules",
+      "storedDeadline": "2026-11-12T21:00+01:00",
+      "foundDeadline": "2026-11-12",
+      "status": "open",
+      "evidence": "Submission Period: Thursday Oct 1, 2026 (9:15 am Pacific Time) – Thursday Nov 12, 2026 (12:00 pm Pacific Time)",
+      "change": null
+    },
+    {
+      "id": "stemergent",
+      "title": "STEMergent Hacks 2026",
+      "sourceUrl": "https://stemergent-hacks.devpost.com/rules",
+      "storedDeadline": "2026-11-16T02:00+01:00",
+      "foundDeadline": "2026-11-15",
+      "status": "open",
+      "evidence": "Deadline: Nov 15, 2026 @ 9:30pm CST",
+      "change": null
+    },
+    {
+      "id": "icehacks",
+      "title": "IceHacks 2026",
+      "sourceUrl": "https://icehacks.devpost.com/rules",
+      "storedDeadline": "2026-11-16T03:00+01:00",
+      "foundDeadline": "2026-11-15",
+      "status": "open",
+      "evidence": "IceHacks Nov 8 – 15, 2026 Join hackathon",
+      "change": null
+    },
+    {
+      "id": "accessed",
+      "title": "AccessED Hacks",
+      "sourceUrl": "https://accessed-hacks.devpost.com/rules",
+      "storedDeadline": "2026-11-20T23:00+01:00",
+      "foundDeadline": "2026-11-20",
+      "status": "open",
+      "evidence": "AccessED Hacks Deadline: Nov 20, 2026 @ 5:00pm EST",
+      "change": null
+    },
+    {
+      "id": "launchpad",
+      "title": "LaunchPad Hacks",
+      "sourceUrl": "https://launchpad-hacks.devpost.com/rules",
+      "storedDeadline": "2026-11-20T23:00+01:00",
+      "foundDeadline": "2026-11-20",
+      "status": "open",
+      "evidence": "Submissions close November 20, 2026 at 5:00 PM Eastern Time.",
+      "change": null
+    },
+    {
+      "id": "stem2connect",
+      "title": "STEM2Connect AI Hackathon",
+      "sourceUrl": "https://stem2connect-online-hackathon.devpost.com/rules",
+      "storedDeadline": "2026-11-22T05:59+01:00",
+      "foundDeadline": "2026-11-21",
+      "status": "open",
+      "evidence": "Submission deadline: Saturday, November 21, 2026, at 11:59 PM EST",
+      "change": null
+    }
+  ],
+  "note": "A real run of the Saturday job, saved on 7 Nov 2026. It is shown until storage for live runs is set up."
+}

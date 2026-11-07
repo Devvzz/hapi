@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WhatsChanged } from "@/components/whats-changed";
 import { opportunities, programs } from "@/lib/data";
 
 const STEPS = [
@@ -32,6 +33,7 @@ export default function Home() {
           </Link>
         ))}
       </section>
+      <WhatsChanged />
     </div>
   );
 }
