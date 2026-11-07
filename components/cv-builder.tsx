@@ -25,6 +25,7 @@ export function CvBuilder() {
   const [cv, setCv] = useStored(STORAGE.cv, EMPTY_CV);
   const [profile] = useProfile();
   const [ai, setAi] = useState<Record<string, Suggestion | "loading" | "error">>({});
+  const [pdfState, setPdfState] = useState<"idle" | "making" | "error">("idle");
   const active = premium.status === "ACTIVE" && premium.subscriptionId;
 
   if (!active) {
@@ -62,6 +63,25 @@ export function CvBuilder() {
     }
   }
 
+  // Builds a real PDF in the browser; the library is loaded only when needed.
+  async function downloadPdf() {
+    setPdfState("making");
+    try {
+      const [{ pdf }, { CvDocument }] = await Promise.all([import("@react-pdf/renderer"), import("./cv-pdf")]);
+      const blob = await pdf(<CvDocument cv={cv} />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      const name = [cv.firstName, cv.lastName].filter(Boolean).join("_") || "CV";
+      a.href = url;
+      a.download = `${name}_Europass_CV.pdf`.replace(/\s+/g, "_");
+      a.click();
+      URL.revokeObjectURL(url);
+      setPdfState("idle");
+    } catch {
+      setPdfState("error");
+    }
+  }
+
   const dismiss = (id: string) =>
     setAi((a) => {
       const next = { ...a };
@@ -94,9 +114,13 @@ export function CvBuilder() {
           <button type="button" onClick={() => setCv(draftFromProfile(cv, profile))} className="rounded border border-teal-700 px-3 py-1 text-teal-800">
             Fill from my Hapi profile
           </button>
-          <button type="button" onClick={() => window.print()} className="rounded bg-teal-700 px-3 py-1 text-white">
-            Print / save as PDF
+          <button type="button" onClick={downloadPdf} disabled={pdfState === "making"} className="rounded bg-teal-700 px-3 py-1 text-white disabled:opacity-50">
+            {pdfState === "making" ? "Making PDF…" : "Download PDF"}
           </button>
+          <button type="button" onClick={() => window.print()} className="rounded border border-slate-300 px-3 py-1">
+            Print
+          </button>
+          {pdfState === "error" && <span className="self-center text-xs text-rose-700">Could not make the PDF. Try Print instead.</span>}
           <button type="button" onClick={() => confirmClear() && setCv(EMPTY_CV)} className="ml-auto text-xs text-slate-500 underline">
             Clear CV
           </button>
