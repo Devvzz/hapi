@@ -226,10 +226,10 @@ export function OpportunitiesFeed() {
       {now && hidden > 0 && (
         <p className="text-xs text-slate-500">
           {showAll
-            ? "Showing everything, including items that are not for you or need checking."
-            : `${hidden} more are hidden: not open to you, above your budget, closed, or their rules are not confirmed.`}{" "}
+            ? "Showing everything, including ones that do not apply to you."
+            : `${hidden} more do not apply to you: not open to you, above your budget or closed.`}{" "}
           <button onClick={() => setShowAll(!showAll)} className="underline">
-            {showAll ? "Show only what I can apply to" : "Show them anyway"}
+            {showAll ? "Show only what I can apply to" : "Show them"}
           </button>
         </p>
       )}

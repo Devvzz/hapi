@@ -83,17 +83,12 @@ function pageRule(r: NationalityRule, nat: string): Check {
   return { ok: false, reason: `Only for ${where(r)}` };
 }
 
-// Offers that anyone can buy or take online; their pages rarely mention nationality at all.
-const OPEN_BY_NATURE: Opportunity["type"][] = ["course", "certificate"];
-
 function countryCheck(o: Opportunity, p: Profile): Check {
   const rule = o.eligibility.nationality;
   if (rule && p.nationality) return pageRule(rule, p.nationality);
   const list = o.eligibility.countries;
-  if (!list || list.length === 0) {
-    if (OPEN_BY_NATURE.includes(o.type)) return { ok: true, reason: null };
-    return { ok: null, reason: "Nationality rules not confirmed: check the official page" };
-  }
+  // No nationality limit found on the page: treat it as open to everyone.
+  if (!list || list.length === 0) return { ok: true, reason: null };
   if (!p.nationality) return { ok: null, reason: `Limited to: ${list.join("; ")}` };
   const results = list.map((text) => countryRule(text, p.nationality, p.austrianSchool ?? false));
   return results.find((r) => r.ok === true) ?? results.find((r) => r.ok === null) ?? results[0];

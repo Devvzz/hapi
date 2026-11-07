@@ -64,9 +64,9 @@ export function ScholarshipsList({ country }: { country: string }) {
         {national.length === 0 && <p className="text-sm text-slate-600">No scholarship here that you can surely apply to right now. See the university notes below.</p>}
         {all.length > sure.length && (
           <p className="text-xs text-slate-500">
-            {showAll ? "Showing all, including ones that are not for you or need checking." : `${all.length - sure.length} more are hidden: not open to you, closed, or not confirmed.`}{" "}
+            {showAll ? "Showing all, including ones that do not apply to you." : `${all.length - sure.length} more do not apply to you: not open to you or closed.`}{" "}
             <button onClick={() => setShowAll(!showAll)} className="underline">
-              {showAll ? "Show only what I can apply to" : "Show them anyway"}
+              {showAll ? "Show only what I can apply to" : "Show them"}
             </button>
           </p>
         )}
