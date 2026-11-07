@@ -87,7 +87,7 @@ export function checkProgram(p: Program, profile: Profile): Eligibility {
     worsen("warn");
     reasons.push("Deadline is from the previous cycle");
   }
-  if (profile.schoolType === "austrian-school-abroad" && p.country === "Austria") {
+  if (profile.austrianSchool && p.country === "Austria") {
     reasons.push("Graduates of Austrian schools abroad can ask for EU-equal tuition status: confirm with the university");
   }
   return { status, reasons, tuitionPerYear: tuition };

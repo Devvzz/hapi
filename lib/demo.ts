@@ -14,12 +14,14 @@ const DEMO_PROFILE: Profile = {
   nationality: "Germany",
   age: 17,
   student: true,
-  schoolType: "secondary",
+  schoolType: "gymnasium",
+  austrianSchool: false,
   languages: [
     { language: "English", level: "B2" },
     { language: "German", level: "C2" },
   ],
   budgetPerYear: 9000,
+  opportunityBudget: 300,
   interests: ["AI", "Coding", "Study abroad", "Free travel"],
 };
 

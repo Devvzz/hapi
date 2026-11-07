@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { costs, FOCUS_COUNTRIES, programs } from "@/lib/data";
 import { checkProgram, type Eligibility } from "@/lib/eligibility";
-import { EMPTY_LOG, EMPTY_PLAN, EMPTY_PROFILE, STORAGE, logEntry } from "@/lib/profile";
+import { EMPTY_LOG, EMPTY_PLAN, STORAGE, logEntry } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
+import { useProfile } from "@/lib/use-profile";
 import type { PlanRow, Program } from "@/lib/types";
 
 const ICON: Record<Eligibility["status"], string> = { ok: "✅", warn: "⚠️", no: "❌" };
@@ -14,7 +15,7 @@ const OTHER_COUNTRIES = [...new Set(programs.map((p) => p.country))].filter((c) 
 type Explanation = { summary: string; nextSteps: string[] };
 
 export function UniversitiesList() {
-  const [profile] = useStored(STORAGE.profile, EMPTY_PROFILE);
+  const [profile] = useProfile();
   const [plan, setPlan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [, setLog] = useStored(STORAGE.log, EMPTY_LOG);
   const [country, setCountry] = useState("Austria");

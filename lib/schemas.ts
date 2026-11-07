@@ -8,5 +8,7 @@ export const profileSchema = z.object({
   schoolType: z.string().max(40),
   languages: z.array(z.object({ language: z.string().max(40), level: z.string().max(4) })).max(10),
   budgetPerYear: z.number().nullable(),
+  austrianSchool: z.boolean().optional(),
+  opportunityBudget: z.number().nullable().optional(),
   interests: z.array(z.string().max(40)).max(20),
 });

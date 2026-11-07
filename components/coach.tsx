@@ -3,15 +3,16 @@
 import { useState } from "react";
 import type { CoachStep } from "@/app/api/coach/route";
 import { formatDate } from "@/lib/dates";
-import { EMPTY_PLAN, EMPTY_PREMIUM, EMPTY_PROFILE, EMPTY_SAVED, STORAGE } from "@/lib/profile";
+import { EMPTY_PLAN, EMPTY_PREMIUM, EMPTY_SAVED, STORAGE } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
+import { useProfile } from "@/lib/use-profile";
 
 type CoachResult = { summary: string; steps: CoachStep[]; createdAt: string };
 const NO_RESULT: CoachResult | null = null;
 
 export function Coach() {
   const [premium] = useStored(STORAGE.premium, EMPTY_PREMIUM);
-  const [profile] = useStored(STORAGE.profile, EMPTY_PROFILE);
+  const [profile] = useProfile();
   const [saved] = useStored(STORAGE.saved, EMPTY_SAVED);
   const [plan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [result, setResult] = useStored(STORAGE.coach, NO_RESULT);

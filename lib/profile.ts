@@ -1,14 +1,37 @@
+import { isStudent, migrateEducation } from "./education";
+import { resolveCountry } from "./countries";
 import type { ActivityEntry, PlanRow, Profile } from "./types";
 
 export const EMPTY_PROFILE: Profile = {
   nationality: "",
   age: null,
   student: true,
-  schoolType: "secondary",
+  schoolType: "gymnasium",
+  austrianSchool: false,
   languages: [{ language: "English", level: "B2" }],
   budgetPerYear: null,
+  opportunityBudget: null,
   interests: [],
 };
+
+// Brings profiles saved by older versions up to date and keeps derived fields in sync.
+export function normalizeProfile(p: Profile): Profile {
+  const schoolType = migrateEducation(p.schoolType);
+  const nationality = p.nationality ? (resolveCountry(p.nationality) ?? p.nationality) : "";
+  return {
+    ...EMPTY_PROFILE,
+    ...p,
+    nationality,
+    schoolType,
+    austrianSchool: p.austrianSchool ?? p.schoolType === "austrian-school-abroad",
+    opportunityBudget: p.opportunityBudget ?? null,
+    student: isStudent(schoolType),
+  };
+}
+
+export function profileIsSet(p: Profile): boolean {
+  return Boolean(p.nationality) && p.age !== null;
+}
 
 export const EMPTY_PLAN: PlanRow[] = [];
 export const EMPTY_LOG: ActivityEntry[] = [];

@@ -14,7 +14,14 @@ export type Opportunity = {
   discountNote: string | null;
   travelPaid: "full" | "partial" | "none" | "n/a" | null;
   certificateIncluded: boolean | null;
-  eligibility: { minAge: number | null; maxAge: number | null; countries: string[] | null; students: boolean | null };
+  eligibility: {
+    minAge: number | null;
+    maxAge: number | null;
+    countries: string[] | null;
+    students: boolean | null;
+    // Who can apply now; null means it is not limited (or not stated) by education level.
+    levels: ("school" | "bachelor" | "master" | "phd" | "graduate")[] | null;
+  };
   applyOpens: string | null;
   deadline: string | null;
   eventDates: string | null;
@@ -77,9 +84,14 @@ export type Profile = {
   nationality: string;
   age: number | null;
   student: boolean;
-  schoolType: "secondary" | "austrian-school-abroad" | "university" | "other";
+  // Detailed education status, see lib/education.ts
+  schoolType: string;
+  austrianSchool?: boolean;
   languages: LanguageSkill[];
+  // Tuition and fees per year for university
   budgetPerYear: number | null;
+  // Most the student can pay for one opportunity (fees and travel)
+  opportunityBudget?: number | null;
   interests: string[];
 };
 

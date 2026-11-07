@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { EMPTY_PROFILE, STORAGE } from "@/lib/profile";
-import { useStored } from "@/lib/storage";
+import { useProfile } from "@/lib/use-profile";
 
 type Found = {
   title: string;
@@ -15,7 +14,7 @@ type Found = {
 };
 
 export function FindMore() {
-  const [profile] = useStored(STORAGE.profile, EMPTY_PROFILE);
+  const [profile] = useProfile();
   const [topic, setTopic] = useState("");
   const [items, setItems] = useState<Found[] | null>(null);
   const [state, setState] = useState<"idle" | "loading" | "error" | "quota">("idle");
