@@ -15,6 +15,12 @@ const RANK: Record<Eligibility["status"], number> = { ok: 0, warn: 1, no: 2 };
 const OTHER_COUNTRIES = [...new Set(programs.map((p) => p.country))].filter((c) => !FOCUS_COUNTRIES.includes(c)).sort();
 
 type Explanation = { summary: string; nextSteps: string[] };
+
+// Research notes like "None", "Check" or only "Erasmus+" (exchange funding) do not count as offering scholarships.
+function hasScholarships(note: string | null): boolean {
+  const t = (note ?? "").trim();
+  return t !== "" && !/^(none|almost none|no|check)\b/i.test(t) && !/^erasmus\+?\.?$/i.test(t);
+}
 type Row = { p: Program; e: Eligibility };
 type Uni = { id: string; name: string; city?: string; country: string; type?: string; rows: Row[]; best: Eligibility["status"]; cheapest: number | null; cheapestLabel: string | null; scholarships: string | null; feeRule: string | null };
 
@@ -68,6 +74,7 @@ function Universities({ country }: { country: string }) {
   const [, setLog] = useStored(STORAGE.log, EMPTY_LOG);
   const [status, setStatus] = useState<"all" | "ok" | "warn">("all");
   const [sort, setSort] = useState<"fit" | "price" | "name">("fit");
+  const [withScholarships, setWithScholarships] = useState(false);
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(15);
   const [open, setOpen] = useState<Record<string, boolean>>({});
@@ -104,12 +111,12 @@ function Universities({ country }: { country: string }) {
         feeRule: rows.map((r) => r.p.feeRule).find(Boolean) ?? null,
       };
     });
-    return out.sort((a, b) => {
+    return out.filter((u) => !withScholarships || hasScholarships(u.scholarships)).sort((a, b) => {
       if (sort === "price") return (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
       if (sort === "name") return a.name.localeCompare(b.name);
       return RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
     });
-  }, [profile, country, status, sort, query]);
+  }, [profile, country, status, sort, query, withScholarships]);
 
   async function explain(p: Program, e: Eligibility) {
     setExplained((x) => ({ ...x, [p.id]: "loading" }));
@@ -157,6 +164,10 @@ function Universities({ country }: { country: string }) {
           <option value="name">Sort: name</option>
         </select>
         <input className="min-w-48 flex-1 rounded border border-slate-300 px-2 py-1" placeholder="Search university, programme, field, city" value={query} onChange={(e) => setQuery(e.target.value)} />
+        <label className="flex items-center gap-2">
+          <input type="checkbox" checked={withScholarships} onChange={(e) => setWithScholarships(e.target.checked)} />
+          Offers scholarships
+        </label>
         <span className="self-center text-slate-600">
           {unis.length} universities · {totalProgrammes} programmes
         </span>
@@ -182,7 +193,7 @@ function Universities({ country }: { country: string }) {
                   <p className="text-xs text-teal-700">{isOpen ? "Hide programmes ▲" : "Show programmes ▼"}</p>
                 </div>
               </button>
-              {u.scholarships && (
+              {hasScholarships(u.scholarships) && (
                 <p className="mx-4 -mt-2 mb-3 rounded bg-emerald-50 px-3 py-1.5 text-xs text-emerald-900">
                   <span className="font-medium">Scholarships: </span>
                   {u.scholarships}
