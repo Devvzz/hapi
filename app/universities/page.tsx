@@ -1,3 +1,4 @@
+import { ProfileGate } from "@/components/profile-gate";
 import { UniversitiesList } from "@/components/universities-list";
 
 export default function UniversitiesPage() {
@@ -9,7 +10,9 @@ export default function UniversitiesPage() {
           Rules check language and non-EU fees against your profile first. The AI only explains the result in plain English. It never changes facts.
         </p>
       </header>
-      <UniversitiesList />
+      <ProfileGate what="universities">
+        <UniversitiesList />
+      </ProfileGate>
     </div>
   );
 }

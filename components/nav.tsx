@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const LINKS = [
-  { href: "/opportunities", label: "Opportunities" },
-  { href: "/universities", label: "Universities" },
-  { href: "/plan", label: "Cost plan" },
   { href: "/profile", label: "My profile" },
+  { href: "/universities", label: "Universities" },
+  { href: "/opportunities", label: "Opportunities" },
+  { href: "/plan", label: "Cost plan" },
   { href: "/premium", label: "Premium" },
 ];
 
