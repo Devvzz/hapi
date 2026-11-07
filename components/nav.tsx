@@ -4,6 +4,7 @@ const LINKS = [
   { href: "/profile", label: "My profile" },
   { href: "/universities", label: "Universities" },
   { href: "/opportunities", label: "Opportunities" },
+  { href: "/calendar", label: "Calendar" },
   { href: "/plan", label: "Cost plan" },
   { href: "/premium", label: "Premium" },
   { href: "/cv", label: "CV" },

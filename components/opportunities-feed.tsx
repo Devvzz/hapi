@@ -87,7 +87,7 @@ export function OpportunitiesFeed() {
   function toggleSaved(o: Opportunity) {
     const isSaved = saved.includes(o.id);
     setSaved(isSaved ? saved.filter((id) => id !== o.id) : [...saved, o.id]);
-    setLog((l) => [logEntry(isSaved ? "Removed from plan" : "Saved to plan", o.title), ...l]);
+    setLog((l) => [logEntry(isSaved ? "Removed from calendar" : "Added to calendar", o.title), ...l]);
   }
 
   function addCost(o: Opportunity) {
@@ -203,7 +203,7 @@ export function OpportunitiesFeed() {
               {o.note && <p className="text-xs text-slate-500">{o.note}</p>}
               <div className="mt-auto flex flex-wrap items-center gap-2 pt-2 text-sm">
                 <button onClick={() => toggleSaved(o)} className="rounded border border-teal-700 px-2 py-1 text-teal-800">
-                  {isSaved ? "Saved ✓" : "Save to my plan"}
+                  {isSaved ? "📅 In calendar ✓" : "📅 Add to calendar"}
                 </button>
                 {o.price && (o.costType === "paid" || o.costType === "discount") && (
                   <button onClick={() => addCost(o)} disabled={costAdded} className="rounded bg-teal-700 px-2 py-1 text-white disabled:opacity-50">
