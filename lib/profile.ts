@@ -19,7 +19,11 @@ export const STORAGE = {
   plan: "hapi.plan",
   saved: "hapi.saved",
   log: "hapi.activity",
+  premium: "hapi.premium",
 } as const;
+
+export type PremiumState = { subscriptionId: string | null; status: string | null };
+export const EMPTY_PREMIUM: PremiumState = { subscriptionId: null, status: null };
 
 export const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
 

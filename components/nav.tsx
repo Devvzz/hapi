@@ -5,6 +5,7 @@ const LINKS = [
   { href: "/universities", label: "Universities" },
   { href: "/plan", label: "Cost plan" },
   { href: "/profile", label: "My profile" },
+  { href: "/premium", label: "Premium" },
 ];
 
 export function Nav() {
