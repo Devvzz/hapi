@@ -46,11 +46,10 @@ export function OpportunitiesFeed() {
   const [type, setType] = useState<string>("all");
   const [cost, setCost] = useState<"all" | "free" | "paid">("all");
   const [sortKey, setSortKey] = useState<SortKey>("match");
-  const [budgetOnly, setBudgetOnly] = useState(false);
   const [travelOnly, setTravelOnly] = useState(false);
   const [certOnly, setCertOnly] = useState(false);
   const [onlineOnly, setOnlineOnly] = useState(false);
-  const [eligibleOnly, setEligibleOnly] = useState(true);
+  const [showAll, setShowAll] = useState(false);
   const [soonOnly, setSoonOnly] = useState(false);
   const [hideClosed, setHideClosed] = useState(true);
   const [query, setQuery] = useState("");
@@ -59,27 +58,28 @@ export function OpportunitiesFeed() {
   const [whyState, setWhyState] = useState<"idle" | "loading" | "error">("idle");
   const now = useNow();
 
-  const ranked = useMemo(() => {
-    if (!now) return [];
+  // Only what the student can surely apply to: eligible, open and within budget. The rest stays hidden unless asked for.
+  const { ranked, hidden } = useMemo(() => {
+    if (!now) return { ranked: [], hidden: 0 };
     const q = query.trim().toLowerCase();
-    return opportunities
+    const filtered = opportunities
       .map((o) => ({ o, m: matchOpportunity(o, profile, now) }))
       .filter(({ o, m }) => {
         if (type !== "all" && o.type !== type) return false;
         if (cost === "free" && o.costType !== "free") return false;
         if (cost === "paid" && o.costType !== "paid" && o.costType !== "discount") return false;
-        if (budgetOnly && m.overBudget) return false;
         if (travelOnly && o.travelPaid !== "full" && o.travelPaid !== "partial") return false;
         if (certOnly && !o.certificateIncluded) return false;
         if (onlineOnly && o.mode !== "online") return false;
-        if (eligibleOnly && m.verdict === "not-eligible") return false;
         if (soonOnly && (m.daysLeft === null || m.daysLeft < 0 || m.daysLeft > 30)) return false;
         if (hideClosed && m.closed) return false;
         if (q && !`${o.title} ${o.provider} ${o.tags.join(" ")} ${o.location ?? ""}`.toLowerCase().includes(q)) return false;
         return true;
       })
       .sort((a, b) => compareMatches(a, b, sortKey));
-  }, [now, profile, type, cost, sortKey, budgetOnly, travelOnly, certOnly, onlineOnly, eligibleOnly, soonOnly, hideClosed, query]);
+    const sure = filtered.filter(({ m }) => m.verdict === "fits");
+    return { ranked: showAll ? filtered : sure, hidden: filtered.length - sure.length };
+  }, [now, profile, type, cost, sortKey, showAll, travelOnly, certOnly, onlineOnly, soonOnly, hideClosed, query]);
 
   const visible = ranked.slice(0, limit);
   const profileEmpty = !profile.nationality && profile.age === null && profile.interests.length === 0;
@@ -153,8 +153,6 @@ export function OpportunitiesFeed() {
           [travelOnly, setTravelOnly, "Travel paid"],
           [certOnly, setCertOnly, "Certificate included"],
           [onlineOnly, setOnlineOnly, "Online"],
-          [eligibleOnly, setEligibleOnly, "Only what I can apply to"],
-          [budgetOnly, setBudgetOnly, "Within my budget"],
           [soonOnly, setSoonOnly, "Deadline in 30 days"],
           [hideClosed, setHideClosed, "Hide closed"],
         ] as const).map(([value, setter, label]) => (
@@ -166,7 +164,7 @@ export function OpportunitiesFeed() {
       </div>
 
       <div className="flex flex-wrap items-center gap-3 text-sm">
-        <span className="text-slate-600">{now ? `${ranked.length} results` : "Loading…"}</span>
+        <span className="text-slate-600">{now ? (showAll ? `${ranked.length} results, including ones to check` : `${ranked.length} you can apply to`) : "Loading…"}</span>
         <button onClick={explainTop} disabled={whyState === "loading" || visible.length === 0} className="rounded bg-teal-700 px-3 py-1.5 text-white disabled:opacity-50">
           {whyState === "loading" ? "Writing…" : "Why do my top matches fit me?"}
         </button>
@@ -224,6 +222,16 @@ export function OpportunitiesFeed() {
         <button onClick={() => setLimit(limit + 30)} className="rounded border border-slate-300 bg-white px-4 py-2 text-sm">
           Show more
         </button>
+      )}
+      {now && hidden > 0 && (
+        <p className="text-xs text-slate-500">
+          {showAll
+            ? "Showing everything, including items that are not for you or need checking."
+            : `${hidden} more are hidden: not open to you, above your budget, closed, or their rules are not confirmed.`}{" "}
+          <button onClick={() => setShowAll(!showAll)} className="underline">
+            {showAll ? "Show only what I can apply to" : "Show them anyway"}
+          </button>
+        </p>
       )}
       <FindMore />
     </div>

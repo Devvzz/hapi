@@ -97,7 +97,7 @@ To approve a Premium subscription in the sandbox you need a sandbox **personal**
 
 The data was researched and checked by hand before the build (31 Oct – 6 Nov 2026), with a source link and a `lastChecked` date on every item.
 
-- `data/opportunities.json`: 191 opportunities
+- `data/opportunities.json`: 191 opportunities. Each says who can apply by education level, and 59 have a nationality rule read from the official page, with a quote as evidence. By default the app shows only what a student can surely apply to; items whose rules are not confirmed stay hidden unless the student asks to see them.
 - `data/programs.json`: 555 bachelor programmes (10 checked in detail, 545 from an earlier atlas, cleaned, with a confidence level for tuition)
 - `data/costs.json`: 22 official fees and costs
 - `data/example-run.json`: a real run of the Saturday job, shown until storage is set up

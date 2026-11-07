@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { opportunities, programs } from "@/lib/data";
 import { formatDate } from "@/lib/dates";
 import { GROUP_LABEL } from "@/lib/education";
@@ -33,8 +33,9 @@ const VERDICT_TEXT = { fits: "You can apply", check: "Check", "not-eligible": "N
 export function ScholarshipsList({ country }: { country: string }) {
   const [profile] = useProfile();
   const now = useNow();
+  const [showAll, setShowAll] = useState(false);
 
-  const national = useMemo(() => {
+  const all = useMemo(() => {
     if (!now) return [];
     return opportunities
       .filter((o) => o.type === "scholarship")
@@ -42,6 +43,8 @@ export function ScholarshipsList({ country }: { country: string }) {
       .filter(({ where }) => country === "all" || where.includes(country) || where.includes("many"))
       .sort((a, b) => compareMatches(a, b, "match"));
   }, [profile, now, country]);
+  const sure = all.filter(({ m }) => m.verdict === "fits");
+  const national = showAll ? all : sure;
 
   const universityNotes = useMemo(() => {
     const seen = new Map<string, { university: string; city?: string; note: string; source: string | undefined }>();
@@ -58,7 +61,15 @@ export function ScholarshipsList({ country }: { country: string }) {
     <div className="space-y-6">
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Scholarships you apply to directly{country !== "all" ? ` (${country})` : ""}</h2>
-        {national.length === 0 && <p className="text-sm text-slate-600">No checked scholarship for this country yet. See the university notes below.</p>}
+        {national.length === 0 && <p className="text-sm text-slate-600">No scholarship here that you can surely apply to right now. See the university notes below.</p>}
+        {all.length > sure.length && (
+          <p className="text-xs text-slate-500">
+            {showAll ? "Showing all, including ones that are not for you or need checking." : `${all.length - sure.length} more are hidden: not open to you, closed, or not confirmed.`}{" "}
+            <button onClick={() => setShowAll(!showAll)} className="underline">
+              {showAll ? "Show only what I can apply to" : "Show them anyway"}
+            </button>
+          </p>
+        )}
         <ul className="grid gap-3 md:grid-cols-2">
           {national.map(({ o, m, where }) => (
             <li key={o.id} className="space-y-1 rounded-xl border border-slate-200 bg-white p-4 text-sm shadow-sm">

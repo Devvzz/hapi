@@ -2,6 +2,15 @@ export type OpportunityType =
   | "hackathon" | "competition" | "certificate" | "course" | "summer-school" | "internship"
   | "job" | "scholarship" | "grant" | "conference" | "exchange" | "startup-program";
 
+export type NationalityRule = {
+  rule: "all" | "only" | "except";
+  basis: "nationality" | "residence" | "either" | "not stated";
+  countries: string[];
+  regions: string[];
+  evidence: string | null;
+  checked: string;
+};
+
 export type Opportunity = {
   id: string;
   type: OpportunityType;
@@ -21,6 +30,8 @@ export type Opportunity = {
     students: boolean | null;
     // Who can apply now; null means it is not limited (or not stated) by education level.
     levels: ("school" | "bachelor" | "master" | "phd" | "graduate")[] | null;
+    // Read from the official page: who may apply by nationality or residence.
+    nationality?: NationalityRule;
   };
   applyOpens: string | null;
   deadline: string | null;

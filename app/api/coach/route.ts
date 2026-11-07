@@ -50,7 +50,7 @@ export async function POST(request: Request) {
   const now = new Date();
   const candidates = opportunities
     .map((o) => ({ o, m: matchOpportunity(o, profile, now), saved: savedIds.includes(o.id) }))
-    .filter(({ m }) => !m.closed && m.verdict !== "not-eligible")
+    .filter(({ m }) => m.verdict === "fits")
     .sort((a, b) => Number(b.saved) - Number(a.saved) || b.m.score - a.m.score)
     .slice(0, 15)
     .map(({ o, m, saved }) => ({

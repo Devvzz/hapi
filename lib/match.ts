@@ -2,7 +2,7 @@ import { EU, EU_CANDIDATES, EU_FEE_COUNTRIES, EUROPE, SOUTHEAST_EUROPE, WESTERN_
 import { daysUntil, parseDeadline } from "./dates";
 import { GROUP_LABEL, groupOf } from "./education";
 import { INTERESTS } from "./profile";
-import type { Opportunity, Profile } from "./types";
+import type { NationalityRule, Opportunity, Profile } from "./types";
 
 export type Match = {
   score: number;
@@ -47,9 +47,53 @@ function countryRule(text: string, nat: string, austrianSchool: boolean): Check 
   return { ok: null, reason: `Limited to: ${text}` };
 }
 
+const COUNCIL_OF_EUROPE = EUROPE.filter((c) => !["Belarus", "Russia", "Vatican City", "Kosovo"].includes(c));
+
+// Regions a page may name instead of single countries. null means the region cannot be decided from nationality alone.
+function inRegion(region: string, nat: string): boolean | null {
+  switch (region) {
+    case "worldwide": return true;
+    case "EU": return EU.includes(nat);
+    case "EEA": return EU_FEE_COUNTRIES.filter((c) => c !== "Switzerland").includes(nat);
+    case "Europe": return EUROPE.includes(nat);
+    case "Western Balkans": return WESTERN_BALKANS.includes(nat);
+    case "Southeast Europe": return SOUTHEAST_EUROPE.includes(nat);
+    case "Council of Europe members": return COUNCIL_OF_EUROPE.includes(nat);
+    case "OECD DAC list": return NOT_DAC.includes(nat) ? false : null;
+    default: return null;
+  }
+}
+
+function where(r: NationalityRule): string {
+  return [...r.regions, ...r.countries].join(", ");
+}
+
+// The rule read from the official page.
+function pageRule(r: NationalityRule, nat: string): Check {
+  const by = r.basis === "residence" ? "Check: this is about where you live" : null;
+  if (r.rule === "all") return { ok: true, reason: "Open to all nationalities" };
+  if (r.rule === "except") {
+    if (r.countries.includes(nat) || r.regions.some((g) => inRegion(g, nat) === true)) return { ok: false, reason: `${nat} is excluded` };
+    return { ok: true, reason: "Open to all nationalities, with a few legal exceptions" };
+  }
+  if (r.countries.includes(nat)) return { ok: by ? null : true, reason: by ?? `Open to ${nat}` };
+  const regionHits = r.regions.map((g) => inRegion(g, nat));
+  if (regionHits.includes(true)) return { ok: by ? null : true, reason: by ?? `Open to ${where(r)}` };
+  if (regionHits.includes(null)) return { ok: null, reason: `Check that ${nat} is in: ${where(r)}` };
+  return { ok: false, reason: `Only for ${where(r)}` };
+}
+
+// Offers that anyone can buy or take online; their pages rarely mention nationality at all.
+const OPEN_BY_NATURE: Opportunity["type"][] = ["course", "certificate"];
+
 function countryCheck(o: Opportunity, p: Profile): Check {
+  const rule = o.eligibility.nationality;
+  if (rule && p.nationality) return pageRule(rule, p.nationality);
   const list = o.eligibility.countries;
-  if (!list || list.length === 0) return { ok: null, reason: null };
+  if (!list || list.length === 0) {
+    if (OPEN_BY_NATURE.includes(o.type)) return { ok: true, reason: null };
+    return { ok: null, reason: "Nationality rules not confirmed: check the official page" };
+  }
   if (!p.nationality) return { ok: null, reason: `Limited to: ${list.join("; ")}` };
   const results = list.map((text) => countryRule(text, p.nationality, p.austrianSchool ?? false));
   return results.find((r) => r.ok === true) ?? results.find((r) => r.ok === null) ?? results[0];

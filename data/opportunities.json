@@ -18,7 +18,22 @@
         "all except Brazil, Quebec, Russia, Crimea, Cuba, Iran, North Korea and other sanctioned places"
       ],
       "students": false,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-01",
     "deadline": "2026-11-12T21:00+01:00",
@@ -57,7 +72,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-11-09T04:00+01:00",
     "deadline": "2026-11-16T03:00+01:00",
@@ -95,7 +125,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-30",
     "deadline": "2026-11-16T02:00+01:00",
@@ -133,7 +178,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-17",
     "deadline": "2026-11-20T23:00+01:00",
@@ -171,7 +231,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-16",
     "deadline": "2026-11-20T23:00+01:00",
@@ -207,7 +282,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-11",
     "deadline": "2026-11-22T05:59+01:00",
@@ -242,7 +332,22 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-29",
     "deadline": "2026-11-30T09:00+01:00",
@@ -280,7 +385,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-20",
     "deadline": "2026-12-21T06:00+01:00",
@@ -312,7 +432,22 @@
         "all except standard exceptions"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-27",
     "deadline": "2026-11-27T23:00+01:00",
@@ -350,7 +485,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-07-16",
     "deadline": "2027-01-15T13:00+01:00",
@@ -380,7 +530,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Anyone who builds. Developers, designers, and makers from any background and any experience level are welcome",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2026-10-25T23:00+01:00",
@@ -443,7 +601,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Students from all around the world who are at least 14 years old at the time of the event can apply.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -864,7 +1030,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "The course has spread worldwide, with graduating students from over 170 countries.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -928,7 +1102,21 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "residence",
+        "countries": [
+          "United Kingdom",
+          "Serbia",
+          "Armenia"
+        ],
+        "regions": [
+          "EU"
+        ],
+        "evidence": "We primarily hire interns based in the EU, as well as those from the UK, Serbia, and Armenia.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -961,7 +1149,15 @@
       "levels": [
         "bachelor",
         "master"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "proud to provide internships to students of more than 160 nationalities",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -997,7 +1193,17 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Albania"
+        ],
+        "regions": [],
+        "evidence": "Czech Government study stays for Albanian students",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-10-01",
     "deadline": "2027-02-19",
@@ -1033,7 +1239,15 @@
       "levels": [
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "Students from all over the world are welcome.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1201,7 +1415,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "A scholarship for the European Forum Alpbach event is available to applicants from all countries and disciplines.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1267,7 +1489,20 @@
         "EU, Norway, Iceland (as stated on the travel page)"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "either",
+        "countries": [
+          "Norway",
+          "Iceland"
+        ],
+        "regions": [
+          "EU"
+        ],
+        "evidence": "We are proud to welcome participants from throughout the European Union, Norway and Iceland.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1427,7 +1662,28 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "either",
+        "countries": [
+          "Albania",
+          "Bosnia and Herzegovina",
+          "Georgia",
+          "Moldova",
+          "Montenegro",
+          "North Macedonia",
+          "Serbia",
+          "Turkey",
+          "Ukraine",
+          "United Kingdom"
+        ],
+        "regions": [
+          "EU"
+        ],
+        "evidence": "These participants must live in: • any of the EU’s 27 Member States; or • any of the nine candidate countries... or • the UK.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1461,7 +1717,17 @@
         "Europe"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "residence",
+        "countries": [],
+        "regions": [
+          "Europe"
+        ],
+        "evidence": "Each year, we fully fund passionate individuals aged 18-30 from across Europe to participate",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2027-01",
     "deadline": null,
@@ -1585,7 +1851,17 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "residence",
+        "countries": [],
+        "regions": [
+          "Council of Europe members"
+        ],
+        "evidence": "Open to residents of any of the 46 Council of Europe member states",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1647,7 +1923,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "However, we also welcome experienced EAs from around the world who can bring valuable perspectives and mentorship to the event.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1886,7 +2170,18 @@
         "Must be eligible to work in your country of residence"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Russia",
+          "Belarus"
+        ],
+        "regions": [],
+        "evidence": "Not residing in a U.S. embargoed country; participants from Russia, Belarus, and the DNR/LNR regions are ineligible.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -1918,7 +2213,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Outreachy provides internships to anyone from any background who faces underrepresentation, systemic bias, or discrimination in the technical industry where they are living.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2079,7 +2382,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "The Diamond Challenge invites high school students worldwide to build solutions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2150,7 +2461,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "The Breakthrough Junior Challenge is an annual, global science video competition for high-school students.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2184,7 +2503,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Beamline for Schools (BL4S) is a physics competition for high school students from all around the world",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2278,7 +2605,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "ClimateLaunchpad is active worldwide.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2309,7 +2644,46 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Bulgaria",
+          "Croatia",
+          "Cyprus",
+          "Czechia",
+          "Estonia",
+          "Greece",
+          "Hungary",
+          "Italy",
+          "Latvia",
+          "Lithuania",
+          "Malta",
+          "Poland",
+          "Portugal",
+          "Romania",
+          "Slovenia",
+          "Slovakia",
+          "Spain",
+          "Albania",
+          "Armenia",
+          "Bosnia and Herzegovina",
+          "Kosovo",
+          "Moldova",
+          "Montenegro",
+          "North Macedonia",
+          "Serbia",
+          "Ukraine",
+          "Turkey"
+        ],
+        "regions": [
+          "EU",
+          "Europe"
+        ],
+        "evidence": "Applicants (at least 1 participating team member) must hold citizenship from one of the following countries or regions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2375,7 +2749,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "bring together high school students from around the world to compete in AI challenges",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -2735,7 +3117,17 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "either",
+        "countries": [
+          "Albania"
+        ],
+        "regions": [],
+        "evidence": "Be an Albanian citizen, or be of Albanian descent in a country without a National Committee, or have lived in Albania for the past 5 years",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-08-30",
     "deadline": "2026-11-14T23:59+01:00",
@@ -2909,7 +3301,17 @@
         "bachelor",
         "master",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "France"
+        ],
+        "regions": [],
+        "evidence": "enable French higher education institutions to attract top foreign students",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2027-01-08",
@@ -2942,7 +3344,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Yale Young Global Scholars (YYGS) is an academic enrichment program for outstanding high school students from around the world.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2027-01-06",
@@ -3046,7 +3456,15 @@
       "levels": [
         "bachelor",
         "master"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "Candidates of all nationalities are welcome to apply for the CERN openlab summer student programme.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -3080,7 +3498,15 @@
       "students": null,
       "levels": [
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "Remember, the internships are open to all EU citizens, and there are also a limited number of places for non-EU nationals",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -3797,7 +4223,15 @@
       "maxAge": null,
       "countries": null,
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Code in Place offers high-quality online programming instruction to learners around the world at no charge.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -3832,7 +4266,17 @@
         "school",
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "either",
+        "countries": [
+          "Italy"
+        ],
+        "regions": [],
+        "evidence": "must not hold the Italian citizenship... must not be resident in Italy at the time of application",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4080,7 +4524,15 @@
       "levels": [
         "bachelor",
         "master"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "open to all students worldwide, except for students enrolled at ETH Zurich",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-11-01",
     "deadline": "2026-12-16T13:00+01:00",
@@ -4114,7 +4566,17 @@
       "students": true,
       "levels": [
         "bachelor"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "either",
+        "countries": [],
+        "regions": [
+          "Europe"
+        ],
+        "evidence": "Amgen Scholars Program offers 10 - 12 undergraduate students from across Europe the opportunity to take part in a summer research project",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2027-02-01T12:00+01:00",
@@ -4360,7 +4822,47 @@
         "bachelor",
         "master",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Albania",
+          "Belarus",
+          "Bosnia and Herzegovina",
+          "North Macedonia",
+          "Moldova",
+          "Serbia",
+          "Ukraine",
+          "Afghanistan",
+          "Armenia",
+          "Azerbaijan",
+          "Georgia",
+          "India",
+          "Indonesia",
+          "Iraq",
+          "Jordan",
+          "Kazakhstan",
+          "Kyrgyzstan",
+          "Lebanon",
+          "Mongolia",
+          "Syria",
+          "Tajikistan",
+          "Uzbekistan",
+          "Vietnam",
+          "Ethiopia",
+          "Kenya",
+          "Sudan",
+          "Tanzania",
+          "Tunisia",
+          "Brazil",
+          "Cuba",
+          "Palestine"
+        ],
+        "regions": [],
+        "evidence": "Scholarships of the Government of the Slovak Republic for full Bachelor and Master and PhD degree for students from countries eligible for the Official Development Assistance (ODA)",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4469,7 +4971,17 @@
         "school",
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [
+          "EU"
+        ],
+        "evidence": "Scholarships for non-EU citizens The annual scholarship programme for foreign citizens offered by the Romanian state, through the Ministry of Foreign Affairs",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4539,7 +5051,23 @@
         "bachelor",
         "master",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Switzerland",
+          "United Kingdom",
+          "Russia",
+          "Belarus"
+        ],
+        "regions": [
+          "EU",
+          "EEA"
+        ],
+        "evidence": "applicants must have a domiciliary of origin outside the EU/EEA, Switzerland and the United Kingdom... Russian and Belarusian nationals are not eligible to apply.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4577,7 +5105,17 @@
         "school",
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [
+          "EEA"
+        ],
+        "evidence": "Your nationality is non-EEA.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4647,7 +5185,17 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "United Kingdom"
+        ],
+        "regions": [],
+        "evidence": "Candidates can be from any country outside the UK but must fulfill all of the following criteria",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4682,7 +5230,94 @@
       "levels": [
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Afghanistan",
+          "Angola",
+          "Bangladesh",
+          "Benin",
+          "Bhutan",
+          "Burkina Faso",
+          "Burundi",
+          "Cambodia",
+          "Chad",
+          "Comoros",
+          "Djibouti",
+          "Eritrea",
+          "Ethiopia",
+          "Gambia",
+          "Guinea",
+          "Guinea-Bissau",
+          "Haiti",
+          "Kiribati",
+          "Lesotho",
+          "Liberia",
+          "Madagascar",
+          "Malawi",
+          "Mali",
+          "Mauritania",
+          "Mozambique",
+          "Myanmar",
+          "Nepal",
+          "Rwanda",
+          "São Tomé and Príncipe",
+          "Senegal",
+          "Sierra Leone",
+          "Solomon Islands",
+          "Somalia",
+          "Tanzania",
+          "Togo",
+          "Tuvalu",
+          "Uganda",
+          "Vanuatu",
+          "Yemen",
+          "Timor-Leste",
+          "South Sudan",
+          "Central African Republic",
+          "Zambia",
+          "Bolivia",
+          "Cabo Verde",
+          "Congo",
+          "Ghana",
+          "Honduras",
+          "India",
+          "North Korea",
+          "Kyrgyzstan",
+          "Mongolia",
+          "Morocco",
+          "Nigeria",
+          "Vietnam",
+          "Uzbekistan",
+          "Ukraine",
+          "Algeria",
+          "Cameroon",
+          "Democratic Republic of the Congo",
+          "Egypt",
+          "Iran",
+          "Côte d'Ivoire",
+          "Jordan",
+          "Kenya",
+          "Micronesia",
+          "Nicaragua",
+          "Niger",
+          "Pakistan",
+          "Papua New Guinea",
+          "Philippines",
+          "Samoa",
+          "Sri Lanka",
+          "Sudan",
+          "Tajikistan",
+          "Tunisia",
+          "Zimbabwe",
+          "Laos"
+        ],
+        "regions": [],
+        "evidence": "Hold the nationality of a country appearing in Appendix 1.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4717,7 +5352,17 @@
         "school",
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "either",
+        "countries": [],
+        "regions": [
+          "EU"
+        ],
+        "evidence": "from a non-European Union state, whose household does not file taxes within the European Union",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4889,7 +5534,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "High school students aged 13-19 from across the world (including people on gap years).",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -4922,7 +5575,17 @@
       "students": null,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "residence",
+        "countries": [],
+        "regions": [
+          "Europe"
+        ],
+        "evidence": "Competitively selected pre-university students from around Europe gather at the University of Oxford",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -5090,7 +5753,15 @@
       "students": true,
       "levels": [
         "school"
-      ]
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "either",
+        "countries": [],
+        "regions": [],
+        "evidence": "the competition is open to students in grades 8–12 worldwide.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": "2026-12",
     "deadline": "2027-05-05",
@@ -5424,7 +6095,17 @@
         "Western Balkans including Albania"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "residence",
+        "countries": [],
+        "regions": [
+          "Western Balkans"
+        ],
+        "evidence": "Eligibility: All WB countries eligible",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -5458,7 +6139,28 @@
         "Some countries excluded"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Argentina",
+          "Australia",
+          "Belarus",
+          "Brazil",
+          "Cuba",
+          "Iran",
+          "Italy",
+          "North Korea",
+          "Philippines",
+          "Russia",
+          "Syria",
+          "United Arab Emirates"
+        ],
+        "regions": [],
+        "evidence": "Specific countries/territories excluded Argentina Australia Belarus Brazil Crimea Cuba Donetsk People’s Republic Iran Islamic Republic of Italy Korea Democratic People's Republic of Luhansk People’s Republic Philippines Quebec Russia Syrian Arab Republic United Arab Emirates",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2026-12-04T23:00+01:00",
@@ -5525,7 +6227,23 @@
         "Some countries excluded"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Belarus",
+          "Brazil",
+          "Cuba",
+          "Iran",
+          "Russia",
+          "Sudan",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Specific countries/territories excluded Belarus Brazil Crimea Cuba Iran Islamic Republic of Korea Democratic People's Republic of Myanmar Quebec Russia Sudan Syrian Arab Republic",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2026-12-22T21:00+01:00",
@@ -5559,7 +6277,124 @@
         "Some countries excluded"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "Afghanistan",
+          "Andorra",
+          "Angola",
+          "Antigua and Barbuda",
+          "Bahamas",
+          "Bangladesh",
+          "Barbados",
+          "Belarus",
+          "Belize",
+          "Benin",
+          "Bhutan",
+          "Bolivia",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "Brazil",
+          "Brunei",
+          "Burundi",
+          "Cameroon",
+          "Cabo Verde",
+          "Central African Republic",
+          "Chad",
+          "Comoros",
+          "Congo",
+          "Democratic Republic of the Congo",
+          "Cuba",
+          "Cyprus",
+          "Djibouti",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Ethiopia",
+          "Fiji",
+          "Gabon",
+          "Gambia",
+          "Ghana",
+          "Grenada",
+          "Guinea",
+          "Guinea-Bissau",
+          "Guyana",
+          "Haiti",
+          "Vatican City",
+          "India",
+          "Iran",
+          "Iraq",
+          "Jamaica",
+          "Kazakhstan",
+          "Kiribati",
+          "North Korea",
+          "Kosovo",
+          "Kyrgyzstan",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Liechtenstein",
+          "Luxembourg",
+          "North Macedonia",
+          "Madagascar",
+          "Malawi",
+          "Mali",
+          "Marshall Islands",
+          "Mauritania",
+          "Micronesia",
+          "Monaco",
+          "Montenegro",
+          "Myanmar",
+          "Namibia",
+          "Nauru",
+          "Nicaragua",
+          "Niger",
+          "Palau",
+          "Palestine",
+          "Panama",
+          "Papua New Guinea",
+          "Russia",
+          "Rwanda",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Vincent and the Grenadines",
+          "Samoa",
+          "San Marino",
+          "São Tomé and Príncipe",
+          "Saudi Arabia",
+          "Senegal",
+          "Seychelles",
+          "Sierra Leone",
+          "Solomon Islands",
+          "Somalia",
+          "Sudan",
+          "Suriname",
+          "Eswatini",
+          "Syria",
+          "Tajikistan",
+          "Timor-Leste",
+          "Togo",
+          "Tonga",
+          "Trinidad and Tobago",
+          "Turkmenistan",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "Uzbekistan",
+          "Vanuatu",
+          "Venezuela",
+          "Vietnam",
+          "Zambia",
+          "Zimbabwe"
+        ],
+        "regions": [],
+        "evidence": "Specific countries/territories excluded Afghanistan Andorra Angola Antigua And Barbuda...",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2026-11-16T08:45+01:00",
@@ -5631,7 +6466,22 @@
         "bachelor",
         "master",
         "phd"
-      ]
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "residence",
+        "countries": [
+          "Brazil",
+          "Russia",
+          "Cuba",
+          "Iran",
+          "North Korea",
+          "Syria"
+        ],
+        "regions": [],
+        "evidence": "Devpost \"Who can participate\": All countries/territories, excluding standard exceptions",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": "2026-11-15T08:45+01:00",
@@ -5665,7 +6515,15 @@
         "anyone, anywhere"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Global Hack Week is a 100% free event for anyone, anywhere!",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -5699,7 +6557,15 @@
         "anyone, anywhere"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Global Hack Week is a 100% free event for anyone, anywhere!",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -6081,7 +6947,17 @@
         "Albania"
       ],
       "students": null,
-      "levels": null
+      "levels": null,
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Albania"
+        ],
+        "regions": [],
+        "evidence": "The call is open to all young Albanians under the age of 25, wherever they live.",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
@@ -6219,7 +7095,17 @@
       "levels": [
         "bachelor",
         "graduate"
-      ]
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Albania"
+        ],
+        "regions": [],
+        "evidence": "to support the AADF Master’s & Internship Program (MIP), a flagship professional exchange initiative that helps talented young and mid-career Albanian professionals",
+        "checked": "2026-11-07"
+      }
     },
     "applyOpens": null,
     "deadline": null,
