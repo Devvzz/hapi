@@ -45,7 +45,12 @@ export const STORAGE = {
   premium: "hapi.premium",
   coach: "hapi.coach",
   cv: "hapi.cv",
+  uniMarks: "hapi.uniMarks",
+  events: "hapi.events",
 } as const;
+
+export type UniMark = "apply" | "no";
+export const EMPTY_MARKS: Record<string, UniMark> = {};
 
 export type PremiumState = { subscriptionId: string | null; status: string | null };
 export const EMPTY_PREMIUM: PremiumState = { subscriptionId: null, status: null };

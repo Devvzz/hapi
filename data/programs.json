@@ -22,7 +22,10 @@
       "Does equal status mean EUR 0 tuition and EU deadlines?"
     ],
     "dataset": "curated",
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": "no",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tuw-inf",
@@ -42,7 +45,10 @@
       "2027 dates not published. 2026: register 1 Apr to 4 May, test about 13 July."
     ],
     "dataset": "curated",
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uniwien-mfds",
@@ -63,7 +69,10 @@
       "2027 dates not published. 2026: register 2 Mar to 4 May, test 15 July in Vienna."
     ],
     "dataset": "curated",
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fh-ai",
@@ -86,7 +95,10 @@
     "lastChecked": "2026-10-28",
     "checkYourself": [],
     "dataset": "curated",
-    "universityId": "fh-oo-hagenberg"
+    "universityId": "fh-oo-hagenberg",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": "2027-05-31"
   },
   {
     "id": "unipi",
@@ -114,7 +126,10 @@
       "note": "2026/27 maximum, reducible by income."
     },
     "dataset": "curated",
-    "universityId": "university-of-pisa"
+    "universityId": "university-of-pisa",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tub-inf",
@@ -142,7 +157,10 @@
       "Full document list"
     ],
     "dataset": "curated",
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-07-15"
   },
   {
     "id": "tud-inf",
@@ -171,7 +189,10 @@
       "2027 deadline"
     ],
     "dataset": "curated",
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "unipd-ie",
@@ -197,7 +218,10 @@
       "Confirm dates when the call is published"
     ],
     "dataset": "curated",
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "unipd-inf",
@@ -222,7 +246,10 @@
       "Confirm dates when the call is published"
     ],
     "dataset": "curated",
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "unibo-inf",
@@ -250,7 +277,10 @@
       "No English-taught computer science bachelor was found in my search"
     ],
     "dataset": "curated",
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-verfahrenstechnik",
@@ -298,7 +328,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-wien-wirtschaftsinformatik",
@@ -346,7 +379,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": "50 EUR",
+    "applyBy": null
   },
   {
     "id": "tu-wien-wirtschaftsingenieurwesen-maschinenbau",
@@ -393,7 +429,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-graz-betriebswirtschaft",
@@ -444,7 +483,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "uni-graz"
+    "universityId": "uni-graz",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-graz-sportwissenschaften",
@@ -494,7 +536,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "uni-graz"
+    "universityId": "uni-graz",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-graz-volkswirtschaftslehre",
@@ -545,7 +590,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "uni-graz"
+    "universityId": "uni-graz",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-bauingenieurwissenschaften",
@@ -595,7 +643,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-internationale-wirtschaftswissenschaften",
@@ -645,7 +696,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-sportwissenschaft",
@@ -693,7 +747,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": "yes",
+    "applicationFeeShort": "50 EUR",
+    "applyBy": "2026-12-01"
   },
   {
     "id": "universitat-klagenfurt-business-administration",
@@ -744,7 +801,10 @@
       "Non-EU tuition",
       "2027 deadline"
     ],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-klagenfurt-international-business-and-economics",
@@ -794,7 +854,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-klagenfurt-management-information-systems-wirtschaftsinfor",
@@ -845,7 +908,10 @@
       "Non-EU tuition",
       "2027 deadline"
     ],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-klagenfurt-robotics-and-artificial-intelligence",
@@ -896,7 +962,10 @@
       "Non-EU tuition",
       "2027 deadline"
     ],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-salzburg-plus-artificial-intelligence",
@@ -946,7 +1015,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "universitat-salzburg-plus"
+    "universityId": "universitat-salzburg-plus",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-salzburg-plus-sport-und-bewegungswissenschaft",
@@ -997,7 +1069,10 @@
       "Non-EU tuition",
       "2027 deadline"
     ],
-    "universityId": "universitat-salzburg-plus"
+    "universityId": "universitat-salzburg-plus",
+    "entryTest": "yes",
+    "applicationFeeShort": "50 EUR",
+    "applyBy": null
   },
   {
     "id": "universitat-wien-internationale-betriebswirtschaft",
@@ -1045,7 +1120,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-wien-sport-und-bewegungswissenschaft",
@@ -1093,7 +1171,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": "50 EUR",
+    "applyBy": null
   },
   {
     "id": "universitat-wien-statistik-und-data-analytics",
@@ -1141,7 +1222,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": "no",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-wien-volkswirtschaftslehre",
@@ -1189,7 +1273,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-wien-wirtschaftsinformatik",
@@ -1237,7 +1324,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "wu-wien-business-and-economics-bbe",
@@ -1288,7 +1378,10 @@
       "Non-EU tuition",
       "2027 deadline"
     ],
-    "universityId": "wu-wien"
+    "universityId": "wu-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ku-leuven-uclouvain-saint-louis-bsc-business-engineering-joint",
@@ -1338,7 +1431,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "ku-leuven-uclouvain-saint-louis"
+    "universityId": "ku-leuven-uclouvain-saint-louis",
+    "entryTest": "no",
+    "applicationFeeShort": "90 EUR",
+    "applyBy": null
   },
   {
     "id": "ku-leuven-brussels-bsc-business-administration",
@@ -1391,7 +1487,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "ku-leuven-brussels"
+    "universityId": "ku-leuven-brussels",
+    "entryTest": null,
+    "applicationFeeShort": "90 EUR",
+    "applyBy": null
   },
   {
     "id": "ctu-cvut-fit-civil-engineering-fce",
@@ -1441,7 +1540,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "ctu-cvut-fit"
+    "universityId": "ctu-cvut-fit",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "charles-university-economics-and-finance-ies",
@@ -1489,7 +1591,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "charles-university"
+    "universityId": "charles-university",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": "2027-02-28"
   },
   {
     "id": "vse-prague-business-administration",
@@ -1537,7 +1642,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "vse-prague"
+    "universityId": "vse-prague",
+    "entryTest": "yes",
+    "applicationFeeShort": "50 EUR",
+    "applyBy": "2027-04-30"
   },
   {
     "id": "vse-prague-economic-data-science",
@@ -1585,7 +1693,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "vse-prague"
+    "universityId": "vse-prague",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2027-02-28"
   },
   {
     "id": "vse-prague-economics",
@@ -1633,7 +1744,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "vse-prague"
+    "universityId": "vse-prague",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2027-04-30"
   },
   {
     "id": "vse-prague-international-business",
@@ -1681,7 +1795,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "vse-prague"
+    "universityId": "vse-prague",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2027-04-30"
   },
   {
     "id": "deutsche-sporthochschule-koln-sport-und-leistung-sport-science",
@@ -1732,7 +1849,10 @@
       "Non-EU tuition",
       "2027 deadline"
     ],
-    "universityId": "deutsche-sporthochschule-koln"
+    "universityId": "deutsche-sporthochschule-koln",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-artificial-intelligence",
@@ -1782,7 +1902,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-data-science",
@@ -1832,7 +1955,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-sportwissenschaft",
@@ -1883,7 +2009,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-wirtschaftsinformatik",
@@ -1933,7 +2062,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-wirtschaftsmathematik",
@@ -1984,7 +2116,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-wirtschaftswissenschaften",
@@ -2035,7 +2170,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fu-berlin-betriebswirtschaftslehre",
@@ -2087,7 +2225,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "fu-berlin"
+    "universityId": "fu-berlin",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "fu-berlin-volkswirtschaftslehre",
@@ -2139,7 +2280,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "fu-berlin"
+    "universityId": "fu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "goethe-uni-frankfurt-sportwissenschaften",
@@ -2190,7 +2334,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "goethe-uni-frankfurt"
+    "universityId": "goethe-uni-frankfurt",
+    "entryTest": "yes",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "goethe-uni-frankfurt-wirtschaftswissenschaften-finance-focus",
@@ -2241,7 +2388,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "goethe-uni-frankfurt"
+    "universityId": "goethe-uni-frankfurt",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "hu-berlin-betriebswirtschaftslehre",
@@ -2292,7 +2442,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "hu-berlin"
+    "universityId": "hu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "hu-berlin-sportwissenschaft",
@@ -2343,7 +2496,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "hu-berlin"
+    "universityId": "hu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "hu-berlin-volkswirtschaftslehre",
@@ -2394,7 +2550,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "hu-berlin"
+    "universityId": "hu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "jmu-wurzburg-b-sc-kunstliche-intelligenz-und-data-science",
@@ -2444,7 +2603,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "jmu-wurzburg"
+    "universityId": "jmu-wurzburg",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "kit-bauingenieurwesen",
@@ -2495,7 +2657,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-computational-and-data-science",
@@ -2546,7 +2711,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-digital-economics",
@@ -2597,7 +2765,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-sportwissenschaft",
@@ -2647,7 +2818,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-wirtschaftsinformatik",
@@ -2698,7 +2872,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-wirtschaftsmathematik",
@@ -2749,7 +2926,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-bioinformatik",
@@ -2799,7 +2979,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-business-administration",
@@ -2849,7 +3032,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-computerlinguistik",
@@ -2899,7 +3085,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-statistik-und-data-science",
@@ -2949,7 +3138,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-volkswirtschaftslehre",
@@ -2999,7 +3191,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": "yes",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-wirtschaftsmathematik",
@@ -3049,7 +3244,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-bauingenieurwesen",
@@ -3101,7 +3299,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-wirtschaftswissenschaften",
@@ -3153,7 +3354,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "saarland-university-betriebswirtschaftslehre",
@@ -3204,7 +3408,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "saarland-university-computerlinguistik",
@@ -3255,7 +3462,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "saarland-university-cybersicherheit-cybersecurity",
@@ -3306,7 +3516,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "saarland-university-data-science-artificial-intelligence",
@@ -3357,7 +3570,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "saarland-university-sportwissenschaft",
@@ -3408,7 +3624,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-berlin-bauingenieurwesen",
@@ -3458,7 +3677,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-berlin-energie-und-prozesstechnik",
@@ -3508,7 +3730,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-berlin-wirtschaftsinformatik",
@@ -3558,7 +3783,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-berlin-wirtschaftsmathematik",
@@ -3608,7 +3836,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-bauingenieurwesen",
@@ -3658,7 +3889,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-bioinformatik",
@@ -3708,7 +3942,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-chemieingenieurwesen",
@@ -3758,7 +3995,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-life-sciences-ernahrungswissenschaft-nutrition",
@@ -3806,7 +4046,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-management-data-science",
@@ -3856,7 +4099,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-sportwissenschaft",
@@ -3906,7 +4152,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-wirtschaftsinformatik",
@@ -3956,7 +4205,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-civil-engineering",
@@ -4004,7 +4256,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": "yes",
+    "applicationFeeShort": "150 EUR",
+    "applyBy": "2026-11-15"
   },
   {
     "id": "bme-transport-engineering",
@@ -4054,7 +4309,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": "yes",
+    "applicationFeeShort": "150 EUR",
+    "applyBy": null
   },
   {
     "id": "corvinus-applied-economics",
@@ -4104,7 +4362,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "corvinus"
+    "universityId": "corvinus",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-20"
   },
   {
     "id": "corvinus-business-data-science",
@@ -4154,7 +4415,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "corvinus"
+    "universityId": "corvinus",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-20"
   },
   {
     "id": "corvinus-business-informatics",
@@ -4204,7 +4468,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "corvinus"
+    "universityId": "corvinus",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-20"
   },
   {
     "id": "corvinus-international-business",
@@ -4254,7 +4521,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "corvinus"
+    "universityId": "corvinus",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-20"
   },
   {
     "id": "hungarian-university-of-sports-science-physical-training-ba",
@@ -4304,7 +4574,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "hungarian-university-of-sports-science"
+    "universityId": "hungarian-university-of-sports-science",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "hungarian-university-of-sports-science-sport-and-exercise-science-bsc",
@@ -4352,7 +4625,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "hungarian-university-of-sports-science"
+    "universityId": "hungarian-university-of-sports-science",
+    "entryTest": "yes",
+    "applicationFeeShort": "150 EUR",
+    "applyBy": "2027-06-30"
   },
   {
     "id": "federico-ii-napoli-ingegneria-dell-automazione-e-robotica",
@@ -4404,7 +4680,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "federico-ii-napoli"
+    "universityId": "federico-ii-napoli",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "pavia-milano-statale-bicocca-artificial-intelligence",
@@ -4454,7 +4733,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "pavia-milano-statale-bicocca"
+    "universityId": "pavia-milano-statale-bicocca",
+    "entryTest": "yes",
+    "applicationFeeShort": "35 EUR",
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-ingegneria-dell-automazione",
@@ -4504,7 +4786,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-process-engineering-cremona",
@@ -4555,7 +4840,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tor-vergata-bsc-business-administration-and-economics",
@@ -4605,7 +4893,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "tor-vergata"
+    "universityId": "tor-vergata",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-brescia-ingegneria-dell-automazione-industriale",
@@ -4655,7 +4946,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "uni-brescia"
+    "universityId": "uni-brescia",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-trieste-intelligenza-artificiale-e-data-analytics",
@@ -4703,7 +4997,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "uni-trieste"
+    "universityId": "uni-trieste",
+    "entryTest": "yes",
+    "applicationFeeShort": "40 EUR",
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-automation-engineering",
@@ -4753,7 +5050,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-dell-automazione",
@@ -4803,7 +5103,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "iseg-ulisboa-economics",
@@ -4851,7 +5154,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "iseg-ulisboa"
+    "universityId": "iseg-ulisboa",
+    "entryTest": "yes",
+    "applicationFeeShort": "60 EUR",
+    "applyBy": null
   },
   {
     "id": "iseg-ulisboa-finance",
@@ -4901,7 +5207,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "iseg-ulisboa"
+    "universityId": "iseg-ulisboa",
+    "entryTest": "yes",
+    "applicationFeeShort": "60 EUR",
+    "applyBy": null
   },
   {
     "id": "nova-ims-lisbon-bsc-data-science",
@@ -4951,7 +5260,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "nova-ims-lisbon"
+    "universityId": "nova-ims-lisbon",
+    "entryTest": "yes",
+    "applicationFeeShort": "70 EUR",
+    "applyBy": null
   },
   {
     "id": "nova-ims-lisbon-bsc-information-systems",
@@ -5001,7 +5313,10 @@
     "checkYourself": [
       "2027 deadline"
     ],
-    "universityId": "nova-ims-lisbon"
+    "universityId": "nova-ims-lisbon",
+    "entryTest": "yes",
+    "applicationFeeShort": "70 EUR",
+    "applyBy": null
   },
   {
     "id": "complutense-madrid-ucm-grado-en-economia-en-ingles",
@@ -5052,7 +5367,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "complutense-madrid-ucm"
+    "universityId": "complutense-madrid-ucm",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uab-artificial-intelligence",
@@ -5104,7 +5422,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "uab"
+    "universityId": "uab",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uab-bioinformatics",
@@ -5155,7 +5476,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uab"
+    "universityId": "uab",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uab-business-administration",
@@ -5206,7 +5530,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uab"
+    "universityId": "uab",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uab-economics",
@@ -5257,7 +5584,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uab"
+    "universityId": "uab",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "upf-barcelona-international-business-economics",
@@ -5305,7 +5635,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "upf-barcelona"
+    "universityId": "upf-barcelona",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "upf-barcelona-mathematical-engineering-in-data-science",
@@ -5353,7 +5686,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "upf-barcelona"
+    "universityId": "upf-barcelona",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "jku-linz-betriebswirtschaftslehre",
@@ -5400,7 +5736,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-elektronik-und-informationstechnik",
@@ -5447,7 +5786,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-informatik",
@@ -5496,7 +5838,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-09-05"
   },
   {
     "id": "jku-linz-international-business-administration",
@@ -5543,7 +5888,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-maschinenbau",
@@ -5590,7 +5938,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-mechatronik",
@@ -5639,7 +5990,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-09-05"
   },
   {
     "id": "jku-linz-medical-engineering",
@@ -5686,7 +6040,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-nachhaltige-kunststofftechnik-und-kreislaufwirtschaft",
@@ -5733,7 +6090,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-sozialwirtschaft",
@@ -5780,7 +6140,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-statistik-und-data-science",
@@ -5827,7 +6190,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-technische-mathematik",
@@ -5874,7 +6240,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-transformation-studies-art-science",
@@ -5921,7 +6290,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "jku-linz-wirtschaftsinformatik",
@@ -5970,7 +6342,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-09-05"
   },
   {
     "id": "jku-linz-wirtschaftswissenschaften",
@@ -6017,7 +6392,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "jku-linz"
+    "universityId": "jku-linz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-architektur",
@@ -6064,7 +6442,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-bauingenieurwissenschaften-und-wirtschaftsingenieurwesen",
@@ -6111,7 +6492,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-biomedical-engineering",
@@ -6158,7 +6542,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-digital-engineering",
@@ -6205,7 +6592,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-electrical-and-electronics-engineering",
@@ -6252,7 +6642,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-elektrotechnik-toningenieur",
@@ -6299,7 +6692,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-geodasie",
@@ -6346,7 +6742,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-informatik-ai-ml-specialisation",
@@ -6393,7 +6792,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-09-05"
   },
   {
     "id": "tu-graz-information-and-computer-engineering",
@@ -6440,7 +6842,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-maschinenbau",
@@ -6487,7 +6892,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-mathematik",
@@ -6534,7 +6942,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-software-engineering-and-management",
@@ -6581,7 +6992,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-09-05"
   },
   {
     "id": "tu-graz-verfahrenstechnik",
@@ -6628,7 +7042,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-graz-wirtschaftsingenieurwesen-maschinenbau",
@@ -6675,7 +7092,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-graz"
+    "universityId": "tu-graz",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-wien-architektur",
@@ -6722,7 +7142,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-bauingenieurwesen",
@@ -6769,7 +7192,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-elektrotechnik-und-informationstechnik",
@@ -6816,7 +7242,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-geodasie-und-geoinformation",
@@ -6863,7 +7292,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-maschinenbau",
@@ -6910,7 +7342,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-raumplanung-und-raumordnung",
@@ -6957,7 +7392,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-technische-informatik",
@@ -7006,7 +7444,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": "yes",
+    "applicationFeeShort": "50 EUR",
+    "applyBy": null
   },
   {
     "id": "tu-wien-technische-mathematik",
@@ -7053,7 +7494,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-wien-umweltingenieurwesen",
@@ -7100,7 +7544,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-wien"
+    "universityId": "tu-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-architektur",
@@ -7149,7 +7596,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-elektrotechnik",
@@ -7198,7 +7648,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-informatik",
@@ -7247,7 +7700,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-management-and-economics",
@@ -7296,7 +7752,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-mathematik",
@@ -7345,7 +7804,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-mechatronik",
@@ -7394,7 +7856,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-innsbruck-umweltingenieurwissenschaften",
@@ -7443,7 +7908,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-innsbruck"
+    "universityId": "universitat-innsbruck",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-klagenfurt-applied-informatics-angewandte-informatik",
@@ -7490,7 +7958,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-klagenfurt-information-and-communications-engineering",
@@ -7537,7 +8008,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-klagenfurt-technical-mathematics",
@@ -7584,7 +8058,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-klagenfurt"
+    "universityId": "universitat-klagenfurt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-salzburg-plus-informatik",
@@ -7631,7 +8108,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-salzburg-plus"
+    "universityId": "universitat-salzburg-plus",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-salzburg-plus-ingenieurwissenschaften",
@@ -7678,7 +8158,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-salzburg-plus"
+    "universityId": "universitat-salzburg-plus",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-salzburg-plus-materialien-und-nachhaltigkeit",
@@ -7725,7 +8208,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-salzburg-plus"
+    "universityId": "universitat-salzburg-plus",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-salzburg-plus-mathematik",
@@ -7772,7 +8258,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-salzburg-plus"
+    "universityId": "universitat-salzburg-plus",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "universitat-wien-betriebswirtschaft",
@@ -7819,7 +8308,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-wien-ernahrungswissenschaften-nutrition-science",
@@ -7866,7 +8358,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-wien-informatik",
@@ -7913,7 +8408,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": null,
+    "applicationFeeShort": "50 EUR",
+    "applyBy": null
   },
   {
     "id": "universitat-wien-mathematik",
@@ -7960,7 +8458,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-wien"
+    "universityId": "universitat-wien",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "wu-wien-wirtschafts-und-sozialwissenschaften-wiso",
@@ -8010,7 +8511,10 @@
       "2027 deadline",
       "Programme details"
     ],
-    "universityId": "wu-wien"
+    "universityId": "wu-wien",
+    "entryTest": null,
+    "applicationFeeShort": "50 EUR",
+    "applyBy": null
   },
   {
     "id": "university-of-zagreb-efzg-bachelor-in-business",
@@ -8060,7 +8564,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "university-of-zagreb-efzg"
+    "universityId": "university-of-zagreb-efzg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "university-of-zagreb-efzg-bachelor-in-economics",
@@ -8110,7 +8617,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "university-of-zagreb-efzg"
+    "universityId": "university-of-zagreb-efzg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ctu-cvut-fit-electrical-engineering-and-computer-science-fee",
@@ -8159,7 +8669,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "ctu-cvut-fit"
+    "universityId": "ctu-cvut-fit",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ctu-cvut-fit-informatics-english",
@@ -8206,7 +8719,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "ctu-cvut-fit"
+    "universityId": "ctu-cvut-fit",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ctu-cvut-fit-mechanical-engineering-fme",
@@ -8255,7 +8771,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "ctu-cvut-fit"
+    "universityId": "ctu-cvut-fit",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "charles-university-computer-science-english",
@@ -8304,7 +8823,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "charles-university"
+    "universityId": "charles-university",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "masaryk-university-economics-and-public-policy",
@@ -8351,7 +8873,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "masaryk-university"
+    "universityId": "masaryk-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-04-30"
   },
   {
     "id": "taltech-bsc-cyber-security-engineering",
@@ -8400,7 +8925,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "taltech"
+    "universityId": "taltech",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-04-01"
   },
   {
     "id": "university-of-tartu-ba-business-administration",
@@ -8449,7 +8977,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "university-of-tartu"
+    "universityId": "university-of-tartu",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-04-15"
   },
   {
     "id": "aalto-university-data-science-digital-systems-and-design",
@@ -8496,7 +9027,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "aalto-university"
+    "universityId": "aalto-university",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2027-01-22"
   },
   {
     "id": "aalto-university-economics",
@@ -8545,7 +9079,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "aalto-university"
+    "universityId": "aalto-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "aalto-university-international-business",
@@ -8594,7 +9131,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "aalto-university"
+    "universityId": "aalto-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "aalto-university-science-and-technology",
@@ -8643,7 +9183,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "aalto-university"
+    "universityId": "aalto-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ecole-polytechnique-bachelor-of-science-maths-cs-tracks",
@@ -8692,7 +9235,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "ecole-polytechnique"
+    "universityId": "ecole-polytechnique",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-computer-science",
@@ -8742,7 +9288,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-electrical-and-computer-engineering",
@@ -8792,7 +9341,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-industrial-engineering-management",
@@ -8842,7 +9394,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-management-decisions-and-markets",
@@ -8892,7 +9447,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-mathematics-modeling-and-data-analytics",
@@ -8942,7 +9500,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-robotics-and-intelligent-systems",
@@ -8992,7 +9553,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "constructor-university-private-software-data-and-technology",
@@ -9042,7 +9606,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "constructor-university-private"
+    "universityId": "constructor-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-computational-engineering",
@@ -9091,7 +9658,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-elektrotechnik-elektronik-und-informationstechni",
@@ -9140,7 +9710,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-informatik",
@@ -9189,7 +9762,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-maschinenbau",
@@ -9238,7 +9814,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-mathematik",
@@ -9287,7 +9866,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-mechatronik",
@@ -9336,7 +9918,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fau-erlangen-nurnberg-medizintechnik",
@@ -9385,7 +9970,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "fau-erlangen-nurnberg"
+    "universityId": "fau-erlangen-nurnberg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fu-berlin-bioinformatik",
@@ -9434,7 +10022,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "fu-berlin"
+    "universityId": "fu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "fu-berlin-informatik",
@@ -9481,7 +10072,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "fu-berlin"
+    "universityId": "fu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "fu-berlin-mathematik",
@@ -9530,7 +10124,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "fu-berlin"
+    "universityId": "fu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "kit-angewandte-umweltinformatik-und-erdbeobachtung",
@@ -9579,7 +10176,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-architektur",
@@ -9628,7 +10228,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-bioingenieurwesen",
@@ -9677,7 +10280,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-chemieingenieurwesen-und-verfahrenstechnik",
@@ -9728,7 +10334,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-elektrotechnik-und-informationstechnik",
@@ -9777,7 +10386,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-geodasie-und-geoinformatik",
@@ -9826,7 +10438,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-informatik",
@@ -9875,7 +10490,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-maschinenbau",
@@ -9924,7 +10542,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-materialwissenschaft-und-werkstofftechnik",
@@ -9973,7 +10594,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-mathematik",
@@ -10022,7 +10646,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-mechanical-engineering-international",
@@ -10071,7 +10698,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-mechatronik-und-informationstechnik",
@@ -10120,7 +10750,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-medizintechnik",
@@ -10169,7 +10802,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "kit-wirtschaftsingenieurwesen",
@@ -10218,7 +10854,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "kit"
+    "universityId": "kit",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-informatik",
@@ -10267,7 +10906,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-07-15"
   },
   {
     "id": "lmu-munich-mathematik",
@@ -10316,7 +10958,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "lmu-munich-medieninformatik",
@@ -10365,7 +11010,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "lmu-munich"
+    "universityId": "lmu-munich",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-architektur",
@@ -10414,7 +11062,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-computational-engineering-science",
@@ -10463,7 +11114,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-computer-engineering",
@@ -10512,7 +11166,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-elektrotechnik-und-informationstechnik",
@@ -10561,7 +11218,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-informatik",
@@ -10608,7 +11268,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-maschinenbau",
@@ -10657,7 +11320,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-mathematik",
@@ -10706,7 +11372,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-wirtschaftsingenieurwesen-bauingenieurwesen",
@@ -10755,7 +11424,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-wirtschaftsingenieurwesen-elektrische-energietechnik",
@@ -10804,7 +11476,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "rwth-aachen-wirtschaftsingenieurwesen-maschinenbau",
@@ -10853,7 +11528,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "rwth-aachen"
+    "universityId": "rwth-aachen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "ruhr-uni-bochum-b-sc-it-sicherheit-informationstechnik-check-electrica",
@@ -10902,7 +11580,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "ruhr-uni-bochum"
+    "universityId": "ruhr-uni-bochum",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "saarland-university-informatik-computer-science",
@@ -10951,7 +11632,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "saarland-university-mathematik",
@@ -11000,7 +11684,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "saarland-university-medieninformatik",
@@ -11049,7 +11736,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "saarland-university-systems-engineering",
@@ -11099,7 +11789,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "saarland-university"
+    "universityId": "saarland-university",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-berlin-architektur",
@@ -11148,7 +11841,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-elektrotechnik",
@@ -11197,7 +11893,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-informationstechnik-im-maschinenwesen",
@@ -11246,7 +11945,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-luft-und-raumfahrttechnik",
@@ -11295,7 +11997,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-maschinenbau",
@@ -11344,7 +12049,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-mathematik",
@@ -11393,7 +12101,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-technische-informatik",
@@ -11442,7 +12153,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-technomathematik",
@@ -11491,7 +12205,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-verkehrswesen",
@@ -11540,7 +12257,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-berlin-wirtschaftsingenieurwesen",
@@ -11589,7 +12309,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-berlin"
+    "universityId": "tu-berlin",
+    "entryTest": null,
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": null
   },
   {
     "id": "tu-chemnitz-sports-engineering-sporttechnik",
@@ -11636,7 +12359,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-chemnitz"
+    "universityId": "tu-chemnitz",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-architektur",
@@ -11683,7 +12409,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-bauingenieurwesen-und-geodasie",
@@ -11730,7 +12459,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-cognitive-science",
@@ -11777,7 +12509,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-computational-engineering",
@@ -11824,7 +12559,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-elektrotechnik-und-informationstechnik",
@@ -11871,7 +12609,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-informatik-mechatronik",
@@ -11918,7 +12659,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": "no",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-informationssystemtechnik",
@@ -11965,7 +12709,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-ingenieurwissenschaften-und-mechanik",
@@ -12012,7 +12759,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-maschinenbau-sustainable-engineering",
@@ -12059,7 +12809,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-materialwissenschaft",
@@ -12106,7 +12859,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-mathematik",
@@ -12153,7 +12909,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-medizintechnik",
@@ -12200,7 +12959,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-umweltingenieurwissenschaften",
@@ -12247,7 +13009,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-wirtschaftsinformatik",
@@ -12294,7 +13059,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-wirtschaftsingenieurwesen-bauingenieurwesen",
@@ -12341,7 +13109,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-wirtschaftsingenieurwesen-elektrotechnik",
@@ -12388,7 +13159,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-wirtschaftsingenieurwesen-maschinenbau",
@@ -12435,7 +13209,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-darmstadt-wirtschaftsingenieurwesen-materialwissenschaft",
@@ -12482,7 +13259,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-darmstadt"
+    "universityId": "tu-darmstadt",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-dortmund-b-sc-datenwissenschaft",
@@ -12529,7 +13309,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-dortmund"
+    "universityId": "tu-dortmund",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-07-15"
   },
   {
     "id": "tu-dortmund-b-sc-statistik",
@@ -12576,7 +13359,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "tu-dortmund"
+    "universityId": "tu-dortmund",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-07-15"
   },
   {
     "id": "tu-dortmund-bauingenieurwesen",
@@ -12626,7 +13412,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dortmund"
+    "universityId": "tu-dortmund",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-dortmund-bio-und-chemieingenieurwesen",
@@ -12676,7 +13465,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dortmund"
+    "universityId": "tu-dortmund",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-dortmund-wirtschaftsmathematik",
@@ -12726,7 +13518,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dortmund"
+    "universityId": "tu-dortmund",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-dresden-bauingenieurwesen-diplom",
@@ -12776,7 +13571,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dresden"
+    "universityId": "tu-dresden",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-dresden-verfahrens-und-naturstofftechnik",
@@ -12826,7 +13624,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dresden"
+    "universityId": "tu-dresden",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-dresden-wirtschaftsinformatik",
@@ -12876,7 +13677,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dresden"
+    "universityId": "tu-dresden",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-dresden-wirtschaftswissenschaften",
@@ -12926,7 +13730,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-dresden"
+    "universityId": "tu-dresden",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-allgemeine-ingenieurwissenschaften",
@@ -12975,7 +13782,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-bau-und-umweltingenieurwesen",
@@ -13024,7 +13834,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-chemie-und-bioingenieurwesen",
@@ -13073,7 +13886,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-computer-science",
@@ -13122,7 +13938,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-elektrotechnik-und-informationstechnik",
@@ -13171,7 +13990,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-engineering-science",
@@ -13220,7 +14042,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-green-technologies-energie-wasser-klima",
@@ -13269,7 +14094,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-informatik-ingenieurwesen",
@@ -13318,7 +14146,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-maschinenbau",
@@ -13367,7 +14198,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-mechatronik",
@@ -13416,7 +14250,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-schiffbau",
@@ -13465,7 +14302,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-technomathematik",
@@ -13514,7 +14354,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-hamburg-tuhh-wirtschaftsingenieurwesen-logistik-und-mobilitat",
@@ -13563,7 +14406,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-hamburg-tuhh"
+    "universityId": "tu-hamburg-tuhh",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-aerospace",
@@ -13612,7 +14458,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-architektur",
@@ -13661,7 +14510,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-electronics-and-data-engineering",
@@ -13710,7 +14562,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-elektrotechnik-und-informationstechnik",
@@ -13759,7 +14614,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-geodasie-und-geoinformation",
@@ -13808,7 +14666,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-informatik",
@@ -13857,7 +14718,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-informatik-games-engineering",
@@ -13906,7 +14770,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-information-engineering-campus-heilbronn",
@@ -13955,7 +14822,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-ingenieurwissenschaften",
@@ -14004,7 +14874,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-management-and-technology-bmt",
@@ -14053,7 +14926,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-07-15"
   },
   {
     "id": "tu-munich-tum-maschinenwesen",
@@ -14102,7 +14978,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-mathematik",
@@ -14151,7 +15030,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-sustainable-engineering-for-materials-and-processes",
@@ -14200,7 +15082,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-sustainable-management-technology",
@@ -14249,7 +15134,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-munich-tum-umweltingenieurwesen",
@@ -14298,7 +15186,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "tu-munich-tum"
+    "universityId": "tu-munich-tum",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-bonn-cyber-security",
@@ -14348,7 +15239,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-bonn"
+    "universityId": "uni-bonn",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-bonn-ernahrungs-und-lebensmittelwissenschaften",
@@ -14398,7 +15292,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-bonn"
+    "universityId": "uni-bonn",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-bonn-volkswirtschaftslehre",
@@ -14448,7 +15345,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-bonn"
+    "universityId": "uni-bonn",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-duisburg-essen-bauingenieurwesen",
@@ -14497,7 +15397,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-duisburg-essen"
+    "universityId": "uni-duisburg-essen",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-duisburg-essen-wirtschaftsinformatik",
@@ -14546,7 +15449,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-duisburg-essen"
+    "universityId": "uni-duisburg-essen",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-hohenheim-ernahrungswissenschaft",
@@ -14595,7 +15501,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-hohenheim"
+    "universityId": "uni-hohenheim",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-hohenheim-wirtschaftswissenschaften",
@@ -14644,7 +15553,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-hohenheim"
+    "universityId": "uni-hohenheim",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-leipzig-sportwissenschaft",
@@ -14694,7 +15606,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-leipzig"
+    "universityId": "uni-leipzig",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-leipzig-wirtschaftsinformatik",
@@ -14744,7 +15659,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-leipzig"
+    "universityId": "uni-leipzig",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-leipzig-wirtschaftswissenschaften",
@@ -14794,7 +15712,10 @@
       "Programme details",
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-leipzig"
+    "universityId": "uni-leipzig",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-mannheim-betriebswirtschaftslehre",
@@ -14843,7 +15764,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-mannheim"
+    "universityId": "uni-mannheim",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-mannheim-volkswirtschaftslehre",
@@ -14892,7 +15816,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-mannheim"
+    "universityId": "uni-mannheim",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-mannheim-wirtschaftsinformatik",
@@ -14941,7 +15868,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-mannheim"
+    "universityId": "uni-mannheim",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-mannheim-wirtschaftsmathematik",
@@ -14990,7 +15920,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-mannheim"
+    "universityId": "uni-mannheim",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-stuttgart-b-sc-data-science",
@@ -15039,7 +15972,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-stuttgart"
+    "universityId": "uni-stuttgart",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-stuttgart-bauingenieurwesen",
@@ -15088,7 +16024,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-stuttgart"
+    "universityId": "uni-stuttgart",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-stuttgart-maschinelle-sprachverarbeitung-nlp",
@@ -15137,7 +16076,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-stuttgart"
+    "universityId": "uni-stuttgart",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-stuttgart-sportwissenschaft",
@@ -15186,7 +16128,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-stuttgart"
+    "universityId": "uni-stuttgart",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-stuttgart-technische-kybernetik",
@@ -15235,7 +16180,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-stuttgart"
+    "universityId": "uni-stuttgart",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-stuttgart-verfahrenstechnik",
@@ -15284,7 +16232,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-stuttgart"
+    "universityId": "uni-stuttgart",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "uni-tubingen-kognitionswissenschaft",
@@ -15333,7 +16284,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-tubingen"
+    "universityId": "uni-tubingen",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-zu-koln-b-sc-bwl",
@@ -15382,7 +16336,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-zu-koln"
+    "universityId": "uni-zu-koln",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-zu-koln-b-sc-wirtschaftsinformatik",
@@ -15431,7 +16388,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "uni-zu-koln"
+    "universityId": "uni-zu-koln",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-bayreuth-sportokonomie-sports-economics",
@@ -15480,7 +16440,10 @@
     "checkYourself": [
       "Confirm on the university site (secondary source)"
     ],
-    "universityId": "universitat-bayreuth"
+    "universityId": "universitat-bayreuth",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-07-15"
   },
   {
     "id": "universitat-hamburg-betriebswirtschaftslehre",
@@ -15529,7 +16492,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-bewegungswissenschaft-sportwissenschaft",
@@ -15578,7 +16544,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-informatik-wirtschaftsinformatik",
@@ -15627,7 +16596,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-mathematik",
@@ -15676,7 +16648,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-mensch-computer-interaktion",
@@ -15725,7 +16700,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-software-system-entwicklung",
@@ -15774,7 +16752,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-volkswirtschaftslehre",
@@ -15823,7 +16804,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-hamburg-wirtschaftsmathematik",
@@ -15872,7 +16856,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-hamburg"
+    "universityId": "universitat-hamburg",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-osnabruck-cognitive-science",
@@ -15919,7 +16906,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universitat-osnabruck"
+    "universityId": "universitat-osnabruck",
+    "entryTest": "no",
+    "applicationFeeShort": "75 EUR via uni-assist",
+    "applyBy": "2027-08-15"
   },
   {
     "id": "universitat-osnabruck-informatik",
@@ -15968,7 +16958,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-osnabruck"
+    "universityId": "universitat-osnabruck",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-osnabruck-mathematik",
@@ -16017,7 +17010,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-osnabruck"
+    "universityId": "universitat-osnabruck",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-osnabruck-wirtschaftsinformatik",
@@ -16066,7 +17062,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-osnabruck"
+    "universityId": "universitat-osnabruck",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universitat-osnabruck-wirtschaftswissenschaften-bwl-vwl",
@@ -16115,7 +17114,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universitat-osnabruck"
+    "universityId": "universitat-osnabruck",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "aueb-athens-international-business-and-technology",
@@ -16165,7 +17167,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "aueb-athens"
+    "universityId": "aueb-athens",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "aristotle-university-sport-and-exercise-sciences-for-health-and-perfor",
@@ -16215,7 +17220,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "aristotle-university"
+    "universityId": "aristotle-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "university-of-macedonia-accounting-and-finance",
@@ -16265,7 +17273,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "university-of-macedonia"
+    "universityId": "university-of-macedonia",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "university-of-west-attica-artificial-intelligence-and-data-science",
@@ -16314,7 +17325,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "university-of-west-attica"
+    "universityId": "university-of-west-attica",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "bme-architecture",
@@ -16364,7 +17378,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-business-administration-and-management",
@@ -16414,7 +17431,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-computer-engineering",
@@ -16462,7 +17482,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-electrical-engineering",
@@ -16512,7 +17535,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-energy-engineering",
@@ -16562,7 +17588,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-mechanical-engineering",
@@ -16612,7 +17641,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-mechatronics-engineering",
@@ -16662,7 +17694,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bme-vehicle-engineering",
@@ -16712,7 +17747,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "bme"
+    "universityId": "bme",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "corvinus-business-administration-and-management",
@@ -16763,7 +17801,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "corvinus"
+    "universityId": "corvinus",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "corvinus-finance-and-accounting",
@@ -16813,7 +17854,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "corvinus"
+    "universityId": "corvinus",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-20"
   },
   {
     "id": "elte-computer-science",
@@ -16863,7 +17907,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "elte"
+    "universityId": "elte",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "elte-mathematics",
@@ -16914,7 +17961,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "elte"
+    "universityId": "elte",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-debrecen-chemical-engineering-bsc",
@@ -16961,7 +18011,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "university-of-debrecen"
+    "universityId": "university-of-debrecen",
+    "entryTest": null,
+    "applicationFeeShort": "150 USD",
+    "applyBy": null
   },
   {
     "id": "university-of-debrecen-civil-engineering-bsc",
@@ -17008,7 +18061,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "university-of-debrecen"
+    "universityId": "university-of-debrecen",
+    "entryTest": null,
+    "applicationFeeShort": "150 USD",
+    "applyBy": null
   },
   {
     "id": "obuda-university-computer-science-engineering",
@@ -17059,7 +18115,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "obuda-university"
+    "universityId": "obuda-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "obuda-university-electrical-engineering",
@@ -17110,7 +18169,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "obuda-university"
+    "universityId": "obuda-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "obuda-university-mechanical-engineering",
@@ -17161,7 +18223,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "obuda-university"
+    "universityId": "obuda-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "obuda-university-mechatronics-engineering",
@@ -17211,7 +18276,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "obuda-university"
+    "universityId": "obuda-university",
+    "entryTest": "yes",
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "bocconi-private-economia-aziendale-e-management-cleam",
@@ -17261,7 +18329,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "bocconi-private"
+    "universityId": "bocconi-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "bocconi-private-economia-e-finanza-clef",
@@ -17311,7 +18382,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "bocconi-private"
+    "universityId": "bocconi-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "bocconi-private-economics-management-computer-science-bemacs",
@@ -17360,7 +18434,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "bocconi-private"
+    "universityId": "bocconi-private",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-25"
   },
   {
     "id": "bocconi-private-international-economics-and-finance-bief",
@@ -17410,7 +18487,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "bocconi-private"
+    "universityId": "bocconi-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "bocconi-private-international-economics-and-management-biem",
@@ -17460,7 +18540,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "bocconi-private"
+    "universityId": "bocconi-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "bocconi-private-mathematical-computing-sciences-for-ai-bai",
@@ -17509,7 +18592,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "bocconi-private"
+    "universityId": "bocconi-private",
+    "entryTest": "yes",
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2026-11-25"
   },
   {
     "id": "ca-foscari-venice-ba-economics-and-business-economics-markets-and-fina",
@@ -17556,7 +18642,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "ca-foscari-venice"
+    "universityId": "ca-foscari-venice",
+    "entryTest": null,
+    "applicationFeeShort": "30 EUR",
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-aerospace-engineering",
@@ -17604,7 +18693,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-architectural-design",
@@ -17652,7 +18744,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-biomedical-engineering",
@@ -17700,7 +18795,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-building-engineering-architecture-lecco",
@@ -17748,7 +18846,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-building-and-construction-engineering",
@@ -17796,7 +18897,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-chemical-engineering",
@@ -17844,7 +18948,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-civil-engineering",
@@ -17892,7 +18999,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-electrical-engineering",
@@ -17940,7 +19050,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-electronic-engineering",
@@ -17988,7 +19101,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-energy-engineering",
@@ -18036,7 +19152,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-engineering-science-new-2026",
@@ -18084,7 +19203,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-engineering-of-computing-systems-ingegneria-info",
@@ -18132,7 +19254,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-environmental-and-land-planning-engineering",
@@ -18180,7 +19305,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-fashion-design",
@@ -18228,7 +19356,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-industrial-engineering-piacenza",
@@ -18276,7 +19407,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-industrial-production-engineering-lecco",
@@ -18324,7 +19458,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-management-and-production-engineering-ingegneria",
@@ -18372,7 +19509,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-materials-and-nanotechnology-engineering",
@@ -18420,7 +19560,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-mathematical-engineering",
@@ -18468,7 +19611,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-mechanical-engineering",
@@ -18516,7 +19662,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-physics-engineering",
@@ -18564,7 +19713,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-milano-urban-planning-cities-environment-landscapes",
@@ -18612,7 +19764,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-milano"
+    "universityId": "politecnico-di-milano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-aerospace-engineering",
@@ -18662,7 +19817,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-architecture",
@@ -18712,7 +19870,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-automotive-engineering",
@@ -18762,7 +19923,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-biomedical-engineering",
@@ -18812,7 +19976,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-cinema-and-media-engineering",
@@ -18862,7 +20029,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-civil-engineering",
@@ -18912,7 +20082,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-computer-engineering",
@@ -18960,7 +20133,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-electrical-engineering",
@@ -19010,7 +20186,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-electronic-and-communications-engineering",
@@ -19060,7 +20239,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-energy-engineering",
@@ -19110,7 +20292,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-environmental-and-land-engineering",
@@ -19160,7 +20345,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-management-engineering",
@@ -19208,7 +20396,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-materials-engineering",
@@ -19258,7 +20449,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-mathematics-for-engineering",
@@ -19308,7 +20502,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-mechanical-engineering",
@@ -19358,7 +20555,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "politecnico-di-torino-physical-engineering",
@@ -19408,7 +20608,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "politecnico-di-torino"
+    "universityId": "politecnico-di-torino",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sant-anna-uni-pisa-allievi-ordinari-economics-or-engineering-track",
@@ -19457,7 +20660,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sant-anna-uni-pisa"
+    "universityId": "sant-anna-uni-pisa",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-applied-computer-science-and-ai-acsai",
@@ -19505,7 +20711,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": "yes",
+    "applicationFeeShort": "30 EUR",
+    "applyBy": null
   },
   {
     "id": "sapienza-economia-e-commercio",
@@ -19555,7 +20764,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-informatica",
@@ -19605,7 +20817,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-aerospaziale",
@@ -19655,7 +20870,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-civile",
@@ -19705,7 +20923,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-clinica",
@@ -19755,7 +20976,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-elettronica",
@@ -19805,7 +21029,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-elettrotecnica",
@@ -19855,7 +21082,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-energetica",
@@ -19905,7 +21135,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-gestionale",
@@ -19955,7 +21188,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-informatica-e-automatica",
@@ -20005,7 +21241,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": "yes",
+    "applicationFeeShort": "30 EUR",
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-meccanica",
@@ -20055,7 +21294,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-ingegneria-delle-comunicazioni",
@@ -20105,7 +21347,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-matematica",
@@ -20155,7 +21400,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-scienze-motorie-e-sportive",
@@ -20205,7 +21453,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sapienza-scienze-dell-architettura",
@@ -20255,7 +21506,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sapienza"
+    "universityId": "sapienza",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-genova-statistica-matematica-e-trattamento-informatico-dei-dati",
@@ -20304,7 +21558,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-genova"
+    "universityId": "uni-genova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-palermo-ingegneria-cibernetica",
@@ -20353,7 +21610,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-palermo"
+    "universityId": "uni-palermo",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-pavia-ingegneria-civile-e-ambientale",
@@ -20402,7 +21662,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-pavia"
+    "universityId": "uni-pavia",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-siena-scienze-economiche-e-bancarie",
@@ -20451,7 +21714,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-siena"
+    "universityId": "uni-siena",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-torino-unito-economia-aziendale",
@@ -20500,7 +21766,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-torino-unito"
+    "universityId": "uni-torino-unito",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-torino-unito-economia-e-commercio",
@@ -20549,7 +21818,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-torino-unito"
+    "universityId": "uni-torino-unito",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-torino-unito-scienze-motorie-suism",
@@ -20598,7 +21870,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-torino-unito"
+    "universityId": "uni-torino-unito",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-torino-unito-statistica-per-l-economia-e-l-impresa",
@@ -20647,7 +21922,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-torino-unito"
+    "universityId": "uni-torino-unito",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-verona-scienze-delle-attivita-motorie-e-sportive",
@@ -20696,7 +21974,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-verona"
+    "universityId": "uni-verona",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-cattolica-private-scienze-motorie-economics-bachelors",
@@ -20746,7 +22027,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "universita-cattolica-private"
+    "universityId": "universita-cattolica-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-aerospace-engineering-forli",
@@ -20796,7 +22080,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-business-and-economics-clem",
@@ -20846,7 +22133,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-civil-engineering",
@@ -20896,7 +22186,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-computer-engineering-ingegneria-informatica",
@@ -20946,7 +22239,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-economics-and-finance-clef",
@@ -20994,7 +22290,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-electrical-energy-engineering",
@@ -21044,7 +22343,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-electronics-and-telecommunications-engineering",
@@ -21094,7 +22396,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-management-engineering-ingegneria-gestionale",
@@ -21144,7 +22449,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-mathematics",
@@ -21194,7 +22502,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-mechanical-engineering",
@@ -21244,7 +22555,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-scienze-delle-attivita-motorie-e-sportive",
@@ -21294,7 +22608,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-bologna-statistical-sciences",
@@ -21344,7 +22661,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-bologna"
+    "universityId": "universita-di-bologna",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-economics-and-management",
@@ -21394,7 +22714,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-aerospaziale",
@@ -21444,7 +22767,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-biomedica",
@@ -21494,7 +22820,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-civile",
@@ -21544,7 +22873,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-elettrica",
@@ -21594,7 +22926,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-elettronica",
@@ -21644,7 +22979,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-gestionale-vicenza",
@@ -21694,7 +23032,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-informatica",
@@ -21744,7 +23085,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-meccanica",
@@ -21794,7 +23138,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-meccatronica-vicenza",
@@ -21844,7 +23191,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-dell-energia",
@@ -21894,7 +23244,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-ingegneria-dell-informazione",
@@ -21944,7 +23297,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-matematica",
@@ -21994,7 +23350,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "universita-di-padova-scienze-motorie",
@@ -22044,7 +23403,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "universita-di-padova"
+    "universityId": "universita-di-padova",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "keio-university-pearl-ba-economics-sat-ib-required",
@@ -22091,7 +23453,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "keio-university"
+    "universityId": "keio-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2026-12-02"
   },
   {
     "id": "kyoto-university-global-engineering-civil-track",
@@ -22140,7 +23505,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kyoto-university"
+    "universityId": "kyoto-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "kyushu-university-iupe-civil-engineering",
@@ -22187,7 +23555,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "kyushu-university"
+    "universityId": "kyushu-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "rtu-riga-bsc-civil-engineering",
@@ -22236,7 +23607,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "rtu-riga"
+    "universityId": "rtu-riga",
+    "entryTest": null,
+    "applicationFeeShort": "165 EUR",
+    "applyBy": null
   },
   {
     "id": "university-of-liechtenstein-bachelor-business-administration",
@@ -22285,7 +23659,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "university-of-liechtenstein"
+    "universityId": "university-of-liechtenstein",
+    "entryTest": null,
+    "applicationFeeShort": "100 CHF",
+    "applyBy": "2027-03-31"
   },
   {
     "id": "ktu-kaunas-bsc-robotics",
@@ -22334,7 +23711,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "ktu-kaunas"
+    "universityId": "ktu-kaunas",
+    "entryTest": null,
+    "applicationFeeShort": "100 EUR",
+    "applyBy": "2027-06-01"
   },
   {
     "id": "vilnius-university-business-data-analytics",
@@ -22384,7 +23764,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "vilnius-university-business-and-finance",
@@ -22434,7 +23817,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "vilnius-university-economics-and-finance",
@@ -22484,7 +23870,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "vilnius-university-economics-and-investment",
@@ -22534,7 +23923,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "vilnius-university-information-systems-and-cyber-security",
@@ -22584,7 +23976,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "vilnius-university-international-business",
@@ -22634,7 +24029,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "vilnius-university-quantitative-economics",
@@ -22684,7 +24082,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "vilnius-university"
+    "universityId": "vilnius-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "erasmus-univ-rotterdam-econometrics-and-operations-research",
@@ -22733,7 +24134,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "erasmus-univ-rotterdam"
+    "universityId": "erasmus-univ-rotterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "erasmus-univ-rotterdam-ibeb-int-economics-business-economics",
@@ -22780,7 +24184,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "erasmus-univ-rotterdam"
+    "universityId": "erasmus-univ-rotterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-01-15"
   },
   {
     "id": "erasmus-univ-rotterdam-international-business-administration-iba",
@@ -22829,7 +24236,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "erasmus-univ-rotterdam"
+    "universityId": "erasmus-univ-rotterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "radboud-university-artificial-intelligence",
@@ -22876,7 +24286,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "radboud-university"
+    "universityId": "radboud-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-04-01"
   },
   {
     "id": "radboud-university-computing-science",
@@ -22925,7 +24338,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "radboud-university"
+    "universityId": "radboud-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "radboud-university-economics-and-business-economics",
@@ -22974,7 +24390,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "radboud-university"
+    "universityId": "radboud-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "radboud-university-international-business-administration",
@@ -23023,7 +24442,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "radboud-university"
+    "universityId": "radboud-university",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-delft-aerospace-engineering",
@@ -23072,7 +24494,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-delft"
+    "universityId": "tu-delft",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-delft-applied-mathematics",
@@ -23121,7 +24546,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-delft"
+    "universityId": "tu-delft",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-delft-architecture-urbanism-and-building-sciences",
@@ -23170,7 +24598,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-delft"
+    "universityId": "tu-delft",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-delft-computer-science-and-engineering",
@@ -23219,7 +24650,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-delft"
+    "universityId": "tu-delft",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-delft-electrical-engineering",
@@ -23268,7 +24702,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-delft"
+    "universityId": "tu-delft",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "tu-delft-mechanical-engineering",
@@ -23317,7 +24754,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "tu-delft"
+    "universityId": "tu-delft",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-groningen-applied-mathematics",
@@ -23366,7 +24806,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-groningen-artificial-intelligence",
@@ -23413,7 +24856,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": "2027-05-01"
   },
   {
     "id": "university-of-groningen-computing-science",
@@ -23462,7 +24908,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-groningen-econometrics-and-operations-research",
@@ -23511,7 +24960,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-groningen-economics-and-business-economics",
@@ -23560,7 +25012,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-groningen-industrial-engineering-and-management",
@@ -23609,7 +25064,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "university-of-groningen-international-business",
@@ -23658,7 +25116,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-groningen"
+    "universityId": "university-of-groningen",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "vu-amsterdam-artificial-intelligence",
@@ -23707,7 +25168,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "vu-amsterdam"
+    "universityId": "vu-amsterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "vu-amsterdam-business-analytics",
@@ -23756,7 +25220,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "vu-amsterdam"
+    "universityId": "vu-amsterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "vu-amsterdam-computer-science",
@@ -23805,7 +25272,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "vu-amsterdam"
+    "universityId": "vu-amsterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "vu-amsterdam-econometrics-and-data-science",
@@ -23854,7 +25324,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "vu-amsterdam"
+    "universityId": "vu-amsterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "vu-amsterdam-economics-and-business-economics",
@@ -23903,7 +25376,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "vu-amsterdam"
+    "universityId": "vu-amsterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "vu-amsterdam-international-business-administration",
@@ -23952,7 +25428,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "vu-amsterdam"
+    "universityId": "vu-amsterdam",
+    "entryTest": null,
+    "applicationFeeShort": "Free",
+    "applyBy": null
   },
   {
     "id": "gdansk-tech-bsc-data-engineering",
@@ -24001,7 +25480,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "gdansk-tech"
+    "universityId": "gdansk-tech",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "sgh-warsaw-english-bachelors-e-g-global-business-finance-and-governanc",
@@ -24050,7 +25532,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "sgh-warsaw"
+    "universityId": "sgh-warsaw",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "university-of-warsaw-finance-international-investment-and-accounting",
@@ -24099,7 +25584,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "university-of-warsaw"
+    "universityId": "university-of-warsaw",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "iscte-lisbon-bsc-data-science",
@@ -24148,7 +25636,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "iscte-lisbon"
+    "universityId": "iscte-lisbon",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "iscte-lisbon-economics",
@@ -24197,7 +25688,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "iscte-lisbon"
+    "universityId": "iscte-lisbon",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "iscte-lisbon-finance-and-accounting",
@@ -24246,7 +25740,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "iscte-lisbon"
+    "universityId": "iscte-lisbon",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nova-sbe-bachelor-in-economics",
@@ -24295,7 +25792,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nova-sbe"
+    "universityId": "nova-sbe",
+    "entryTest": null,
+    "applicationFeeShort": "70 EUR",
+    "applyBy": null
   },
   {
     "id": "kfupm-ai-machine-learning",
@@ -24344,7 +25844,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kfupm"
+    "universityId": "kfupm",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "kfupm-civil-engineering",
@@ -24393,7 +25896,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kfupm"
+    "universityId": "kfupm",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "kaist-aerospace-engineering",
@@ -24443,7 +25949,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-business-technology-and-management",
@@ -24493,7 +26002,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-civil-and-environmental-engineering",
@@ -24543,7 +26055,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-computing-robotics-related-undergrad",
@@ -24591,7 +26106,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-electrical-engineering",
@@ -24641,7 +26159,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-industrial-and-systems-engineering",
@@ -24691,7 +26212,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-mathematical-sciences",
@@ -24741,7 +26265,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "kaist-mechanical-engineering",
@@ -24791,7 +26318,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "kaist"
+    "universityId": "kaist",
+    "entryTest": null,
+    "applicationFeeShort": "80 USD",
+    "applyBy": "2027-01-14"
   },
   {
     "id": "ie-university-private-business-administration",
@@ -24841,7 +26371,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "ie-university-private"
+    "universityId": "ie-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ie-university-private-computer-science-artificial-intelligence",
@@ -24891,7 +26424,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "ie-university-private"
+    "universityId": "ie-university-private",
+    "entryTest": "yes",
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ie-university-private-data-business-analytics",
@@ -24941,7 +26477,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "ie-university-private"
+    "universityId": "ie-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "ie-university-private-economics",
@@ -24991,7 +26530,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "ie-university-private"
+    "universityId": "ie-university-private",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-aerospace-engineering",
@@ -25042,7 +26584,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-applied-mathematics-and-computing",
@@ -25093,7 +26638,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-business-administration",
@@ -25144,7 +26692,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-computer-science-and-engineering",
@@ -25195,7 +26746,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-data-science-and-engineering",
@@ -25246,7 +26800,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-economics",
@@ -25297,7 +26854,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-finance-and-accounting",
@@ -25348,7 +26908,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-industrial-technologies-engineering",
@@ -25399,7 +26962,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-robotics-engineering",
@@ -25449,7 +27015,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uc3m-telecommunication-technologies-engineering",
@@ -25500,7 +27069,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uc3m"
+    "universityId": "uc3m",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-architektur",
@@ -25549,7 +27121,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-bauingenieurwissenschaften",
@@ -25598,7 +27173,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-elektrotechnik-und-informationstechnologie",
@@ -25647,7 +27225,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-informatik",
@@ -25694,7 +27275,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": "yes",
+    "applicationFeeShort": "150 CHF",
+    "applyBy": null
   },
   {
     "id": "eth-zurich-maschineningenieurwissenschaften",
@@ -25743,7 +27327,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-materialwissenschaft",
@@ -25792,7 +27379,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-mathematik",
@@ -25841,7 +27431,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-raumbezogene-ingenieurwissenschaften",
@@ -25890,7 +27483,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-rechnergestutzte-wissenschaften-cse",
@@ -25939,7 +27535,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "eth-zurich-umweltingenieurwissenschaften",
@@ -25988,7 +27587,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "eth-zurich"
+    "universityId": "eth-zurich",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "usi-lugano-architecture-mendrisio",
@@ -26039,7 +27641,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "usi-lugano"
+    "universityId": "usi-lugano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "usi-lugano-economics",
@@ -26090,7 +27695,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "usi-lugano"
+    "universityId": "usi-lugano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "usi-lugano-informatics",
@@ -26140,7 +27748,10 @@
     "checkYourself": [
       "Non-EU tuition"
     ],
-    "universityId": "usi-lugano"
+    "universityId": "usi-lugano",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-basel-b-sc-business-and-economics",
@@ -26190,7 +27801,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uni-basel"
+    "universityId": "uni-basel",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "uni-bern-betriebswirtschaftslehre",
@@ -26240,7 +27854,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uni-bern"
+    "universityId": "uni-bern",
+    "entryTest": null,
+    "applicationFeeShort": "100 CHF",
+    "applyBy": "2027-04-30"
   },
   {
     "id": "uni-bern-sportwissenschaft",
@@ -26290,7 +27907,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uni-bern"
+    "universityId": "uni-bern",
+    "entryTest": null,
+    "applicationFeeShort": "100 CHF",
+    "applyBy": "2027-02-15"
   },
   {
     "id": "uni-bern-volkswirtschaftslehre",
@@ -26340,7 +27960,10 @@
       "Non-EU tuition",
       "Programme details"
     ],
-    "universityId": "uni-bern"
+    "universityId": "uni-bern",
+    "entryTest": null,
+    "applicationFeeShort": "100 CHF",
+    "applyBy": "2027-04-30"
   },
   {
     "id": "uni-st-gallen-hsg-ba-business-administration",
@@ -26389,7 +28012,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-st-gallen-hsg"
+    "universityId": "uni-st-gallen-hsg",
+    "entryTest": null,
+    "applicationFeeShort": "268 CHF",
+    "applyBy": null
   },
   {
     "id": "uni-st-gallen-hsg-ba-economics",
@@ -26438,7 +28064,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-st-gallen-hsg"
+    "universityId": "uni-st-gallen-hsg",
+    "entryTest": null,
+    "applicationFeeShort": "268 CHF",
+    "applyBy": null
   },
   {
     "id": "uni-zurich-uzh-ba-wirtschaftswissenschaften-economics-banking-finance",
@@ -26487,7 +28116,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-zurich-uzh"
+    "universityId": "uni-zurich-uzh",
+    "entryTest": null,
+    "applicationFeeShort": "150 CHF",
+    "applyBy": null
   },
   {
     "id": "uni-zurich-uzh-computerlinguistik",
@@ -26536,7 +28168,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "uni-zurich-uzh"
+    "universityId": "uni-zurich-uzh",
+    "entryTest": null,
+    "applicationFeeShort": "150 CHF",
+    "applyBy": null
   },
   {
     "id": "khalifa-university-civil-engineering",
@@ -26585,7 +28220,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "khalifa-university"
+    "universityId": "khalifa-university",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "mbzuai-bsc-artificial-intelligence-business-or-engineering-stream",
@@ -26632,7 +28270,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "mbzuai"
+    "universityId": "mbzuai",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": "2027-02-01"
   },
   {
     "id": "nyu-abu-dhabi-business-organizations-and-society",
@@ -26681,7 +28322,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nyu-abu-dhabi-civil-engineering",
@@ -26730,7 +28374,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nyu-abu-dhabi-computer-engineering",
@@ -26779,7 +28426,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nyu-abu-dhabi-computer-science",
@@ -26826,7 +28476,10 @@
     "dataset": "bachelor-atlas",
     "lastChecked": null,
     "checkYourself": [],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": "70 USD",
+    "applyBy": "2027-01-05"
   },
   {
     "id": "nyu-abu-dhabi-economics",
@@ -26875,7 +28528,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nyu-abu-dhabi-electrical-engineering",
@@ -26924,7 +28580,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nyu-abu-dhabi-mathematics",
@@ -26973,7 +28632,10 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   },
   {
     "id": "nyu-abu-dhabi-mechanical-engineering",
@@ -27022,6 +28684,9 @@
     "checkYourself": [
       "Programme details"
     ],
-    "universityId": "nyu-abu-dhabi"
+    "universityId": "nyu-abu-dhabi",
+    "entryTest": null,
+    "applicationFeeShort": null,
+    "applyBy": null
   }
 ]

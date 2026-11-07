@@ -75,6 +75,10 @@ export type Program = {
   deadlineCycle?: string | null;
   scholarships?: string | null;
   feeRule?: string | null;
+  // Clear fields for every programme; null means not published or not known yet.
+  entryTest?: "yes" | "no" | null;
+  applicationFeeShort?: string | null;
+  applyBy?: string | null;
   type?: string;
   fixes?: string[] | null;
 };

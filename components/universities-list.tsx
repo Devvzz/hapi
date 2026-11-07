@@ -4,7 +4,8 @@ import { useMemo, useState } from "react";
 import { costs, FOCUS_COUNTRIES, programs } from "@/lib/data";
 import { checkProgram, type Eligibility } from "@/lib/eligibility";
 import { formatPrice } from "@/lib/price";
-import { EMPTY_LOG, EMPTY_PLAN, STORAGE, logEntry } from "@/lib/profile";
+import { formatDate } from "@/lib/dates";
+import { EMPTY_LOG, EMPTY_MARKS, EMPTY_PLAN, STORAGE, logEntry, type UniMark } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
 import type { PlanRow, Program } from "@/lib/types";
@@ -72,7 +73,8 @@ function Universities({ country }: { country: string }) {
   const [profile] = useProfile();
   const [plan, setPlan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [, setLog] = useStored(STORAGE.log, EMPTY_LOG);
-  const [status, setStatus] = useState<"all" | "ok" | "warn">("all");
+  const [marks, setMarks] = useStored(STORAGE.uniMarks, EMPTY_MARKS);
+  const [status, setStatus] = useState<"all" | "ok" | "warn" | "mine">("all");
   const [sort, setSort] = useState<"fit" | "price" | "name">("fit");
   const [withScholarships, setWithScholarships] = useState(false);
   const [query, setQuery] = useState("");
@@ -89,6 +91,8 @@ function Universities({ country }: { country: string }) {
       const e = checkProgram(p, profile);
       if (status === "ok" && e.status !== "ok") continue;
       if (status === "warn" && e.status === "no") continue;
+      if (status === "mine" && marks[p.id] !== "apply") continue;
+      if (status !== "mine" && marks[p.id] === "no") continue;
       const list = groups.get(p.universityId) ?? [];
       list.push({ p, e });
       groups.set(p.universityId, list);
@@ -116,7 +120,17 @@ function Universities({ country }: { country: string }) {
       if (sort === "name") return a.name.localeCompare(b.name);
       return RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
     });
-  }, [profile, country, status, sort, query, withScholarships]);
+  }, [profile, country, status, sort, query, withScholarships, marks]);
+
+  function mark(p: Program, value: UniMark) {
+    const next = { ...marks };
+    if (next[p.id] === value) delete next[p.id];
+    else next[p.id] = value;
+    setMarks(next);
+    if (next[p.id]) setLog((l) => [logEntry(value === "apply" ? "Want to apply" : "Not interested", `${p.university}: ${p.program ?? ""}`), ...l]);
+  }
+  const hiddenCount = Object.values(marks).filter((m) => m === "no").length;
+  const myCount = Object.values(marks).filter((m) => m === "apply").length;
 
   async function explain(p: Program, e: Eligibility) {
     setExplained((x) => ({ ...x, [p.id]: "loading" }));
@@ -157,6 +171,7 @@ function Universities({ country }: { country: string }) {
           <option value="all">All programmes</option>
           <option value="ok">✅ Only where I can apply</option>
           <option value="warn">✅ and ⚠️ (hide ❌)</option>
+          <option value="mine">⭐ My list: want to apply ({myCount})</option>
         </select>
         <select className="rounded border border-slate-300 px-2 py-1" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
           <option value="fit">Sort: best fit</option>
@@ -170,6 +185,7 @@ function Universities({ country }: { country: string }) {
         </label>
         <span className="self-center text-slate-600">
           {unis.length} universities · {totalProgrammes} programmes
+          {hiddenCount > 0 && status !== "mine" ? ` · ${hiddenCount} marked not interested are hidden` : ""}
         </span>
       </div>
 
@@ -186,6 +202,7 @@ function Universities({ country }: { country: string }) {
                   </h2>
                   <p className="text-sm text-slate-600">
                     {[u.city, u.country, u.type].filter(Boolean).join(" · ")} · {okCount} of {u.rows.length} programmes open to you
+                    {u.rows.some((r) => marks[r.p.id] === "apply") ? ` · ⭐ ${u.rows.filter((r) => marks[r.p.id] === "apply").length} on your list` : ""}
                   </p>
                 </div>
                 <div className="text-right text-sm">
@@ -228,6 +245,20 @@ function Universities({ country }: { country: string }) {
                             {!e.price.confirmed && <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800">verify fee</span>}
                           </div>
                         </div>
+                        <dl className="mt-2 grid grid-cols-3 gap-2 rounded bg-slate-50 p-2 text-xs">
+                          <div>
+                            <dt className="text-slate-500">Entry test</dt>
+                            <dd className="font-medium">{p.entryTest === "yes" ? "Yes" : p.entryTest === "no" ? "No" : "—"}</dd>
+                          </div>
+                          <div>
+                            <dt className="text-slate-500">Application fee</dt>
+                            <dd className="font-medium">{p.applicationFeeShort ?? "—"}</dd>
+                          </div>
+                          <div>
+                            <dt className="text-slate-500">Apply by</dt>
+                            <dd className="font-medium">{p.applyBy ? formatDate(p.applyBy) : "—"}</dd>
+                          </div>
+                        </dl>
                         <ul className="mt-2 list-inside list-disc text-sm text-slate-700">
                           {e.reasons.map((r) => (
                             <li key={r}>{r}</li>
@@ -257,6 +288,12 @@ function Universities({ country }: { country: string }) {
                         )}
                         {ex === "error" && <p className="mt-2 text-sm text-rose-700">AI is busy. The reasons above still apply.</p>}
                         <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
+                          <button onClick={() => mark(p, "apply")} className={`rounded px-2 py-1 ${marks[p.id] === "apply" ? "bg-amber-400 text-slate-900" : "border border-amber-500 text-amber-800"}`}>
+                            {marks[p.id] === "apply" ? "⭐ Want to apply" : "☆ Want to apply"}
+                          </button>
+                          <button onClick={() => mark(p, "no")} className="rounded border border-slate-300 px-2 py-1 text-slate-600">
+                            {marks[p.id] === "no" ? "Not interested ✓" : "Not interested"}
+                          </button>
                           <button onClick={() => explain(p, e)} disabled={ex === "loading"} className="rounded border border-teal-700 px-2 py-1 text-teal-800 disabled:opacity-50">
                             {ex === "loading" ? "Explaining…" : "Explain in plain English"}
                           </button>
