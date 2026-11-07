@@ -20,6 +20,7 @@ export const STORAGE = {
   saved: "hapi.saved",
   log: "hapi.activity",
   premium: "hapi.premium",
+  coach: "hapi.coach",
 } as const;
 
 export type PremiumState = { subscriptionId: string | null; status: string | null };

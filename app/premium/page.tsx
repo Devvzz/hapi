@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Coach } from "@/components/coach";
 import { PremiumPanel } from "@/components/premium-panel";
 
 export default function PremiumPage() {
@@ -9,7 +10,9 @@ export default function PremiumPage() {
         <p className="text-sm text-slate-600">A monthly PayPal subscription unlocks the weekly AI coach.</p>
       </header>
       <Suspense fallback={<p className="text-sm text-slate-500">Loading…</p>}>
-        <PremiumPanel />
+        <PremiumPanel>
+          <Coach />
+        </PremiumPanel>
       </Suspense>
     </div>
   );

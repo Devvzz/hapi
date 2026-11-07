@@ -3,19 +3,12 @@ import { z } from "zod";
 import { RULES, withModel } from "@/lib/ai";
 import { opportunities } from "@/lib/data";
 import { matchOpportunity } from "@/lib/match";
+import { profileSchema } from "@/lib/schemas";
 import type { Profile } from "@/lib/types";
 
 const bodySchema = z.object({
   ids: z.array(z.string()).max(8),
-  profile: z.object({
-    nationality: z.string(),
-    age: z.number().nullable(),
-    student: z.boolean(),
-    schoolType: z.string(),
-    languages: z.array(z.object({ language: z.string(), level: z.string() })),
-    budgetPerYear: z.number().nullable(),
-    interests: z.array(z.string()),
-  }),
+  profile: profileSchema,
 });
 
 const outputSchema = z.object({
