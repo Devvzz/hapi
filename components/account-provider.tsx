@@ -5,6 +5,7 @@ import type { Session } from "@supabase/supabase-js";
 import { DEMO_KEY } from "@/lib/demo";
 import { STORAGE } from "@/lib/profile";
 import { onStoredChange, writeRaw } from "@/lib/storage";
+import { upsertProfile } from "@/lib/social";
 import { accountsEnabled, supabase } from "@/lib/supabase";
 
 // Everything a student saves in Hapi; synced as one private row per account (row-level security in Supabase).
@@ -18,6 +19,7 @@ type Account = {
   enabled: boolean;
   ready: boolean;
   email: string | null;
+  userId: string | null;
   status: SyncStatus;
   signUp: (name: string, email: string, password: string) => Promise<Result>;
   signIn: (email: string, password: string) => Promise<Result>;
@@ -44,6 +46,17 @@ function snapshot(): Record<string, string | null> {
     }
   }
   return out;
+}
+
+// The public name shown on reviews and comments: the first name from Hapi, or the one given at sign-up.
+function publicName(session: Session | null): string {
+  try {
+    const u = JSON.parse(window.localStorage.getItem(STORAGE.user) ?? "null") as { name?: string } | null;
+    if (u?.name) return u.name;
+  } catch {
+    // ignore
+  }
+  return (session?.user.user_metadata?.name as string | undefined) ?? "";
 }
 
 function friendly(message: string): string {
@@ -95,14 +108,18 @@ export function AccountProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const sb = supabase();
     if (!sb) return;
+    const afterSignIn = async (s: Session) => {
+      await pull(s.user.id);
+      await upsertProfile(s.user.id, publicName(s));
+    };
     sb.auth.getSession().then(({ data }) => {
       setSession(data.session);
       setReady(true);
-      if (data.session) void pull(data.session.user.id);
+      if (data.session) void afterSignIn(data.session);
     });
     const { data: sub } = sb.auth.onAuthStateChange((event, s) => {
       setSession(s);
-      if (event === "SIGNED_IN" && s) void pull(s.user.id);
+      if (event === "SIGNED_IN" && s) void afterSignIn(s);
     });
     return () => sub.subscription.unsubscribe();
   }, [pull]);
@@ -112,6 +129,7 @@ export function AccountProvider({ children }: { children: ReactNode }) {
     if (!userId) return;
     return onStoredChange((key) => {
       if (!(SYNC_KEYS as string[]).includes(key) || inDemo()) return;
+      if (key === STORAGE.user) void upsertProfile(userId, publicName(null));
       if (timer.current) window.clearTimeout(timer.current);
       timer.current = window.setTimeout(() => void push(userId), 1200);
     });
@@ -145,7 +163,7 @@ export function AccountProvider({ children }: { children: ReactNode }) {
   }, [userId, push]);
 
   return (
-    <AccountContext.Provider value={{ enabled: accountsEnabled, ready, email: session?.user.email ?? null, status, signUp, signIn, signOut }}>
+    <AccountContext.Provider value={{ enabled: accountsEnabled, ready, email: session?.user.email ?? null, userId, status, signUp, signIn, signOut }}>
       {children}
     </AccountContext.Provider>
   );

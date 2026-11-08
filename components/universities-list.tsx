@@ -190,11 +190,11 @@ function Universities({ country }: { country: string }) {
       </div>
 
       <ul className="space-y-3">
-        {unis.slice(0, limit).map((u) => {
+        {unis.slice(0, limit).map((u, i) => {
           const okCount = u.rows.filter((r) => r.e.status === "ok").length;
           const isOpen = open[u.id] ?? false;
           return (
-            <li key={u.id} className="rounded-xl border border-slate-200 bg-panel shadow-sm">
+            <li key={u.id} className="welcome-in rounded-2xl border border-white/10 bg-panel" style={{ animationDelay: `${(i % 15) * 35}ms` }}>
               <button onClick={() => setOpen((o) => ({ ...o, [u.id]: !isOpen }))} className="flex w-full flex-wrap items-start justify-between gap-3 p-4 text-left">
                 <div>
                   <h2 className="font-semibold">

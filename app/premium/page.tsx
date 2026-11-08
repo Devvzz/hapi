@@ -1,3 +1,4 @@
+import { PageHero } from "@/components/ui";
 import { Suspense } from "react";
 import { Coach } from "@/components/coach";
 import { PremiumPanel } from "@/components/premium-panel";
@@ -5,10 +6,7 @@ import { PremiumPanel } from "@/components/premium-panel";
 export default function PremiumPage() {
   return (
     <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold">Premium</h1>
-        <p className="text-sm text-slate-600">A monthly PayPal subscription unlocks the weekly AI coach.</p>
-      </header>
+      <PageHero kicker="Hapi Premium" title="Go" highlight="further" subtitle="A weekly AI coach and a Europass CV builder for €2.99 a month, paid with PayPal. The free parts of Hapi stay free." />
       <Suspense fallback={<p className="text-sm text-slate-500">Loading…</p>}>
         <PremiumPanel>
           <Coach />

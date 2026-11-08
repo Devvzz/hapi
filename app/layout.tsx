@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Suspense } from "react";
 import { AccountProvider } from "@/components/account-provider";
+import { Ambient } from "@/components/ambient";
 import { DemoBanner } from "@/components/demo-banner";
 import { HapiMark } from "@/components/logo";
 import { Nav } from "@/components/nav";
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col text-slate-900 print:bg-white">
+        <Ambient />
         <AccountProvider>
         <Suspense fallback={null}>
           <DemoBanner />

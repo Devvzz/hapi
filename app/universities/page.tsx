@@ -1,15 +1,11 @@
+import { PageHero } from "@/components/ui";
 import { ProfileGate } from "@/components/profile-gate";
 import { UniversitiesList } from "@/components/universities-list";
 
 export default function UniversitiesPage() {
   return (
     <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold">Universities</h1>
-        <p className="text-sm text-slate-600">
-          Grouped by university, with the fee you would pay. Rules check language and budget first; the AI only explains the result.
-        </p>
-      </header>
+      <PageHero kicker="Study abroad" title="Universities" highlight="that fit you" subtitle="Every programme with the fee you would pay, entry test, application fee and dates. Rules check language and budget first; the AI only explains." />
       <ProfileGate what="universities">
         <UniversitiesList />
       </ProfileGate>

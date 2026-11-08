@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 // A slowly drifting network of points in violet and cyan; lines appear between close points and near the cursor.
-export function Starfield() {
+export function Starfield({ density = 14000, className = "absolute inset-0 h-full w-full" }: { density?: number; className?: string }) {
   const ref = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function Starfield() {
       canvas!.width = w * dpr;
       canvas!.height = h * dpr;
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const count = Math.round(Math.min(110, (w * h) / 14000));
+      const count = Math.round(Math.min(110, (w * h) / density));
       pts = Array.from({ length: count }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -110,7 +110,7 @@ export function Starfield() {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerleave", onLeave);
     };
-  }, []);
+  }, [density]);
 
-  return <canvas ref={ref} className="absolute inset-0 h-full w-full" aria-hidden="true" />;
+  return <canvas ref={ref} className={className} aria-hidden="true" />;
 }

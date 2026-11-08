@@ -54,6 +54,11 @@ export function AccountMenu() {
           <Link href="/profile" onClick={() => setOpen(false)} className="block rounded-lg px-2 py-1.5 text-slate-700 hover:bg-white/5">
             My profile
           </Link>
+          {account.userId && (
+            <Link href={`/people/${account.userId}`} onClick={() => setOpen(false)} className="block rounded-lg px-2 py-1.5 text-slate-700 hover:bg-white/5">
+              My public page: likes and reviews
+            </Link>
+          )}
           {account.enabled && !account.email && (
             <div className="space-y-2 rounded-xl border border-violet-400/30 bg-violet-500/10 p-3">
               <p className="text-xs text-slate-700">Create an account to keep your data and use it on any device.</p>

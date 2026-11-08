@@ -19,6 +19,7 @@ PayPal runs in **sandbox mode**. No real money moves.
 | Cost plan | An editable AG Grid table with totals per currency and a sponsored progress bar. A paid opportunity, or a university's one-off fees, can be added with one click. |
 | Family sponsorship | The student describes the request in their own words. Gemini drafts a PayPal invoice, and an approval card shows exactly what will be sent. Only the Approve button sends it. The status (sent, paid) can be refreshed. |
 | Hapi Premium | A €2.99/month PayPal subscription. The server checks that the subscription is ACTIVE before the coach or the CV AI answers. |
+| Community | With an account, students can like opportunities, rate them, write reviews by the year they took part, and ask or answer questions. Each student has a public page with their first name, likes and reviews. Everyone can read; only the author can change their own posts (row-level security in Supabase). |
 | Weekly coach | Up to 5 steps for this week, built only from checked opportunities that the student is eligible for, their saved items and their unpaid costs. Every step links to its official page. |
 | Europass CV | A CV builder in the structure of the EU's Europass CV: personal information, work experience, education with EQF levels, languages on the CEFR self-assessment grid, digital skills and more. "Improve with AI" rewrites the student's own words without adding facts, and asks what could be added. Print or save as PDF. Premium only, checked on the server. |
 | What changed this week | Every Saturday a Vercel Cron job re-reads the official page of a few open opportunities and reports changed dates, closed rounds and new editions. |
@@ -92,7 +93,7 @@ Fill in `.env.local`:
 | `CRON_SECRET` | for the job | Protects `/api/research`; Vercel sends it automatically |
 | `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | no | Stores the latest Saturday run; without them the app shows the saved example run |
 
-**Accounts (optional):** create a free [Supabase](https://supabase.com) project, turn off "Confirm email" under Authentication, run `supabase/setup.sql` in the SQL Editor, and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Without them, Hapi saves everything in the browser only.
+**Accounts (optional):** create a free [Supabase](https://supabase.com) project, turn off "Confirm email" under Authentication, run `supabase/setup.sql` and then `supabase/community.sql` in the SQL Editor, and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Without them, Hapi saves everything in the browser only.
 
 To approve a Premium subscription in the sandbox you need a sandbox **personal** (buyer) account from the PayPal Developer dashboard. Demo mode unlocks the coach without one.
 

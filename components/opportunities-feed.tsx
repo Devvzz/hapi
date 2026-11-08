@@ -8,8 +8,10 @@ import { compareMatches, matchOpportunity, type Match, type SortKey } from "@/li
 import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
 import { useNow, useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
+import { useStats } from "@/lib/social";
 import type { Opportunity, OpportunityType } from "@/lib/types";
 import { FindMore } from "./find-more";
+import { CalendarIcon, HeartIcon, Stars } from "./ui";
 
 const TYPES: OpportunityType[] = [
   "hackathon", "competition", "certificate", "course", "summer-school", "internship", "job",
@@ -57,6 +59,7 @@ export function OpportunitiesFeed() {
   const [why, setWhy] = useState<Record<string, string>>({});
   const [whyState, setWhyState] = useState<"idle" | "loading" | "error">("idle");
   const now = useNow();
+  const stats = useStats();
 
   // Only what the student can surely apply to: eligible, open and within budget. The rest stays hidden unless asked for.
   const { ranked, hidden } = useMemo(() => {
@@ -172,16 +175,20 @@ export function OpportunitiesFeed() {
       </div>
 
       <ul className="grid gap-4 md:grid-cols-2">
-        {visible.map(({ o, m }) => {
+        {visible.map(({ o, m }, i) => {
           const isSaved = saved.includes(o.id);
           const costAdded = plan.some((r) => r.id === `opp-${o.id}`);
           const travel = travelLabel(o);
           return (
-            <li key={o.id} className="flex flex-col gap-2 rounded-xl border border-slate-200 bg-panel p-4 shadow-sm">
+            <li key={o.id} className="welcome-in glow-card flex flex-col gap-2 rounded-2xl border border-white/10 bg-panel p-4" style={{ animationDelay: `${(i % 12) * 35}ms` }}>
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <p className="text-xs uppercase tracking-wide text-slate-500">{o.type} · {o.provider}</p>
-                  <h2 className="font-semibold">{o.title}</h2>
+                  <h2 className="font-semibold">
+                    <Link href={`/opportunities/${o.id}`} className="hover:text-cyan-200">
+                      {o.title}
+                    </Link>
+                  </h2>
                 </div>
                 <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs ${VERDICT_STYLE[m.verdict]}`}>{VERDICT_TEXT[m.verdict]} · {m.score}</span>
               </div>
@@ -203,13 +210,24 @@ export function OpportunitiesFeed() {
               {o.note && <p className="text-xs text-slate-500">{o.note}</p>}
               <div className="mt-auto flex flex-wrap items-center gap-2 pt-2 text-sm">
                 <button onClick={() => toggleSaved(o)} className="rounded border border-teal-700 px-2 py-1 text-teal-800">
-                  {isSaved ? "📅 In calendar ✓" : "📅 Add to calendar"}
+                  <span className="inline-flex items-center gap-1.5">
+                    <CalendarIcon size={14} /> {isSaved ? "In calendar ✓" : "Add to calendar"}
+                  </span>
                 </button>
                 {o.price && (o.costType === "paid" || o.costType === "discount") && (
                   <button onClick={() => addCost(o)} disabled={costAdded} className="rounded bg-teal-700 px-2 py-1 text-white disabled:opacity-50">
                     {costAdded ? "Cost in plan" : "Add cost to my plan"}
                   </button>
                 )}
+                <Link href={`/opportunities/${o.id}`} className="inline-flex items-center gap-2 rounded border border-white/15 px-2 py-1 text-xs text-slate-700 hover:border-violet-400/60">
+                  <HeartIcon size={13} className="text-rose-700" /> {stats.get(o.id)?.likes ?? 0}
+                  {stats.get(o.id)?.reviews ? (
+                    <>
+                      <Stars value={stats.get(o.id)!.avg_rating ?? 0} size={12} /> {stats.get(o.id)!.avg_rating}
+                    </>
+                  ) : null}
+                  <span className="text-violet-300">Reviews &amp; details →</span>
+                </Link>
                 <a href={o.sourceUrl} target="_blank" rel="noopener noreferrer" className="ml-auto text-xs text-teal-700 underline">
                   Source · checked {o.lastChecked}
                 </a>
