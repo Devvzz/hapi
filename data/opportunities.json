@@ -573,7 +573,7 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": null,
+    "eventDates": "2027-03-17 to 2027-03-19",
     "resultsDate": null,
     "tags": [
       "finance",
@@ -581,7 +581,7 @@
       "student-led"
     ],
     "sourceUrl": "https://www.startglobal.org/start-hack",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Partial travel refund was offered for the 2025 edition per its old FAQ, which is now offline. Not confirmed for 2027. Applications not dated on the page. Check yourself. Cost: check yourself."
   },
   {
@@ -719,7 +719,7 @@
       ]
     },
     "applyOpens": null,
-    "deadline": null,
+    "deadline": "2027-02-28",
     "eventDates": null,
     "resultsDate": null,
     "tags": [
@@ -727,7 +727,7 @@
       "ai"
     ],
     "sourceUrl": "https://imaginecup.microsoft.com/en-us",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Listed as coming soon. Dates and rules not published when checked. Cost: check yourself."
   },
   {
@@ -1061,7 +1061,7 @@
     "costType": "free",
     "price": null,
     "discountNote": "Paid: 94 CHF per day allowance plus health insurance.",
-    "travelPaid": null,
+    "travelPaid": "partial",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -1082,7 +1082,7 @@
       "paid"
     ],
     "sourceUrl": "https://careers.cern/programmes/summer-studentship/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Needs 6 completed university semesters. Check the Member State rule on the page."
   },
   {
@@ -1136,7 +1136,7 @@
     "provider": "IAESTE",
     "mode": "onsite",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "Paid internships, per IAESTE.",
     "travelPaid": null,
@@ -1167,7 +1167,7 @@
       "abroad"
     ],
     "sourceUrl": "https://iaeste.org/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "The site lists Albania, showing 0 internships when checked. Cost: check yourself."
   },
   {
@@ -1388,14 +1388,14 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": null,
+    "eventDates": "2027-06-18 to 2027-06-19",
     "resultsDate": null,
     "tags": [
       "politics",
       "networking"
     ],
     "sourceUrl": "https://european-youth-event.europarl.europa.eu/en",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Groups can apply for a financial contribution by 13 Nov 2026. Event dates not captured."
   },
   {
@@ -1405,10 +1405,10 @@
     "provider": "European Forum Alpbach",
     "mode": "onsite",
     "location": "Alpbach, Austria",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "About 350 scholarships a year for first-time participants.",
-    "travelPaid": null,
+    "travelPaid": "none",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -1434,7 +1434,7 @@
       "networking"
     ],
     "sourceUrl": "https://www.alpbach.org/blog/scholarship-programme",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Dates from alpbach.org. Scholarship page linked from the site; details for 2027 not confirmed. Cost: check yourself."
   },
   {
@@ -1841,7 +1841,7 @@
     "provider": "Council of Europe",
     "mode": "onsite",
     "location": "Strasbourg, France",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "full",
@@ -1872,7 +1872,7 @@
       "travel"
     ],
     "sourceUrl": "https://democracyhackathon.coe.int/day-1/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "2026 edition, past. Travel and accommodation covered for selected teams. 2027 edition and Albanian eligibility not confirmed. Check yourself. Cost: check yourself."
   },
   {
@@ -2491,10 +2491,10 @@
     "provider": "CERN",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -2514,7 +2514,7 @@
       }
     },
     "applyOpens": null,
-    "deadline": null,
+    "deadline": "2027-03-12",
     "eventDates": null,
     "resultsDate": null,
     "tags": [
@@ -2523,7 +2523,7 @@
       "cern"
     ],
     "sourceUrl": "https://beamlineforschools.cern/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Teams of school students propose an experiment. Proposals for 2027 are open; deadline not captured. All eligible teams get a certificate. Cost: check yourself."
   },
   {
@@ -2634,7 +2634,7 @@
     "provider": "European Institute of Innovation and Technology",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -2694,7 +2694,7 @@
       "europe"
     ],
     "sourceUrl": "https://eitjumpstarter.eu/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "2026 deadline was 8 May 2026. Albania listed as eligible in 2025 and 2026, from secondary sources. 2027 edition not confirmed. Cost: check yourself."
   },
   {
@@ -2831,8 +2831,8 @@
       ]
     },
     "applyOpens": null,
-    "deadline": null,
-    "eventDates": null,
+    "deadline": "2026-12-31",
+    "eventDates": "2026-11-17 to 2027-06",
     "resultsDate": null,
     "tags": [
       "networking",
@@ -2840,7 +2840,7 @@
       "university"
     ],
     "sourceUrl": "https://www.huawei.com/uz/news/2026/huawei-ict-competition-2026-2027-meca-registration-launch",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Registration deadlines differ by region and conflict between sources. Albania registration not confirmed. Check yourself. Cost: check yourself."
   },
   {
@@ -2850,7 +2850,7 @@
     "provider": "GitHub",
     "mode": "online",
     "location": null,
-    "costType": "discount",
+    "costType": "free",
     "price": {
       "amount": 99,
       "currency": "USD"
@@ -3103,7 +3103,7 @@
     "provider": "UWC Albania",
     "mode": "onsite",
     "location": "UWC schools worldwide",
-    "costType": null,
+    "costType": "discount",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -3138,7 +3138,7 @@
       "full-scholarship"
     ],
     "sourceUrl": "https://apply.uwc.org/prog/uwc_albania_application_2027-2029/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Ages 16 or 17 on 1 Sept 2027. At least one full scholarship a year plus partial ones. Cost: check yourself."
   },
   {
@@ -3277,7 +3277,7 @@
       "balkans"
     ],
     "sourceUrl": "https://www.visegradfund.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Master's and post-master's. Sources conflict on the 2027 deadline (15 Apr or 31 May 2027) and on eligibility. Check yourself. Cost: check yourself."
   },
   {
@@ -3314,7 +3314,7 @@
       }
     },
     "applyOpens": null,
-    "deadline": "2027-01-08",
+    "deadline": "2027-01-06",
     "eventDates": null,
     "resultsDate": null,
     "tags": [
@@ -3441,10 +3441,10 @@
     "provider": "CERN",
     "mode": "onsite",
     "location": "Geneva, Switzerland",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "partial",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -3476,7 +3476,7 @@
       "cern"
     ],
     "sourceUrl": "https://openlab.cern/faqs-summer-student-programme/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "For bachelor's and master's students in computer science, maths, engineering or physics. 2026 deadline was 26 Jan 2026. 2027 dates not published. Cost: check yourself."
   },
   {
@@ -3510,7 +3510,7 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": null,
+    "eventDates": "2027-03 to 2027-07",
     "resultsDate": null,
     "tags": [
       "eu",
@@ -3518,7 +3518,7 @@
       "graduates"
     ],
     "sourceUrl": "https://commission.europa.eu/news-and-media/news/become-european-commission-trainee-applications-are-now-open-2026-07-22_en",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Needs a bachelor's degree. Limited places for non-EU nationals in specific departments; Albania not confirmed. March 2027 session closed 4 Sept 2026."
   },
   {
@@ -3698,7 +3698,7 @@
       "levels": null
     },
     "applyOpens": null,
-    "deadline": null,
+    "deadline": "2027-01-18",
     "eventDates": "B2/C1: 2027-04-08, 2027-06-10, 2027-12-02",
     "resultsDate": null,
     "tags": [
@@ -3707,7 +3707,7 @@
       "study-in-italy"
     ],
     "sourceUrl": "https://cils.unistrasi.it/1/213/428/Le_date_degli_esami_2027.htm",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Registration deadlines: 8 Mar, 1 May and 23 Oct 2027. The 8 Apr C1 session is for medical trainees. C2 dates not captured. Price: check yourself."
   },
   {
@@ -3733,7 +3733,7 @@
       "levels": null
     },
     "applyOpens": null,
-    "deadline": null,
+    "deadline": "2027-02-09",
     "eventDates": "2027-06-11 and 2027-11-16",
     "resultsDate": null,
     "tags": [
@@ -3742,7 +3742,7 @@
       "study-in-italy"
     ],
     "sourceUrl": "https://cvcl.unistrapg.it/notizia/calendario-celi-e-dils-pg-2027-000",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Register by 11 May or 16 Oct 2027."
   },
   {
@@ -3965,7 +3965,7 @@
       "levels": null
     },
     "applyOpens": "2026-11-18",
-    "deadline": null,
+    "deadline": "2027-02-10",
     "eventDates": "C1: 2027-04-02, 2027-05-22, 2027-07-09, 2027-11-13; C2: 2027-05-22, 2027-11-13",
     "resultsDate": null,
     "tags": [
@@ -3973,7 +3973,7 @@
       "language-test"
     ],
     "sourceUrl": "https://examenes.cervantes.es/es/dele/examenes/c1",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Registration closes about 6 to 8 weeks before each date. Price by centre. Price: check yourself."
   },
   {
@@ -4182,7 +4182,7 @@
     "provider": "Hugging Face",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "Hugging Face says certification is completely free.",
     "travelPaid": "n/a",
@@ -4203,7 +4203,7 @@
       "agents"
     ],
     "sourceUrl": "https://huggingface.co/learn/agents-course/unit0/introduction",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Two certificate levels; no deadline. Cost: check yourself."
   },
   {
@@ -4252,7 +4252,7 @@
     "provider": "University of Padova",
     "mode": "onsite",
     "location": "Padova, Italy",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "EUR 8,000 a year plus tuition waiver; up to 76 awards.",
     "travelPaid": null,
@@ -4288,7 +4288,7 @@
       "english-taught"
     ],
     "sourceUrl": "https://www.unipd.it/en/padua-excellence",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "For non-Italian applicants to English-taught degrees, not resident in Italy. Mostly awarded from Call One (15 Sept to 15 Nov 2026). Calls published Nov 2026. Cost: check yourself."
   },
   {
