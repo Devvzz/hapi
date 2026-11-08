@@ -9,6 +9,10 @@ create table if not exists public.user_data (
 
 alter table public.user_data enable row level security;
 
+-- Only signed-in users may reach the table at all; the policies below limit them to their own row.
+revoke all on public.user_data from anon;
+grant select, insert, update, delete on public.user_data to authenticated;
+
 -- Each person can only see and change their own row.
 drop policy if exists "read own data" on public.user_data;
 create policy "read own data" on public.user_data for select to authenticated using ((select auth.uid()) = user_id);
