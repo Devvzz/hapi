@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Suspense } from "react";
+import { AccountProvider } from "@/components/account-provider";
 import { DemoBanner } from "@/components/demo-banner";
 import { HapiMark } from "@/components/logo";
 import { Nav } from "@/components/nav";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col text-slate-900 print:bg-white">
+        <AccountProvider>
         <Suspense fallback={null}>
           <DemoBanner />
         </Suspense>
@@ -37,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <span>Checked data with source links · &quot;check yourself&quot; means not confirmed · PayPal in sandbox mode, no real money moves</span>
           </div>
         </footer>
+        </AccountProvider>
       </body>
     </html>
   );

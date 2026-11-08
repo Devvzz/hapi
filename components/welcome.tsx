@@ -8,6 +8,8 @@ import { Starfield } from "./starfield";
 import { DEMO_KEY } from "@/lib/demo";
 import { useStored } from "@/lib/storage";
 import { useUser, type HapiUser } from "@/lib/user";
+import { useAccount } from "./account-provider";
+import { AuthForm } from "./auth-form";
 
 const noop = () => () => {};
 const GOALS: { value: NonNullable<HapiUser["goal"]>; title: string; text: string }[] = [
@@ -23,25 +25,38 @@ export function Welcome() {
   const [demo] = useStored(DEMO_KEY, false);
   const path = usePathname();
   const router = useRouter();
-  const [step, setStep] = useState<0 | 1>(0);
+  const account = useAccount();
+  const [step, setStep] = useState<"name" | "goal" | "account" | "login">("name");
   const [name, setName] = useState("");
+  const [goal, setGoal] = useState<NonNullable<HapiUser["goal"]>>("both");
+  const [stay, setStay] = useState(false);
   const [leaving, setLeaving] = useState(false);
 
-  if (!mounted || user.name || demo || path.startsWith("/api")) return null;
+  if (!mounted || (user.name && !stay) || demo || path.startsWith("/api")) return null;
   if (typeof window !== "undefined" && new URLSearchParams(window.location.search).has("demo")) return null;
 
   const clean = name.trim().replace(/\s+/g, " ").slice(0, 40);
 
   function next(e: FormEvent) {
     e.preventDefault();
-    if (clean.length >= 2) setStep(1);
+    if (clean.length >= 2) setStep("goal");
   }
 
-  function finish(goal: NonNullable<HapiUser["goal"]>) {
+  function pickGoal(g: NonNullable<HapiUser["goal"]>) {
+    setGoal(g);
+    if (account.enabled) {
+      setStay(true);
+      setStep("account");
+    } else finish(g);
+  }
+
+  // Close the welcome screen; a new student goes on to the profile, a returning one to the home page.
+  function finish(g: NonNullable<HapiUser["goal"]> | null) {
     setLeaving(true);
     window.setTimeout(() => {
-      setUser({ name: clean, goal, createdAt: new Date().toISOString() });
-      router.push("/profile");
+      if (g) setUser({ name: clean, goal: g, createdAt: user.createdAt ?? new Date().toISOString() });
+      setStay(false);
+      router.push(g ? "/profile" : "/");
     }, 450);
   }
 
@@ -57,7 +72,7 @@ export function Welcome() {
             <HapiMark size={64} />
           </div>
 
-          {step === 0 ? (
+          {step === "name" ? (
             <form onSubmit={next} key="name" className="space-y-6">
               <div className="welcome-in space-y-2" style={{ animationDelay: "120ms" }}>
                 <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">Built by a student, for students</p>
@@ -80,13 +95,63 @@ export function Welcome() {
                   Continue
                 </button>
               </div>
+              {account.enabled && (
+                <p className="welcome-in text-sm text-slate-600" style={{ animationDelay: "330ms" }}>
+                  Already have an account?{" "}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setStay(true);
+                      setStep("login");
+                    }}
+                    className="font-medium text-violet-300 hover:text-cyan-200"
+                  >
+                    Log in
+                  </button>
+                </p>
+              )}
               <p className="welcome-in text-xs text-slate-500" style={{ animationDelay: "400ms" }}>
-                Saved only in this browser. No password, no email.{" "}
+                {account.enabled ? "You can also continue without an account." : "Saved only in this browser. No password, no email."}{" "}
                 <Link href="/?demo=1" className="text-violet-300 underline-offset-2 hover:underline">
                   Or try it with a sample student
                 </Link>
               </p>
             </form>
+          ) : step === "account" || step === "login" ? (
+            <div key={step} className="welcome-in space-y-5">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-extrabold tracking-tight">
+                  {step === "login" ? (
+                    <>
+                      Welcome <span className="text-gradient">back</span>
+                    </>
+                  ) : (
+                    <>
+                      Save your <span className="text-gradient">progress</span>
+                    </>
+                  )}
+                </h1>
+                <p className="text-slate-600">{step === "login" ? "Log in to load your profile, plans and calendar." : "Create a free account to keep everything and use Hapi on any device."}</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-panel p-5">
+                <AuthForm start={step === "login" ? "login" : "signup"} name={clean} onDone={() => finish(step === "login" ? null : goal)} />
+              </div>
+              {step === "account" ? (
+                <button onClick={() => finish(goal)} className="text-sm text-slate-500 hover:text-white">
+                  Continue without an account →
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    setStay(false);
+                    setStep("name");
+                  }}
+                  className="text-xs text-slate-500 hover:text-white"
+                >
+                  ← Back
+                </button>
+              )}
+            </div>
           ) : (
             <div key="goal" className="space-y-6">
               <div className="welcome-in space-y-2">
@@ -99,7 +164,7 @@ export function Welcome() {
                 {GOALS.map((g, i) => (
                   <button
                     key={g.value}
-                    onClick={() => finish(g.value)}
+                    onClick={() => pickGoal(g.value)}
                     className="welcome-in glow-card block w-full rounded-2xl border border-white/10 bg-panel px-5 py-4 text-left"
                     style={{ animationDelay: `${120 + i * 110}ms` }}
                   >
@@ -108,7 +173,7 @@ export function Welcome() {
                   </button>
                 ))}
               </div>
-              <button onClick={() => setStep(0)} className="text-xs text-slate-500 hover:text-slate-700">
+              <button onClick={() => setStep("name")} className="text-xs text-slate-500 hover:text-slate-700">
                 ← Back
               </button>
             </div>

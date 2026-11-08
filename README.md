@@ -87,9 +87,12 @@ Fill in `.env.local`:
 | `PAYPAL_ENVIRONMENT` | yes | Keep `SANDBOX` |
 | `GEMINI_MODEL` | no | Main model, default `gemini-flash-lite-latest` |
 | `PAYPAL_PREMIUM_PLAN_ID` | no | Pin an existing plan; otherwise one is found or created |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | no | Turns on accounts: sign up with email and password, data synced to one private row per user |
 | `HAPI_DEMO` | no | Set to `off` to stop demo mode from unlocking the coach |
 | `CRON_SECRET` | for the job | Protects `/api/research`; Vercel sends it automatically |
 | `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | no | Stores the latest Saturday run; without them the app shows the saved example run |
+
+**Accounts (optional):** create a free [Supabase](https://supabase.com) project, turn off "Confirm email" under Authentication, run `supabase/setup.sql` in the SQL Editor, and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Without them, Hapi saves everything in the browser only.
 
 To approve a Premium subscription in the sandbox you need a sandbox **personal** (buyer) account from the PayPal Developer dashboard. Demo mode unlocks the coach without one.
 
@@ -102,7 +105,7 @@ The data was researched and checked by hand before the build (31 Oct – 6 Nov 2
 - `data/costs.json`: 22 official fees and costs
 - `data/example-run.json`: a real run of the Saturday job, shown until storage is set up
 
-The data is for all students. No user data is stored on a server: the profile, plan and saved items stay in the browser.
+The data is for all students. Without an account, nothing about the student is stored on a server: everything stays in the browser. With an account, the same data is saved in one private row per user in Supabase (EU), protected by row-level security so only that user can read it.
 
 ## Limitations
 

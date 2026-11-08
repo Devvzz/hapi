@@ -5,6 +5,29 @@ import { useCallback, useSyncExternalStore } from "react";
 // Small localStorage store: the profile, plan and activity log live in the browser only.
 const listeners = new Set<() => void>();
 const cache = new Map<string, { raw: string | null; value: unknown }>();
+const changeListeners = new Set<(key: string) => void>();
+
+// Called after the app itself changes a stored value (used to sync to the account).
+export function onStoredChange(cb: (key: string) => void): () => void {
+  changeListeners.add(cb);
+  return () => {
+    changeListeners.delete(cb);
+  };
+}
+
+// Replaces stored values without triggering a sync (used when loading data from the account).
+export function writeRaw(entries: Record<string, string | null>) {
+  for (const [key, raw] of Object.entries(entries)) {
+    try {
+      if (raw === null) window.localStorage.removeItem(key);
+      else window.localStorage.setItem(key, raw);
+    } catch {
+      // storage blocked
+    }
+    cache.delete(key);
+  }
+  listeners.forEach((l) => l());
+}
 
 function subscribe(listener: () => void) {
   listeners.add(listener);
@@ -69,6 +92,7 @@ export function useStored<T>(key: string, fallback: T): [T, (next: T | ((prev: T
         cache.set(key, { raw: null, value: resolved });
       }
       listeners.forEach((l) => l());
+      changeListeners.forEach((l) => l(key));
     },
     [key, fallback],
   );

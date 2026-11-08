@@ -12,6 +12,7 @@
     "@ai-sdk/google": "^4.0.113",
     "@paypal/agent-toolkit": "^1.11.0",
     "@react-pdf/renderer": "^4.9.0",
+    "@supabase/supabase-js": "^2.119.0",
     "ag-grid-community": "^36.3.0",
     "ag-grid-react": "^36.3.0",
     "ai": "^7.0.164",
