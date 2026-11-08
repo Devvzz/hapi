@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { useUser } from "@/lib/user";
+import { capitalizeName, useUser } from "@/lib/user";
 import { useAccount } from "./account-provider";
 
 const field = "w-full rounded-xl border border-violet-400/40 px-4 py-3";
@@ -22,7 +22,7 @@ export function AuthForm({ start = "signup", name: givenName = "", onDone }: { s
     e.preventDefault();
     setBusy(true);
     setError(null);
-    const cleanName = name.trim().replace(/\s+/g, " ").slice(0, 40);
+    const cleanName = capitalizeName(name.trim().replace(/\s+/g, " ").slice(0, 40));
     if (mode === "signup") {
       if (cleanName.length < 2) {
         setError("Add your first name.");

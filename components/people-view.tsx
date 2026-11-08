@@ -1,5 +1,6 @@
 "use client";
 
+import { capitalizeName } from "@/lib/user";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -39,7 +40,7 @@ export function PeopleView({ id }: { id: string }) {
         <div className="relative space-y-1">
           <p className="welcome-in text-xs font-medium uppercase tracking-[0.3em] text-violet-300">{mine ? "Your public profile" : "Student on Hapi"}</p>
           <h1 className="welcome-in text-4xl font-extrabold tracking-tight sm:text-5xl" style={{ animationDelay: "80ms" }}>
-            {profile.display_name}
+            {capitalizeName(profile.display_name)}
           </h1>
           <p className="welcome-in text-sm text-slate-500" style={{ animationDelay: "160ms" }}>
             Joined {timeAgo(profile.created_at)} · {liked.length} liked · {reviews.length} {reviews.length === 1 ? "review" : "reviews"}

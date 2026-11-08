@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import type { Session } from "@supabase/supabase-js";
 import { DEMO_KEY } from "@/lib/demo";
 import { STORAGE } from "@/lib/profile";
+import { capitalizeName } from "@/lib/user";
 import { onStoredChange, writeRaw } from "@/lib/storage";
 import { upsertProfile } from "@/lib/social";
 import { accountsEnabled, supabase } from "@/lib/supabase";
@@ -52,11 +53,11 @@ function snapshot(): Record<string, string | null> {
 function publicName(session: Session | null): string {
   try {
     const u = JSON.parse(window.localStorage.getItem(STORAGE.user) ?? "null") as { name?: string } | null;
-    if (u?.name) return u.name;
+    if (u?.name) return capitalizeName(u.name);
   } catch {
     // ignore
   }
-  return (session?.user.user_metadata?.name as string | undefined) ?? "";
+  return capitalizeName((session?.user.user_metadata?.name as string | undefined) ?? "");
 }
 
 function friendly(message: string): string {

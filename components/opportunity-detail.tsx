@@ -1,5 +1,6 @@
 "use client";
 
+import { capitalizeName } from "@/lib/user";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { formatDate } from "@/lib/dates";
@@ -24,7 +25,7 @@ function cost(o: Opportunity): string {
 function Name({ id, name }: { id: string; name: string | undefined }) {
   return (
     <Link href={`/people?id=${id}`} className="font-medium text-white hover:text-cyan-200">
-      {name ?? "Student"}
+      {name ? capitalizeName(name) : "Student"}
     </Link>
   );
 }
