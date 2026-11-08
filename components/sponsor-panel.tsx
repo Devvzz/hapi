@@ -6,6 +6,25 @@ import { useStored } from "@/lib/storage";
 import type { PlanRow } from "@/lib/types";
 
 type Draft = { sponsorName: string; sponsorEmail: string; rowIds: string[]; message: string };
+type Sent = { sponsorName: string; items: string; total: string; url: string };
+
+// A WhatsApp link with a ready message; the student chooses who to send it to.
+function whatsappLink(s: Sent): string {
+  const text = `Hi ${s.sponsorName}! Could you help me pay for ${s.items} (${s.total}) for my studies abroad? You can pay safely with PayPal here: ${s.url}
+Thank you so much! (sent with Hapi)`;
+  return `https://wa.me/?text=${encodeURIComponent(text)}`;
+}
+
+function WhatsAppButton({ sent }: { sent: Sent }) {
+  return (
+    <a href={whatsappLink(sent)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-[#06281a] transition hover:brightness-110">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z" />
+      </svg>
+      Share on WhatsApp
+    </a>
+  );
+}
 
 const PAID = new Set(["PAID", "MARKED_AS_PAID"]);
 
@@ -21,8 +40,15 @@ export function SponsorPanel() {
   const [draft, setDraft] = useState<Draft | null>(null);
   const [busy, setBusy] = useState<"draft" | "send" | "refresh" | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [sent, setSent] = useState<Sent | null>(null);
 
   const unpaid = plan.filter((r) => r.status === "unpaid");
+  // Invoices sent but not paid yet, so the student can remind the sponsor on WhatsApp.
+  const waiting: Sent[] = [...new Set(plan.filter((r) => r.status === "invoiced" && r.invoiceId).map((r) => r.invoiceId!))].map((id) => {
+    const rows = plan.filter((r) => r.invoiceId === id);
+    const sum = rows.reduce((t, r) => t + r.amount, 0);
+    return { sponsorName: rows[0].sponsor ?? "there", items: rows.map((r) => r.item).join(", "), total: `${sum.toLocaleString("en-GB")} ${rows[0].currency}`, url: `https://www.sandbox.paypal.com/invoice/p/#${id}` };
+  });
   const invoiceIds = [...new Set(plan.map((r) => r.invoiceId).filter((id): id is string => !!id))];
 
   async function makeDraft() {
@@ -64,6 +90,8 @@ export function SponsorPanel() {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "PayPal error");
+      const sum = rows.reduce((s, r) => s + r.amount, 0);
+      setSent({ sponsorName: draft.sponsorName, items: rows.map((r) => r.item).join(", "), total: `${sum.toLocaleString("en-GB")} ${rows[0]?.currency ?? "EUR"}`, url: data.payerUrl });
       setPlan((all) => all.map((r) => (draft.rowIds.includes(r.id) ? { ...r, sponsor: draft.sponsorName, status: toPlanStatus(data.status), invoiceId: data.invoiceId } : r)));
       setLog((l) => [logEntry("Sent PayPal invoice", `${data.invoiceId} to ${draft.sponsorName} (${draft.sponsorEmail}), status ${data.status}`), ...l]);
       setDraft(null);
@@ -121,7 +149,36 @@ export function SponsorPanel() {
         </button>
       </div>
       {unpaid.length === 0 && <p className="text-xs text-slate-500">Add an unpaid cost to the plan first.</p>}
+      {waiting.length > 0 && !sent && (
+        <div className="space-y-2">
+          <p className="text-xs font-medium uppercase tracking-wider text-slate-500">Waiting for payment</p>
+          {waiting.map((w) => (
+            <div key={w.url} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-white/10 px-3 py-2 text-sm">
+              <span>
+                {w.sponsorName}: {w.items} · {w.total}
+              </span>
+              <WhatsAppButton sent={w} />
+            </div>
+          ))}
+        </div>
+      )}
       {error && <p className="text-sm text-rose-700">{error}</p>}
+
+      {sent && (
+        <div className="space-y-2 rounded-lg border border-emerald-400/40 bg-emerald-500/10 p-4 text-sm">
+          <p className="font-medium text-white">Invoice sent to {sent.sponsorName}&apos;s email.</p>
+          <p className="text-slate-600">Want to make sure they see it? Send them the payment link on WhatsApp too.</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <WhatsAppButton sent={sent} />
+            <button onClick={() => navigator.clipboard?.writeText(sent.url)} className="rounded-full border border-white/15 px-3 py-2 text-xs text-slate-600 hover:text-white">
+              Copy payment link
+            </button>
+            <button onClick={() => setSent(null)} className="text-xs text-slate-500 hover:text-white">
+              Done
+            </button>
+          </div>
+        </div>
+      )}
 
       {draft && (
         <div className="space-y-3 rounded-lg border-2 border-amber-300 bg-amber-50 p-4 text-sm">

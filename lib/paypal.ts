@@ -59,12 +59,18 @@ function findInvoiceId(value: unknown): string | null {
 
 export type InvoiceLine = { name: string; amount: number; currency: string };
 
+// The page where the sponsor sees and pays the invoice.
+export function payerUrl(invoiceId: string): string {
+  const live = (process.env.PAYPAL_ENVIRONMENT ?? "SANDBOX").toUpperCase() === "PRODUCTION";
+  return `https://www.${live ? "" : "sandbox."}paypal.com/invoice/p/#${invoiceId}`;
+}
+
 export async function createAndSendInvoice(input: {
   sponsorName: string;
   sponsorEmail: string;
   lines: InvoiceLine[];
   note: string;
-}): Promise<{ invoiceId: string; status: string }> {
+}): Promise<{ invoiceId: string; status: string; payerUrl: string }> {
   const [given, ...rest] = input.sponsorName.trim().split(/\s+/);
   const created = await run("create_invoice", {
     currency_code: input.lines[0].currency,
@@ -81,7 +87,7 @@ export async function createAndSendInvoice(input: {
   const invoiceId = findInvoiceId(created);
   if (!invoiceId) throw new Error("PayPal did not return an invoice ID");
   await run("send_invoice", { invoice_id: invoiceId, send_to_recipient: true });
-  return { invoiceId, status: await getInvoiceStatus(invoiceId) };
+  return { invoiceId, status: await getInvoiceStatus(invoiceId), payerUrl: payerUrl(invoiceId) };
 }
 
 export async function getInvoiceStatus(invoiceId: string): Promise<string> {
