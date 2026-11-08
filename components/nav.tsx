@@ -17,7 +17,7 @@ const LINKS: { href: string; label: string; icon: ReactNode; premium?: boolean }
   { href: "/universities", label: "Universities", icon: icon(<><path d="M2 9l10-5 10 5-10 5z" /><path d="M6 11v5c3 2.5 9 2.5 12 0v-5" /></>) },
   { href: "/opportunities", label: "Opportunities", icon: icon(<><path d="M12 3l2.2 5.3L20 9l-4.4 3.8L17 19l-5-3-5 3 1.4-6.2L4 9l5.8-.7z" /></>) },
   { href: "/calendar", label: "Calendar", premium: true, icon: icon(<><rect x="3.5" y="5" width="17" height="15" rx="3" /><path d="M8 3v4M16 3v4M3.5 10h17" /></>) },
-  { href: "/plan", label: "Cost plan", icon: icon(<><rect x="3" y="6" width="18" height="13" rx="3" /><path d="M3 10h18M16 15h2" /></>) },
+  { href: "/plan", label: "Plan", icon: icon(<><rect x="3" y="6" width="18" height="13" rx="3" /><path d="M3 10h18M16 15h2" /></>) },
   { href: "/cv", label: "CV", premium: true, icon: icon(<><path d="M7 3h7l5 5v13H7z" /><path d="M14 3v5h5M10 13h6M10 17h6" /></>) },
   { href: "/about", label: "About", icon: icon(<><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></>) },
 ];

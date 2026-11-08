@@ -1,9 +1,10 @@
 import { opportunities, programs } from "./data";
 import { parseDeadline } from "./dates";
 import type { UniMark } from "./profile";
-import type { PlanRow } from "./types";
+import { buildRoadmap } from "./roadmap";
+import type { PlanRow, Profile } from "./types";
 
-export type EventKind = "opens" | "deadline" | "event" | "results" | "apply-by" | "payment" | "custom";
+export type EventKind = "opens" | "deadline" | "event" | "results" | "apply-by" | "payment" | "step" | "custom";
 export type CalEvent = { id: string; date: string; title: string; kind: EventKind; link?: string | null; note?: string; source: "opportunity" | "university" | "plan" | "custom"; refId?: string };
 export type CustomEvent = { id: string; date: string; title: string; note: string };
 export type Undated = { id: string; title: string; why: string; link?: string | null };
@@ -15,6 +16,7 @@ export const KIND_LABEL: Record<EventKind, string> = {
   results: "Results",
   "apply-by": "Apply by",
   payment: "Payment due",
+  step: "Plan step",
   custom: "My event",
 };
 export const KIND_STYLE: Record<EventKind, string> = {
@@ -24,6 +26,7 @@ export const KIND_STYLE: Record<EventKind, string> = {
   results: "bg-emerald-100 text-emerald-900",
   "apply-by": "bg-amber-100 text-amber-900",
   payment: "bg-slate-200 text-slate-900",
+  step: "bg-indigo-100 text-indigo-900",
   custom: "bg-teal-100 text-teal-900",
 };
 
@@ -50,7 +53,7 @@ function firstDay(text: string | null): string | null {
   return `${m[3]}-${String(MONTHS[m[2].toLowerCase()]).padStart(2, "0")}-${m[1].padStart(2, "0")}`;
 }
 
-export function buildEvents(saved: string[], marks: Record<string, UniMark>, plan: PlanRow[], custom: CustomEvent[]): { events: CalEvent[]; undated: Undated[] } {
+export function buildEvents(saved: string[], marks: Record<string, UniMark>, plan: PlanRow[], custom: CustomEvent[], profile?: Profile): { events: CalEvent[]; undated: Undated[] } {
   const events: CalEvent[] = [];
   const undated: Undated[] = [];
 
@@ -71,6 +74,10 @@ export function buildEvents(saved: string[], marks: Record<string, UniMark>, pla
     if (!p) continue;
     const title = `${p.university}${p.program ? `: ${p.program}` : ""}`;
     if (p.applyBy) events.push({ id: `${p.id}-apply`, date: p.applyBy, title, kind: "apply-by", link: p.sources[0] ?? null, source: "university", refId: p.id });
+    // The suggested steps of the step-by-step plan (the official deadline is already above).
+    if (profile)
+      for (const s of buildRoadmap(p, profile))
+        if (s.due && !s.official) events.push({ id: `${p.id}-${s.key}`, date: s.due, title: `${s.title} · ${p.university}`, kind: "step", note: s.detail, link: "/plan", source: "university", refId: p.id });
     else undated.push({ id: p.id, title, why: "Application date not published yet", link: p.sources[0] ?? null });
   }
 
@@ -109,7 +116,10 @@ export function toIcs(events: CalEvent[], now: Date): string {
     if (desc) lines.push(`DESCRIPTION:${icsText(desc)}`);
     if (e.link) lines.push(`URL:${e.link}`);
     if (e.kind === "deadline" || e.kind === "apply-by" || e.kind === "payment") {
-      lines.push("BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${icsText(`In one week: ${e.title}`)}`, "TRIGGER:-P7D", "END:VALARM");
+      for (const [trigger, when] of [["-P14D", "In two weeks"], ["-P3D", "In 3 days"], ["-P1D", "Tomorrow"]])
+        lines.push("BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${icsText(`${when}: ${e.title}`)}`, `TRIGGER:${trigger}`, "END:VALARM");
+    } else if (e.kind === "step") {
+      lines.push("BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${icsText(`In 3 days: ${e.title}`)}`, "TRIGGER:-P3D", "END:VALARM");
     }
     lines.push("END:VEVENT");
   }

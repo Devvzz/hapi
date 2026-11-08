@@ -6,6 +6,7 @@ import { buildEvents, isoDay, KIND_LABEL, KIND_STYLE, toIcs, type CalEvent, type
 import { formatDate } from "@/lib/dates";
 import { EMPTY_MARKS, EMPTY_PLAN, EMPTY_PREMIUM, EMPTY_SAVED, STORAGE } from "@/lib/profile";
 import { useNow, useStored } from "@/lib/storage";
+import { useProfile } from "@/lib/use-profile";
 
 const NO_CUSTOM: CustomEvent[] = [];
 const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -20,12 +21,13 @@ export function CalendarView() {
   const [plan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [custom, setCustom] = useStored(STORAGE.events, NO_CUSTOM);
   const [premium] = useStored(STORAGE.premium, EMPTY_PREMIUM);
+  const [profile] = useProfile();
   const now = useNow();
   const [cursor, setCursor] = useState<{ y: number; m: number } | null>(null);
   const [picked, setPicked] = useState<string | null>(null);
   const [form, setForm] = useState({ title: "", date: "", note: "" });
 
-  const { events, undated } = useMemo(() => buildEvents(saved, marks, plan, custom), [saved, marks, plan, custom]);
+  const { events, undated } = useMemo(() => buildEvents(saved, marks, plan, custom, profile), [saved, marks, plan, custom, profile]);
   const byDay = useMemo(() => {
     const map = new Map<string, CalEvent[]>();
     for (const e of events) map.set(e.date, [...(map.get(e.date) ?? []), e]);
@@ -42,7 +44,7 @@ export function CalendarView() {
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#fcd34d]">Premium</p>
           <h2 className="text-2xl font-bold">Your calendar is part of Hapi Premium</h2>
           <p className="text-slate-600">
-            Every deadline you saved, every programme you want to apply to and every payment from your cost plan in one month view. Export it to your phone with a reminder a week before each date.
+            Every deadline you saved, every programme you want to apply to and every payment from your cost plan in one month view. Export it to your phone with reminders two weeks, three days and one day before each date.
           </p>
           {waiting > 0 && (
             <p className="text-sm text-violet-200">

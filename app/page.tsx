@@ -1,6 +1,7 @@
 import { BoardingPasses } from "@/components/boarding-passes";
 import { DepartureBoard } from "@/components/departure-board";
 import { HomeStart } from "@/components/home-start";
+import { Reminders } from "@/components/reminders";
 import { WhatsChanged } from "@/components/whats-changed";
 import { opportunities, programs } from "@/lib/data";
 
@@ -49,6 +50,8 @@ export default function Home() {
           <BoardingPasses />
         </div>
       </section>
+
+      <Reminders />
 
       <DepartureBoard rows={rows} />
 
