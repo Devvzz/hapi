@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { HapiMark } from "@/components/logo";
+import { DepartureBoard } from "@/components/departure-board";
+import { PassportStamps } from "@/components/passport-stamps";
 import { PageHero } from "@/components/ui";
 import { opportunities, programs } from "@/lib/data";
 
@@ -8,18 +9,26 @@ export const metadata: Metadata = { title: "About – Hapi", description: "Why H
 
 const PRINCIPLES = [
   {
+    icon: <path d="M9 12l2 2 4-4M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z" />,
+    tone: "bg-emerald-400 text-emerald-300",
     title: "Checked, with sources",
     text: "Every opportunity and programme was researched by hand and links to its official page. What is not confirmed says “check yourself”, never a guess.",
   },
   {
+    icon: <path d="M4 6h16M4 12h10M4 18h6M17 14l3 3-3 3" />,
+    tone: "bg-cyan-400 text-cyan-300",
     title: "Rules first, AI second",
     text: "Code decides who can apply, what it costs and when it closes. The AI only explains and helps you write. It never invents a deadline or a price.",
   },
   {
+    icon: <path d="M4 5h16l-6 8v6l-4-2v-4z" />,
+    tone: "bg-violet-400 text-violet-300",
     title: "Only what you can apply to",
     text: "Your nationality, age, school and budget filter everything first, so you are not shown chances that were never open to you.",
   },
   {
+    icon: <path d="M12 20s-7-4.4-9.2-8.6C1.3 8.5 3 5 6.4 5c2 0 3.3 1.1 4 2.3h3.2C14.3 6.1 15.6 5 17.6 5 21 5 22.7 8.5 21.2 11.4 19 15.6 12 20 12 20z" />,
+    tone: "bg-amber-400 text-[#fcd34d]",
     title: "Family can help, safely",
     text: "Ask a relative to sponsor a cost with a PayPal invoice. Nothing is sent until you approve it yourself.",
   },
@@ -31,10 +40,10 @@ export default function AboutPage() {
   const universities = new Set(programs.map((p) => p.universityId)).size;
   const confirmed = opportunities.filter((o) => o.eligibility.nationality).length;
   const numbers = [
-    { n: opportunities.length, label: "checked opportunities" },
-    { n: programs.length, label: "bachelor programmes" },
-    { n: universities, label: "universities" },
-    { n: confirmed, label: "nationality rules read from official pages" },
+    { label: "Opportunities", value: String(opportunities.length), note: "checked by hand" },
+    { label: "Programmes", value: String(programs.length), note: "bachelor, with real fees" },
+    { label: "Universities", value: String(universities), note: "official pages only" },
+    { label: "Nationality rules", value: String(confirmed), note: "read from the source" },
   ];
 
   return (
@@ -45,8 +54,8 @@ export default function AboutPage() {
         highlight="for students."
         subtitle="Hapi exists because talent is everywhere, but information is not. It puts every chance a student can really apply to in one honest place, with the dates, the real cost and a way for family to help pay."
       >
-        <div className="relative hidden h-36 w-36 items-center justify-center rounded-[2rem] border border-violet-400/40 bg-[#0b0818cc] shadow-[0_0_60px_-10px_rgba(139,92,246,0.9)] md:flex">
-          <HapiMark size={96} />
+        <div className="hidden md:block">
+          <PassportStamps />
         </div>
       </PageHero>
 
@@ -70,14 +79,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-        {numbers.map((s, i) => (
-          <div key={s.label} className="welcome-in glow-card rounded-2xl border border-white/10 bg-panel p-5" style={{ animationDelay: `${i * 70}ms` }}>
-            <p className="font-display text-4xl font-bold text-gradient">{s.n}</p>
-            <p className="mt-1 text-xs uppercase tracking-wider text-slate-500">{s.label}</p>
-          </div>
-        ))}
-      </section>
+      <DepartureBoard rows={numbers} />
 
       <section className="space-y-6">
         <div>
@@ -87,11 +89,18 @@ export default function AboutPage() {
           </h2>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
-          {PRINCIPLES.map((p, i) => (
-            <div key={p.title} className="glow-card relative overflow-hidden rounded-2xl border border-white/10 bg-panel p-6">
-              <span className="font-display absolute -right-2 -top-6 text-8xl font-extrabold text-white/[0.04]">0{i + 1}</span>
-              <h3 className="font-display text-xl font-semibold text-white">{p.title}</h3>
-              <p className="mt-2 text-slate-600">{p.text}</p>
+          {PRINCIPLES.map((p) => (
+            <div key={p.title} className="promise relative flex gap-4 overflow-hidden rounded-2xl border border-white/10 bg-panel p-6 hover:border-white/25">
+              <span className={`edge absolute left-0 top-0 h-10 w-1 ${p.tone.split(" ")[0]}`} />
+              <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] ${p.tone.split(" ")[1]}`}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  {p.icon}
+                </svg>
+              </span>
+              <div>
+                <h3 className="font-display text-xl font-semibold text-white">{p.title}</h3>
+                <p className="mt-2 text-slate-600">{p.text}</p>
+              </div>
             </div>
           ))}
         </div>

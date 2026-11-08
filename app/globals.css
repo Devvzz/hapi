@@ -309,7 +309,119 @@ input[type="checkbox"] {
   animation-direction: reverse;
 }
 
+/* Boarding passes: a stacked deck that shuffles, fans out on hover */
+.pass-card {
+  transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.5s ease, filter 0.5s ease;
+  transform-origin: 50% 120%;
+}
+.pass-card[data-depth="0"] {
+  transform: rotate(-2deg);
+}
+.pass-card[data-depth="1"] {
+  transform: translate(14px, 14px) rotate(4deg) scale(0.96);
+  filter: brightness(0.7);
+}
+.pass-card[data-depth="2"] {
+  transform: translate(-10px, 26px) rotate(-7deg) scale(0.92);
+  filter: brightness(0.5);
+}
+.pass-stack:hover .pass-card[data-depth="0"] {
+  transform: translateY(-6px) rotate(0deg);
+}
+.pass-stack:hover .pass-card[data-depth="1"] {
+  transform: translate(40px, 30px) rotate(9deg) scale(0.95);
+  filter: brightness(0.8);
+}
+.pass-stack:hover .pass-card[data-depth="2"] {
+  transform: translate(-36px, 40px) rotate(-12deg) scale(0.92);
+  filter: brightness(0.6);
+}
+@keyframes hapi-fly {
+  0%,
+  100% {
+    left: 18%;
+  }
+  50% {
+    left: 82%;
+  }
+}
+.pass-plane {
+  left: 50%;
+  animation: hapi-fly 5s ease-in-out infinite;
+}
+
+/* Split-flap digits: a hinge line through the middle */
+.flap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgb(0 0 0 / 0.75);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.04);
+}
+
+/* Passport stamps press down one after another */
+@keyframes hapi-stamp {
+  0% {
+    opacity: 0;
+    scale: 1.6;
+  }
+  60% {
+    opacity: 1;
+    scale: 0.94;
+  }
+  100% {
+    opacity: 0.92;
+    scale: 1;
+  }
+}
+.stamp {
+  animation: hapi-stamp 0.55s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+}
+.stamp > div {
+  transition: transform 0.3s ease;
+}
+.stamps:hover .stamp > div {
+  transform: scale(1.06);
+}
+
+/* Hand-drawn underline that draws itself under a word */
+@keyframes hapi-scribble {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.scribble path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: hapi-scribble 1.1s 0.5s cubic-bezier(0.6, 0, 0.2, 1) forwards;
+}
+
+/* Promise cards: tilt and a coloured edge that grows on hover */
+.promise {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s ease;
+}
+.promise:hover {
+  transform: translateY(-4px) rotate(-0.4deg);
+}
+.promise .edge {
+  transition: height 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.promise:hover .edge {
+  height: 100%;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .pass-card,
+  .pass-plane,
+  .stamp,
+  .scribble path {
+    animation: none !important;
+    transition: none !important;
+    stroke-dashoffset: 0 !important;
+  }
   .welcome-in,
   .welcome-orb,
   .premium-btn::after {

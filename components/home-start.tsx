@@ -70,7 +70,7 @@ function ChoiceCard({ href, title, text, art, cta }: { href: string; title: stri
     e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
   }
   return (
-    <Link href={href} onMouseMove={track} className="choice-card flex items-center gap-5 rounded-[1.25rem] border border-white/10 bg-panel p-6">
+    <Link href={href} onMouseMove={track} className="choice-card flex flex-col items-start gap-4 rounded-[1.25rem] sm:flex-row sm:items-center sm:gap-5 border border-white/10 bg-panel p-6">
       {art}
       <div className="min-w-0 space-y-1.5">
         <h3 className="font-display text-xl font-semibold text-white">{title}</h3>

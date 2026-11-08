@@ -49,7 +49,7 @@ function Dock({ path }: { path: string }) {
             <span className={`transition-all duration-300 ${active ? "text-white" : "text-slate-500 group-hover:-translate-y-px group-hover:text-cyan-300 group-hover:drop-shadow-[0_0_6px_rgba(103,232,249,0.8)]"}`}>{l.icon}</span>
             {l.label}
             {l.premium && (
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-label="Premium" className={active ? "text-amber-200" : "text-amber-300/80"}>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-label="Premium" className={active ? "text-[#fde68a]" : "text-[#fcd34d]/80"}>
                 <path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" />
               </svg>
             )}
@@ -65,7 +65,7 @@ function PremiumButton({ active }: { active: boolean }) {
     <Link
       href="/premium"
       className={`premium-btn relative inline-flex shrink-0 items-center gap-2 overflow-hidden rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform duration-300 hover:scale-[1.04] ${
-        active ? "ring-2 ring-amber-200/70" : ""
+        active ? "ring-2 ring-[#fde68a]/70" : ""
       }`}
     >
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="relative drop-shadow-[0_0_6px_rgba(253,230,138,0.9)]">

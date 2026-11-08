@@ -13,7 +13,7 @@ import { ScholarshipsList } from "./scholarships-list";
 
 const STATUS: Record<Eligibility["status"], { label: string; pill: string; bar: string }> = {
   ok: { label: "Open to you", pill: "border-emerald-400/40 bg-emerald-500/10 text-emerald-300", bar: "before:bg-emerald-400" },
-  warn: { label: "Check the rules", pill: "border-amber-400/40 bg-amber-500/10 text-amber-300", bar: "before:bg-amber-400" },
+  warn: { label: "Check the rules", pill: "border-amber-400/40 bg-amber-500/10 text-[#fcd34d]", bar: "before:bg-amber-400" },
   no: { label: "Not open to you", pill: "border-rose-400/40 bg-rose-500/10 text-rose-300", bar: "before:bg-rose-400/70" },
 };
 

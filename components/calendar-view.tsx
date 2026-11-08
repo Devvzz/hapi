@@ -39,7 +39,7 @@ export function CalendarView() {
       <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-violet-400/30 bg-panel p-8 text-center shadow-[0_0_60px_-20px_rgba(139,92,246,0.8)]">
         <div className="pointer-events-none absolute left-1/2 top-0 h-32 w-[70%] -translate-x-1/2 rounded-full bg-violet-500/25 blur-3xl" />
         <div className="relative space-y-4">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-amber-300">Premium</p>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#fcd34d]">Premium</p>
           <h2 className="text-2xl font-bold">Your calendar is part of Hapi Premium</h2>
           <p className="text-slate-600">
             Every deadline you saved, every programme you want to apply to and every payment from your cost plan in one month view. Export it to your phone with a reminder a week before each date.
