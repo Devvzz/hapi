@@ -92,6 +92,7 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
               open it
             </a>
           </li>
+          <li>Ask Hapi: a chat assistant that knows your profile and answers from checked data only.</li>
           <li>
             A calendar with every deadline, programme and payment, exported to your phone with reminders ·{" "}
             <a href="/calendar" className="text-teal-700 underline">

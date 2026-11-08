@@ -52,16 +52,16 @@ export function DepartureBoard({ rows }: { rows: { label: string; value: string;
       </div>
       <div className="grid gap-px bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
         {rows.map((r, row) => (
-          <div key={r.label} className="flex items-center justify-between gap-3 bg-[#07060d] px-4 py-3">
+          <div key={r.label} className="flex items-center justify-between gap-3 bg-[#07060d] px-4 py-4">
             <div className="min-w-0">
-              <p className="truncate text-xs font-semibold uppercase tracking-wider text-slate-600">{r.label}</p>
-              {r.note && <p className="truncate text-[11px] text-slate-500">{r.note}</p>}
+              <p className="truncate text-sm font-semibold uppercase tracking-wider text-white">{r.label}</p>
+              {r.note && <p className="truncate text-xs text-slate-600">{r.note}</p>}
             </div>
             <div className="flex shrink-0 gap-[3px]" aria-label={r.value}>
               {shown(r.value, row)
                 .split("")
                 .map((c, i) => (
-                  <span key={i} className="flap font-mono relative flex h-8 w-5 items-center justify-center rounded-[4px] bg-[#16131f] text-base sm:h-9 sm:w-6 sm:text-lg font-bold text-[#fde68a]" aria-hidden="true">
+                  <span key={i} className="flap font-mono relative flex h-11 w-8 items-center justify-center rounded-md text-2xl font-bold sm:h-12 sm:w-9 sm:text-[1.7rem]" aria-hidden="true">
                     {c}
                   </span>
                 ))}

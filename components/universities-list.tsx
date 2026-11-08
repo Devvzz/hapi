@@ -5,6 +5,7 @@ import { costs, FOCUS_COUNTRIES, programs } from "@/lib/data";
 import { checkProgram, type Eligibility } from "@/lib/eligibility";
 import { formatPrice } from "@/lib/price";
 import { formatDate } from "@/lib/dates";
+import { diplomaLabel } from "@/lib/education";
 import { EMPTY_LOG, EMPTY_MARKS, EMPTY_PLAN, STORAGE, logEntry, type UniMark } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
@@ -100,7 +101,7 @@ export function UniversitiesList() {
       <CountryPicker value={countries} onChange={setCountries} />
       <p className="text-xs text-slate-500">
         Prices are for you: {profile.nationality ? `${profile.nationality} passport` : "add your nationality"}
-        {profile.austrianSchool ? ", Austrian school abroad" : ""}
+        {profile.diploma && profile.diploma !== "national" ? `, ${diplomaLabel(profile.diploma).split(" (")[0]}` : ""}
         {profile.budgetPerYear !== null ? `, budget €${profile.budgetPerYear.toLocaleString("en-GB")}/year` : ""}.
       </p>
       {tab === "unis" ? <Universities countries={countries} /> : <ScholarshipsList countries={countries} />}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Suspense } from "react";
 import { AccountProvider } from "@/components/account-provider";
+import { ChatWidget } from "@/components/chat-widget";
 import { Ambient } from "@/components/ambient";
 import { DemoBanner } from "@/components/demo-banner";
 import { HapiMark } from "@/components/logo";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </span>
           </div>
         </footer>
+        <ChatWidget />
         </AccountProvider>
       </body>
     </html>

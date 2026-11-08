@@ -15,6 +15,7 @@ const DEMO_PROFILE: Profile = {
   age: 17,
   student: true,
   schoolType: "gymnasium",
+  diploma: "national",
   austrianSchool: false,
   languages: [
     { language: "English", level: "B2" },

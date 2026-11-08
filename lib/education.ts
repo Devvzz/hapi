@@ -41,3 +41,19 @@ export function migrateEducation(old: string): Education {
   if (old === "university") return "bachelor";
   return EDUCATION.some((x) => x.value === old) ? (old as Education) : "other";
 }
+
+// The school-leaving diploma. Some countries treat diplomas from their own schools abroad like local ones.
+export const DIPLOMAS: { value: string; label: string }[] = [
+  { value: "national", label: "The state school-leaving exam of my country" },
+  { value: "austrian-matura", label: "Austrian Matura / Reifeprüfung (Austrian school abroad, e.g. an HTL)" },
+  { value: "german-abitur", label: "German Abitur (German school abroad)" },
+  { value: "italian-maturita", label: "Italian Maturità (Italian school abroad)" },
+  { value: "ib", label: "IB Diploma (International Baccalaureate)" },
+  { value: "a-levels", label: "A-levels / British curriculum" },
+  { value: "us-diploma", label: "American high school diploma (with SAT/AP)" },
+  { value: "other", label: "Other or not sure yet" },
+];
+
+export function diplomaLabel(value: string | undefined): string {
+  return DIPLOMAS.find((d) => d.value === value)?.label ?? DIPLOMAS[0].label;
+}

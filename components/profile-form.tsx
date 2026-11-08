@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { resolveCountry, suggestCountries } from "@/lib/countries";
-import { EDUCATION } from "@/lib/education";
+import { DIPLOMAS, EDUCATION } from "@/lib/education";
 import { EMPTY_PROFILE, INTERESTS, LEVELS, profileIsSet } from "@/lib/profile";
 import { useProfile } from "@/lib/use-profile";
 import type { LanguageSkill, Profile } from "@/lib/types";
@@ -165,12 +165,20 @@ export function ProfileForm() {
             ))}
           </select>
         </label>
-        <label className="flex items-start gap-2 sm:col-span-2">
-          <input type="checkbox" className="mt-0.5" checked={profile.austrianSchool ?? false} onChange={(e) => update({ austrianSchool: e.target.checked })} />
-          <span>
-            My school is an Austrian school abroad (for example an HTL abroad).
-            <span className="block text-xs text-slate-500">This can change university fees in Austria.</span>
-          </span>
+        <label className="space-y-1 sm:col-span-2">
+          <span className="font-medium">Which school-leaving diploma will you have?</span>
+          <select
+            className="w-full rounded border border-slate-300 px-2 py-1"
+            value={profile.diploma ?? "national"}
+            onChange={(e) => update({ diploma: e.target.value, austrianSchool: e.target.value === "austrian-matura" })}
+          >
+            {DIPLOMAS.map((d) => (
+              <option key={d.value} value={d.value}>
+                {d.label}
+              </option>
+            ))}
+          </select>
+          <span className="block text-xs text-slate-500">If you already finished school, pick the one you have. Some universities treat diplomas from their own schools abroad like local ones.</span>
         </label>
         <MoneyField
           label="University budget per year"

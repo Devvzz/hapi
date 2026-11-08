@@ -190,7 +190,7 @@ export function OpportunitiesFeed() {
                     </Link>
                   </h2>
                 </div>
-                <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs ${VERDICT_STYLE[m.verdict]}`}>{VERDICT_TEXT[m.verdict]} · {m.score}</span>
+                <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs ${VERDICT_STYLE[m.verdict]}`}>{VERDICT_TEXT[m.verdict]}</span>
               </div>
               <dl className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-slate-600">
                 <div><dt className="inline font-medium">Opens: </dt><dd className="inline">{formatDate(o.applyOpens)}</dd></div>

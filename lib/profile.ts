@@ -7,6 +7,7 @@ export const EMPTY_PROFILE: Profile = {
   age: null,
   student: true,
   schoolType: "gymnasium",
+  diploma: "national",
   austrianSchool: false,
   languages: [{ language: "English", level: "B2" }],
   budgetPerYear: null,
@@ -18,12 +19,14 @@ export const EMPTY_PROFILE: Profile = {
 export function normalizeProfile(p: Profile): Profile {
   const schoolType = migrateEducation(p.schoolType);
   const nationality = p.nationality ? (resolveCountry(p.nationality) ?? p.nationality) : "";
+  const diploma = p.diploma ?? (p.austrianSchool || p.schoolType === "austrian-school-abroad" ? "austrian-matura" : "national");
   return {
     ...EMPTY_PROFILE,
     ...p,
     nationality,
     schoolType,
-    austrianSchool: p.austrianSchool ?? p.schoolType === "austrian-school-abroad",
+    diploma,
+    austrianSchool: diploma === "austrian-matura",
     opportunityBudget: p.opportunityBudget ?? null,
     student: isStudent(schoolType),
   };

@@ -103,6 +103,9 @@ export type Profile = {
   student: boolean;
   // Detailed education status, see lib/education.ts
   schoolType: string;
+  // School-leaving diploma, see DIPLOMAS in lib/education.ts
+  diploma?: string;
+  // Derived from diploma: an Austrian Matura from an Austrian school abroad
   austrianSchool?: boolean;
   languages: LanguageSkill[];
   // Tuition and fees per year for university
