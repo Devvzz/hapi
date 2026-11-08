@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { buildEvents, isoDay, KIND_LABEL, KIND_STYLE, toIcs, type CalEvent, type CustomEvent } from "@/lib/calendar";
 import { formatDate } from "@/lib/dates";
-import { EMPTY_MARKS, EMPTY_PLAN, EMPTY_SAVED, STORAGE } from "@/lib/profile";
+import { EMPTY_MARKS, EMPTY_PLAN, EMPTY_PREMIUM, EMPTY_SAVED, STORAGE } from "@/lib/profile";
 import { useNow, useStored } from "@/lib/storage";
 
 const NO_CUSTOM: CustomEvent[] = [];
@@ -19,6 +19,7 @@ export function CalendarView() {
   const [marks, setMarks] = useStored(STORAGE.uniMarks, EMPTY_MARKS);
   const [plan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [custom, setCustom] = useStored(STORAGE.events, NO_CUSTOM);
+  const [premium] = useStored(STORAGE.premium, EMPTY_PREMIUM);
   const now = useNow();
   const [cursor, setCursor] = useState<{ y: number; m: number } | null>(null);
   const [picked, setPicked] = useState<string | null>(null);
@@ -32,6 +33,30 @@ export function CalendarView() {
   }, [events]);
 
   if (!now) return <p className="text-sm text-slate-500">Loading…</p>;
+  if (!(premium.status === "ACTIVE" && premium.subscriptionId)) {
+    const waiting = events.filter((e) => e.date >= isoDay(now)).length;
+    return (
+      <div className="relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-violet-400/30 bg-panel p-8 text-center shadow-[0_0_60px_-20px_rgba(139,92,246,0.8)]">
+        <div className="pointer-events-none absolute left-1/2 top-0 h-32 w-[70%] -translate-x-1/2 rounded-full bg-violet-500/25 blur-3xl" />
+        <div className="relative space-y-4">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-amber-300">Premium</p>
+          <h2 className="text-2xl font-bold">Your calendar is part of Hapi Premium</h2>
+          <p className="text-slate-600">
+            Every deadline you saved, every programme you want to apply to and every payment from your cost plan in one month view. Export it to your phone with a reminder a week before each date.
+          </p>
+          {waiting > 0 && (
+            <p className="text-sm text-violet-200">
+              {waiting} upcoming {waiting === 1 ? "date is" : "dates are"} already waiting for you.
+            </p>
+          )}
+          <Link href="/premium" className="premium-btn relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-2.5 text-sm font-semibold text-white">
+            <span className="relative">Get Premium · €2.99/month</span>
+          </Link>
+          <p className="text-xs text-slate-500">You can keep adding things with &quot;Add to calendar&quot;. They are saved and show up here once you have Premium.</p>
+        </div>
+      </div>
+    );
+  }
   const today = isoDay(now);
   const view = cursor ?? { y: now.getFullYear(), m: now.getMonth() };
   const first = new Date(view.y, view.m, 1);

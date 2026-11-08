@@ -92,6 +92,12 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
               open it
             </a>
           </li>
+          <li>
+            A calendar with every deadline, programme and payment, exported to your phone with reminders ·{" "}
+            <a href="/calendar" className="text-teal-700 underline">
+              open it
+            </a>
+          </li>
           <li>The free parts of Hapi stay free.</li>
         </ul>
 

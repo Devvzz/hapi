@@ -12,13 +12,13 @@ const icon = (d: ReactNode) => (
   </svg>
 );
 
-const LINKS: { href: string; label: string; icon: ReactNode }[] = [
+const LINKS: { href: string; label: string; icon: ReactNode; premium?: boolean }[] = [
   { href: "/profile", label: "Profile", icon: icon(<><circle cx="12" cy="8" r="4" /><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></>) },
   { href: "/universities", label: "Universities", icon: icon(<><path d="M2 9l10-5 10 5-10 5z" /><path d="M6 11v5c3 2.5 9 2.5 12 0v-5" /></>) },
   { href: "/opportunities", label: "Opportunities", icon: icon(<><path d="M12 3l2.2 5.3L20 9l-4.4 3.8L17 19l-5-3-5 3 1.4-6.2L4 9l5.8-.7z" /></>) },
-  { href: "/calendar", label: "Calendar", icon: icon(<><rect x="3.5" y="5" width="17" height="15" rx="3" /><path d="M8 3v4M16 3v4M3.5 10h17" /></>) },
+  { href: "/calendar", label: "Calendar", premium: true, icon: icon(<><rect x="3.5" y="5" width="17" height="15" rx="3" /><path d="M8 3v4M16 3v4M3.5 10h17" /></>) },
   { href: "/plan", label: "Cost plan", icon: icon(<><rect x="3" y="6" width="18" height="13" rx="3" /><path d="M3 10h18M16 15h2" /></>) },
-  { href: "/cv", label: "CV", icon: icon(<><path d="M7 3h7l5 5v13H7z" /><path d="M14 3v5h5M10 13h6M10 17h6" /></>) },
+  { href: "/cv", label: "CV", premium: true, icon: icon(<><path d="M7 3h7l5 5v13H7z" /><path d="M14 3v5h5M10 13h6M10 17h6" /></>) },
   { href: "/about", label: "About", icon: icon(<><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></>) },
 ];
 
@@ -48,6 +48,11 @@ function Dock({ path }: { path: string }) {
           >
             <span className={`transition-all duration-300 ${active ? "text-white" : "text-slate-500 group-hover:-translate-y-px group-hover:text-cyan-300 group-hover:drop-shadow-[0_0_6px_rgba(103,232,249,0.8)]"}`}>{l.icon}</span>
             {l.label}
+            {l.premium && (
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-label="Premium" className={active ? "text-amber-200" : "text-amber-300/80"}>
+                <path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" />
+              </svg>
+            )}
           </Link>
         );
       })}
