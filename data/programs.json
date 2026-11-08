@@ -1357,11 +1357,11 @@
     "years": 3,
     "description": "Management, accounting, finance, marketing, micro/macroeconomics, maths, statistics and law (English-taught).",
     "tuitionNonEuPerYear": {
-      "min": 1453.44,
-      "max": 1453.44,
+      "min": 1453,
+      "max": 1453,
       "currency": "EUR",
-      "note": "Likely €726.72/sem + ÖH (UG §91(2), §64 NAG permit); uni's PersGV practice not checked",
-      "confidence": "needs-check"
+      "note": "Non-EU students on a student residence permit pay EUR 726.72 per semester. EU students pay nothing within standard study time plus 2 semesters. Everyone pays the OeH student union fee (EUR 26.20 per semester). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
@@ -1385,7 +1385,8 @@
     "sources": [
       "https://www.wu.ac.at/universitaet/news-und-events/news/details-news/detail/aufnahmeverfahren-2026-an-der-wu-starten-1",
       "https://www.wu.ac.at/fileadmin/wu/h/programs/bachelor/bbe/Aufnahmeverfahren/Roadmap_Aufnahmeverfahren_BBE_2026.pdf",
-      "https://www.wu.ac.at/en/programs/bachelors-programs/business-and-economics/overview/selection-procedure-bbe-1"
+      "https://www.wu.ac.at/en/programs/bachelors-programs/business-and-economics/overview/selection-procedure-bbe-1",
+      "https://www.wu.ac.at/en/students/getting-organized/tuition-fees-students-union-oeh-dues"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -1412,15 +1413,15 @@
     "years": 3,
     "description": "Finance, accounting, marketing, logistics plus heavy maths, statistics, operations research, econometrics and data analysis.",
     "tuitionNonEuPerYear": {
-      "min": 2505,
-      "max": 2505,
+      "min": 5369,
+      "max": 5369,
       "currency": "EUR",
-      "note": "Non-EEA EUR 2,505/yr (UCLouvain Saint-Louis rates; 2024-25 page, verify 2027)",
-      "confidence": "estimate"
+      "note": "Fees follow UCLouvain rules. Non-EU students pay EUR 1,194 plus a EUR 4,175 supplement (EUR 5,369 per year). Albania is not on the exempt country list (KU Leuven BBEng fee sheet). EU and assimilated students pay EUR 1,194. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 835,
-      "max": 835,
+      "min": 1194,
+      "max": 1194,
       "currency": "EUR"
     },
     "otherFeesPerYear": 0,
@@ -1439,10 +1440,11 @@
     "fixes": null,
     "sources": [
       "https://feb.kuleuven.be/eng/prospective-students/bachelor-of-business-engineering",
-      "https://feb.kuleuven.be/eng/prospective-students/bachelor-of-business-engineering"
+      "https://feb.kuleuven.be/eng/prospective-students/bachelor-of-business-engineering",
+      "https://www.uclouvain.be/en/tuition-fee-reform"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition"
     ],
@@ -1833,15 +1835,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~EUR300-330 (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition for anyone. Semester contribution EUR 353.30 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 640,
+    "otherFeesPerYear": 707,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "hochschulstart.de registration + mySpoho application",
     "freeToApply": true,
@@ -1858,7 +1860,8 @@
     "sources": [
       "https://www.dshs-koeln.de/web/d1/studsek/pdf/faq_bewerbung_bachelor.pdf;",
       "https://www.dshs-koeln.de/fileadmin/redaktion/Aktuelles/Amtliche_Mitteilungen/AM_2025-07-Eignungsfeststellungsordnung-2025-a.pdf",
-      "https://www.dshs-koeln.de/studium/studieneinstieg/bachelor/bewerbung/"
+      "https://www.dshs-koeln.de/studium/studieneinstieg/bachelor/bewerbung/",
+      "https://www.dshs-koeln.de/studium/studienorganisation/formulare/rueckmeldungsemesterbeitrag/"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -2215,15 +2218,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~EUR320 (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition in Berlin, also for non-EU students. Semester fees EUR 376.80 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 640,
+    "otherFeesPerYear": 754,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -2240,7 +2243,8 @@
     "sources": [
       "https://www.mygermanuniversity.com/de/universities/Freie-Universitaet-Berlin/application-deadlines",
       "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
-      "https://www.fu-berlin.de/studium/bewerbung/bewerbungsfristen/index.html"
+      "https://www.fu-berlin.de/studium/bewerbung/bewerbungsfristen/index.html",
+      "https://www.fu-berlin.de/studium/studieren/studienorganisation/gebuehren/index.html"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -2271,15 +2275,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~EUR320 (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition in Berlin, also for non-EU students. Semester fees EUR 376.80 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 640,
+    "otherFeesPerYear": 754,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -2296,7 +2300,8 @@
     "sources": [
       "https://www.mygermanuniversity.com/de/universities/Freie-Universitaet-Berlin/application-deadlines",
       "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
-      "https://www.fu-berlin.de/studium/bewerbung/bewerbungsfristen/index.html"
+      "https://www.fu-berlin.de/studium/bewerbung/bewerbungsfristen/index.html",
+      "https://www.fu-berlin.de/studium/studieren/studienorganisation/gebuehren/index.html"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -2327,15 +2332,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~EUR380-400 (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition in Hesse, also for non-EU students. Semester fee EUR 408.28 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 780,
+    "otherFeesPerYear": 817,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -2351,10 +2356,11 @@
     "fixes": null,
     "sources": [
       "https://uni-frankfurt.de/94080993/Flyer_Bachelor_Sportwissenschaft.pdf;",
-      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/"
+      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
+      "https://www.uni-frankfurt.de/en/studium/studienorganisation/studierendenservice/studium-weiterfuehren-beenden"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
       "Programme details"
@@ -2381,15 +2387,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~EUR380-400 (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition in Hesse, also for non-EU students. Semester fee EUR 408.28 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 780,
+    "otherFeesPerYear": 817,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -2405,10 +2411,11 @@
     "fixes": null,
     "sources": [
       "https://www.uni-frankfurt.de/61321486/Non_EU_applicants",
-      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/"
+      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
+      "https://www.uni-frankfurt.de/en/studium/studienorganisation/studierendenservice/studium-weiterfuehren-beenden"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
       "Programme details"
@@ -3295,15 +3302,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~€300+ incl. Deutschlandticket (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition in NRW, also for non-EU students. Semester contribution about EUR 375 per semester from winter 2026/27 (student body ~12.62 + mobility 234.57 + social 128); exact amount shown in RWTHonline. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 600,
+    "otherFeesPerYear": 750,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "RWTHonline, free of charge (no uni-assist)",
     "freeToApply": true,
@@ -3319,10 +3326,11 @@
     "fixes": null,
     "sources": [
       "https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/zugangsvoraussetzungen/~bxip/besonderheiten-internationale-studienint/?lidx=1",
-      "https://hochschulsport.rwth-aachen.de/cms/hsz/sport/sportangebot/~iivhm/schwimmen/?lidx=1"
+      "https://hochschulsport.rwth-aachen.de/cms/hsz/sport/sportangebot/~iivhm/schwimmen/?lidx=1",
+      "https://www.asta.rwth-aachen.de/en/about-us/finance/"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
       "2027 deadline",
@@ -3350,15 +3358,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition; semester contribution ~€300+ incl. Deutschlandticket (verify)",
-      "confidence": "needs-check"
+      "note": "No tuition in NRW, also for non-EU students. Semester contribution about EUR 375 per semester from winter 2026/27 (student body ~12.62 + mobility 234.57 + social 128); exact amount shown in RWTHonline. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 600,
+    "otherFeesPerYear": 750,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "RWTHonline, free of charge (no uni-assist)",
     "freeToApply": true,
@@ -3374,10 +3382,11 @@
     "fixes": null,
     "sources": [
       "https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/zugangsvoraussetzungen/~bxip/besonderheiten-internationale-studienint/?lidx=1",
-      "https://hochschulsport.rwth-aachen.de/cms/hsz/sport/sportangebot/~iivhm/schwimmen/?lidx=1"
+      "https://hochschulsport.rwth-aachen.de/cms/hsz/sport/sportangebot/~iivhm/schwimmen/?lidx=1",
+      "https://www.asta.rwth-aachen.de/en/about-us/finance/"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
       "2027 deadline",
@@ -3680,15 +3689,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition (Berlin); semester fee not confirmed",
-      "confidence": "needs-check"
+      "note": "No tuition in Berlin, also for non-EU students. Semester fees EUR 379.06 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 600,
+    "otherFeesPerYear": 758,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -3704,7 +3713,8 @@
     "fixes": null,
     "sources": [
       "https://www.tu.berlin/en/studierendensekretariat/dates-deadlines-for-application-and-enrollment-at-tu-berlin",
-      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/"
+      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
+      "https://www.tu.berlin/en/studierendensekretariat/topics-a-z/semester-fees"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -3733,15 +3743,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition (Berlin); semester fee not confirmed",
-      "confidence": "needs-check"
+      "note": "No tuition in Berlin, also for non-EU students. Semester fees EUR 379.06 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 600,
+    "otherFeesPerYear": 758,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -3757,7 +3767,8 @@
     "fixes": null,
     "sources": [
       "https://www.tu.berlin/en/studierendensekretariat/dates-deadlines-for-application-and-enrollment-at-tu-berlin",
-      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/"
+      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
+      "https://www.tu.berlin/en/studierendensekretariat/topics-a-z/semester-fees"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -3786,15 +3797,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition (Berlin); semester fee not confirmed",
-      "confidence": "needs-check"
+      "note": "No tuition in Berlin, also for non-EU students. Semester fees EUR 379.06 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 600,
+    "otherFeesPerYear": 758,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -3810,7 +3821,8 @@
     "fixes": null,
     "sources": [
       "https://www.tu.berlin/en/studierendensekretariat/dates-deadlines-for-application-and-enrollment-at-tu-berlin",
-      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/"
+      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
+      "https://www.tu.berlin/en/studierendensekretariat/topics-a-z/semester-fees"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -3839,15 +3851,15 @@
       "min": 0,
       "max": 0,
       "currency": "EUR",
-      "note": "No tuition (Berlin); semester fee not confirmed",
-      "confidence": "needs-check"
+      "note": "No tuition in Berlin, also for non-EU students. Semester fees EUR 379.06 per semester (includes Deutschlandsemesterticket). Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
       "max": 0,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 600,
+    "otherFeesPerYear": 758,
     "feeRule": "No tuition for EU/EEA or permanent residents. Everyone pays a semester contribution (~€70–430/sem, often incl. Deutschlandticket).",
     "applicationFee": "If via uni-assist: €75 first wish + €30 each extra per semester (VPD same); use for Austrian Matura unverified",
     "freeToApply": false,
@@ -3863,7 +3875,8 @@
     "fixes": null,
     "sources": [
       "https://www.tu.berlin/en/studierendensekretariat/dates-deadlines-for-application-and-enrollment-at-tu-berlin",
-      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/"
+      "https://www.uni-assist.de/bewerben/kosten-zahlen/bearbeitungskosten/",
+      "https://www.tu.berlin/en/studierendensekretariat/topics-a-z/semester-fees"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -4692,18 +4705,18 @@
     "years": 3,
     "description": "Control systems, robotics, electronics, programming, maths and physics for automated machines.",
     "tuitionNonEuPerYear": {
-      "min": 183.5,
-      "max": 183.5,
+      "min": 0,
+      "max": 0,
       "currency": "EUR",
-      "note": "Non-EU exempt from contributo; pay only regional tax (max 167.50 EUR) + 16 EUR stamp",
-      "confidence": "estimate"
+      "note": "Non-EU citizens pay no tuition, only the regional tax (EUR 151 if family lives abroad) plus EUR 16 stamp = EUR 167/yr. Other-EU citizens pay a fixed EUR 200 contribution; Italian-ISEE students pay EUR 0 (ISEE up to 30,000) up to EUR 2,384. Regional tax is EUR 130-173 by ISEE. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 0,
-      "max": 2600,
+      "max": 2384,
       "currency": "EUR"
     },
-    "otherFeesPerYear": 175,
+    "otherFeesPerYear": 167,
     "feeRule": "EU citizens and anyone resident in Italy pay by family income (ISEE): €0 under ~€22–30k ISEE, up to the uni maximum. Non-EU with family abroad: flat fee or 'ISEE parificato'. Everyone pays regional tax (~€140–200) + €16 stamp. EU/residents: ISEE-based, €0 under ~€22k ISEE.",
     "applicationFee": "No application fee found; Universitaly pre-application believed free",
     "freeToApply": false,
@@ -4719,10 +4732,11 @@
     "fixes": null,
     "sources": [
       "https://allegati.unina.it/reg-ord-25-26/",
-      "https://ingegneria-automazione.dieti.unina.it/attachments/article/23/L-IAUT_guida_25_26.pdf"
+      "https://ingegneria-automazione.dieti.unina.it/attachments/article/23/L-IAUT_guida_25_26.pdf",
+      "https://www.unina.it/documents/20117/4260320/Guida_Studente_rapidA_26-27_10.7.2026.pdf"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
       "2027 deadline",
@@ -5439,15 +5453,15 @@
     "years": 4,
     "description": "Maths, programming, machine learning, computer vision, NLP, robotics plus cognitive science and ethics.",
     "tuitionNonEuPerYear": {
-      "min": 4000,
-      "max": 4000,
+      "min": 1061,
+      "max": 1061,
       "currency": "EUR",
-      "note": "Non-EU non-resident fees set by annual UAB Board of Trustees tariff; 2026-27 figure not found",
-      "confidence": "estimate"
+      "note": "Official 2026-27 UAB price table: EUR 17.69 per credit for first enrolment (60 credits = about EUR 1,061/yr). The table lists no separate non-EU price for bachelor degrees (non-EU surcharges appear only for master's), so non-EU pay the same. Small admin/insurance fees come on top. Checked on the official fee page (2026-11-08, 2026/27). Based on the official price per credit (€17.69, first enrolment); confirm with the UAB fee simulator at uab.cat/simulador-matricula.",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1200,
-      "max": 1200,
+      "min": 1061,
+      "max": 1061,
       "currency": "EUR"
     },
     "otherFeesPerYear": 50,
@@ -5466,14 +5480,16 @@
     "fixes": null,
     "sources": [
       "https://www.uab.cat:443/web/study/ba-degrees/enrolment/surcharges-1345749159661.html",
-      "https://www-balan.uab.cat/web/study/bachelor-s-degrees/admission/access-requirements-1345919218437.html"
+      "https://www-balan.uab.cat/web/study/bachelor-s-degrees/admission/access-requirements-1345919218437.html",
+      "https://www.uab.cat/doc/preus2025_2026"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
       "2027 deadline",
-      "Programme details"
+      "Programme details",
+      "Confirm the yearly price in the UAB fee simulator"
     ],
     "universityId": "uab",
     "entryTest": "yes",
@@ -5548,15 +5564,15 @@
     "years": 4,
     "description": "Management, accounting, marketing, finance, economics, statistics and business law.",
     "tuitionNonEuPerYear": {
-      "min": 4000,
-      "max": 4000,
+      "min": 1061,
+      "max": 1061,
       "currency": "EUR",
-      "note": "Non-EU non-resident fees set by annual UAB Board of Trustees tariff; 2026-27 figure not found",
-      "confidence": "estimate"
+      "note": "Official 2026-27 UAB price table: EUR 17.69 per credit for first enrolment (60 credits = about EUR 1,061/yr). The table lists no separate non-EU price for bachelor degrees (non-EU surcharges appear only for master's), so non-EU pay the same. Small admin/insurance fees come on top. Checked on the official fee page (2026-11-08, 2026/27). Based on the official price per credit (€17.69, first enrolment); confirm with the UAB fee simulator at uab.cat/simulador-matricula.",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1200,
-      "max": 1200,
+      "min": 1061,
+      "max": 1061,
       "currency": "EUR"
     },
     "otherFeesPerYear": 50,
@@ -5575,13 +5591,15 @@
     "fixes": null,
     "sources": [
       "https://www.uab.cat:443/web/study/ba-degrees/enrolment/surcharges-1345749159661.html",
-      "https://www-balan.uab.cat/web/study/bachelor-s-degrees/admission/access-requirements-1345919218437.html"
+      "https://www-balan.uab.cat/web/study/bachelor-s-degrees/admission/access-requirements-1345919218437.html",
+      "https://www.uab.cat/doc/preus2025_2026"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
-      "Programme details"
+      "Programme details",
+      "Confirm the yearly price in the UAB fee simulator"
     ],
     "universityId": "uab",
     "entryTest": "yes",
@@ -5602,15 +5620,15 @@
     "years": 4,
     "description": "Micro/macroeconomics, econometrics, maths, statistics and economic policy.",
     "tuitionNonEuPerYear": {
-      "min": 4000,
-      "max": 4000,
+      "min": 1061,
+      "max": 1061,
       "currency": "EUR",
-      "note": "Non-EU non-resident fees set by annual UAB Board of Trustees tariff; 2026-27 figure not found",
-      "confidence": "estimate"
+      "note": "Official 2026-27 UAB price table: EUR 17.69 per credit for first enrolment (60 credits = about EUR 1,061/yr). The table lists no separate non-EU price for bachelor degrees (non-EU surcharges appear only for master's), so non-EU pay the same. Small admin/insurance fees come on top. Checked on the official fee page (2026-11-08, 2026/27). Based on the official price per credit (€17.69, first enrolment); confirm with the UAB fee simulator at uab.cat/simulador-matricula.",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1200,
-      "max": 1200,
+      "min": 1061,
+      "max": 1061,
       "currency": "EUR"
     },
     "otherFeesPerYear": 50,
@@ -5629,13 +5647,15 @@
     "fixes": null,
     "sources": [
       "https://www.uab.cat:443/web/study/ba-degrees/enrolment/surcharges-1345749159661.html",
-      "https://www-balan.uab.cat/web/study/bachelor-s-degrees/admission/access-requirements-1345919218437.html"
+      "https://www-balan.uab.cat/web/study/bachelor-s-degrees/admission/access-requirements-1345919218437.html",
+      "https://www.uab.cat/doc/preus2025_2026"
     ],
     "dataset": "bachelor-atlas",
-    "lastChecked": null,
+    "lastChecked": "2026-11-08",
     "checkYourself": [
       "Non-EU tuition",
-      "Programme details"
+      "Programme details",
+      "Confirm the yearly price in the UAB fee simulator"
     ],
     "universityId": "uab",
     "entryTest": "yes",
@@ -24091,12 +24111,12 @@
       "min": 4500,
       "max": 4500,
       "currency": "EUR",
-      "note": "€4,500/yr",
-      "confidence": "estimate"
+      "note": "Annual fee for a non-state-funded place. EU citizens pay slightly less and can also compete for state-funded places. Page does not state the intake year. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 4500,
-      "max": 4500,
+      "min": 4201,
+      "max": 4201,
       "currency": "EUR"
     },
     "otherFeesPerYear": 0,
@@ -24115,7 +24135,8 @@
     "fixes": null,
     "sources": [
       "https://www.vu.lt/site_files/Vertimai/EN_Translation_U%C5%BEsienio_student%C5%B3_pri%C4%97mimas_20262027_kainos.pdf",
-      "https://www.vu.lt/en/admissions"
+      "https://www.vu.lt/en/admissions",
+      "https://www.vu.lt/en/studies/bachelor-studies/business-data-analytics"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -24199,8 +24220,8 @@
       "min": 3660,
       "max": 3660,
       "currency": "EUR",
-      "note": "€3,660/yr",
-      "confidence": "estimate"
+      "note": "Same fee for EU and non-EU students (non-state-funded place). EU citizens can also compete for state-funded places. Page does not state the intake year. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 3660,
@@ -24223,7 +24244,8 @@
     "fixes": null,
     "sources": [
       "https://www.vu.lt/site_files/Vertimai/EN_Translation_U%C5%BEsienio_student%C5%B3_pri%C4%97mimas_20262027_kainos.pdf",
-      "https://www.vu.lt/en/admissions"
+      "https://www.vu.lt/en/admissions",
+      "https://www.vu.lt/en/studies/bachelor-studies/economics-and-finance"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -24362,12 +24384,12 @@
       "min": 4350,
       "max": 4350,
       "currency": "EUR",
-      "note": "€4,350/yr",
-      "confidence": "estimate"
+      "note": "Annual fee for a non-state-funded place. Page does not state the intake year. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 4350,
-      "max": 4350,
+      "min": 3950,
+      "max": 3950,
       "currency": "EUR"
     },
     "otherFeesPerYear": 0,
@@ -24386,7 +24408,8 @@
     "fixes": null,
     "sources": [
       "https://www.vu.lt/site_files/Vertimai/EN_Translation_U%C5%BEsienio_student%C5%B3_pri%C4%97mimas_20262027_kainos.pdf",
-      "https://www.vu.lt/en/admissions"
+      "https://www.vu.lt/en/admissions",
+      "https://www.vu.lt/en/studies/bachelor-studies/international-business"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",
@@ -24416,8 +24439,8 @@
       "min": 3660,
       "max": 3660,
       "currency": "EUR",
-      "note": "€3,660/yr",
-      "confidence": "estimate"
+      "note": "Same fee for EU and non-EU students (non-state-funded place). EU citizens can also compete for state-funded places. Page does not state the intake year. Checked on the official fee page (2026-11-08, 2026/27).",
+      "confidence": "verified"
     },
     "tuitionEuPerYear": {
       "min": 3660,
@@ -24440,7 +24463,8 @@
     "fixes": null,
     "sources": [
       "https://www.vu.lt/site_files/Vertimai/EN_Translation_U%C5%BEsienio_student%C5%B3_pri%C4%97mimas_20262027_kainos.pdf",
-      "https://www.vu.lt/en/admissions"
+      "https://www.vu.lt/en/admissions",
+      "https://www.vu.lt/en/studies/bachelor-studies/quantitative-economics"
     ],
     "dataset": "bachelor-atlas",
     "lastChecked": "2026-11-08",

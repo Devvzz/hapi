@@ -737,10 +737,10 @@
     "provider": "Hult Prize",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "none",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -762,7 +762,7 @@
       "1m-prize"
     ],
     "sourceUrl": "https://www.hultprize.org/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Winner receives 1M USD seed funding. Next-cycle dates not on the page. Cost: check yourself."
   },
   {
@@ -1477,7 +1477,7 @@
     "provider": "University of Leicester",
     "mode": "onsite",
     "location": "United Kingdom",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "partial",
@@ -1513,7 +1513,7 @@
       "travel"
     ],
     "sourceUrl": "https://copernicus-hackathon.le.ac.uk/travel-grants/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Travel grants subject to funding. Year not stated on the page. Albanian eligibility not stated, so ask first. Cost: check yourself."
   },
   {
@@ -1524,7 +1524,10 @@
     "mode": "onsite",
     "location": "Gimo, Sweden",
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 450,
+      "currency": "EUR"
+    },
     "discountNote": "Student pricing reported, exact price not captured. Check the page.",
     "travelPaid": "partial",
     "certificateIncluded": null,
@@ -1544,7 +1547,7 @@
       "paid-entry"
     ],
     "sourceUrl": "https://eubic-ms.org/events/hackathon-2027/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Specialist event for mass spectrometry researchers, so a poor fit for most students. Travel grants may come from outside bodies."
   },
   {
@@ -1589,7 +1592,10 @@
     "mode": "onsite",
     "location": "Amsterdam, Netherlands",
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 1850,
+      "currency": "EUR"
+    },
     "discountNote": "Summer and winter scholarships exist; check eligibility.",
     "travelPaid": null,
     "certificateIncluded": null,
@@ -1608,7 +1614,7 @@
       "summer-school"
     ],
     "sourceUrl": "https://www.uva.nl/en/education/summer-school/uva-summer-school.html",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Fees vary by programme and were not captured."
   },
   {
@@ -1619,7 +1625,10 @@
     "mode": "onsite",
     "location": "Utrecht, Netherlands",
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 350,
+      "currency": "EUR"
+    },
     "discountNote": null,
     "travelPaid": null,
     "certificateIncluded": null,
@@ -1638,7 +1647,7 @@
       "summer-school"
     ],
     "sourceUrl": "https://utrechtsummerschool.nl/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "2027 edition mentioned. Dates and fees not captured."
   },
   {
@@ -1903,7 +1912,7 @@
       "networking"
     ],
     "sourceUrl": "https://oywj.org/tag/2027/",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Check yourself for scholarship dates and fee."
   },
   {
@@ -1913,7 +1922,7 @@
     "provider": "Centre for Effective Altruism",
     "mode": "onsite",
     "location": "Urania Berlin, Germany",
-    "costType": null,
+    "costType": "discount",
     "price": null,
     "discountNote": null,
     "travelPaid": "partial",
@@ -1942,7 +1951,7 @@
       "networking"
     ],
     "sourceUrl": "https://www.effectivealtruism.org/ea-global/events/eagxberlin-2026",
-    "lastChecked": "2026-10-31",
+    "lastChecked": "2026-11-08",
     "note": "Travel support on request. Cost: check yourself."
   },
   {
@@ -2449,7 +2458,7 @@
     "provider": "Breakthrough Prize Foundation",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -2481,7 +2490,7 @@
       "scholarship"
     ],
     "sourceUrl": "https://breakthroughjuniorchallenge.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Global science video competition for high school students. Winner gets a USD 250,000 scholarship. 2026 submissions closed; deadline was 15 Sept. 2027 dates not published. Cost: check yourself."
   },
   {
@@ -2564,7 +2573,7 @@
     "provider": "Advent of Code",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -2585,7 +2594,7 @@
       "puzzles"
     ],
     "sourceUrl": "https://adventofcode.com/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Daily puzzles unlock from 1 Dec at midnight EST. End date assumed from the format. Cost: check yourself."
   },
   {
@@ -2595,7 +2604,7 @@
     "provider": "ClimateLaunchpad",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -2624,7 +2633,7 @@
       "climate"
     ],
     "sourceUrl": "https://climatelaunchpad.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Green business idea competition with boot camps. 2026 ran March to September. Albania participation and 2027 dates not confirmed. Check yourself. Cost: check yourself."
   },
   {
@@ -2704,10 +2713,10 @@
     "provider": "IOI / Hasso Plattner Institute",
     "mode": "onsite",
     "location": "Potsdam, Germany",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "partial",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -2727,7 +2736,7 @@
       "programming"
     ],
     "sourceUrl": "https://ioi2027.de/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Entry only through a national team selection. Cost: check yourself."
   },
   {
@@ -2982,7 +2991,10 @@
     "mode": "onsite",
     "location": "Tirana, Albania",
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 235,
+      "currency": "EUR"
+    },
     "discountNote": null,
     "travelPaid": null,
     "certificateIncluded": true,
@@ -3002,7 +3014,7 @@
       "language-test"
     ],
     "sourceUrl": "https://britishcouncil.al/en/exam/ielts/dates-fees-locations",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "A 2026 aggregator lists EUR 226; the official fee page was not read. Price: check yourself."
   },
   {
@@ -3148,7 +3160,7 @@
     "provider": "UK Government",
     "mode": "onsite",
     "location": "United Kingdom",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "full",
@@ -3173,7 +3185,7 @@
       "closed"
     ],
     "sourceUrl": "https://www.chevening.org/scholarship/albania/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Closed for 2027-28. For one-year UK master's after work experience. Next round opens around August. Cost: check yourself."
   },
   {
@@ -3183,10 +3195,10 @@
     "provider": "Embassy of Japan in Albania",
     "mode": "onsite",
     "location": "Japan",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -3208,7 +3220,7 @@
       "closed"
     ],
     "sourceUrl": "https://www.al.emb-japan.go.jp/itpr_ja/11_000001_01047.html",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "2027 cycle closed. Past Albanian deadlines were late May, so the 2028 call is likely around April to May 2027. Cost: check yourself."
   },
   {
@@ -3218,10 +3230,10 @@
     "provider": "OeAD",
     "mode": "onsite",
     "location": "Austria",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "none",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -3243,7 +3255,7 @@
       "austria"
     ],
     "sourceUrl": "https://studyinaustria.at/en/news/article/2026/08/ernst-mach-stipendium-weltweit-bewerbung-bis-1-dezember-2026",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "For PhD students, postgraduates and researchers, not first-degree students. Cost: check yourself."
   },
   {
@@ -3253,10 +3265,10 @@
     "provider": "International Visegrad Fund",
     "mode": "onsite",
     "location": "Czechia, Hungary, Poland, Slovakia",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "none",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -3287,10 +3299,10 @@
     "provider": "Campus France",
     "mode": "onsite",
     "location": "France",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -3322,7 +3334,7 @@
       "phd"
     ],
     "sourceUrl": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Deadline from one secondary source; universities apply on behalf of students. Check yourself. Cost: check yourself."
   },
   {
@@ -3333,9 +3345,12 @@
     "mode": "onsite",
     "location": "New Haven, USA",
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 7500,
+      "currency": "USD"
+    },
     "discountNote": "Need-based aid up to full tuition for international students. Application fee waiver available.",
-    "travelPaid": null,
+    "travelPaid": "none",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": 16,
@@ -3364,7 +3379,7 @@
       "financial-aid"
     ],
     "sourceUrl": "https://globalscholars.yale.edu/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Regular deadline from secondary sources; early round closed 15 Oct 2026. Tuition about USD 7,000 to 7,500 per sources. Check yourself."
   },
   {
@@ -3374,7 +3389,7 @@
     "provider": "U.S. Department of State / American Councils",
     "mode": "onsite",
     "location": "United States",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "full",
@@ -3400,7 +3415,7 @@
       "usa"
     ],
     "sourceUrl": "https://www.yesprograms.org/countries/albania",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Albania is a YES country. Year in a US high school with a host family. Albania deadline and age window not confirmed. Check yourself. Cost: check yourself."
   },
   {
@@ -3559,7 +3574,10 @@
     "mode": "onsite",
     "location": "Messe Berlin, Germany",
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 120,
+      "currency": "EUR"
+    },
     "discountNote": null,
     "travelPaid": "none",
     "certificateIncluded": null,
@@ -3579,7 +3597,7 @@
       "networking"
     ],
     "sourceUrl": "https://www.visitberlin.de/en/node/2255344",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Student ticket price not confirmed on an official page. Check yourself."
   },
   {
@@ -4150,7 +4168,7 @@
     "provider": "Kaggle",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -4172,7 +4190,7 @@
       "python"
     ],
     "sourceUrl": "https://www.kaggle.com/learn",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Free short courses; completion certificates per course according to reviews. Account needed. Cost: check yourself."
   },
   {
@@ -4213,7 +4231,7 @@
     "provider": "Stanford University",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -4242,7 +4260,7 @@
       "beginner"
     ],
     "sourceUrl": "https://engineering.stanford.edu/news/stanford-engineering-offers-free-online-introductory-programming-course",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Free 6-week Python course. 2026 learner deadline was 8 Apr; 2027 dates not published. Cost: check yourself."
   },
   {
@@ -4298,7 +4316,7 @@
     "provider": "Politecnico di Milano",
     "mode": "onsite",
     "location": "Milan, Italy",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "Gold EUR 8,000 (Milan), Platinum EUR 10,000, Silver tuition waiver.",
     "travelPaid": null,
@@ -4323,7 +4341,7 @@
       "english-taught"
     ],
     "sourceUrl": "https://www.polimi.it/fileadmin/user_upload/futuri_studenti/borse-di-studio/Merit_Based_Call_For_Applications_a.y._2027-2028.pdf",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "For international applicants to English-taught MSc who applied 1 Oct to 1 Dec 2026. English certificate due by 4 Mar 2027. Cost: check yourself."
   },
   {
@@ -4333,10 +4351,10 @@
     "provider": "Politecnico di Torino",
     "mode": "onsite",
     "location": "Turin, Italy",
-    "costType": null,
+    "costType": "discount",
     "price": null,
     "discountNote": "EUR 8,000 a year.",
-    "travelPaid": null,
+    "travelPaid": "none",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -4358,7 +4376,7 @@
       "engineering"
     ],
     "sourceUrl": "https://international.polito.it/financial_aid/politecnico_international_scholarships",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Last call found was 2023/24 (deadline 14 July, GRE needed). 2027/28 call not published. Cost: check yourself."
   },
   {
@@ -4368,7 +4386,7 @@
     "provider": "Bocconi University",
     "mode": "onsite",
     "location": "Milan, Italy",
-    "costType": null,
+    "costType": "discount",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -4404,7 +4422,7 @@
     "provider": "University of Bologna",
     "mode": "onsite",
     "location": "Bologna, Italy",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "2025/26: 30 grants of EUR 6,500 a year.",
     "travelPaid": null,
@@ -4428,7 +4446,7 @@
       "masters"
     ],
     "sourceUrl": "https://www.unibo.it/en",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Master's level. 2025/26 call closed 30 May 2025, GRE required. 2027/28 call not found. Cost: check yourself."
   },
   {
@@ -4438,7 +4456,7 @@
     "provider": "Italian Ministry of Foreign Affairs",
     "mode": "onsite",
     "location": "Italy",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -4465,7 +4483,7 @@
       "language-course"
     ],
     "sourceUrl": "https://www.esteri.it/en/servizi-opportunita/opportunita/borse-di-studio/per-cittadini-stranieri/borsestudio_stranieri/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "2026/27 call closed 26 Mar 2026; apply through Study in Italy. Albania on the list not confirmed. 2027/28 call expected early 2027. Cost: check yourself."
   },
   {
@@ -4509,7 +4527,7 @@
     "provider": "ETH Zurich",
     "mode": "onsite",
     "location": "Zurich, Switzerland",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "CHF 4,000 plus travel and visa costs.",
     "travelPaid": "full",
@@ -4544,7 +4562,7 @@
       "paid"
     ],
     "sourceUrl": "https://inf.ethz.ch/studies/summer-research-fellowship.html",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Bachelor's or master's students with two years completed. Cost: check yourself."
   },
   {
@@ -4554,7 +4572,7 @@
     "provider": "ETH Zurich",
     "mode": "onsite",
     "location": "Zurich, Switzerland",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -4597,10 +4615,10 @@
     "provider": "EPFL",
     "mode": "onsite",
     "location": "Lausanne, Switzerland",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "CHF 3,600 for two months.",
-    "travelPaid": null,
+    "travelPaid": "partial",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -4807,7 +4825,7 @@
     "provider": "SAIA / Slovak Government",
     "mode": "onsite",
     "location": "Slovakia",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -4874,7 +4892,7 @@
       "phd"
     ],
     "sourceUrl": "https://grants.saia.sk/Pages/ProgramDetail.aspx?Program=531",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Deadline 25 May in recent rounds. Slovak B2 needed, or a 10-month language year first. Cost: check yourself."
   },
   {
@@ -4884,10 +4902,10 @@
     "provider": "SAIA",
     "mode": "onsite",
     "location": "Slovakia",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "partial",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -4909,7 +4927,7 @@
       "semester"
     ],
     "sourceUrl": "https://www.scholarships.sk/en/news/call-sum-sem-acad-yr-26/27-apply-now",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "One or two semesters. Deadlines 30 Apr and 31 Oct each year; 30 Apr 2027 assumed from the pattern. Cost: check yourself."
   },
   {
@@ -4919,10 +4937,10 @@
     "provider": "NAWA",
     "mode": "onsite",
     "location": "Poland",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "partial",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -4945,7 +4963,7 @@
       "balkans"
     ],
     "sourceUrl": "https://nawa.gov.pl/en/students/foreign-students/the-banach-scholarship-programme",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Master's study with tuition waiver and monthly stipend. Past deadlines late June. 2027 call not published. Cost: check yourself."
   },
   {
@@ -5002,7 +5020,7 @@
     "provider": "China Scholarship Council",
     "mode": "onsite",
     "location": "China",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -5027,7 +5045,7 @@
       "masters"
     ],
     "sourceUrl": "https://www.campuschina.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Undergraduates under 25 at the deadline; CSCA test required for undergraduates. Each embassy sets its own deadline; Albania's not found. Cost: check yourself."
   },
   {
@@ -5173,7 +5191,7 @@
     "provider": "UCL",
     "mode": "onsite",
     "location": "London, UK",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -5207,7 +5225,7 @@
       "need-based"
     ],
     "sourceUrl": "https://www.ucl.ac.uk/scholarships/ucl-global-undergraduate-scholarship",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "For international students from low-income backgrounds paying overseas fees. 2026 deadline was 27 Apr 2026; 2027 not published. Cost: check yourself."
   },
   {
@@ -5417,7 +5435,7 @@
     "provider": "Gates Cambridge Trust",
     "mode": "onsite",
     "location": "Cambridge, UK",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "full",
@@ -5453,7 +5471,7 @@
     "provider": "Heinrich Böll Stiftung",
     "mode": "onsite",
     "location": "Germany",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -5489,7 +5507,7 @@
     "provider": "Schmidt Futures / Rhodes Trust",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "Need-based scholarships, mentorship and a funded residential summit.",
     "travelPaid": "n/a",
@@ -5512,7 +5530,7 @@
       "high-school"
     ],
     "sourceUrl": "https://www.risefortheworld.org/about",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "2027 deadline not found; past deadlines Dec to Jan. Cost: check yourself."
   },
   {
@@ -5569,8 +5587,11 @@
     "provider": "Central European University",
     "mode": "onsite",
     "location": "Vienna or Budapest",
-    "costType": null,
-    "price": null,
+    "costType": "paid",
+    "price": {
+      "amount": 500,
+      "currency": "EUR"
+    },
     "discountNote": null,
     "travelPaid": null,
     "certificateIncluded": null,
@@ -5595,7 +5616,7 @@
       "social-sciences"
     ],
     "sourceUrl": "https://summeruniversity.ceu.edu/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Financial aid offered in past years. 2027 deadline not published. Cost: check yourself."
   },
   {
@@ -5605,7 +5626,7 @@
     "provider": "Carnegie Mellon University",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -5627,7 +5648,7 @@
       "beginner"
     ],
     "sourceUrl": "https://picoctf.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Usually in March (2026: 9 to 19 Mar). 2027 dates not announced. Cost: check yourself."
   },
   {
@@ -5744,10 +5765,10 @@
     "provider": "Society for Science",
     "mode": "onsite",
     "location": "Los Angeles, USA",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -5767,7 +5788,7 @@
       "high-school"
     ],
     "sourceUrl": "https://www.societyforscience.org/isef/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Entry only through a Society-affiliated fair. Over USD 7 million in awards. Cost: check yourself."
   },
   {
@@ -5811,10 +5832,10 @@
     "provider": "European Commission",
     "mode": "onsite",
     "location": "Genoa, Italy",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -5834,7 +5855,7 @@
       "young-scientists"
     ],
     "sourceUrl": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/eucys_en",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Entry through national contests such as Jugend Innovativ. Cost: check yourself."
   },
   {
@@ -5844,7 +5865,7 @@
     "provider": "IMO",
     "mode": "onsite",
     "location": "Budapest, Hungary",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -5867,7 +5888,7 @@
       "maths"
     ],
     "sourceUrl": "https://www.imo-official.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "National team selection. Cost: check yourself."
   },
   {
@@ -5877,7 +5898,7 @@
     "provider": "Microsoft",
     "mode": "onsite",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -5903,7 +5924,7 @@
       "big-tech"
     ],
     "sourceUrl": "https://careers.microsoft.com/v2/global/en/students",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Global university internships plus Discovery and Explore programmes for early students. Locations and dates vary. Cost: check yourself."
   },
   {
@@ -5913,10 +5934,10 @@
     "provider": "Bending Spoons",
     "mode": "onsite",
     "location": "Milan, London, Madrid or Warsaw",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -5937,7 +5958,7 @@
       "paid"
     ],
     "sourceUrl": "https://jobs.bendingspoons.com/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Listed as suitable for students. Pay and dates not captured. Cost: check yourself."
   },
   {
@@ -5947,10 +5968,10 @@
     "provider": "Jane Street",
     "mode": "onsite",
     "location": "London / Amsterdam",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -5971,7 +5992,7 @@
       "first-year"
     ],
     "sourceUrl": "https://www.janestreet.com/join-jane-street/programs-and-events/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Day-long and multi-day programs for first- and second-year university students. Dates not captured. Cost: check yourself."
   },
   {
@@ -6013,7 +6034,7 @@
     "provider": "European Youth Parliament",
     "mode": "onsite",
     "location": "Europe",
-    "costType": null,
+    "costType": "paid",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -6035,7 +6056,7 @@
       "youth"
     ],
     "sourceUrl": "https://eyp.org/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "National committees in about 40 countries run sessions. Whether Albania has one not confirmed. Cost: check yourself."
   },
   {
@@ -6579,7 +6600,7 @@
     "provider": "Kaggle",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -6601,7 +6622,7 @@
       "cash-prize"
     ],
     "sourceUrl": "https://www.kaggle.com/competitions",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Ongoing featured competitions with cash prizes plus free Playground and Getting Started rounds. Each competition has its own rules and deadline. Cost: check yourself."
   },
   {
@@ -6706,7 +6727,7 @@
     "provider": "DeepLearning.AI",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -6727,7 +6748,7 @@
       "llm"
     ],
     "sourceUrl": "https://www.deeplearning.ai/courses",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Short AI courses; most short courses are free. Check each course. Cost: check yourself."
   },
   {
@@ -6831,7 +6852,7 @@
     "provider": "Amazon Web Services",
     "mode": "online",
     "location": null,
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": "Up to USD 200,000 in AWS credits for eligible startups.",
     "travelPaid": "n/a",
@@ -6853,7 +6874,7 @@
       "credits"
     ],
     "sourceUrl": "https://aws.amazon.com/startups/credits/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Founders tier for early-stage startups; eligibility rules on the page. Cost: check yourself."
   },
   {
@@ -6863,7 +6884,7 @@
     "provider": "Albanian Ministry of Economy / Startup Albania",
     "mode": "online",
     "location": "Albania",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -6887,7 +6908,7 @@
       "grant"
     ],
     "sourceUrl": "https://mia.gov.al/en/winners-of-the-2026-grant-programme-announced-minister-ibrahimaj-says-e16-5-million-invested-in-startups-over-four-years/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "2026 round: EUR 6 million, 1,219 applications, winners announced. Focus on green and digital. 2027 call not published. Cost: check yourself."
   },
   {
@@ -6897,7 +6918,7 @@
     "provider": "Ivanaj Foundation",
     "mode": "online",
     "location": "Albania",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "n/a",
@@ -6931,7 +6952,7 @@
       "youth"
     ],
     "sourceUrl": "https://ivanaj-foundations.org/en/?p=24351",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "For young Albanians starting a business. Dates and terms not captured. Cost: check yourself."
   },
   {
@@ -6973,7 +6994,7 @@
     "provider": "U.S. Department of State / U.S. Embassy Tirana",
     "mode": "onsite",
     "location": "United States",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": "full",
@@ -6997,7 +7018,7 @@
       "leadership"
     ],
     "sourceUrl": "https://exchanges.state.gov/non-us/program/study-us-institutes-student-leaders",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Five- to six-week academic programmes for undergraduates, nominated by embassies. Past Albanian calls closed in November. 2027 Albanian call not found. Cost: check yourself."
   },
   {
@@ -7042,10 +7063,10 @@
     "provider": "Albanian-American Development Foundation / IREX",
     "mode": "onsite",
     "location": "United States",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
-    "travelPaid": null,
+    "travelPaid": "full",
     "certificateIncluded": null,
     "eligibility": {
       "minAge": null,
@@ -7079,7 +7100,7 @@
       "professional"
     ],
     "sourceUrl": "https://www.irex.org/node/9617",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Six-month US professional internships for emerging Albanian leaders; cohorts planned 2026 to 2028. Application timing not confirmed. Cost: check yourself."
   },
   {
@@ -7089,7 +7110,7 @@
     "provider": "UNDP",
     "mode": "onsite",
     "location": "Tirana, Albania",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -7115,7 +7136,7 @@
       "policy"
     ],
     "sourceUrl": "https://www.impactpool.org/jobs/351668",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Interns recruited periodically; listings found were closed or undated. Check the UNDP jobs portal. Cost: check yourself."
   },
   {
@@ -7125,7 +7146,7 @@
     "provider": "Slush",
     "mode": "onsite",
     "location": "Helsinki, Finland",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -7147,7 +7168,7 @@
       "networking"
     ],
     "sourceUrl": "https://slush.org/audience/volunteers",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "About 1,800 volunteers help run Slush. Dates and perks not captured. Cost: check yourself."
   },
   {
@@ -7190,7 +7211,7 @@
     "provider": "IPhO",
     "mode": "onsite",
     "location": "Saudi Arabia",
-    "costType": null,
+    "costType": "free",
     "price": null,
     "discountNote": null,
     "travelPaid": null,
@@ -7213,7 +7234,7 @@
       "physics"
     ],
     "sourceUrl": "https://fastcompanyme.com/news/saudi-arabia-to-host-international-physics-olympiad-in-2027/",
-    "lastChecked": "2026-11-06",
+    "lastChecked": "2026-11-08",
     "note": "Host confirmed by news reports; dates not on the official site yet. National selection. Cost: check yourself."
   },
   {
