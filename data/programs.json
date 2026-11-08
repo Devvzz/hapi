@@ -4375,9 +4375,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1980000,
-      "max": 1980000,
-      "currency": "HUF"
+      "min": 4950,
+      "max": 4950,
+      "currency": "EUR",
+      "note": "Official: HUF 1,980,000 a year, shown in euro at an approximate rate."
     },
     "otherFeesPerYear": 0,
     "feeRule": "English-taught: usually same fee for EU and non-EU. Stipendium Hungaricum (€0 + stipend) is only for non-EU partner countries (Albania yes, EU no). Hungarian-taught state-funded places for EU/residents. EU self-funded fee may differ slightly; SH not open to EU.",
@@ -4429,9 +4430,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1980000,
-      "max": 1980000,
-      "currency": "HUF"
+      "min": 4950,
+      "max": 4950,
+      "currency": "EUR",
+      "note": "Official: HUF 1,980,000 a year, shown in euro at an approximate rate."
     },
     "otherFeesPerYear": 0,
     "feeRule": "English-taught: usually same fee for EU and non-EU. Stipendium Hungaricum (€0 + stipend) is only for non-EU partner countries (Albania yes, EU no). Hungarian-taught state-funded places for EU/residents. EU self-funded fee may differ slightly; SH not open to EU.",
@@ -4483,9 +4485,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1980000,
-      "max": 1980000,
-      "currency": "HUF"
+      "min": 4950,
+      "max": 4950,
+      "currency": "EUR",
+      "note": "Official: HUF 1,980,000 a year, shown in euro at an approximate rate."
     },
     "otherFeesPerYear": 0,
     "feeRule": "English-taught: usually same fee for EU and non-EU. Stipendium Hungaricum (€0 + stipend) is only for non-EU partner countries (Albania yes, EU no). Hungarian-taught state-funded places for EU/residents. EU self-funded fee may differ slightly; SH not open to EU.",
@@ -4537,9 +4540,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1980000,
-      "max": 1980000,
-      "currency": "HUF"
+      "min": 4950,
+      "max": 4950,
+      "currency": "EUR",
+      "note": "Official: HUF 1,980,000 a year, shown in euro at an approximate rate."
     },
     "otherFeesPerYear": 0,
     "feeRule": "English-taught: usually same fee for EU and non-EU. Stipendium Hungaricum (€0 + stipend) is only for non-EU partner countries (Albania yes, EU no). Hungarian-taught state-funded places for EU/residents. EU self-funded fee may differ slightly; SH not open to EU.",
@@ -18032,9 +18036,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 1980000,
-      "max": 1980000,
-      "currency": "HUF"
+      "min": 4950,
+      "max": 4950,
+      "currency": "EUR",
+      "note": "Official: HUF 1,980,000 a year, shown in euro at an approximate rate."
     },
     "otherFeesPerYear": 0,
     "feeRule": "English-taught: usually same fee for EU and non-EU. Stipendium Hungaricum (€0 + stipend) is only for non-EU partner countries (Albania yes, EU no). Hungarian-taught state-funded places for EU/residents. EU self-funded fee may differ slightly; SH not open to EU.",
@@ -28446,9 +28451,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 7155,
-      "max": 7155,
-      "currency": "EUR"
+      "min": 7088.22,
+      "max": 7088.22,
+      "currency": "EUR",
+      "note": "EU citizens pay the same foreigner rate as everyone not resident in Switzerland: CHF 3,343.50 per semester."
     },
     "otherFeesPerYear": 120,
     "feeRule": "Most unis charge a surcharge for foreigners who got their school diploma abroad. Swiss citizens and people resident in CH when they got their Matura pay the base rate. Swiss nationals CHF 1,310.50/sem; foreign nationals (incl. EU and residents) CHF 3,343.50/sem (2026-27, set by nationality).",
@@ -28500,9 +28506,10 @@
       "confidence": "verified"
     },
     "tuitionEuPerYear": {
-      "min": 7155,
-      "max": 7155,
-      "currency": "EUR"
+      "min": 7088.22,
+      "max": 7088.22,
+      "currency": "EUR",
+      "note": "EU citizens pay the same foreigner rate as everyone not resident in Switzerland: CHF 3,343.50 per semester."
     },
     "otherFeesPerYear": 120,
     "feeRule": "Most unis charge a surcharge for foreigners who got their school diploma abroad. Swiss citizens and people resident in CH when they got their Matura pay the base rate. Swiss nationals CHF 1,310.50/sem; foreign nationals (incl. EU and residents) CHF 3,343.50/sem (2026-27, set by nationality).",
