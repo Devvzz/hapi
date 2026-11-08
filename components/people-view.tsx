@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { opportunities } from "@/lib/data";
 import { fetchPublicProfile, timeAgo, type PublicProfile, type Review } from "@/lib/social";
 import { useAccount } from "./account-provider";
@@ -92,4 +93,11 @@ export function PeopleView({ id }: { id: string }) {
       </section>
     </div>
   );
+}
+
+// /people?id=… : read the id from the address.
+export function PersonFromQuery() {
+  const id = useSearchParams().get("id");
+  if (!id) return <p className="pt-10 text-center text-slate-600">No profile selected.</p>;
+  return <PeopleView id={id} />;
 }
