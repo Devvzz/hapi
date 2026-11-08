@@ -139,7 +139,7 @@ export function ProfileForm() {
   const ready = profileIsSet(profile);
 
   return (
-    <form className="max-w-2xl space-y-6 rounded-xl border border-slate-200 bg-white p-5 text-sm" onSubmit={(e) => e.preventDefault()}>
+    <form className="max-w-2xl space-y-6 rounded-xl border border-slate-200 bg-panel p-5 text-sm" onSubmit={(e) => e.preventDefault()}>
       <div className="grid gap-4 sm:grid-cols-2">
         <NationalityField value={profile.nationality} onChange={(nationality) => update({ nationality })} />
         <label className="space-y-1">

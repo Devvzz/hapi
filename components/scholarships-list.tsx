@@ -72,7 +72,7 @@ export function ScholarshipsList({ country }: { country: string }) {
         )}
         <ul className="grid gap-3 md:grid-cols-2">
           {national.map(({ o, m, where }) => (
-            <li key={o.id} className="space-y-1 rounded-xl border border-slate-200 bg-white p-4 text-sm shadow-sm">
+            <li key={o.id} className="space-y-1 rounded-xl border border-slate-200 bg-panel p-4 text-sm shadow-sm">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <p className="text-xs uppercase tracking-wide text-slate-500">{o.provider}</p>
@@ -102,7 +102,7 @@ export function ScholarshipsList({ country }: { country: string }) {
         <h2 className="text-lg font-semibold">Scholarships at the universities</h2>
         <p className="text-xs text-slate-500">From our university research. Amounts and rules change every year, so confirm on the university page.</p>
         {universityNotes.length === 0 && <p className="text-sm text-slate-600">No university scholarship notes for this country.</p>}
-        <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
+        <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-panel">
           {universityNotes.map((u) => (
             <li key={u.university} className="p-3 text-sm">
               <p className="font-medium">

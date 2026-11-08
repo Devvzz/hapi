@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AgGridReact } from "ag-grid-react";
-import { AllCommunityModule, ModuleRegistry, type CellValueChangedEvent, type ColDef, type ICellRendererParams } from "ag-grid-community";
+import { AllCommunityModule, ModuleRegistry, colorSchemeDark, themeQuartz, type CellValueChangedEvent, type ColDef, type ICellRendererParams } from "ag-grid-community";
 import { opportunities } from "@/lib/data";
 import { formatDate } from "@/lib/dates";
 import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
@@ -11,6 +11,18 @@ import type { PlanRow } from "@/lib/types";
 import { SponsorPanel } from "./sponsor-panel";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
+
+// Dark grid that matches the Hapi theme
+const gridTheme = themeQuartz.withPart(colorSchemeDark).withParams({
+  backgroundColor: "#0c0919",
+  foregroundColor: "#ece9ff",
+  headerBackgroundColor: "#16112b",
+  accentColor: "#8b5cf6",
+  borderColor: "#2a2547",
+  rowHoverColor: "#1c1638",
+  oddRowBackgroundColor: "#0f0b20",
+  fontFamily: "inherit",
+});
 
 type GridRow = PlanRow & { isTotal?: boolean };
 
@@ -97,6 +109,7 @@ export function CostPlan() {
         ))}
         <div className="h-96 w-full">
           <AgGridReact<GridRow>
+            theme={gridTheme}
             rowData={plan}
             columnDefs={columns}
             pinnedBottomRowData={pinned}
@@ -108,14 +121,14 @@ export function CostPlan() {
         <div className="flex flex-wrap gap-2 text-sm">
           <input className="flex-1 rounded border border-slate-300 px-2 py-1" placeholder="Own cost, e.g. visa fee" value={newItem} onChange={(e) => setNewItem(e.target.value)} />
           <input className="w-32 rounded border border-slate-300 px-2 py-1" type="number" min={0} placeholder="EUR" value={newAmount} onChange={(e) => setNewAmount(e.target.value)} />
-          <button onClick={addRow} className="rounded bg-slate-800 px-3 py-1 text-white">Add cost</button>
+          <button onClick={addRow} className="rounded bg-violet-600 px-3 py-1 text-white">Add cost</button>
         </div>
       </section>
 
       <SponsorPanel />
 
       {savedItems.length > 0 && (
-        <section className="rounded-xl border border-slate-200 bg-white p-4">
+        <section className="rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">Saved opportunities</h2>
           <ul className="mt-2 space-y-1 text-sm">
             {savedItems.map((o) => (
@@ -128,7 +141,7 @@ export function CostPlan() {
         </section>
       )}
 
-      <section className="rounded-xl border border-slate-200 bg-white p-4">
+      <section className="rounded-xl border border-slate-200 bg-panel p-4">
         <h2 className="font-semibold">Activity log</h2>
         {log.length === 0 ? (
           <p className="text-sm text-slate-600">Nothing yet.</p>

@@ -39,7 +39,7 @@ export function WhatsChanged() {
   const confirmed = run?.checked.filter((c) => !c.change && c.status === "open") ?? [];
 
   return (
-    <section className="space-y-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+    <section className="space-y-4 rounded-xl border border-slate-200 bg-panel p-5 shadow-sm">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="text-lg font-semibold">What changed this week</h2>
         {run?.ranAt && (

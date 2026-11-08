@@ -42,7 +42,7 @@ export function FindMore() {
   }
 
   return (
-    <section className="space-y-3 rounded-xl border border-dashed border-slate-300 bg-white p-4">
+    <section className="space-y-3 rounded-xl border border-dashed border-slate-300 bg-panel p-4">
       <h2 className="font-semibold">Find more with AI</h2>
       <p className="text-sm text-slate-600">Gemini searches the web with Google Search. Results are unverified until you check the link, and they are never added to the checked list.</p>
       <div className="flex flex-wrap gap-2">
@@ -53,7 +53,7 @@ export function FindMore() {
           onChange={(e) => setTopic(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && search()}
         />
-        <button onClick={search} disabled={state === "loading"} className="rounded bg-slate-800 px-3 py-1.5 text-sm text-white disabled:opacity-50">
+        <button onClick={search} disabled={state === "loading"} className="rounded bg-violet-600 px-3 py-1.5 text-sm text-white disabled:opacity-50">
           {state === "loading" ? "Searching…" : "Find more"}
         </button>
       </div>

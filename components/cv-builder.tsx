@@ -30,7 +30,7 @@ export function CvBuilder() {
 
   if (!active) {
     return (
-      <div className="mx-auto max-w-lg space-y-3 rounded-xl border border-teal-200 bg-white p-6 text-center">
+      <div className="mx-auto max-w-lg space-y-3 rounded-xl border border-teal-200 bg-panel p-6 text-center">
         <h2 className="text-lg font-semibold">The CV builder is part of Hapi Premium</h2>
         <p className="text-sm text-slate-600">A CV in the official Europass structure, with AI that polishes your own words without inventing anything.</p>
         <Link href="/premium" className="inline-block rounded bg-teal-700 px-4 py-2 text-sm font-medium text-white">
@@ -126,7 +126,7 @@ export function CvBuilder() {
           </button>
         </div>
 
-        <section className="space-y-2 rounded-xl border border-slate-200 bg-white p-4">
+        <section className="space-y-2 rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">Personal information</h2>
           <div className="grid gap-3 sm:grid-cols-2">
             <Field label="First name"><input className={input} value={cv.firstName} onChange={(e) => set({ firstName: e.target.value })} /></Field>
@@ -144,7 +144,7 @@ export function CvBuilder() {
           {help("about", "about", cv.about, (t) => set({ about: t }))}
         </section>
 
-        <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-4">
+        <section className="space-y-3 rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">Work experience</h2>
           <p className="text-xs text-slate-500">Jobs, internships, summer work, volunteering roles. Newest first.</p>
           {cv.work.map((w, i) => (
@@ -170,7 +170,7 @@ export function CvBuilder() {
           <button type="button" className="text-sm text-teal-700" onClick={() => setList("work", [...cv.work, blankWork()])}>+ Add experience</button>
         </section>
 
-        <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-4">
+        <section className="space-y-3 rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">Education and training</h2>
           {cv.education.map((ed, i) => (
             <div key={ed.id} className="space-y-2 rounded border border-slate-200 p-3">
@@ -199,7 +199,7 @@ export function CvBuilder() {
           <button type="button" className="text-sm text-teal-700" onClick={() => setList("education", [...cv.education, blankEdu()])}>+ Add education</button>
         </section>
 
-        <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-4">
+        <section className="space-y-3 rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">Language skills</h2>
           <Field label="Mother tongue(s)" wide><input className={input} value={cv.motherTongues} onChange={(e) => set({ motherTongues: e.target.value })} /></Field>
           <p className="text-xs text-slate-500">Other languages, rated with the CEFR self-assessment grid (A1 basic to C2 proficient).</p>
@@ -225,7 +225,7 @@ export function CvBuilder() {
           <button type="button" className="text-sm text-teal-700" onClick={() => setList("languages", [...cv.languages, blankLang()])}>+ Add language</button>
         </section>
 
-        <section className="space-y-2 rounded-xl border border-slate-200 bg-white p-4">
+        <section className="space-y-2 rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">Skills</h2>
           <Field label="Digital skills" wide><textarea rows={3} className={input} placeholder="e.g. Java, Python, Git, Microsoft Office" value={cv.digitalSkills} onChange={(e) => set({ digitalSkills: e.target.value })} /></Field>
           {help("digital", "skills", cv.digitalSkills, (t) => set({ digitalSkills: t }), "digital skills")}
@@ -234,7 +234,7 @@ export function CvBuilder() {
           <Field label="Driving licence (e.g. B)" wide><input className={input} value={cv.drivingLicence} onChange={(e) => set({ drivingLicence: e.target.value })} /></Field>
         </section>
 
-        <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-4">
+        <section className="space-y-3 rounded-xl border border-slate-200 bg-panel p-4">
           <h2 className="font-semibold">More sections</h2>
           {cv.extras.map((x, i) => (
             <div key={x.id} className="grid gap-2 rounded border border-slate-200 p-3 sm:grid-cols-2">
@@ -301,7 +301,7 @@ function CvPreview({ cv }: { cv: Cv }) {
   const contact = [cv.dateOfBirth && `Date of birth: ${cv.dateOfBirth.split("-").reverse().join("/")}`, cv.nationality && `Nationality: ${cv.nationality}`, cv.phone && `Phone: ${cv.phone}`, cv.email && `Email: ${cv.email}`, cv.website, cv.address && `Address: ${cv.address}`].filter(Boolean);
   const headings = [...new Set(cv.extras.map((x) => x.heading))];
   return (
-    <article className="cv-print rounded-xl border border-slate-200 bg-white p-6 text-[13px] leading-snug text-slate-900 shadow-sm print:rounded-none print:border-0 print:p-0 print:shadow-none">
+    <article className="cv-print paper rounded-xl border border-slate-200 bg-white p-6 text-[13px] leading-snug text-slate-900 shadow-sm print:rounded-none print:border-0 print:p-0 print:shadow-none">
       <header className="border-b border-slate-200 pb-3">
         <p className="text-[10px] font-semibold uppercase tracking-widest text-[#0e47cb]">Curriculum vitae · Europass structure</p>
         <h2 className="text-2xl font-bold">{name || "Your name"}</h2>

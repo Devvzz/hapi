@@ -75,14 +75,14 @@ export function CalendarView() {
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-2">
-        <button onClick={() => move(-1)} className="rounded border border-slate-300 bg-white px-2 py-1 text-sm">
+        <button onClick={() => move(-1)} className="rounded border border-slate-300 bg-panel px-2 py-1 text-sm">
           ‹
         </button>
         <h2 className="w-44 text-center font-semibold">{first.toLocaleDateString("en-GB", { month: "long", year: "numeric" })}</h2>
-        <button onClick={() => move(1)} className="rounded border border-slate-300 bg-white px-2 py-1 text-sm">
+        <button onClick={() => move(1)} className="rounded border border-slate-300 bg-panel px-2 py-1 text-sm">
           ›
         </button>
-        <button onClick={() => { setCursor(null); setPicked(today); }} className="rounded border border-slate-300 bg-white px-2 py-1 text-sm">
+        <button onClick={() => { setCursor(null); setPicked(today); }} className="rounded border border-slate-300 bg-panel px-2 py-1 text-sm">
           Today
         </button>
         <button onClick={exportIcs} disabled={events.length === 0} className="ml-auto rounded bg-teal-700 px-3 py-1.5 text-sm text-white disabled:opacity-50">
@@ -90,7 +90,7 @@ export function CalendarView() {
         </button>
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <div className="overflow-hidden rounded-xl border border-slate-200 bg-panel">
         <div className="grid grid-cols-7 border-b border-slate-200 bg-slate-50 text-center text-xs font-medium text-slate-500">
           {WEEKDAYS.map((d) => (
             <div key={d} className="py-1.5">
@@ -158,18 +158,18 @@ export function CalendarView() {
         </section>
 
         <aside className="space-y-4">
-          <section className="space-y-2 rounded-xl border border-slate-200 bg-white p-4 text-sm">
+          <section className="space-y-2 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
             <h3 className="font-semibold">Add your own</h3>
             <input className="w-full rounded border border-slate-300 px-2 py-1" placeholder="e.g. IELTS exam, school exams" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} />
             <input type="date" className="w-full rounded border border-slate-300 px-2 py-1" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })} />
             <input className="w-full rounded border border-slate-300 px-2 py-1" placeholder="Note (optional)" value={form.note} onChange={(e) => setForm({ ...form, note: e.target.value })} />
-            <button onClick={addCustom} disabled={!form.title.trim() || !form.date} className="rounded bg-slate-800 px-3 py-1 text-white disabled:opacity-50">
+            <button onClick={addCustom} disabled={!form.title.trim() || !form.date} className="rounded bg-violet-600 px-3 py-1 text-white disabled:opacity-50">
               Add
             </button>
           </section>
 
           {undated.length > 0 && (
-            <section className="space-y-2 rounded-xl border border-slate-200 bg-white p-4 text-sm">
+            <section className="space-y-2 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
               <h3 className="font-semibold">No date yet</h3>
               <p className="text-xs text-slate-500">On your list, but the date is not published. Check the official page later.</p>
               <ul className="space-y-1">
@@ -197,7 +197,7 @@ export function CalendarView() {
 function EventRow({ e, today, onRemove }: { e: CalEvent; today: string; onRemove: (e: CalEvent) => void }) {
   const left = daysBetween(today, e.date);
   return (
-    <li className="flex flex-wrap items-center gap-2 rounded-lg border border-slate-200 bg-white p-2 text-sm">
+    <li className="flex flex-wrap items-center gap-2 rounded-lg border border-slate-200 bg-panel p-2 text-sm">
       <span className="w-24 shrink-0 text-xs text-slate-500">{formatDate(e.date)}</span>
       <span className={`rounded px-1.5 py-0.5 text-xs ${KIND_STYLE[e.kind]}`}>{KIND_LABEL[e.kind]}</span>
       <span className="min-w-0 flex-1">

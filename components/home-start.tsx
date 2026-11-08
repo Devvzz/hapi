@@ -9,7 +9,7 @@ export function HomeStart() {
   const [profile] = useProfile();
   if (!profileIsSet(profile)) {
     return (
-      <section className="space-y-3 rounded-xl border border-teal-200 bg-white p-6">
+      <section className="space-y-3 rounded-2xl border border-violet-400/30 bg-panel p-6 shadow-[0_0_40px_-15px_rgba(139,92,246,0.8)]">
         <h2 className="text-xl font-semibold">Start with your profile</h2>
         <p className="text-sm text-slate-600">Nationality, age, school, languages and budget. Then Hapi shows only what you can really apply to.</p>
         <div className="flex flex-wrap gap-3">
@@ -32,14 +32,14 @@ export function HomeStart() {
           edit
         </Link>
       </p>
-      <h2 className="text-xl font-semibold">What do you want to look at?</h2>
+      <h2 className="text-2xl font-bold">Where do you want to go?</h2>
       <div className="grid gap-4 sm:grid-cols-2">
-        <Link href="/universities" className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-teal-400">
-          <h3 className="font-semibold text-teal-800">Universities →</h3>
+        <Link href="/universities" className="glow-card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 className="font-display text-lg font-semibold text-white">🎓 Universities <span className="text-violet-300">→</span></h3>
           <p className="mt-1 text-sm text-slate-600">Bachelor programmes you can apply to, your real price and scholarships.</p>
         </Link>
-        <Link href="/opportunities" className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:border-teal-400">
-          <h3 className="font-semibold text-teal-800">Opportunities →</h3>
+        <Link href="/opportunities" className="glow-card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 className="font-display text-lg font-semibold text-white">🚀 Opportunities <span className="text-violet-300">→</span></h3>
           <p className="mt-1 text-sm text-slate-600">Hackathons, competitions, exchanges, internships, certificates and events you can join.</p>
         </Link>
       </div>

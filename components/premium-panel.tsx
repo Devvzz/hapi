@@ -78,7 +78,7 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
 
   return (
     <div className="space-y-6">
-      <section className="space-y-3 rounded-xl border border-teal-200 bg-white p-5">
+      <section className="space-y-3 rounded-xl border border-teal-200 bg-panel p-5">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="text-lg font-semibold">Hapi Premium</h2>
           <p className="text-sm text-slate-600">€2.99 per month · PayPal sandbox, no real money</p>

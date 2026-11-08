@@ -42,12 +42,12 @@ export function UniversitiesList() {
           <button
             key={key}
             onClick={() => setTab(key)}
-            className={`rounded-full px-4 py-1.5 text-sm ${tab === key ? "bg-teal-700 text-white" : "border border-slate-300 bg-white"}`}
+            className={`rounded-full px-4 py-1.5 text-sm ${tab === key ? "bg-teal-700 text-white" : "border border-slate-300 bg-panel"}`}
           >
             {label}
           </button>
         ))}
-        <select className="ml-auto rounded border border-slate-300 bg-white px-2 py-1 text-sm" value={country} onChange={(e) => setCountry(e.target.value)}>
+        <select className="ml-auto rounded border border-slate-300 bg-panel px-2 py-1 text-sm" value={country} onChange={(e) => setCountry(e.target.value)}>
           {FOCUS_COUNTRIES.map((c) => (
             <option key={c}>{c}</option>
           ))}
@@ -166,7 +166,7 @@ function Universities({ country }: { country: string }) {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap gap-3 rounded-xl border border-slate-200 bg-white p-4 text-sm">
+      <div className="flex flex-wrap gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
         <select className="rounded border border-slate-300 px-2 py-1" value={status} onChange={(e) => setStatus(e.target.value as typeof status)}>
           <option value="all">All programmes</option>
           <option value="ok">✅ Only where I can apply</option>
@@ -194,7 +194,7 @@ function Universities({ country }: { country: string }) {
           const okCount = u.rows.filter((r) => r.e.status === "ok").length;
           const isOpen = open[u.id] ?? false;
           return (
-            <li key={u.id} className="rounded-xl border border-slate-200 bg-white shadow-sm">
+            <li key={u.id} className="rounded-xl border border-slate-200 bg-panel shadow-sm">
               <button onClick={() => setOpen((o) => ({ ...o, [u.id]: !isOpen }))} className="flex w-full flex-wrap items-start justify-between gap-3 p-4 text-left">
                 <div>
                   <h2 className="font-semibold">
@@ -288,7 +288,7 @@ function Universities({ country }: { country: string }) {
                         )}
                         {ex === "error" && <p className="mt-2 text-sm text-rose-700">AI is busy. The reasons above still apply.</p>}
                         <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
-                          <button onClick={() => mark(p, "apply")} className={`rounded px-2 py-1 ${marks[p.id] === "apply" ? "bg-amber-400 text-slate-900" : "border border-amber-500 text-amber-800"}`}>
+                          <button onClick={() => mark(p, "apply")} className={`rounded px-2 py-1 ${marks[p.id] === "apply" ? "bg-amber-400 text-[#1a1300]" : "border border-amber-500 text-amber-800"}`}>
                             {marks[p.id] === "apply" ? "⭐ Want to apply" : "☆ Want to apply"}
                           </button>
                           <button onClick={() => mark(p, "no")} className="rounded border border-slate-300 px-2 py-1 text-slate-600">
@@ -319,7 +319,7 @@ function Universities({ country }: { country: string }) {
         })}
       </ul>
       {unis.length > limit && (
-        <button onClick={() => setLimit(limit + 15)} className="rounded border border-slate-300 bg-white px-4 py-2 text-sm">
+        <button onClick={() => setLimit(limit + 15)} className="rounded border border-slate-300 bg-panel px-4 py-2 text-sm">
           Show more universities
         </button>
       )}

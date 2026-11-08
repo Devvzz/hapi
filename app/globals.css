@@ -1,10 +1,181 @@
 @import "tailwindcss";
 
+/*
+  Hapi theme: deep space black, violet to cyan glow, glass panels.
+  The neutral and accent scales are remapped once here, so every page shares the same dark look.
+  Light = text, dark = surfaces. ".paper" restores the light palette for printed documents (the CV).
+*/
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+
+  --color-panel: rgb(20 16 40 / 0.62);
+  --color-glow: #8b5cf6;
+
+  --color-slate-50: #05040b;
+  --color-slate-100: #161229;
+  --color-slate-200: #2a2547;
+  --color-slate-300: #3d3666;
+  --color-slate-400: #6f6a92;
+  --color-slate-500: #918cb2;
+  --color-slate-600: #aca7cb;
+  --color-slate-700: #cbc7e2;
+  --color-slate-800: #e5e2f6;
+  --color-slate-900: #f5f3ff;
+
+  --color-teal-50: #1a1236;
+  --color-teal-100: #23194a;
+  --color-teal-200: #3f2d7c;
+  --color-teal-400: #a78bfa;
+  --color-teal-600: #7c3aed;
+  --color-teal-700: #8b5cf6;
+  --color-teal-800: #c4b5fd;
+  --color-teal-900: #ddd6fe;
+
+  --color-emerald-50: #072821;
+  --color-emerald-100: #0b3529;
+  --color-emerald-700: #34d399;
+  --color-emerald-800: #6ee7b7;
+  --color-emerald-900: #a7f3d0;
+
+  --color-amber-50: #261b06;
+  --color-amber-100: #36270a;
+  --color-amber-200: #5a4210;
+  --color-amber-300: #7a5a14;
+  --color-amber-700: #fbbf24;
+  --color-amber-800: #fcd34d;
+  --color-amber-900: #fde68a;
+
+  --color-rose-100: #3a0d1b;
+  --color-rose-700: #fb7185;
+  --color-rose-800: #fda4af;
+  --color-rose-900: #fecdd3;
+
+  --color-sky-100: #0b2940;
+  --color-sky-900: #bae6fd;
+  --color-violet-100: #2a1752;
+  --color-violet-900: #ddd6fe;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Light palette again, for documents that are printed on white paper. */
+.paper {
+  color-scheme: light;
+  --color-slate-50: oklch(98.4% 0.003 247.858);
+  --color-slate-100: oklch(96.8% 0.007 247.896);
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-300: oklch(86.9% 0.022 252.894);
+  --color-slate-400: oklch(70.4% 0.04 256.788);
+  --color-slate-500: oklch(55.4% 0.046 257.417);
+  --color-slate-600: oklch(44.6% 0.043 257.281);
+  --color-slate-700: oklch(37.2% 0.044 257.287);
+  --color-slate-800: oklch(27.9% 0.041 260.031);
+  --color-slate-900: oklch(20.8% 0.042 265.755);
+}
+
 body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  background-color: #05040b;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 15% -10%, rgb(124 58 237 / 0.28), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgb(34 211 238 / 0.14), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 50% 110%, rgb(124 58 237 / 0.16), transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Faint grid over the whole page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgb(139 92 246 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(139 92 246 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 20%, black, transparent);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-sora), var(--font-geist-sans), sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Glass panels */
+.bg-panel {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Inputs and selects on dark */
+input,
+select,
+textarea {
+  background-color: rgb(10 8 22 / 0.7);
+  color: var(--color-slate-900);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-slate-400);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-glow) !important;
+  box-shadow: 0 0 0 3px rgb(139 92 246 / 0.25);
+}
+option {
+  background: #110d22;
+}
+input[type="checkbox"] {
+  accent-color: #8b5cf6;
+}
+
+/* Primary buttons: violet to cyan with a soft glow */
+.bg-teal-700 {
+  background-image: linear-gradient(135deg, #7c3aed, #6366f1 60%, #0891b2);
+  box-shadow: 0 0 18px -4px rgb(139 92 246 / 0.7);
+}
+.bg-teal-700:hover {
+  filter: brightness(1.12);
+}
+
+.text-gradient {
+  background-image: linear-gradient(90deg, #ddd6fe, #a78bfa 35%, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.glow-card:hover {
+  transform: translateY(-2px);
+  border-color: rgb(139 92 246 / 0.7);
+  box-shadow: 0 10px 40px -12px rgb(139 92 246 / 0.6);
+}
+
+::selection {
+  background: rgb(139 92 246 / 0.45);
+}
+
+@media print {
+  body {
+    background: white;
+  }
+  body::before {
+    display: none;
+  }
 }

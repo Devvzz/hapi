@@ -106,7 +106,7 @@ export function SponsorPanel() {
   const validEmail = draft ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(draft.sponsorEmail) : false;
 
   return (
-    <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-4">
+    <section className="space-y-3 rounded-xl border border-slate-200 bg-panel p-4">
       <h2 className="font-semibold">Family sponsorship with PayPal</h2>
       <p className="text-sm text-slate-600">
         Ask Hapi in your own words, e.g. &quot;Ask Uncle Arben (arben@example.com) to pay the visa fee&quot;. Hapi drafts a PayPal invoice. Nothing is sent before you press Approve.

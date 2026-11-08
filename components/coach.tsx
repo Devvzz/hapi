@@ -47,11 +47,11 @@ export function Coach() {
   }
 
   return (
-    <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5">
+    <section className="space-y-3 rounded-xl border border-slate-200 bg-panel p-5">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <h2 className="text-lg font-semibold">Your weekly coach</h2>
         {active && (
-          <button onClick={run} disabled={state === "loading"} className="rounded bg-slate-800 px-3 py-1.5 text-sm text-white disabled:opacity-50">
+          <button onClick={run} disabled={state === "loading"} className="rounded bg-violet-600 px-3 py-1.5 text-sm text-white disabled:opacity-50">
             {state === "loading" ? "Thinking…" : result ? "Make a new plan" : "Make this week's plan"}
           </button>
         )}
