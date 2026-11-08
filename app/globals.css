@@ -247,6 +247,32 @@ input[type="checkbox"] {
   color: #67e8f9;
 }
 
+/* Premium button: gold to violet, with a light that sweeps across every few seconds */
+@keyframes hapi-shine {
+  0%,
+  60% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+  }
+}
+.premium-btn {
+  background-image: linear-gradient(120deg, #f59e0b, #ec4899 45%, #8b5cf6 75%, #6366f1);
+  box-shadow: 0 0 28px -6px rgb(236 72 153 / 0.75), 0 0 0 1px rgb(253 230 138 / 0.35) inset;
+}
+.premium-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.55), transparent);
+  animation: hapi-shine 4s ease-in-out infinite;
+}
+.premium-btn:hover {
+  box-shadow: 0 0 40px -4px rgb(236 72 153 / 0.95), 0 0 0 1px rgb(253 230 138 / 0.6) inset;
+}
+
 /* Welcome screen */
 @keyframes hapi-in {
   from {
@@ -285,7 +311,8 @@ input[type="checkbox"] {
 
 @media (prefers-reduced-motion: reduce) {
   .welcome-in,
-  .welcome-orb {
+  .welcome-orb,
+  .premium-btn::after {
     animation: none !important;
   }
   .choice-card,

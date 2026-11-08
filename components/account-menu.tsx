@@ -39,7 +39,7 @@ export function AccountMenu() {
           {initial}
           {account.email && <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-[#070510] bg-emerald-400" />}
         </span>
-        <span className="hidden max-w-24 truncate lg:inline">{user.name || "Account"}</span>
+        <span className="hidden max-w-24 truncate xl:inline">{user.name || "Account"}</span>
       </button>
 
       {open && (
