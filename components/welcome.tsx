@@ -1,0 +1,120 @@
+"use client";
+
+import { useState, useSyncExternalStore, type FormEvent } from "react";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { HapiMark } from "./logo";
+import { Starfield } from "./starfield";
+import { DEMO_KEY } from "@/lib/demo";
+import { useStored } from "@/lib/storage";
+import { useUser, type HapiUser } from "@/lib/user";
+
+const noop = () => () => {};
+const GOALS: { value: NonNullable<HapiUser["goal"]>; title: string; text: string }[] = [
+  { value: "universities", title: "Study at a university", text: "Bachelor programmes, fees, entry tests, scholarships" },
+  { value: "opportunities", title: "Opportunities", text: "Hackathons, competitions, exchanges, internships" },
+  { value: "both", title: "Both", text: "Show me everything" },
+];
+
+// First visit: ask for a name and what the student is looking for, over an animated background.
+export function Welcome() {
+  const mounted = useSyncExternalStore(noop, () => true, () => false);
+  const [user, setUser] = useUser();
+  const [demo] = useStored(DEMO_KEY, false);
+  const path = usePathname();
+  const router = useRouter();
+  const [step, setStep] = useState<0 | 1>(0);
+  const [name, setName] = useState("");
+  const [leaving, setLeaving] = useState(false);
+
+  if (!mounted || user.name || demo || path.startsWith("/api")) return null;
+  if (typeof window !== "undefined" && new URLSearchParams(window.location.search).has("demo")) return null;
+
+  const clean = name.trim().replace(/\s+/g, " ").slice(0, 40);
+
+  function next(e: FormEvent) {
+    e.preventDefault();
+    if (clean.length >= 2) setStep(1);
+  }
+
+  function finish(goal: NonNullable<HapiUser["goal"]>) {
+    setLeaving(true);
+    window.setTimeout(() => {
+      setUser({ name: clean, goal, createdAt: new Date().toISOString() });
+      router.push("/profile");
+    }, 450);
+  }
+
+  return (
+    <div className={`fixed inset-0 z-[100] overflow-hidden bg-[#05040b] transition-opacity duration-500 ${leaving ? "opacity-0" : "opacity-100"}`}>
+      <div className="welcome-orb left-[-10%] top-[-15%] h-[55vmax] w-[55vmax] bg-violet-600/30" />
+      <div className="welcome-orb welcome-orb-2 bottom-[-20%] right-[-10%] h-[50vmax] w-[50vmax] bg-cyan-500/20" />
+      <Starfield />
+
+      <div className="relative z-10 flex h-full items-center justify-center px-5">
+        <div className="w-full max-w-md text-center">
+          <div className="welcome-in mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-3xl border border-violet-400/40 bg-[#0b0818cc] shadow-[0_0_60px_-8px_rgba(139,92,246,0.9)]">
+            <HapiMark size={64} />
+          </div>
+
+          {step === 0 ? (
+            <form onSubmit={next} key="name" className="space-y-6">
+              <div className="welcome-in space-y-2" style={{ animationDelay: "120ms" }}>
+                <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">Built by a student, for students</p>
+                <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                  Welcome to <span className="text-gradient">hapi</span>
+                </h1>
+                <p className="text-slate-600">Your next step abroad starts here. What should we call you?</p>
+              </div>
+              <div className="welcome-in space-y-3" style={{ animationDelay: "260ms" }}>
+                <input
+                  autoFocus
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Your first name"
+                  autoComplete="given-name"
+                  maxLength={40}
+                  className="w-full rounded-2xl border border-violet-400/40 px-5 py-4 text-center text-lg"
+                />
+                <button type="submit" disabled={clean.length < 2} className="w-full rounded-2xl bg-teal-700 px-5 py-3.5 font-semibold text-white transition disabled:opacity-40">
+                  Continue
+                </button>
+              </div>
+              <p className="welcome-in text-xs text-slate-500" style={{ animationDelay: "400ms" }}>
+                Saved only in this browser. No password, no email.{" "}
+                <Link href="/?demo=1" className="text-violet-300 underline-offset-2 hover:underline">
+                  Or try it with a sample student
+                </Link>
+              </p>
+            </form>
+          ) : (
+            <div key="goal" className="space-y-6">
+              <div className="welcome-in space-y-2">
+                <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                  Nice to meet you, <span className="text-gradient">{clean}</span>.
+                </h1>
+                <p className="text-slate-600">What are you looking for?</p>
+              </div>
+              <div className="space-y-3">
+                {GOALS.map((g, i) => (
+                  <button
+                    key={g.value}
+                    onClick={() => finish(g.value)}
+                    className="welcome-in glow-card block w-full rounded-2xl border border-white/10 bg-panel px-5 py-4 text-left"
+                    style={{ animationDelay: `${120 + i * 110}ms` }}
+                  >
+                    <span className="font-display block font-semibold text-white">{g.title}</span>
+                    <span className="block text-sm text-slate-600">{g.text}</span>
+                  </button>
+                ))}
+              </div>
+              <button onClick={() => setStep(0)} className="text-xs text-slate-500 hover:text-slate-700">
+                ← Back
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useUser } from "@/lib/user";
 import { Logo } from "./logo";
 
 const LINKS = [
@@ -16,6 +17,7 @@ const LINKS = [
 
 export function Nav() {
   const path = usePathname();
+  const [user] = useUser();
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#07051099] backdrop-blur-xl print:hidden">
       <nav className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
@@ -48,6 +50,14 @@ export function Nav() {
         >
           ✦ Premium
         </Link>
+        {user.name && (
+          <Link href="/profile" title="Your profile" className="flex shrink-0 items-center gap-2 rounded-full border border-white/10 bg-white/5 py-1 pl-1 pr-3 text-sm text-slate-700 hover:border-violet-400/60">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 text-xs font-bold text-white">
+              {user.name.charAt(0).toUpperCase()}
+            </span>
+            <span className="hidden max-w-24 truncate lg:inline">{user.name}</span>
+          </Link>
+        )}
       </nav>
     </header>
   );

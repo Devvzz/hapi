@@ -15,8 +15,7 @@ export default function Home() {
     <div className="space-y-14">
       <section className="relative grid items-center gap-10 pt-6 md:grid-cols-[1.4fr_1fr]">
         <div className="space-y-6">
-          <p className="inline-flex items-center gap-2 rounded-full border border-violet-400/40 bg-violet-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-violet-200">
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan-300 shadow-[0_0_8px_#67e8f9]" />
+          <p className="inline-flex items-center rounded-full border border-violet-400/40 bg-violet-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-violet-200">
             Built by a student, for students
           </p>
           <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">

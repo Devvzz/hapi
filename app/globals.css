@@ -171,6 +171,140 @@ input[type="checkbox"] {
   background: rgb(139 92 246 / 0.45);
 }
 
+/* Choice cards: cursor spotlight, a light that runs around the border, line art that draws itself */
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes hapi-spin {
+  to {
+    --angle: 360deg;
+  }
+}
+.choice-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+}
+.choice-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(420px circle at var(--x, 50%) var(--y, 50%), rgb(139 92 246 / 0.22), transparent 45%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.choice-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(from var(--angle), transparent 0deg 220deg, #8b5cf6 280deg, #22d3ee 330deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  animation: hapi-spin 3.5s linear infinite;
+  pointer-events: none;
+}
+.choice-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px -20px rgb(139 92 246 / 0.7);
+}
+.choice-card:hover::before,
+.choice-card:hover::after {
+  opacity: 1;
+}
+.choice-card .art-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.4s cubic-bezier(0.6, 0, 0.2, 1);
+}
+.choice-card:hover .art-draw {
+  stroke-dashoffset: 0;
+}
+.choice-card .art-dot {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0.3);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.choice-card:hover .art-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+.choice-card .art-orbit {
+  transform-box: view-box;
+  transform-origin: 60px 60px;
+  transition: transform 1.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.choice-card:hover .art-orbit {
+  transform: rotate(160deg);
+}
+.choice-card .go {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.choice-card:hover .go {
+  transform: translateX(6px);
+  color: #67e8f9;
+}
+
+/* Welcome screen */
+@keyframes hapi-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+@keyframes hapi-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(6%, 8%) scale(1.08);
+  }
+}
+.welcome-in {
+  animation: hapi-in 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.welcome-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  animation: hapi-float 16s ease-in-out infinite;
+}
+.welcome-orb-2 {
+  animation-duration: 21s;
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-in,
+  .welcome-orb {
+    animation: none !important;
+  }
+  .choice-card,
+  .choice-card::after,
+  .choice-card .art-draw,
+  .choice-card .art-orbit {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 @media print {
   body {
     background: white;

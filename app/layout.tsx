@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { DemoBanner } from "@/components/demo-banner";
 import { HapiMark } from "@/components/logo";
 import { Nav } from "@/components/nav";
+import { Welcome } from "@/components/welcome";
 import "./globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Suspense fallback={null}>
           <DemoBanner />
         </Suspense>
+        <Welcome />
         <Nav />
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 print:max-w-none print:p-0">{children}</main>
         <footer className="mt-10 border-t border-white/10 print:hidden">

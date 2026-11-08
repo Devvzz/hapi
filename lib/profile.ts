@@ -47,6 +47,7 @@ export const STORAGE = {
   cv: "hapi.cv",
   uniMarks: "hapi.uniMarks",
   events: "hapi.events",
+  user: "hapi.user",
 } as const;
 
 export type UniMark = "apply" | "no";

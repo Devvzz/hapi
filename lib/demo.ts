@@ -8,7 +8,7 @@ import type { PlanRow, Profile } from "./types";
 export const DEMO_KEY = "hapi.demo";
 const BACKUP_KEY = "hapi.backup";
 export const DEMO_SUBSCRIPTION = "DEMO";
-const KEYS = [STORAGE.profile, STORAGE.plan, STORAGE.saved, STORAGE.premium, STORAGE.coach, STORAGE.cv, STORAGE.uniMarks, STORAGE.events];
+const KEYS = [STORAGE.profile, STORAGE.plan, STORAGE.saved, STORAGE.premium, STORAGE.coach, STORAGE.cv, STORAGE.uniMarks, STORAGE.events, STORAGE.user];
 
 const DEMO_PROFILE: Profile = {
   nationality: "Germany",
@@ -67,6 +67,7 @@ export function enterDemo(now: Date) {
     write(STORAGE.plan, demoPlan(now));
     write(STORAGE.saved, demoSaved(now));
     write(STORAGE.premium, { subscriptionId: DEMO_SUBSCRIPTION, status: "ACTIVE" });
+    write(STORAGE.user, { name: "Alex", goal: "both", createdAt: now.toISOString() });
     write(STORAGE.uniMarks, Object.fromEntries(programs.filter((p) => p.applyBy && p.applyBy >= now.toISOString().slice(0, 10)).slice(0, 2).map((p) => [p.id, "apply"])));
     window.localStorage.removeItem(STORAGE.events);
     window.localStorage.removeItem(STORAGE.coach);
