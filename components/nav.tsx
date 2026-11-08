@@ -12,6 +12,7 @@ const LINKS = [
   { href: "/calendar", label: "Calendar" },
   { href: "/plan", label: "Cost plan" },
   { href: "/cv", label: "CV" },
+  { href: "/about", label: "About" },
   { href: "/premium", label: "✦ Premium", mobileOnly: true },
 ];
 

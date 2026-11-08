@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Suspense } from "react";
 import { AccountProvider } from "@/components/account-provider";
@@ -38,7 +39,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <span className="font-display font-semibold text-slate-800">Built by a student, for students.</span> Discover. Apply. Grow.
               </span>
             </span>
-            <span>Checked data with source links · &quot;check yourself&quot; means not confirmed · PayPal in sandbox mode, no real money moves</span>
+            <span>
+              <Link href="/about" className="text-violet-300 hover:text-cyan-200">
+                About Hapi
+              </Link>{" "}
+              · Checked data with source links · &quot;check yourself&quot; means not confirmed · PayPal in sandbox mode, no real money moves
+            </span>
           </div>
         </footer>
         </AccountProvider>
