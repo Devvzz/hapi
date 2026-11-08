@@ -1,4 +1,5 @@
 import { EU, EU_CANDIDATES, EU_FEE_COUNTRIES, EUROPE, SOUTHEAST_EUROPE, WESTERN_BALKANS } from "./countries";
+import { toEur } from "./currency";
 import { daysUntil, parseDeadline } from "./dates";
 import { GROUP_LABEL, groupOf } from "./education";
 import { INTERESTS } from "./profile";
@@ -109,9 +110,10 @@ function levelCheck(o: Opportunity, p: Profile): Check {
 const PAYS_YOU: Opportunity["type"][] = ["scholarship", "internship", "job", "grant", "exchange"];
 
 // Rough cost of joining: the fee, or nothing when it is free.
+// Cost in euro, so it can be compared with the budget.
 export function costOf(o: Opportunity): number | null {
   if (o.costType === "free") return 0;
-  return o.price?.amount ?? null;
+  return o.price ? toEur(o.price.amount, o.price.currency) : null;
 }
 
 export function matchOpportunity(o: Opportunity, p: Profile, now: Date): Match {
@@ -142,7 +144,7 @@ export function matchOpportunity(o: Opportunity, p: Profile, now: Date): Match {
   const cost = costOf(o);
   const limit = p.opportunityBudget ?? null;
   const overBudget = limit !== null && cost !== null && cost > limit;
-  if (overBudget) reasons.push(limit === 0 ? "Not free" : `Costs about ${cost} ${o.price?.currency ?? ""}, above your limit of €${limit}`.trim());
+  if (overBudget) reasons.push(limit === 0 ? "Not free" : `Costs about €${cost}, above your limit of €${limit}`);
   else if (limit !== null && cost === null && o.costType !== "free" && !PAYS_YOU.includes(o.type)) reasons.push("Cost unknown: check it fits your budget");
 
   // Then how good a fit it is.
