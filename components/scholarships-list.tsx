@@ -30,7 +30,7 @@ function countriesOf(o: Opportunity): string[] {
 const VERDICT = { fits: "bg-emerald-100 text-emerald-800", check: "bg-amber-100 text-amber-800", "not-eligible": "bg-rose-100 text-rose-800" } as const;
 const VERDICT_TEXT = { fits: "You can apply", check: "Check", "not-eligible": "Not for you" } as const;
 
-export function ScholarshipsList({ country }: { country: string }) {
+export function ScholarshipsList({ countries }: { countries: string[] }) {
   const [profile] = useProfile();
   const now = useNow();
   const [showAll, setShowAll] = useState(false);
@@ -40,27 +40,27 @@ export function ScholarshipsList({ country }: { country: string }) {
     return opportunities
       .filter((o) => o.type === "scholarship")
       .map((o) => ({ o, m: matchOpportunity(o, profile, now), where: countriesOf(o) }))
-      .filter(({ where }) => country === "all" || where.includes(country) || where.includes("many"))
+      .filter(({ where }) => countries.length === 0 || where.includes("many") || countries.some((c) => where.includes(c)))
       .sort((a, b) => compareMatches(a, b, "match"));
-  }, [profile, now, country]);
+  }, [profile, now, countries]);
   const sure = all.filter(({ m }) => m.verdict === "fits");
   const national = showAll ? all : sure;
 
   const universityNotes = useMemo(() => {
     const seen = new Map<string, { university: string; city?: string; note: string; source: string | undefined }>();
     for (const p of programs) {
-      if (country !== "all" && p.country !== country) continue;
+      if (countries.length > 0 && !countries.includes(p.country)) continue;
       if (!p.scholarships || seen.has(p.universityId)) continue;
       if (/^(none|almost none|no )/i.test(p.scholarships.trim())) continue;
       seen.set(p.universityId, { university: p.university, city: p.city, note: p.scholarships, source: p.sources[0] });
     }
     return [...seen.values()].sort((a, b) => a.university.localeCompare(b.university));
-  }, [country]);
+  }, [countries]);
 
   return (
     <div className="space-y-6">
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold">Scholarships you apply to directly{country !== "all" ? ` (${country})` : ""}</h2>
+        <h2 className="text-lg font-semibold">Scholarships you apply to directly{countries.length > 0 ? ` (${countries.join(", ")})` : ""}</h2>
         {national.length === 0 && <p className="text-sm text-slate-600">No scholarship here that you can surely apply to right now. See the university notes below.</p>}
         {all.length > sure.length && (
           <p className="text-xs text-slate-500">
@@ -101,7 +101,7 @@ export function ScholarshipsList({ country }: { country: string }) {
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Scholarships at the universities</h2>
         <p className="text-xs text-slate-500">From our university research. Amounts and rules change every year, so confirm on the university page.</p>
-        {universityNotes.length === 0 && <p className="text-sm text-slate-600">No university scholarship notes for this country.</p>}
+        {universityNotes.length === 0 && <p className="text-sm text-slate-600">No university scholarship notes for these countries.</p>}
         <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-panel">
           {universityNotes.map((u) => (
             <li key={u.university} className="p-3 text-sm">

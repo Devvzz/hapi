@@ -34,10 +34,50 @@ function hasScholarships(note: string | null): boolean {
 type Row = { p: Program; e: Eligibility };
 type Uni = { id: string; name: string; city?: string; country: string; type?: string; rows: Row[]; best: Eligibility["status"]; cheapest: number | null; cheapestLabel: string | null; scholarships: string | null; feeRule: string | null };
 
+// Pick one or many countries. Nothing picked means "not sure yet": every country is shown.
+function CountryPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
+  const toggle = (c: string) => onChange(value.includes(c) ? value.filter((x) => x !== c) : [...value, c]);
+  const chip = (on: boolean) =>
+    `rounded-full border px-3 py-1 text-sm transition-all duration-200 ${
+      on ? "border-transparent bg-gradient-to-r from-violet-600 to-cyan-500 text-white shadow-[0_0_16px_-4px_rgba(139,92,246,0.9)]" : "border-white/15 text-slate-600 hover:border-violet-400/60 hover:text-white"
+    }`;
+  const extra = value.filter((c) => !FOCUS_COUNTRIES.includes(c));
+  const left = OTHER_COUNTRIES.filter((c) => !value.includes(c));
+  return (
+    <div className="space-y-2 rounded-2xl border border-white/10 bg-panel p-4">
+      <p className="text-xs font-medium uppercase tracking-[0.2em] text-violet-300">Where do you want to study? Pick as many as you like</p>
+      <div className="flex flex-wrap items-center gap-2">
+        <button onClick={() => onChange([])} className={chip(value.length === 0)} aria-pressed={value.length === 0}>
+          Not sure yet, show all
+        </button>
+        {[...FOCUS_COUNTRIES, ...extra].map((c) => (
+          <button key={c} onClick={() => toggle(c)} className={chip(value.includes(c))} aria-pressed={value.includes(c)}>
+            {c}
+            {value.includes(c) && <span className="ml-1.5 opacity-80">×</span>}
+          </button>
+        ))}
+        {left.length > 0 && (
+          <select
+            aria-label="Add another country"
+            className="rounded-full border border-dashed border-white/20 bg-transparent px-3 py-1 text-sm text-slate-600"
+            value=""
+            onChange={(e) => e.target.value && onChange([...value, e.target.value])}
+          >
+            <option value="">+ More countries</option>
+            {left.map((c) => (
+              <option key={c}>{c}</option>
+            ))}
+          </select>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function UniversitiesList() {
   const [tab, setTab] = useState<"unis" | "scholarships">("unis");
   const [profile] = useProfile();
-  const [country, setCountry] = useState("Austria");
+  const [countries, setCountries] = useState<string[]>([]);
 
   return (
     <div className="space-y-4">
@@ -56,29 +96,19 @@ export function UniversitiesList() {
             {label}
           </button>
         ))}
-        <select className="ml-auto rounded border border-slate-300 bg-panel px-2 py-1 text-sm" value={country} onChange={(e) => setCountry(e.target.value)}>
-          {FOCUS_COUNTRIES.map((c) => (
-            <option key={c}>{c}</option>
-          ))}
-          <optgroup label="More countries">
-            {OTHER_COUNTRIES.map((c) => (
-              <option key={c}>{c}</option>
-            ))}
-          </optgroup>
-          <option value="all">All countries</option>
-        </select>
       </div>
+      <CountryPicker value={countries} onChange={setCountries} />
       <p className="text-xs text-slate-500">
         Prices are for you: {profile.nationality ? `${profile.nationality} passport` : "add your nationality"}
         {profile.austrianSchool ? ", Austrian school abroad" : ""}
         {profile.budgetPerYear !== null ? `, budget €${profile.budgetPerYear.toLocaleString("en-GB")}/year` : ""}.
       </p>
-      {tab === "unis" ? <Universities country={country} /> : <ScholarshipsList country={country} />}
+      {tab === "unis" ? <Universities countries={countries} /> : <ScholarshipsList countries={countries} />}
     </div>
   );
 }
 
-function Universities({ country }: { country: string }) {
+function Universities({ countries }: { countries: string[] }) {
   const [profile] = useProfile();
   const [plan, setPlan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [, setLog] = useStored(STORAGE.log, EMPTY_LOG);
@@ -95,7 +125,7 @@ function Universities({ country }: { country: string }) {
     const q = query.trim().toLowerCase();
     const groups = new Map<string, Row[]>();
     for (const p of programs) {
-      if (country !== "all" && p.country !== country) continue;
+      if (countries.length > 0 && !countries.includes(p.country)) continue;
       if (q && !`${p.university} ${p.program ?? ""} ${p.fields ?? ""} ${p.city ?? ""}`.toLowerCase().includes(q)) continue;
       const e = checkProgram(p, profile);
       if (status === "ok" && e.status !== "ok") continue;
@@ -129,7 +159,7 @@ function Universities({ country }: { country: string }) {
       if (sort === "name") return a.name.localeCompare(b.name);
       return RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
     });
-  }, [profile, country, status, sort, query, withScholarships, marks]);
+  }, [profile, countries, status, sort, query, withScholarships, marks]);
 
   function mark(p: Program, value: UniMark) {
     const next = { ...marks };
