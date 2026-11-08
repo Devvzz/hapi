@@ -11,7 +11,16 @@ import { useProfile } from "@/lib/use-profile";
 import type { PlanRow, Program } from "@/lib/types";
 import { ScholarshipsList } from "./scholarships-list";
 
-const ICON: Record<Eligibility["status"], string> = { ok: "✅", warn: "⚠️", no: "❌" };
+const STATUS: Record<Eligibility["status"], { label: string; pill: string; bar: string }> = {
+  ok: { label: "Open to you", pill: "border-emerald-400/40 bg-emerald-500/10 text-emerald-300", bar: "before:bg-emerald-400" },
+  warn: { label: "Check the rules", pill: "border-amber-400/40 bg-amber-500/10 text-amber-300", bar: "before:bg-amber-400" },
+  no: { label: "Not open to you", pill: "border-rose-400/40 bg-rose-500/10 text-rose-300", bar: "before:bg-rose-400/70" },
+};
+
+function StatusPill({ status }: { status: Eligibility["status"] }) {
+  const s = STATUS[status];
+  return <span className={`inline-flex shrink-0 items-center rounded-full border px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider ${s.pill}`}>{s.label}</span>;
+}
 const RANK: Record<Eligibility["status"], number> = { ok: 0, warn: 1, no: 2 };
 const OTHER_COUNTRIES = [...new Set(programs.map((p) => p.country))].filter((c) => !FOCUS_COUNTRIES.includes(c)).sort();
 
@@ -169,9 +178,9 @@ function Universities({ country }: { country: string }) {
       <div className="flex flex-wrap gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
         <select className="rounded border border-slate-300 px-2 py-1" value={status} onChange={(e) => setStatus(e.target.value as typeof status)}>
           <option value="all">All programmes</option>
-          <option value="ok">✅ Only where I can apply</option>
-          <option value="warn">✅ and ⚠️ (hide ❌)</option>
-          <option value="mine">⭐ My list: want to apply ({myCount})</option>
+          <option value="ok">Only where I can apply</option>
+          <option value="warn">Open + check the rules</option>
+          <option value="mine">My list: want to apply ({myCount})</option>
         </select>
         <select className="rounded border border-slate-300 px-2 py-1" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
           <option value="fit">Sort: best fit</option>
@@ -194,20 +203,21 @@ function Universities({ country }: { country: string }) {
           const okCount = u.rows.filter((r) => r.e.status === "ok").length;
           const isOpen = open[u.id] ?? false;
           return (
-            <li key={u.id} className="welcome-in rounded-2xl border border-white/10 bg-panel" style={{ animationDelay: `${(i % 15) * 35}ms` }}>
+            <li key={u.id} className={`welcome-in relative overflow-hidden rounded-2xl border border-white/10 bg-panel before:absolute before:inset-y-0 before:left-0 before:w-1 ${STATUS[u.best].bar}`} style={{ animationDelay: `${(i % 15) * 35}ms` }}>
               <button onClick={() => setOpen((o) => ({ ...o, [u.id]: !isOpen }))} className="flex w-full flex-wrap items-start justify-between gap-3 p-4 text-left">
                 <div>
-                  <h2 className="font-semibold">
-                    {ICON[u.best]} {u.name}
-                  </h2>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h2 className="font-semibold">{u.name}</h2>
+                    <StatusPill status={u.best} />
+                  </div>
                   <p className="text-sm text-slate-600">
                     {[u.city, u.country, u.type].filter(Boolean).join(" · ")} · {okCount} of {u.rows.length} programmes open to you
-                    {u.rows.some((r) => marks[r.p.id] === "apply") ? ` · ⭐ ${u.rows.filter((r) => marks[r.p.id] === "apply").length} on your list` : ""}
+                    {u.rows.some((r) => marks[r.p.id] === "apply") ? ` · ${u.rows.filter((r) => marks[r.p.id] === "apply").length} on your list` : ""}
                   </p>
                 </div>
                 <div className="text-right text-sm">
                   <p className="font-medium">{u.cheapestLabel === null ? "Fee: check yourself" : `From ${u.cheapestLabel}/year`}</p>
-                  <p className="text-xs text-teal-700">{isOpen ? "Hide programmes ▲" : "Show programmes ▼"}</p>
+                  <p className="text-xs text-teal-700">{isOpen ? "Hide programmes" : "Show programmes"}</p>
                 </div>
               </button>
               {hasScholarships(u.scholarships) && (
@@ -228,21 +238,27 @@ function Universities({ country }: { country: string }) {
                     const ex = explained[p.id];
                     const planned = plan.some((r) => r.id === `tuition-${p.id}`);
                     return (
-                      <div key={p.id} className="rounded-lg border border-slate-200 p-3">
+                      <div key={p.id} className={`relative overflow-hidden rounded-lg border border-slate-200 p-3 pl-4 before:absolute before:inset-y-0 before:left-0 before:w-0.5 ${STATUS[e.status].bar}`}>
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div>
-                            <h3 className="font-medium">
-                              {ICON[e.status]} {p.program ?? "Programme to choose"}
-                            </h3>
+                            <div className="flex flex-wrap items-center gap-2">
+                              <h3 className="font-medium">{p.program ?? "Programme to choose"}</h3>
+                              <StatusPill status={e.status} />
+                            </div>
                             <p className="text-xs text-slate-600">
                               {p.language ?? "language: check yourself"}
                               {p.years ? ` · ${p.years} years` : ""}
                             </p>
                           </div>
                           <div className="text-right text-sm">
-                            <p className="font-medium">{formatPrice(e.price)}/year</p>
-                            <p className="text-xs text-slate-500">{e.price.basis}</p>
-                            {!e.price.confirmed && <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800">verify fee</span>}
+                            <p className="font-medium">
+                              {e.price.confirmed ? "" : "≈ "}
+                              {formatPrice(e.price)}/year
+                            </p>
+                            <p className="text-xs text-slate-500">
+                              {e.price.basis}
+                              {e.price.confirmed ? "" : " · estimate"}
+                            </p>
                           </div>
                         </div>
                         <dl className="mt-2 grid grid-cols-3 gap-2 rounded bg-slate-50 p-2 text-xs">
@@ -289,10 +305,10 @@ function Universities({ country }: { country: string }) {
                         {ex === "error" && <p className="mt-2 text-sm text-rose-700">AI is busy. The reasons above still apply.</p>}
                         <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
                           <button onClick={() => mark(p, "apply")} className={`rounded px-2 py-1 ${marks[p.id] === "apply" ? "bg-amber-400 text-[#1a1300]" : "border border-amber-500 text-amber-800"}`}>
-                            {marks[p.id] === "apply" ? "⭐ Want to apply" : "☆ Want to apply"}
+                            {marks[p.id] === "apply" ? "On my list" : "Want to apply"}
                           </button>
-                          <button onClick={() => mark(p, "no")} className="rounded border border-slate-300 px-2 py-1 text-slate-600">
-                            {marks[p.id] === "no" ? "Not interested ✓" : "Not interested"}
+                          <button onClick={() => mark(p, "no")} className={`rounded px-2 py-1 ${marks[p.id] === "no" ? "bg-slate-200 text-slate-800" : "border border-slate-300 text-slate-600"}`}>
+                            {marks[p.id] === "no" ? "Marked not interested" : "Not interested"}
                           </button>
                           <button onClick={() => explain(p, e)} disabled={ex === "loading"} className="rounded border border-teal-700 px-2 py-1 text-teal-800 disabled:opacity-50">
                             {ex === "loading" ? "Explaining…" : "Explain in plain English"}

@@ -148,7 +148,7 @@ export function CalendarView() {
           {events.length === 0 ? (
             <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">
               Your calendar is empty. Click <span className="font-medium">📅 Add to calendar</span> on <Link href="/opportunities" className="underline">opportunities</Link>, or{" "}
-              <span className="font-medium">☆ Want to apply</span> on <Link href="/universities" className="underline">university programmes</Link>.
+              <span className="font-medium">Want to apply</span> on <Link href="/universities" className="underline">university programmes</Link>.
             </p>
           ) : upcoming.length === 0 ? (
             <p className="text-sm text-slate-500">Nothing coming up.</p>

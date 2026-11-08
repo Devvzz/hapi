@@ -211,7 +211,7 @@ export function OpportunitiesFeed() {
               <div className="mt-auto flex flex-wrap items-center gap-2 pt-2 text-sm">
                 <button onClick={() => toggleSaved(o)} className="rounded border border-teal-700 px-2 py-1 text-teal-800">
                   <span className="inline-flex items-center gap-1.5">
-                    <CalendarIcon size={14} /> {isSaved ? "In calendar ✓" : "Add to calendar"}
+                    <CalendarIcon size={14} /> {isSaved ? "In calendar" : "Add to calendar"}
                   </span>
                 </button>
                 {o.price && (o.costType === "paid" || o.costType === "discount") && (
