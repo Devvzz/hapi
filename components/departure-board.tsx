@@ -57,7 +57,8 @@ export function DepartureBoard({ rows }: { rows: { label: string; value: string;
               <p className="truncate text-sm font-semibold uppercase tracking-wider text-white">{r.label}</p>
               {r.note && <p className="truncate text-xs text-slate-600">{r.note}</p>}
             </div>
-            <div className="flex shrink-0 gap-[3px]" aria-label={r.value}>
+            <div className="flex shrink-0 gap-[3px]">
+              <span className="sr-only">{r.value}</span>
               {shown(r.value, row)
                 .split("")
                 .map((c, i) => (

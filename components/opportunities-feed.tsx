@@ -140,16 +140,16 @@ export function OpportunitiesFeed() {
 
       <div className="grid gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
         <input className="rounded border border-slate-300 px-2 py-1" placeholder="Search (e.g. AI, Vienna, scholarship)" value={query} onChange={(e) => setQuery(e.target.value)} />
-        <select className="rounded border border-slate-300 px-2 py-1" value={type} onChange={(e) => setType(e.target.value)}>
+        <select aria-label="Type of opportunity" className="rounded border border-slate-300 px-2 py-1" value={type} onChange={(e) => setType(e.target.value)}>
           <option value="all">All types</option>
           {TYPES.map((t) => <option key={t} value={t}>{t}</option>)}
         </select>
-        <select className="rounded border border-slate-300 px-2 py-1" value={cost} onChange={(e) => setCost(e.target.value as typeof cost)}>
+        <select aria-label="Cost" className="rounded border border-slate-300 px-2 py-1" value={cost} onChange={(e) => setCost(e.target.value as typeof cost)}>
           <option value="all">Free and paid</option>
           <option value="free">Free only</option>
           <option value="paid">Paid or discounted</option>
         </select>
-        <select className="rounded border border-slate-300 px-2 py-1" value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)}>
+        <select aria-label="Sort opportunities" className="rounded border border-slate-300 px-2 py-1" value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)}>
           <option value="match">Sort: best match</option>
           <option value="deadline">Sort: deadline soonest</option>
           <option value="cost">Sort: cheapest</option>

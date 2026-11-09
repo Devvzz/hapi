@@ -207,13 +207,13 @@ function Universities({ countries }: { countries: string[] }) {
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
-        <select className="rounded border border-slate-300 px-2 py-1" value={status} onChange={(e) => setStatus(e.target.value as typeof status)}>
+        <select aria-label="Which programmes to show" className="rounded border border-slate-300 px-2 py-1" value={status} onChange={(e) => setStatus(e.target.value as typeof status)}>
           <option value="all">All programmes</option>
           <option value="ok">Only where I can apply</option>
           <option value="warn">Open + check the rules</option>
           <option value="mine">My list: want to apply ({myCount})</option>
         </select>
-        <select className="rounded border border-slate-300 px-2 py-1" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
+        <select aria-label="Sort universities" className="rounded border border-slate-300 px-2 py-1" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
           <option value="fit">Sort: best fit</option>
           <option value="price">Sort: cheapest for me</option>
           <option value="name">Sort: name</option>

@@ -200,12 +200,12 @@ export function ProfileForm() {
         <legend className="font-medium">Languages</legend>
         {profile.languages.map((l, i) => (
           <div key={i} className="flex flex-wrap gap-2">
-            <select className="rounded border border-slate-300 px-2 py-1" value={l.language} onChange={(e) => setLanguage(i, { language: e.target.value })}>
+            <select aria-label={`Language ${i + 1}`} className="rounded border border-slate-300 px-2 py-1" value={l.language} onChange={(e) => setLanguage(i, { language: e.target.value })}>
               {LANGUAGE_OPTIONS.map((o) => (
                 <option key={o}>{o}</option>
               ))}
             </select>
-            <select className="rounded border border-slate-300 px-2 py-1" value={l.level} onChange={(e) => setLanguage(i, { level: e.target.value as LanguageSkill["level"] })}>
+            <select aria-label={`Level in language ${i + 1}`} className="rounded border border-slate-300 px-2 py-1" value={l.level} onChange={(e) => setLanguage(i, { level: e.target.value as LanguageSkill["level"] })}>
               {LEVELS.map((lv) => (
                 <option key={lv} value={lv}>
                   {LEVEL_LABEL[lv]}

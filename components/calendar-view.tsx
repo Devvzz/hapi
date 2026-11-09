@@ -239,7 +239,7 @@ function EventRow({ e, today, onRemove }: { e: CalEvent; today: string; onRemove
       </span>
       <span className={`text-xs ${left <= 7 && left >= 0 ? "font-semibold text-rose-700" : "text-slate-500"}`}>{left === 0 ? "today" : left === 1 ? "tomorrow" : left > 0 ? `in ${left} days` : left === -1 ? "yesterday" : `${-left} days ago`}</span>
       {e.source !== "plan" && (
-        <button onClick={() => onRemove(e)} className="text-xs text-slate-400 hover:text-rose-700" title="Remove from calendar">
+        <button onClick={() => onRemove(e)} className="text-xs text-slate-500 hover:text-rose-700" title="Remove from calendar">
           ✕
         </button>
       )}
