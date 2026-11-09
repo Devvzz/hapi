@@ -98,6 +98,15 @@ export function PeopleView({ id }: { id: string }) {
 // /people?id=… : read the id from the address.
 export function PersonFromQuery() {
   const id = useSearchParams().get("id");
-  if (!id) return <p className="pt-10 text-center text-slate-600">No profile selected.</p>;
+  if (!id)
+    return (
+      <div className="mx-auto max-w-md space-y-3 pt-10 text-center">
+        <h1 className="text-2xl font-extrabold">No profile picked</h1>
+        <p className="text-slate-600">Open an opportunity and tap a student who joined it to see their profile here.</p>
+        <Link href="/opportunities" className="inline-block rounded-full bg-teal-700 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-800">
+          See opportunities
+        </Link>
+      </div>
+    );
   return <PeopleView id={id} />;
 }
