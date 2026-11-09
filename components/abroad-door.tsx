@@ -55,6 +55,10 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
             <stop offset="0" stopColor="#ffffff" />
             <stop offset="1" stopColor="#eef1f7" />
           </linearGradient>
+          <linearGradient id="ad-shadow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#0e1b2e" stopOpacity="0.22" />
+            <stop offset="1" stopColor="#0e1b2e" stopOpacity="0" />
+          </linearGradient>
           <filter id="ad-blur" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="8" />
           </filter>
@@ -118,34 +122,48 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
         <path d="M118 140 L88 128 L88 238 L118 244 Z M118 262 L88 258 L88 380 L118 360 Z" fill="none" stroke="#cfcac0" strokeWidth="1.4" />
         <circle cx="86" cy="252" r="3.4" fill="#ff6b3d" />
 
-        {/* the student's shadow, falling back towards us */}
-        <path d="M188 376 L214 376 L236 440 L168 440 Z" fill="#0e1b2e" opacity="0.18" filter="url(#ad-soft)" />
+        {/* the student's shadow, falling back towards us and fading out */}
+        <path d="M186 374 L214 374 L232 440 L170 440 Z" fill="url(#ad-shadow)" filter="url(#ad-soft)" />
 
-        {/* the student, seen from behind, walking in */}
-        <g className="ad-walker">
-          <g fill="#ffd9a8" opacity="0.7" filter="url(#ad-soft)">
-            <circle cx="200" cy="203" r="14" />
-            <path d="M178 226 Q200 214 222 226 L216 292 L184 292 Z" />
+        {/* the student, seen from behind, mid-step into the light */}
+        <g className="ad-walker" strokeLinejoin="round">
+          {/* sunlight wrapping around the edges */}
+          <g fill="#ffd9a8" opacity="0.55" filter="url(#ad-soft)">
+            <ellipse cx="200" cy="211" rx="14" ry="15" />
+            <path d="M179 232 Q200 222 221 232 L232 290 L168 290 Z" />
           </g>
-          <g fill="#0e1b2e" stroke="#0e1b2e" strokeLinecap="round" strokeLinejoin="round">
-            {/* back leg, foot lifting */}
-            <path className="ad-leg-back" d="M207 288 L213 334 L219 368" fill="none" strokeWidth="13" />
-            {/* front leg */}
-            <path className="ad-leg-front" d="M193 288 L189 332 L185 374" fill="none" strokeWidth="13" />
-            <ellipse cx="184" cy="375" rx="8" ry="3.5" />
-            {/* body and jacket */}
-            <path d="M180 226 Q200 214 220 226 L216 294 Q200 300 184 294 Z" strokeWidth="2" />
-            {/* arms swinging */}
-            <path className="ad-arm-left" d="M182 230 L172 262 L174 290" fill="none" strokeWidth="9.5" />
-            <path className="ad-arm-right" d="M218 230 L228 260 L226 284" fill="none" strokeWidth="9.5" />
-            {/* head and hair */}
-            <circle cx="200" cy="203" r="12.5" />
-            <path d="M188 200 Q190 188 200 189 Q211 188 212 200 Q206 194 200 195 Q193 194 188 200 Z" fill="#1e2f4d" stroke="none" />
-          </g>
-          {/* backpack with a rim of sunlight */}
-          <rect x="187" y="230" width="26" height="40" rx="7" fill="#ff6b3d" stroke="#ffd9a8" strokeOpacity="0.8" strokeWidth="1.2" />
-          <rect x="192" y="252" width="16" height="11" rx="3" fill="#e5532a" />
-          <path d="M190 232 L188 226 M210 232 L212 226" stroke="#c9461f" strokeWidth="3" strokeLinecap="round" />
+
+          {/* legs: the front foot is further away, so it sits a little higher */}
+          <path d="M184 292 L199 294 L197.5 330 L196 359 L187 359 L185.5 330 Z" fill="#2c4470" />
+          <path d="M201 294 L216 292 L215.5 330 L214.5 366 L205 366 L203 330 Z" fill="#33507f" />
+          {/* sneakers */}
+          <path d="M185 358 h12.5 q2 0 2 2.5 v1.5 q0 2 -2 2 h-12.5 q-2.5 0 -2.5 -3 q0 -3 2.5 -3 z" fill="#f4f1ea" stroke="#0e1b2e" strokeWidth="1" />
+          <path d="M203.5 365 h12.5 q2.5 0 2.5 3 v2 q0 2.5 -2.5 2.5 h-12.5 q-2.5 0 -2.5 -2.5 v-2 q0 -3 2.5 -3 z" fill="#f4f1ea" stroke="#0e1b2e" strokeWidth="1" />
+          <path d="M202 371 h16" stroke="#cfcac0" strokeWidth="1.6" />
+
+          {/* jacket */}
+          <path d="M182 232 Q200 224 218 232 Q223 236 222 252 L218.5 297 Q200 300 181.5 297 L178 252 Q177 236 182 232 Z" fill="#1d2b45" stroke="#ffd9a8" strokeOpacity="0.6" strokeWidth="1" />
+          <path d="M182 293 Q200 296 218 293" fill="none" stroke="#0e1b2e" strokeWidth="1.4" />
+          {/* arms hanging loose, hands in the light */}
+          <path d="M181 234 Q173 238 171.5 257 L170 285 Q172.5 289 177 287.5 L179.5 262 Q180.5 249 184 242 Z" fill="#24365a" />
+          <path d="M219 234 Q227 238 228.5 257 L230 285 Q227.5 289 223 287.5 L220.5 262 Q219.5 249 216 242 Z" fill="#24365a" />
+          <ellipse cx="173.5" cy="290.5" rx="3.6" ry="4.6" fill="#d9a07a" />
+          <ellipse cx="226.5" cy="290.5" rx="3.6" ry="4.6" fill="#d9a07a" />
+
+          {/* neck, ears and hair */}
+          <path d="M195 219 h10 v11 q-5 3 -10 0 z" fill="#c98d68" />
+          <ellipse cx="188.6" cy="213" rx="2.4" ry="3.4" fill="#d9a07a" />
+          <ellipse cx="211.4" cy="213" rx="2.4" ry="3.4" fill="#d9a07a" />
+          <ellipse cx="200" cy="210.5" rx="11.5" ry="12.5" fill="#2a1d17" stroke="#ffd9a8" strokeOpacity="0.7" strokeWidth="1" />
+          <path d="M191 203 Q196 199 203 200" fill="none" stroke="#4a3426" strokeWidth="1.4" strokeLinecap="round" />
+
+          {/* backpack */}
+          <path d="M187 236 L185 230 M213 236 L215 230" stroke="#c9461f" strokeWidth="3.2" strokeLinecap="round" />
+          <rect x="186" y="236" width="28" height="46" rx="8" fill="#ff6b3d" stroke="#ffd9a8" strokeOpacity="0.8" strokeWidth="1" />
+          <path d="M196 236.5 q4 -5 8 0" fill="none" stroke="#c9461f" strokeWidth="1.6" strokeLinecap="round" />
+          <path d="M189 248 H211" stroke="#c9461f" strokeWidth="1.2" strokeLinecap="round" />
+          <rect x="190.5" y="259" width="19" height="16" rx="4.5" fill="#e5532a" />
+          <path d="M193 263 H207" stroke="#c9461f" strokeWidth="1" strokeLinecap="round" />
         </g>
       </svg>
 

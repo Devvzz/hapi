@@ -513,35 +513,11 @@ input[type="checkbox"] {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2.5px);
+    transform: translateY(-1.5px);
   }
 }
 .ad-walker {
-  animation: ad-bob 1.1s ease-in-out infinite;
-}
-@keyframes ad-swing {
-  0%,
-  100% {
-    transform: rotate(-7deg);
-  }
-  50% {
-    transform: rotate(7deg);
-  }
-}
-.ad-leg-front,
-.ad-leg-back,
-.ad-arm-left,
-.ad-arm-right {
-  transform-box: fill-box;
-  transform-origin: 50% 0;
-  animation: ad-swing 2.2s ease-in-out infinite;
-}
-.ad-leg-back,
-.ad-arm-left {
-  animation-direction: reverse;
-}
-.abroad-door:hover .ad-walker {
-  animation-duration: 0.7s;
+  animation: ad-bob 2.6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -553,11 +529,7 @@ input[type="checkbox"] {
   .ad-birds,
   .ad-bird,
   .ad-window,
-  .ad-walker,
-  .ad-leg-front,
-  .ad-leg-back,
-  .ad-arm-left,
-  .ad-arm-right {
+  .ad-walker {
     animation: none !important;
   }
   .book-glyph {
