@@ -19,7 +19,7 @@ export default function Home() {
     <div className="space-y-14">
       <section className="relative grid items-center gap-12 pt-6 md:grid-cols-[1.25fr_1fr]">
         <div className="space-y-6">
-          <p className="inline-block -rotate-2 rounded-md bg-[#fcd34d] px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-[#1a1300] shadow-[3px_3px_0_#0e1b2e]">
+          <p className="inline-block -rotate-2 rounded-md bg-[#ff6b3d] px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-[#0e1b2e] shadow-[3px_3px_0_#0e1b2e]">
             Built by a student, for students
           </p>
           <h1 className="text-5xl font-extrabold leading-[1.08] tracking-tight sm:text-6xl">
