@@ -25,7 +25,7 @@ function cost(o: Opportunity): string {
 
 function Name({ id, name }: { id: string; name: string | undefined }) {
   return (
-    <Link href={`/people?id=${id}`} className="font-medium text-white hover:text-cyan-200">
+    <Link href={`/people?id=${id}`} className="font-medium text-slate-900 hover:text-teal-800">
       {name ? capitalizeName(name) : "Student"}
     </Link>
   );
@@ -33,7 +33,7 @@ function Name({ id, name }: { id: string; name: string | undefined }) {
 
 function Avatar({ name }: { name: string | undefined }) {
   return (
-    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 text-sm font-bold text-white">
+    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-teal-700 text-sm font-bold text-white">
       {(name ?? "?").charAt(0).toUpperCase()}
     </span>
   );
@@ -117,7 +117,7 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
           onClick={toggleLike}
           disabled={!uid}
           title={uid ? undefined : "Log in to like"}
-          className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm transition ${liked ? "border-rose-400/60 bg-rose-500/15 text-rose-800 shadow-[0_0_20px_-6px_rgba(251,113,133,0.8)]" : "border-white/15 bg-panel hover:border-rose-400/50"} disabled:opacity-60`}
+          className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm transition ${liked ? "border-rose-400/60 bg-rose-500/15 text-rose-800 " : "border-slate-200 bg-panel hover:border-rose-400/50"} disabled:opacity-60`}
         >
           <HeartIcon filled={liked} /> {liked ? "Liked" : "Like"} · {likes + (liked && !stats ? 1 : 0)}
         </button>
@@ -126,7 +126,7 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
             setSaved(inCalendar ? saved.filter((x) => x !== o.id) : [...saved, o.id]);
             if (!inCalendar) track("save", o.type);
           }}
-          className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm transition ${inCalendar ? "border-cyan-300/60 bg-cyan-400/10 text-cyan-100" : "border-white/15 bg-panel hover:border-cyan-300/50"}`}
+          className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm transition ${inCalendar ? "border-cyan-300/60 bg-cyan-400/10 text-teal-800" : "border-slate-200 bg-panel hover:border-cyan-300/50"}`}
         >
           <CalendarIcon /> {inCalendar ? "In your calendar" : "Add to calendar"}
         </button>
@@ -137,7 +137,7 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
 
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {facts.map(([k, v], i) => (
-          <div key={k} className="welcome-in rounded-2xl border border-white/10 bg-panel p-4" style={{ animationDelay: `${300 + i * 40}ms` }}>
+          <div key={k} className="welcome-in rounded-2xl border border-slate-200 bg-panel p-4" style={{ animationDelay: `${300 + i * 40}ms` }}>
             <p className="text-xs uppercase tracking-wider text-slate-500">{k}</p>
             <p className="mt-1 font-medium text-slate-900">{v}</p>
           </div>
@@ -145,11 +145,11 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
       </section>
 
       {m && m.reasons.length > 0 && (
-        <section className="rounded-2xl border border-white/10 bg-panel p-5">
+        <section className="rounded-2xl border border-slate-200 bg-panel p-5">
           <h2 className="mb-2 text-lg font-bold">For you</h2>
           <ul className="flex flex-wrap gap-2 text-sm">
             {m.reasons.map((r) => (
-              <li key={r} className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-slate-700">
+              <li key={r} className="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-slate-700">
                 {r}
               </li>
             ))}
@@ -167,7 +167,7 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
             </h2>
           </div>
           {reviews.length > 0 && (
-            <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-panel px-5 py-3">
+            <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-panel px-5 py-3">
               <span className="font-display text-4xl font-bold text-gradient">{avg.toFixed(1)}</span>
               <div className="space-y-1">
                 <Stars value={avg} />
@@ -181,7 +181,7 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
                   return (
                     <div key={n} className="flex items-center gap-1 text-[10px] text-slate-500">
                       {n}
-                      <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/10">
+                      <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
                         <span className="block h-full rounded-full bg-gradient-to-r from-amber-400 to-amber-300" style={{ width: `${(c / reviews.length) * 100}%` }} />
                       </span>
                     </div>
@@ -195,17 +195,17 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
         {uid ? <ReviewForm o={o} uid={uid} mine={reviews.filter((r) => r.user_id === uid)} onSaved={load} /> : <SignInPrompt why="Took part before? Log in to rate it and tell the next students what it was really like." />}
 
         {byYear.length === 0 ? (
-          <p className="rounded-2xl border border-dashed border-white/15 p-6 text-center text-sm text-slate-500">No reviews yet. If you took part in an earlier year, be the first to share how it went.</p>
+          <p className="rounded-2xl border border-dashed border-slate-200 p-6 text-center text-sm text-slate-500">No reviews yet. If you took part in an earlier year, be the first to share how it went.</p>
         ) : (
           byYear.map(([year, list]) => (
             <div key={year} className="space-y-3">
               <h3 className="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider text-slate-500">
-                <span className="font-display text-2xl font-bold normal-case tracking-normal text-white">{year}</span> {list.length} {list.length === 1 ? "review" : "reviews"}
+                <span className="font-display text-2xl font-bold normal-case tracking-normal text-slate-900">{year}</span> {list.length} {list.length === 1 ? "review" : "reviews"}
                 <span className="h-px flex-1 bg-gradient-to-r from-violet-500/40 to-transparent" />
               </h3>
               <ul className="grid gap-3 md:grid-cols-2">
                 {list.map((r) => (
-                  <li key={r.id} className="glow-card space-y-2 rounded-2xl border border-white/10 bg-panel p-4">
+                  <li key={r.id} className="glow-card space-y-2 rounded-2xl border border-slate-200 bg-panel p-4">
                     <div className="flex items-center gap-3">
                       <Avatar name={r.profiles?.display_name} />
                       <div className="min-w-0 flex-1 text-sm">
@@ -255,12 +255,12 @@ function ReviewForm({ o, uid, mine, onSaved }: { o: Opportunity; uid: string; mi
   }
 
   return (
-    <div className="space-y-3 rounded-2xl border border-violet-400/30 bg-panel p-5 shadow-[0_0_40px_-20px_rgba(139,92,246,0.9)]">
+    <div className="space-y-3 rounded-2xl border border-violet-400/30 bg-panel p-5 ">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h3 className="font-display text-lg font-semibold">Took part? Leave a review</h3>
         <label className="flex items-center gap-2 text-sm text-slate-600">
           I took part in
-          <select value={year} onChange={(e) => setYear(Number(e.target.value))} className="rounded-lg border border-white/15 px-2 py-1">
+          <select value={year} onChange={(e) => setYear(Number(e.target.value))} className="rounded-lg border border-slate-200 px-2 py-1">
             {Array.from({ length: 7 }, (_, i) => thisYear - i).map((y) => (
               <option key={y}>{y}</option>
             ))}
@@ -274,7 +274,7 @@ function ReviewForm({ o, uid, mine, onSaved }: { o: Opportunity; uid: string; mi
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder="What was it like? Was it worth it, how hard was it to get in, what should others know?"
-        className="w-full rounded-xl border border-white/15 px-3 py-2 text-sm"
+        className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
       />
       <div className="flex flex-wrap items-center gap-3">
         <button onClick={submit} disabled={rating === 0 || body.trim().length < 10 || state === "saving"} className="rounded-xl bg-teal-700 px-4 py-2 text-sm font-medium text-white disabled:opacity-40">
@@ -312,7 +312,7 @@ function Comments({ o, uid, comments, reload }: { o: Opportunity; uid: string | 
       </div>
       {uid ? (
         <div className="flex gap-2">
-          <input value={text} onChange={(e) => setText(e.target.value)} maxLength={1000} onKeyDown={(e) => e.key === "Enter" && post(text, null)} placeholder="Ask something or share a tip…" className="flex-1 rounded-xl border border-white/15 px-4 py-2.5 text-sm" />
+          <input value={text} onChange={(e) => setText(e.target.value)} maxLength={1000} onKeyDown={(e) => e.key === "Enter" && post(text, null)} placeholder="Ask something or share a tip…" className="flex-1 rounded-xl border border-slate-200 px-4 py-2.5 text-sm" />
           <button onClick={() => post(text, null)} disabled={!text.trim()} className="flex items-center gap-2 rounded-xl bg-teal-700 px-4 text-sm font-medium text-white disabled:opacity-40">
             <ChatIcon size={16} /> Post
           </button>
@@ -325,7 +325,7 @@ function Comments({ o, uid, comments, reload }: { o: Opportunity; uid: string | 
         {top.map((c) => {
           const replies = comments.filter((r) => r.parent_id === c.id);
           return (
-            <li key={c.id} className="space-y-3 rounded-2xl border border-white/10 bg-panel p-4">
+            <li key={c.id} className="space-y-3 rounded-2xl border border-slate-200 bg-panel p-4">
               <div className="flex gap-3">
                 <Avatar name={c.profiles?.display_name} />
                 <div className="min-w-0 flex-1 text-sm">
@@ -335,7 +335,7 @@ function Comments({ o, uid, comments, reload }: { o: Opportunity; uid: string | 
                   <p className="whitespace-pre-line text-slate-700">{c.body}</p>
                   <div className="mt-1 flex gap-3 text-xs">
                     {uid && (
-                      <button onClick={() => setReplyTo(replyTo === c.id ? null : c.id)} className="text-violet-300 hover:text-cyan-200">
+                      <button onClick={() => setReplyTo(replyTo === c.id ? null : c.id)} className="text-violet-300 hover:text-teal-800">
                         Reply
                       </button>
                     )}
@@ -364,7 +364,7 @@ function Comments({ o, uid, comments, reload }: { o: Opportunity; uid: string | 
               )}
               {replyTo === c.id && (
                 <div className="ml-12 flex gap-2">
-                  <input autoFocus value={reply} onChange={(e) => setReply(e.target.value)} maxLength={1000} onKeyDown={(e) => e.key === "Enter" && post(reply, c.id)} placeholder="Write a reply…" className="flex-1 rounded-xl border border-white/15 px-3 py-2 text-sm" />
+                  <input autoFocus value={reply} onChange={(e) => setReply(e.target.value)} maxLength={1000} onKeyDown={(e) => e.key === "Enter" && post(reply, c.id)} placeholder="Write a reply…" className="flex-1 rounded-xl border border-slate-200 px-3 py-2 text-sm" />
                   <button onClick={() => post(reply, c.id)} disabled={!reply.trim()} className="rounded-xl bg-teal-700 px-3 text-sm text-white disabled:opacity-40">
                     Reply
                   </button>

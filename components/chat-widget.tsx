@@ -25,13 +25,13 @@ function Rich({ text: raw }: { text: string }) {
     if (m[3]) parts.push(<strong key={m.index}>{m[3]}</strong>);
     else if (m[2].startsWith("/"))
       parts.push(
-        <Link key={m.index} href={m[2]} className="text-cyan-300 underline underline-offset-2">
+        <Link key={m.index} href={m[2]} className="text-teal-700 underline underline-offset-2">
           {m[1]}
         </Link>,
       );
     else
       parts.push(
-        <a key={m.index} href={m[2]} target="_blank" rel="noopener noreferrer" className="text-cyan-300 underline underline-offset-2">
+        <a key={m.index} href={m[2]} target="_blank" rel="noopener noreferrer" className="text-teal-700 underline underline-offset-2">
           {m[1]}
         </a>,
       );
@@ -90,19 +90,19 @@ export function ChatWidget() {
   return (
     <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3 print:hidden">
       {open && (
-        <div className="welcome-in flex h-[min(34rem,calc(100dvh-7rem))] w-[min(24rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-violet-400/30 bg-[#0d0a1a]/95 shadow-[0_30px_80px_-20px_rgba(139,92,246,0.7)] backdrop-blur-xl">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
+        <div className="welcome-in flex h-[min(34rem,calc(100dvh-7rem))] w-[min(24rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-violet-400/30 bg-white shadow-xl backdrop-blur-xl">
+          <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
             <div>
-              <p className="font-display text-sm font-semibold text-white">Ask Hapi</p>
+              <p className="font-display text-sm font-semibold text-slate-900">Ask Hapi</p>
               <p className="text-[11px] text-slate-500">Answers from checked data only</p>
             </div>
             <div className="flex items-center gap-1">
               {active && messages.length > 0 && (
-                <button onClick={() => setMessages([])} className="rounded-full px-2 py-1 text-xs text-slate-500 hover:text-white">
+                <button onClick={() => setMessages([])} className="rounded-full px-2 py-1 text-xs text-slate-500 hover:text-slate-900">
                   Clear
                 </button>
               )}
-              <button onClick={() => setOpen(false)} aria-label="Close chat" className="rounded-full px-2 py-1 text-lg leading-none text-slate-500 hover:text-white">
+              <button onClick={() => setOpen(false)} aria-label="Close chat" className="rounded-full px-2 py-1 text-lg leading-none text-slate-500 hover:text-slate-900">
                 ×
               </button>
             </div>
@@ -110,8 +110,8 @@ export function ChatWidget() {
 
           {!active ? (
             <div className="flex flex-1 flex-col items-center justify-center gap-4 p-6 text-center">
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#fcd34d]">Premium</p>
-              <p className="font-display text-lg font-semibold text-white">Your own study-abroad assistant</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-amber-700">Premium</p>
+              <p className="font-display text-lg font-semibold text-slate-900">Your own study-abroad assistant</p>
               <p className="text-sm text-slate-600">Ask anything: what you can apply to, which universities you can afford, how to write your motivation letter. It knows your profile and only uses checked data.</p>
               <Link href="/premium" onClick={() => setOpen(false)} className="premium-btn relative overflow-hidden rounded-full px-5 py-2 text-sm font-semibold text-white">
                 <span className="relative">Get Premium · €2.99/month</span>
@@ -125,7 +125,7 @@ export function ChatWidget() {
                     <p className="text-slate-600">Hi! Ask me about opportunities, universities, costs or applications. I only use what Hapi has checked for you.</p>
                     <div className="flex flex-wrap gap-2">
                       {STARTERS.map((s) => (
-                        <button key={s} onClick={() => send(s)} className="rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1.5 text-left text-xs text-violet-200 transition hover:border-cyan-300/60 hover:text-white">
+                        <button key={s} onClick={() => send(s)} className="rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1.5 text-left text-xs text-violet-200 transition hover:border-cyan-300/60 hover:text-slate-900">
                           {s}
                         </button>
                       ))}
@@ -134,7 +134,7 @@ export function ChatWidget() {
                 )}
                 {messages.map((m, i) => (
                   <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
-                    <div className={`max-w-[85%] rounded-2xl px-3 py-2 ${m.role === "user" ? "rounded-br-sm bg-gradient-to-r from-violet-600 to-indigo-500 text-white" : "rounded-bl-sm bg-white/[0.06] text-slate-800"}`}>
+                    <div className={`max-w-[85%] rounded-2xl px-3 py-2 ${m.role === "user" ? "rounded-br-sm bg-teal-700 text-white" : "rounded-bl-sm bg-slate-100 text-slate-800"}`}>
                       {m.role === "assistant" ? <Rich text={m.content} /> : m.content}
                     </div>
                   </div>
@@ -150,7 +150,7 @@ export function ChatWidget() {
                 <div ref={end} />
               </div>
               <form
-                className="flex gap-2 border-t border-white/10 p-3"
+                className="flex gap-2 border-t border-slate-200 p-3"
                 onSubmit={(e) => {
                   e.preventDefault();
                   send(input);
@@ -161,7 +161,7 @@ export function ChatWidget() {
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Ask anything about going abroad…"
                   maxLength={1500}
-                  className="min-w-0 flex-1 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2 text-sm"
+                  className="min-w-0 flex-1 rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm"
                 />
                 <button type="submit" disabled={!input.trim() || state === "thinking"} className="rounded-full bg-teal-700 px-4 py-2 text-sm font-medium text-white disabled:opacity-40">
                   Send
@@ -174,7 +174,7 @@ export function ChatWidget() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Close chat" : "Open Ask Hapi chat"}
-        className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 via-indigo-500 to-cyan-500 text-white shadow-[0_10px_30px_-6px_rgba(139,92,246,0.9)] transition-transform hover:scale-105"
+        className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-slate-900 text-white shadow-xl transition-transform hover:scale-105"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           {open ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M5 18l-1.5 3 4-1.5A9 9 0 1 0 5 18zM8.5 11h.01M12 11h.01M15.5 11h.01" />}

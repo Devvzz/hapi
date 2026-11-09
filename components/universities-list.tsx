@@ -14,8 +14,8 @@ import { ScholarshipsList } from "./scholarships-list";
 
 const STATUS: Record<Eligibility["status"], { label: string; pill: string; bar: string }> = {
   ok: { label: "Open to you", pill: "border-emerald-400/40 bg-emerald-500/10 text-emerald-300", bar: "before:bg-emerald-400" },
-  warn: { label: "Check the rules", pill: "border-amber-400/40 bg-amber-500/10 text-[#fcd34d]", bar: "before:bg-amber-400" },
-  no: { label: "Not open to you", pill: "border-rose-400/40 bg-rose-500/10 text-rose-300", bar: "before:bg-rose-400/70" },
+  warn: { label: "Check the rules", pill: "border-amber-400/40 bg-amber-500/10 text-amber-700", bar: "before:bg-amber-400" },
+  no: { label: "Not open to you", pill: "border-rose-400/40 bg-rose-500/10 text-rose-700", bar: "before:bg-rose-400/70" },
 };
 
 function StatusPill({ status }: { status: Eligibility["status"] }) {
@@ -40,12 +40,12 @@ function CountryPicker({ value, onChange }: { value: string[]; onChange: (v: str
   const toggle = (c: string) => onChange(value.includes(c) ? value.filter((x) => x !== c) : [...value, c]);
   const chip = (on: boolean) =>
     `rounded-full border px-3 py-1 text-sm transition-all duration-200 ${
-      on ? "border-transparent bg-gradient-to-r from-violet-600 to-cyan-500 text-white shadow-[0_0_16px_-4px_rgba(139,92,246,0.9)]" : "border-white/15 text-slate-600 hover:border-violet-400/60 hover:text-white"
+      on ? "border-transparent bg-slate-900 text-white" : "border-white/15 text-slate-600 hover:border-violet-400/60 hover:text-white"
     }`;
   const extra = value.filter((c) => !FOCUS_COUNTRIES.includes(c));
   const left = OTHER_COUNTRIES.filter((c) => !value.includes(c));
   return (
-    <div className="space-y-2 rounded-2xl border border-white/10 bg-panel p-4">
+    <div className="space-y-2 rounded-2xl border border-slate-200 bg-panel p-4">
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-violet-300">Where do you want to study? Pick as many as you like</p>
       <div className="flex flex-wrap items-center gap-2">
         <button onClick={() => onChange([])} className={chip(value.length === 0)} aria-pressed={value.length === 0}>
@@ -60,7 +60,7 @@ function CountryPicker({ value, onChange }: { value: string[]; onChange: (v: str
         {left.length > 0 && (
           <select
             aria-label="Add another country"
-            className="rounded-full border border-dashed border-white/20 bg-transparent px-3 py-1 text-sm text-slate-600"
+            className="rounded-full border border-dashed border-slate-200 bg-transparent px-3 py-1 text-sm text-slate-600"
             value=""
             onChange={(e) => e.target.value && onChange([...value, e.target.value])}
           >
@@ -234,7 +234,7 @@ function Universities({ countries }: { countries: string[] }) {
           const okCount = u.rows.filter((r) => r.e.status === "ok").length;
           const isOpen = open[u.id] ?? false;
           return (
-            <li key={u.id} className={`welcome-in relative overflow-hidden rounded-2xl border border-white/10 bg-panel before:absolute before:inset-y-0 before:left-0 before:w-1 ${STATUS[u.best].bar}`} style={{ animationDelay: `${(i % 15) * 35}ms` }}>
+            <li key={u.id} className={`welcome-in relative overflow-hidden rounded-2xl border border-slate-200 bg-panel before:absolute before:inset-y-0 before:left-0 before:w-1 ${STATUS[u.best].bar}`} style={{ animationDelay: `${(i % 15) * 35}ms` }}>
               <button onClick={() => setOpen((o) => ({ ...o, [u.id]: !isOpen }))} className="flex w-full flex-wrap items-start justify-between gap-3 p-4 text-left">
                 <div>
                   <div className="flex flex-wrap items-center gap-2">

@@ -32,7 +32,7 @@ function Dock({ path }: { path: string }) {
     }
   }, [path]);
   return (
-    <div ref={box} className="flex min-w-0 items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/[0.03] p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] [scrollbar-width:none]">
+    <div ref={box} className="flex min-w-0 items-center gap-1 overflow-x-auto rounded-full border border-slate-200 bg-white p-1 [scrollbar-width:none]">
       {LINKS.map((l) => {
         const active = path === l.href || path.startsWith(`${l.href}/`);
         return (
@@ -41,15 +41,15 @@ function Dock({ path }: { path: string }) {
             href={l.href}
             aria-current={active ? "page" : undefined}
             className={`group relative flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full px-3 py-2 text-[13px] font-medium xl:px-3.5 transition-all duration-300 ${
-              active
-                ? "bg-gradient-to-r from-violet-600 via-indigo-500 to-cyan-500 text-white shadow-[0_0_24px_-4px_rgba(139,92,246,0.9),inset_0_1px_0_rgba(255,255,255,0.25)]"
-                : "text-slate-600 hover:bg-white/[0.07] hover:text-white"
-            }`}
+ active
+ ? "bg-slate-900 text-white "
+ : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+ }`}
           >
-            <span className={`transition-all duration-300 ${active ? "text-white" : "text-slate-500 group-hover:-translate-y-px group-hover:text-cyan-300 group-hover:drop-shadow-[0_0_6px_rgba(103,232,249,0.8)]"}`}>{l.icon}</span>
+            <span className={`transition-all duration-300 ${active ? "text-white" : "text-slate-500 group-hover:-translate-y-px group-hover:text-teal-700"}`}>{l.icon}</span>
             {l.label}
             {l.premium && (
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-label="Premium" className={active ? "text-[#fde68a]" : "text-[#fcd34d]/80"}>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-label="Premium" className={active ? "text-[#ffd56b]" : "text-[#ff6b3d]"}>
                 <path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" />
               </svg>
             )}
@@ -65,10 +65,10 @@ function PremiumButton({ active }: { active: boolean }) {
     <Link
       href="/premium"
       className={`premium-btn relative inline-flex shrink-0 items-center gap-2 overflow-hidden rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform duration-300 hover:scale-[1.04] ${
-        active ? "ring-2 ring-[#fde68a]/70" : ""
-      }`}
+ active ? "ring-2 ring-amber-300" : ""
+ }`}
     >
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="relative drop-shadow-[0_0_6px_rgba(253,230,138,0.9)]">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="relative ">
         <path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" />
       </svg>
       <span className="relative">Premium</span>
@@ -79,7 +79,7 @@ function PremiumButton({ active }: { active: boolean }) {
 export function Nav() {
   const path = usePathname();
   return (
-    <header className="sticky top-0 z-40 border-b border-white/[0.08] bg-[#070510b3] backdrop-blur-xl print:hidden">
+    <header className="sticky top-0 z-40 border-b border-slate-200 bg-[#f7f5f0eb] backdrop-blur-md print:hidden">
       <nav className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-3 px-4 py-3 lg:flex-nowrap">
         <Link href="/" className="shrink-0" aria-label="Hapi home">
           <Logo size={30} />

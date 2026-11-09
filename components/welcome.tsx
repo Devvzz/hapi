@@ -3,11 +3,8 @@
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { GlyphField } from "./glyph-field";
 import { AbroadDoor } from "./abroad-door";
 
-// Where the doorway sits on the welcome screen, so the floating characters stream into it.
-const BOOK_POINT = { x: 0.5, y: 0.2 };
 import { DEMO_KEY } from "@/lib/demo";
 import { useStored } from "@/lib/storage";
 import { useUser, type HapiUser } from "@/lib/user";
@@ -64,10 +61,9 @@ export function Welcome() {
   }
 
   return (
-    <div className={`fixed inset-0 z-[100] overflow-hidden bg-[#05040b] transition-opacity duration-500 ${leaving ? "opacity-0" : "opacity-100"}`}>
-      <div className="welcome-orb left-[-10%] top-[-15%] h-[55vmax] w-[55vmax] bg-violet-600/30" />
-      <div className="welcome-orb welcome-orb-2 bottom-[-20%] right-[-10%] h-[50vmax] w-[50vmax] bg-cyan-500/20" />
-      <GlyphField density={20000} target={BOOK_POINT} />
+    <div className={`fixed inset-0 z-[100] overflow-hidden bg-[#f7f5f0] transition-opacity duration-500 ${leaving ? "opacity-0" : "opacity-100"}`}>
+      <div className="welcome-orb left-[-10%] top-[-15%] h-[55vmax] w-[55vmax] bg-[#dde7ff]/70" />
+      <div className="welcome-orb welcome-orb-2 bottom-[-20%] right-[-10%] h-[50vmax] w-[50vmax] bg-[#ffd9c9]/60" />
 
       <div className="relative z-10 flex h-full items-center justify-center px-5">
         <div className="w-full max-w-md text-center">
@@ -107,7 +103,7 @@ export function Welcome() {
                       setStay(true);
                       setStep("login");
                     }}
-                    className="font-medium text-violet-300 hover:text-cyan-200"
+                    className="font-medium text-violet-300 hover:text-teal-800"
                   >
                     Log in
                   </button>
@@ -136,11 +132,11 @@ export function Welcome() {
                 </h1>
                 <p className="text-slate-600">{step === "login" ? "Log in to load your profile, plans and calendar." : "Create a free account to keep everything and use Hapi on any device."}</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-panel p-5">
+              <div className="rounded-2xl border border-slate-200 bg-panel p-5">
                 <AuthForm start={step === "login" ? "login" : "signup"} name={clean} onDone={() => finish(step === "login" ? null : goal)} />
               </div>
               {step === "account" ? (
-                <button onClick={() => finish(goal)} className="text-sm text-slate-500 hover:text-white">
+                <button onClick={() => finish(goal)} className="text-sm text-slate-500 hover:text-slate-900">
                   Continue without an account →
                 </button>
               ) : (
@@ -149,7 +145,7 @@ export function Welcome() {
                     setStay(false);
                     setStep("name");
                   }}
-                  className="text-xs text-slate-500 hover:text-white"
+                  className="text-xs text-slate-500 hover:text-slate-900"
                 >
                   ← Back
                 </button>
@@ -168,10 +164,10 @@ export function Welcome() {
                   <button
                     key={g.value}
                     onClick={() => pickGoal(g.value)}
-                    className="welcome-in glow-card block w-full rounded-2xl border border-white/10 bg-panel px-5 py-4 text-left"
+                    className="welcome-in glow-card block w-full rounded-2xl border border-slate-200 bg-panel px-5 py-4 text-left"
                     style={{ animationDelay: `${120 + i * 110}ms` }}
                   >
-                    <span className="font-display block font-semibold text-white">{g.title}</span>
+                    <span className="font-display block font-semibold text-slate-900">{g.title}</span>
                     <span className="block text-sm text-slate-600">{g.text}</span>
                   </button>
                 ))}

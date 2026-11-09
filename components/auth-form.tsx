@@ -40,7 +40,7 @@ export function AuthForm({ start = "signup", name: givenName = "", onDone }: { s
 
   return (
     <form onSubmit={submit} className="space-y-3 text-left">
-      <div className="grid grid-cols-2 gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-1 text-sm">
+      <div className="grid grid-cols-2 gap-1 rounded-xl border border-slate-200 bg-slate-100 p-1 text-sm">
         {(["signup", "login"] as const).map((m) => (
           <button
             key={m}
@@ -49,7 +49,7 @@ export function AuthForm({ start = "signup", name: givenName = "", onDone }: { s
               setMode(m);
               setError(null);
             }}
-            className={`rounded-lg py-2 transition ${mode === m ? "bg-violet-500/25 text-white shadow-[inset_0_0_0_1px_rgba(167,139,250,0.5)]" : "text-slate-600 hover:text-white"}`}
+            className={`rounded-lg py-2 transition ${mode === m ? "bg-violet-500/25 text-slate-900 " : "text-slate-600 hover:text-slate-900"}`}
           >
             {m === "signup" ? "Create account" : "Log in"}
           </button>
@@ -68,7 +68,7 @@ export function AuthForm({ start = "signup", name: givenName = "", onDone }: { s
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="button" onClick={() => setShow(!show)} className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-white">
+        <button type="button" onClick={() => setShow(!show)} className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-slate-900">
           {show ? "Hide" : "Show"}
         </button>
       </div>

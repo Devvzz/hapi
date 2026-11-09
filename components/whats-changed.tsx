@@ -55,14 +55,14 @@ export function WhatsChanged() {
   const ranAt = run?.ranAt ? new Date(run.ranAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : null;
 
   return (
-    <section className="overflow-hidden rounded-[1.25rem] border border-white/10 bg-panel">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 bg-gradient-to-r from-violet-600/15 via-transparent to-cyan-500/10 px-6 py-4">
+    <section className="overflow-hidden rounded-[1.25rem] border border-slate-200 bg-panel">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 bg-gradient-to-r from-violet-600/15 via-transparent to-cyan-500/10 px-6 py-4">
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-violet-300">Weekly check</p>
           <h2 className="text-xl font-bold">What changed this week</h2>
         </div>
         {ranAt && (
-          <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-slate-600">
+          <span className="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs text-slate-600">
             {run?.example ? "Example run" : "Last check"} · {ranAt}
           </span>
         )}
@@ -76,7 +76,7 @@ export function WhatsChanged() {
               { n: changes.length, label: changes.length === 1 ? "change found" : "changes found" },
               { n: now ? nextSaturday(now) : "Sat", label: "next check" },
             ].map((s) => (
-              <div key={s.label} className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+              <div key={s.label} className="rounded-xl border border-slate-200 bg-slate-100 px-4 py-3">
                 <p className="font-display text-2xl font-bold text-gradient">{s.n}</p>
                 <p className="text-xs text-slate-500">{s.label}</p>
               </div>
@@ -96,16 +96,16 @@ export function WhatsChanged() {
                       {c.title}
                       {c.change === "date-changed" && <span className="block text-xs text-slate-500">now {formatDate(c.foundDeadline)}, was {formatDate(c.storedDeadline)}</span>}
                     </span>
-                    <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-violet-300 hover:text-cyan-200">
+                    <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-violet-300 hover:text-teal-800">
                       source
                     </a>
                   </li>
                 ))}
                 {confirmed.map((c) => (
-                  <li key={c.id} className="flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.02] px-3 py-2 text-sm">
+                  <li key={c.id} className="flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-100 px-3 py-2 text-sm">
                     <Check />
                     <span className="min-w-0 flex-1 truncate text-slate-800">{c.title}</span>
-                    <span className="shrink-0 rounded-full bg-white/5 px-2 py-0.5 text-xs text-slate-600">{formatDate(c.storedDeadline)}</span>
+                    <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600">{formatDate(c.storedDeadline)}</span>
                   </li>
                 ))}
               </ul>
@@ -129,12 +129,12 @@ export function WhatsChanged() {
                         href={o.sourceUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glow-card flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3"
+                        className="glow-card flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-100 p-3"
                       >
                         <span
                           className={`flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-lg border ${
-                            urgent ? "border-rose-400/50 bg-rose-500/10 text-rose-800" : "border-violet-400/40 bg-violet-500/10 text-violet-200"
-                          }`}
+ urgent ? "border-rose-400/50 bg-rose-500/10 text-rose-800" : "border-violet-400/40 bg-violet-500/10 text-violet-200"
+ }`}
                         >
                           <span className="font-display text-lg font-bold leading-none">{days}</span>
                           <span className="text-[9px] uppercase tracking-wider">{days === 1 ? "day" : "days"}</span>

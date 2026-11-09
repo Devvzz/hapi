@@ -7,13 +7,13 @@ export function HapiMark({ size = 32, className = "" }: { size?: number; classNa
     <svg width={size} height={size} viewBox="0 0 64 64" className={className} aria-hidden="true">
       <defs>
         <linearGradient id={`g${id}`} x1="0" y1="1" x2="1" y2="0">
-          <stop offset="0" stopColor="#7c3aed" />
-          <stop offset="0.55" stopColor="#8b5cf6" />
-          <stop offset="1" stopColor="#22d3ee" />
+          <stop offset="0" stopColor="#1f5eff" />
+          <stop offset="0.55" stopColor="#1f5eff" />
+          <stop offset="1" stopColor="#ff6b3d" />
         </linearGradient>
         <linearGradient id={`b${id}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#ffffff" />
-          <stop offset="1" stopColor="#d9d3ff" />
+          <stop offset="0" stopColor="#0e1b2e" />
+          <stop offset="1" stopColor="#1e2f4d" />
         </linearGradient>
         <mask id={`m${id}`}>
           <rect width="64" height="64" fill="white" />
@@ -39,11 +39,11 @@ export function HapiMark({ size = 32, className = "" }: { size?: number; classNa
 
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
-    <span className={`font-display relative inline-flex items-baseline font-bold tracking-tight text-white ${className}`}>
+    <span className={`font-display relative inline-flex items-baseline font-bold tracking-tight text-slate-900 ${className}`}>
       hap
       <span className="relative">
         ı
-        <span className="absolute left-1/2 top-[0.08em] h-[0.2em] w-[0.2em] -translate-x-1/2 rounded-full bg-gradient-to-br from-violet-400 to-cyan-300 shadow-[0_0_10px_rgba(167,139,250,0.9)]" />
+        <span className="absolute left-1/2 top-[0.08em] h-[0.2em] w-[0.2em] -translate-x-1/2 rounded-full bg-[#ff6b3d]" />
       </span>
     </span>
   );

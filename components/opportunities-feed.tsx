@@ -182,12 +182,12 @@ export function OpportunitiesFeed() {
           const costAdded = plan.some((r) => r.id === `opp-${o.id}`);
           const travel = travelLabel(o);
           return (
-            <li key={o.id} className="welcome-in glow-card flex flex-col gap-2 rounded-2xl border border-white/10 bg-panel p-4" style={{ animationDelay: `${(i % 12) * 35}ms` }}>
+            <li key={o.id} className="welcome-in glow-card flex flex-col gap-2 rounded-2xl border border-slate-200 bg-panel p-4" style={{ animationDelay: `${(i % 12) * 35}ms` }}>
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <p className="text-xs uppercase tracking-wide text-slate-500">{o.type} · {o.provider}</p>
                   <h2 className="font-semibold">
-                    <Link href={`/opportunities/${o.id}`} className="hover:text-cyan-200">
+                    <Link href={`/opportunities/${o.id}`} className="hover:text-teal-800">
                       {o.title}
                     </Link>
                   </h2>
@@ -221,7 +221,7 @@ export function OpportunitiesFeed() {
                     {costAdded ? "Cost in plan" : "Add cost to my plan"}
                   </button>
                 )}
-                <Link href={`/opportunities/${o.id}`} className="inline-flex items-center gap-2 rounded border border-white/15 px-2 py-1 text-xs text-slate-700 hover:border-violet-400/60">
+                <Link href={`/opportunities/${o.id}`} className="inline-flex items-center gap-2 rounded border border-slate-200 px-2 py-1 text-xs text-slate-700 hover:border-violet-400/60">
                   <HeartIcon size={13} className="text-rose-700" /> {stats.get(o.id)?.likes ?? 0}
                   {stats.get(o.id)?.reviews ? (
                     <>

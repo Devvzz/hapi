@@ -33,8 +33,7 @@ export function PeopleView({ id }: { id: string }) {
   return (
     <div className="space-y-10">
       <header className="relative flex flex-wrap items-center gap-6 pt-4">
-        <div className="pointer-events-none absolute -left-16 -top-20 h-60 w-60 rounded-full bg-violet-600/25 blur-3xl" />
-        <span className="welcome-in relative flex h-24 w-24 items-center justify-center rounded-3xl bg-gradient-to-br from-violet-500 to-cyan-400 font-display text-4xl font-extrabold text-white shadow-[0_0_50px_-8px_rgba(139,92,246,0.9)]">
+        <span className="welcome-in relative flex h-24 w-24 items-center justify-center rounded-3xl bg-teal-700 font-display text-4xl font-extrabold text-white ">
           {profile.display_name.charAt(0).toUpperCase()}
         </span>
         <div className="relative space-y-1">
@@ -58,9 +57,9 @@ export function PeopleView({ id }: { id: string }) {
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {liked.map((o, i) => (
               <li key={o.id} className="welcome-in" style={{ animationDelay: `${i * 40}ms` }}>
-                <Link href={`/opportunities/${o.id}`} className="glow-card block rounded-2xl border border-white/10 bg-panel p-4">
+                <Link href={`/opportunities/${o.id}`} className="glow-card block rounded-2xl border border-slate-200 bg-panel p-4">
                   <p className="text-xs uppercase tracking-wider text-slate-500">{o.type}</p>
-                  <p className="font-medium text-white">{o.title}</p>
+                  <p className="font-medium text-slate-900">{o.title}</p>
                 </Link>
               </li>
             ))}
@@ -77,9 +76,9 @@ export function PeopleView({ id }: { id: string }) {
             {reviews.map((r) => {
               const o = opportunities.find((x) => x.id === r.opportunity_id);
               return (
-                <li key={r.id} className="glow-card space-y-2 rounded-2xl border border-white/10 bg-panel p-4">
+                <li key={r.id} className="glow-card space-y-2 rounded-2xl border border-slate-200 bg-panel p-4">
                   <div className="flex items-center justify-between gap-2">
-                    <Link href={`/opportunities/${r.opportunity_id}`} className="font-medium text-white hover:text-cyan-200">
+                    <Link href={`/opportunities/${r.opportunity_id}`} className="font-medium text-slate-900 hover:text-teal-800">
                       {o?.title ?? r.opportunity_id}
                     </Link>
                     <Stars value={r.rating} />

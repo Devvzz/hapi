@@ -33,7 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Welcome />
         <Nav />
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 print:max-w-none print:p-0">{children}</main>
-        <footer className="mt-10 border-t border-white/10 print:hidden">
+        <footer className="mt-10 border-t border-slate-200 print:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
             <span className="flex items-center gap-2 text-slate-600">
               <HapiMark size={18} />
@@ -42,11 +42,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               </span>
             </span>
             <span>
-              <Link href="/about" className="text-violet-300 hover:text-cyan-200">
+              <Link href="/about" className="text-violet-300 underline underline-offset-2 hover:text-teal-800">
                 About Hapi
               </Link>{" "}
               ·{" "}
-              <Link href="/stats" className="text-violet-300 hover:text-cyan-200">
+              <Link href="/stats" className="text-violet-300 underline underline-offset-2 hover:text-teal-800">
                 Hapi in numbers
               </Link>{" "}
               · Checked data with source links · &quot;check yourself&quot; means not confirmed · PayPal in sandbox mode, no real money moves

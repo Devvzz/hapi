@@ -43,19 +43,19 @@ export function DepartureBoard({ rows }: { rows: { label: string; value: string;
       .join("");
 
   return (
-    <div ref={box} className="overflow-hidden rounded-2xl border border-white/10 bg-[#07060d] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+    <div ref={box} className="overflow-hidden rounded-2xl bg-[#0e1b2e] shadow-[0_12px_30px_-18px_rgba(14,27,46,0.6)]">
       <div className="flex items-center justify-between border-b border-white/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#fcd34d]">
         <span>Departures</span>
-        <span className="flex items-center gap-1.5 text-slate-500">
+        <span className="flex items-center gap-1.5 text-[#9fb0cc]">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" /> On time
         </span>
       </div>
-      <div className="grid gap-px bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
         {rows.map((r, row) => (
-          <div key={r.label} className="flex items-center justify-between gap-3 bg-[#07060d] px-4 py-4">
+          <div key={r.label} className="flex items-center justify-between gap-3 bg-[#0e1b2e] px-4 py-4">
             <div className="min-w-0">
               <p className="truncate text-sm font-semibold uppercase tracking-wider text-white">{r.label}</p>
-              {r.note && <p className="truncate text-xs text-slate-600">{r.note}</p>}
+              {r.note && <p className="truncate text-xs text-[#9fb0cc]">{r.note}</p>}
             </div>
             <div className="flex shrink-0 gap-[3px]">
               <span className="sr-only">{r.value}</span>

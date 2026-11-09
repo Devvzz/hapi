@@ -30,7 +30,7 @@ export default function StatsPage() {
       />
 
       <section className="space-y-4">
-        <h2 className="font-display text-2xl font-semibold text-white">Opportunities</h2>
+        <h2 className="font-display text-2xl font-semibold text-slate-900">Opportunities</h2>
         <div className="grid gap-3 sm:grid-cols-4">
           {[
             { n: opportunities.length, l: "in the database" },
@@ -38,18 +38,18 @@ export default function StatsPage() {
             { n: `${travel} · ${pct(travel)}%`, l: "with travel fully or partly paid" },
             { n: nationalityChecked, l: "nationality rules read from the official page" },
           ].map((t) => (
-            <div key={t.l} className="rounded-2xl border border-white/10 bg-panel p-4">
-              <p className="font-display text-3xl font-bold text-white">{t.n}</p>
+            <div key={t.l} className="rounded-2xl border border-slate-200 bg-panel p-4">
+              <p className="font-display text-3xl font-bold text-slate-900">{t.n}</p>
               <p className="text-sm text-slate-600">{t.l}</p>
             </div>
           ))}
         </div>
-        <div className="grid gap-x-8 gap-y-2 rounded-2xl border border-white/10 bg-panel p-5 sm:grid-cols-2">
+        <div className="grid gap-x-8 gap-y-2 rounded-2xl border border-slate-200 bg-panel p-5 sm:grid-cols-2">
           {byType.map(([type, n]) => (
             <div key={type} className="flex items-center gap-3 text-sm">
-              <span className="w-36 shrink-0 capitalize text-white">{type.replace("-", " ")}</span>
-              <span className="h-2 flex-1 overflow-hidden rounded-full bg-white/[0.06]">
-                <span className="block h-full rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" style={{ width: `${(n / byType[0][1]) * 100}%` }} />
+              <span className="w-36 shrink-0 capitalize text-slate-900">{type.replace("-", " ")}</span>
+              <span className="h-2 flex-1 overflow-hidden rounded-full bg-slate-100">
+                <span className="block h-full rounded-full bg-teal-700" style={{ width: `${(n / byType[0][1]) * 100}%` }} />
               </span>
               <span className="w-8 text-right text-slate-600">{n}</span>
             </div>

@@ -155,7 +155,7 @@ export function SponsorPanel() {
         <div className="space-y-2">
           <p className="text-xs font-medium uppercase tracking-wider text-slate-500">Waiting for payment</p>
           {waiting.map((w) => (
-            <div key={w.url} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-white/10 px-3 py-2 text-sm">
+            <div key={w.url} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm">
               <span>
                 {w.sponsorName}: {w.items} · {w.total}
               </span>
@@ -168,14 +168,14 @@ export function SponsorPanel() {
 
       {sent && (
         <div className="space-y-2 rounded-lg border border-emerald-400/40 bg-emerald-500/10 p-4 text-sm">
-          <p className="font-medium text-white">Invoice sent to {sent.sponsorName}&apos;s email.</p>
+          <p className="font-medium text-slate-900">Invoice sent to {sent.sponsorName}&apos;s email.</p>
           <p className="text-slate-600">Want to make sure they see it? Send them the payment link on WhatsApp too.</p>
           <div className="flex flex-wrap items-center gap-3">
             <WhatsAppButton sent={sent} />
-            <button onClick={() => navigator.clipboard?.writeText(sent.url)} className="rounded-full border border-white/15 px-3 py-2 text-xs text-slate-600 hover:text-white">
+            <button onClick={() => navigator.clipboard?.writeText(sent.url)} className="rounded-full border border-slate-200 px-3 py-2 text-xs text-slate-600 hover:text-slate-900">
               Copy payment link
             </button>
-            <button onClick={() => setSent(null)} className="text-xs text-slate-500 hover:text-white">
+            <button onClick={() => setSent(null)} className="text-xs text-slate-500 hover:text-slate-900">
               Done
             </button>
           </div>

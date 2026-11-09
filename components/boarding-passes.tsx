@@ -9,7 +9,7 @@ import { useNow } from "@/lib/storage";
 
 type Pass = { id: string; href: string; code: string; place: string; title: string; sub: string; date: string; label: string; extra: string; tone: string };
 
-const TONES = ["from-violet-500 to-indigo-500", "from-cyan-400 to-sky-500", "from-amber-400 to-pink-500"];
+const TONES = ["bg-[#1f5eff]", "bg-[#0e1b2e]", "bg-[#ff6b3d]"];
 
 const code = (s: string) =>
   s
@@ -72,43 +72,43 @@ function pick(today: string): Pass[] {
 
 function Ticket({ p }: { p: Pass }) {
   return (
-    <Link href={p.href} className="flex h-full overflow-hidden rounded-2xl bg-[#f6f3ff] text-[#1a1530] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.8)]">
+    <Link href={p.href} className="flex h-full overflow-hidden rounded-2xl border border-[#e4e0d7] bg-white text-[#0e1b2e] shadow-[0_18px_40px_-20px_rgba(14,27,46,0.35)]">
       <div className="flex min-w-0 flex-1 flex-col justify-between p-4">
         <div className="flex items-center justify-between gap-2">
-          <span className={`rounded-md bg-gradient-to-r ${p.tone} px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white`}>hapi pass</span>
-          <span className="text-[10px] font-semibold uppercase tracking-widest text-[#6b6390]">{p.label}</span>
+          <span className={`rounded-md ${p.tone} px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white`}>hapi pass</span>
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-[#5f6675]">{p.label}</span>
         </div>
         <div className="flex items-center gap-3">
           <div>
             <p className="font-display text-2xl font-extrabold leading-none">YOU</p>
-            <p className="text-[10px] uppercase text-[#6b6390]">today</p>
+            <p className="text-[10px] uppercase text-[#5f6675]">today</p>
           </div>
-          <div className="relative h-px flex-1 border-t-2 border-dashed border-[#c7bff0]">
-            <svg viewBox="0 0 24 24" className="pass-plane absolute -top-[11px] h-5 w-5 -translate-x-1/2 text-[#7c3aed]" fill="currentColor" aria-hidden="true">
+          <div className="relative h-px flex-1 border-t-2 border-dashed border-[#cfcac0]">
+            <svg viewBox="0 0 24 24" className="pass-plane absolute -top-[11px] h-5 w-5 -translate-x-1/2 text-[#1f5eff]" fill="currentColor" aria-hidden="true">
               <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)" />
             </svg>
           </div>
           <div className="text-right">
             <p className="font-display text-2xl font-extrabold leading-none">{p.code}</p>
-            <p className="max-w-[7rem] truncate text-[10px] uppercase text-[#6b6390]">{p.place}</p>
+            <p className="max-w-[7rem] truncate text-[10px] uppercase text-[#5f6675]">{p.place}</p>
           </div>
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-bold">{p.title}</p>
-          <p className="truncate text-xs text-[#6b6390]">{p.sub}</p>
+          <p className="truncate text-xs text-[#5f6675]">{p.sub}</p>
         </div>
       </div>
-      <div className="relative flex w-24 shrink-0 flex-col justify-between border-l-2 border-dashed border-[#d9d2fb] p-3 text-center">
-        <span className="absolute -left-[9px] -top-2 h-4 w-4 rounded-full bg-[#0b0818]" />
-        <span className="absolute -bottom-2 -left-[9px] h-4 w-4 rounded-full bg-[#0b0818]" />
+      <div className="relative flex w-24 shrink-0 flex-col justify-between border-l-2 border-dashed border-[#e4e0d7] p-3 text-center">
+        <span className="absolute -left-[9px] -top-2 h-4 w-4 rounded-full border border-[#e4e0d7] bg-[#f7f5f0]" />
+        <span className="absolute -bottom-2 -left-[9px] h-4 w-4 rounded-full border border-[#e4e0d7] bg-[#f7f5f0]" />
         <div>
-          <p className="text-[10px] uppercase tracking-widest text-[#6b6390]">{p.label}</p>
+          <p className="text-[10px] uppercase tracking-widest text-[#5f6675]">{p.label}</p>
           <p className="font-display text-sm font-extrabold leading-tight">{formatDate(p.date)}</p>
         </div>
-        <p className="truncate text-[10px] font-semibold capitalize text-[#7c3aed]">{p.extra}</p>
+        <p className="truncate text-[10px] font-semibold capitalize text-[#1f5eff]">{p.extra}</p>
         <div className="flex h-8 items-end justify-center gap-[2px]" aria-hidden="true">
           {bars(p.id).map((w, i) => (
-            <span key={i} className="h-full bg-[#1a1530]" style={{ width: w }} />
+            <span key={i} className="h-full bg-[#0e1b2e]" style={{ width: w }} />
           ))}
         </div>
       </div>
@@ -144,7 +144,7 @@ export function BoardingPasses() {
       </div>
       <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
         <span>Next real deadlines in Hapi</span>
-        <button onClick={() => setFront((f) => (f + 1) % passes.length)} className="rounded-full border border-white/15 px-3 py-1 text-slate-600 transition hover:border-cyan-300/60 hover:text-white">
+        <button onClick={() => setFront((f) => (f + 1) % passes.length)} className="rounded-full border border-slate-300 px-3 py-1 text-slate-600 transition hover:border-slate-400 hover:text-slate-900">
           Next pass
         </button>
       </div>

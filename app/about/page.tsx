@@ -16,7 +16,7 @@ const PRINCIPLES = [
   },
   {
     icon: <path d="M4 6h16M4 12h10M4 18h6M17 14l3 3-3 3" />,
-    tone: "bg-cyan-400 text-cyan-300",
+    tone: "bg-cyan-400 text-teal-700",
     title: "Rules first, AI second",
     text: "Code decides who can apply, what it costs and when it closes. The AI only explains and helps you write. It never invents a deadline or a price.",
   },
@@ -28,7 +28,7 @@ const PRINCIPLES = [
   },
   {
     icon: <path d="M12 20s-7-4.4-9.2-8.6C1.3 8.5 3 5 6.4 5c2 0 3.3 1.1 4 2.3h3.2C14.3 6.1 15.6 5 17.6 5 21 5 22.7 8.5 21.2 11.4 19 15.6 12 20 12 20z" />,
-    tone: "bg-amber-400 text-[#fcd34d]",
+    tone: "bg-amber-400 text-amber-700",
     title: "Family can help, safely",
     text: "Ask a relative to sponsor a cost with a PayPal invoice. Nothing is sent until you approve it yourself.",
   },
@@ -73,7 +73,7 @@ export default function AboutPage() {
           <p>
             Then friends started asking for it. Most young people around me had never heard that chances like these existed. There are so many students with the will to grow who are simply lost, so I turned my tool into an app that anyone can use.
           </p>
-          <p className="font-display text-xl font-semibold text-white">
+          <p className="font-display text-xl font-semibold text-slate-900">
             Discover. Apply. <span className="text-gradient">Grow.</span>
           </p>
         </div>
@@ -90,15 +90,15 @@ export default function AboutPage() {
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           {PRINCIPLES.map((p) => (
-            <div key={p.title} className="promise relative flex gap-4 overflow-hidden rounded-2xl border border-white/10 bg-panel p-6 hover:border-white/25">
+            <div key={p.title} className="promise relative flex gap-4 overflow-hidden rounded-2xl border border-slate-200 bg-panel p-6 hover:border-slate-300">
               <span className={`edge absolute left-0 top-0 h-10 w-1 ${p.tone.split(" ")[0]}`} />
-              <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] ${p.tone.split(" ")[1]}`}>
+              <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-100 ${p.tone.split(" ")[1]}`}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   {p.icon}
                 </svg>
               </span>
               <div>
-                <h3 className="font-display text-xl font-semibold text-white">{p.title}</h3>
+                <h3 className="font-display text-xl font-semibold text-slate-900">{p.title}</h3>
                 <p className="mt-2 text-slate-600">{p.text}</p>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
-        <div className="space-y-4 rounded-2xl border border-white/10 bg-panel p-6">
+        <div className="space-y-4 rounded-2xl border border-slate-200 bg-panel p-6">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">How it is built</p>
           <p className="text-slate-700">
             The data was researched before the build and checked against official pages. The app was built in November 2026, solo, assisted by AI in coding. All code is open source on GitHub under the MIT license.
@@ -120,7 +120,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-        <div className="space-y-4 rounded-2xl border border-white/10 bg-panel p-6">
+        <div className="space-y-4 rounded-2xl border border-slate-200 bg-panel p-6">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">Your data</p>
           <ul className="space-y-2 text-slate-700">
             <li>Without an account, everything stays in your browser.</li>
@@ -132,8 +132,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden rounded-[1.5rem] border border-violet-400/30 bg-gradient-to-br from-violet-600/20 via-[#0b0818] to-cyan-500/10 p-8 text-center sm:p-12">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-40 w-[60%] -translate-x-1/2 rounded-full bg-violet-500/30 blur-3xl" />
+      <section className="relative overflow-hidden rounded-[1.5rem] border border-violet-400/30 bg-gradient-to-br from-violet-600/20 via-white to-cyan-500/10 p-8 text-center sm:p-12">
         <div className="relative space-y-4">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">Made by</p>
           <h2 className="text-3xl font-extrabold sm:text-4xl">Devis Hila</h2>
@@ -142,10 +141,10 @@ export default function AboutPage() {
             <Link href="/profile" className="rounded-xl bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white">
               Find my next step
             </Link>
-            <a href="https://github.com/Devvzz/hapi" target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/15 px-5 py-2.5 text-sm hover:border-violet-400/60">
+            <a href="https://github.com/Devvzz/hapi" target="_blank" rel="noopener noreferrer" className="rounded-xl border border-slate-200 px-5 py-2.5 text-sm hover:border-violet-400/60">
               Source code on GitHub
             </a>
-            <Link href="/stats" className="rounded-xl border border-white/15 px-5 py-2.5 text-sm hover:border-violet-400/60">
+            <Link href="/stats" className="rounded-xl border border-slate-200 px-5 py-2.5 text-sm hover:border-violet-400/60">
               Hapi in numbers
             </Link>
           </div>

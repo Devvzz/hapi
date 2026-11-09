@@ -31,18 +31,18 @@ export function Survey() {
 
   return (
     <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-cyan-400/30 bg-cyan-500/[0.07] p-4" aria-label="Quick question">
-      <p className="text-sm text-white">
-        <span className="mr-2 text-xs font-semibold uppercase tracking-wider text-cyan-300">Quick question</span>
+      <p className="text-sm text-slate-900">
+        <span className="mr-2 text-xs font-semibold uppercase tracking-wider text-teal-700">Quick question</span>
         Did Hapi show you something you did not know about before?
       </p>
       <div className="flex gap-2">
         <button onClick={() => reply("yes")} className="rounded-full bg-teal-700 px-4 py-1.5 text-sm font-medium text-white">
           Yes
         </button>
-        <button onClick={() => reply("no")} className="rounded-full border border-white/15 px-4 py-1.5 text-sm text-slate-700 hover:text-white">
+        <button onClick={() => reply("no")} className="rounded-full border border-slate-200 px-4 py-1.5 text-sm text-slate-700 hover:text-slate-900">
           Not yet
         </button>
-        <button onClick={() => setAnswer("done")} aria-label="Hide question" className="px-2 text-slate-500 hover:text-white">
+        <button onClick={() => setAnswer("done")} aria-label="Hide question" className="px-2 text-slate-500 hover:text-slate-900">
           ×
         </button>
       </div>

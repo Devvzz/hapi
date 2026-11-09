@@ -25,11 +25,10 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
       <svg viewBox="0 0 400 440" className="block h-auto w-full overflow-visible">
         <defs>
           <linearGradient id="ad-sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#2e1065" />
-            <stop offset="0.45" stopColor="#7c3aed" />
-            <stop offset="0.72" stopColor="#f472b6" />
-            <stop offset="0.9" stopColor="#fdba74" />
-            <stop offset="1" stopColor="#fde68a" />
+            <stop offset="0" stopColor="#3d74ff" />
+            <stop offset="0.5" stopColor="#8fb2ff" />
+            <stop offset="0.78" stopColor="#ffc9b0" />
+            <stop offset="1" stopColor="#ffe3a3" />
           </linearGradient>
           <radialGradient id="ad-sun" cx="0.5" cy="0.5" r="0.5">
             <stop offset="0" stopColor="#fffbeb" />
@@ -37,25 +36,24 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
             <stop offset="1" stopColor="#fb923c" stopOpacity="0" />
           </radialGradient>
           <linearGradient id="ad-road" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#fde68a" stopOpacity="0.85" />
-            <stop offset="1" stopColor="#a78bfa" stopOpacity="0.35" />
+            <stop offset="0" stopColor="#fff4dc" />
+            <stop offset="1" stopColor="#ffffff" />
           </linearGradient>
           <linearGradient id="ad-ground" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#4c1d95" />
-            <stop offset="1" stopColor="#1e1b4b" />
+            <stop offset="0" stopColor="#c9d8ff" />
+            <stop offset="1" stopColor="#9db8ff" />
           </linearGradient>
           <linearGradient id="ad-spill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#fde68a" stopOpacity="0.55" />
-            <stop offset="1" stopColor="#fde68a" stopOpacity="0" />
+            <stop offset="0" stopColor="#ffcf8a" stopOpacity="0.55" />
+            <stop offset="1" stopColor="#ffcf8a" stopOpacity="0" />
           </linearGradient>
           <linearGradient id="ad-frame" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#fde68a" />
-            <stop offset="0.5" stopColor="#c4b5fd" />
-            <stop offset="1" stopColor="#67e8f9" />
+            <stop offset="0" stopColor="#0e1b2e" />
+            <stop offset="1" stopColor="#1e2f4d" />
           </linearGradient>
           <linearGradient id="ad-leaf" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stopColor="#1e1240" />
-            <stop offset="1" stopColor="#3b1d78" />
+            <stop offset="0" stopColor="#ffffff" />
+            <stop offset="1" stopColor="#eef1f7" />
           </linearGradient>
           <filter id="ad-blur" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="8" />
@@ -69,31 +67,31 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
         </defs>
 
         {/* floor in front of the door, with the light that falls out of it */}
-        <ellipse cx="200" cy="384" rx="190" ry="40" fill="#0b0818" opacity="0.9" />
+        <ellipse cx="200" cy="384" rx="170" ry="26" fill="#0e1b2e" opacity="0.06" />
         <polygon className="ad-spill" points="128,372 272,372 380,440 20,440" fill="url(#ad-spill)" />
 
         {/* soft glow around the doorway */}
-        <path d={ARCH} fill="none" stroke="#a78bfa" strokeWidth="22" opacity="0.45" filter="url(#ad-blur)" className="ad-breathe" />
+        <path d={ARCH} fill="none" stroke="#ffb27a" strokeWidth="18" opacity="0.4" filter="url(#ad-blur)" className="ad-breathe" />
 
         {/* the country on the other side */}
         <g clipPath="url(#ad-clip)">
           <rect x="120" y="30" width="160" height="350" fill="url(#ad-sky)" />
           <circle cx="200" cy="226" r="50" fill="url(#ad-sun)" className="ad-sun" />
           <circle cx="200" cy="226" r="16" fill="#fffbeb" />
-          <g className="ad-clouds" fill="#fdf4ff" opacity="0.55">
+          <g className="ad-clouds" fill="#ffffff" opacity="0.8">
             <ellipse cx="150" cy="110" rx="26" ry="6" />
             <ellipse cx="166" cy="104" rx="16" ry="6" />
             <ellipse cx="248" cy="150" rx="22" ry="5" />
             <ellipse cx="262" cy="145" rx="12" ry="5" />
           </g>
-          <g className="ad-birds" fill="none" stroke="#1e1240" strokeWidth="1.6" strokeLinecap="round">
+          <g className="ad-birds" fill="none" stroke="#1e2f4d" strokeWidth="1.6" strokeLinecap="round">
             <path className="ad-bird" d="M160 170 q4 -4 8 0 q4 -4 8 0" />
             <path className="ad-bird" d="M178 160 q3 -3 6 0 q3 -3 6 0" style={{ animationDelay: "0.3s" }} />
             <path className="ad-bird" d="M150 158 q2.5 -2.5 5 0 q2.5 -2.5 5 0" style={{ animationDelay: "0.6s" }} />
           </g>
           {/* hills and the city on the horizon */}
-          <path d="M120 250 Q150 222 182 244 Q205 228 232 242 Q258 226 280 246 V380 H120 Z" fill="#6d28d9" opacity="0.55" />
-          <g fill="#3b1d78">
+          <path d="M120 250 Q150 222 182 244 Q205 228 232 242 Q258 226 280 246 V380 H120 Z" fill="#6f95f0" opacity="0.45" />
+          <g fill="#3a5aa8">
             {CITY.map(([x, w, h]) => (
               <rect key={x} x={x} y={252 - h} width={w} height={h} rx="1" />
             ))}
@@ -108,7 +106,7 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
           {/* ground and the road towards the city */}
           <rect x="120" y="252" width="160" height="130" fill="url(#ad-ground)" />
           <polygon points="196,252 204,252 262,372 138,372" fill="url(#ad-road)" />
-          <path d="M200 262 V276 M200 290 V308 M200 324 V350" stroke="#fffbeb" strokeWidth="2" strokeDasharray="0" opacity="0.7" />
+          <path d="M200 262 V276 M200 290 V308 M200 324 V350" stroke="#ffb27a" strokeWidth="2" strokeDasharray="0" opacity="0.8" />
         </g>
 
         {/* the door frame */}
@@ -116,20 +114,20 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
         <rect x="118" y="370" width="164" height="7" rx="2" fill="url(#ad-frame)" opacity="0.9" />
 
         {/* the open door, swung towards us on its left hinge */}
-        <path d="M128 112 L76 92 L76 414 L128 372 Z" fill="url(#ad-leaf)" stroke="#c4b5fd" strokeOpacity="0.5" strokeWidth="1.5" />
-        <path d="M118 140 L88 128 L88 238 L118 244 Z M118 262 L88 258 L88 380 L118 360 Z" fill="none" stroke="#a78bfa" strokeOpacity="0.35" strokeWidth="1.2" />
-        <circle cx="86" cy="252" r="3.2" fill="#fde68a" />
+        <path d="M128 112 L76 92 L76 414 L128 372 Z" fill="url(#ad-leaf)" stroke="#0e1b2e" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M118 140 L88 128 L88 238 L118 244 Z M118 262 L88 258 L88 380 L118 360 Z" fill="none" stroke="#cfcac0" strokeWidth="1.4" />
+        <circle cx="86" cy="252" r="3.4" fill="#ff6b3d" />
 
         {/* the student's shadow, falling back towards us */}
-        <path d="M188 376 L214 376 L236 440 L168 440 Z" fill="#05040b" opacity="0.55" filter="url(#ad-soft)" />
+        <path d="M188 376 L214 376 L236 440 L168 440 Z" fill="#0e1b2e" opacity="0.18" filter="url(#ad-soft)" />
 
         {/* the student, seen from behind, walking in */}
         <g className="ad-walker">
-          <g fill="#fde68a" opacity="0.65" filter="url(#ad-soft)">
+          <g fill="#ffd9a8" opacity="0.7" filter="url(#ad-soft)">
             <circle cx="200" cy="203" r="14" />
             <path d="M178 226 Q200 214 222 226 L216 292 L184 292 Z" />
           </g>
-          <g fill="#0d0a1a" stroke="#0d0a1a" strokeLinecap="round" strokeLinejoin="round">
+          <g fill="#0e1b2e" stroke="#0e1b2e" strokeLinecap="round" strokeLinejoin="round">
             {/* back leg, foot lifting */}
             <path className="ad-leg-back" d="M207 288 L213 334 L219 368" fill="none" strokeWidth="13" />
             {/* front leg */}
@@ -142,12 +140,12 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
             <path className="ad-arm-right" d="M218 230 L228 260 L226 284" fill="none" strokeWidth="9.5" />
             {/* head and hair */}
             <circle cx="200" cy="203" r="12.5" />
-            <path d="M188 200 Q190 188 200 189 Q211 188 212 200 Q206 194 200 195 Q193 194 188 200 Z" fill="#1e1240" stroke="none" />
+            <path d="M188 200 Q190 188 200 189 Q211 188 212 200 Q206 194 200 195 Q193 194 188 200 Z" fill="#1e2f4d" stroke="none" />
           </g>
           {/* backpack with a rim of sunlight */}
-          <rect x="187" y="230" width="26" height="40" rx="7" fill="#2e1065" stroke="#fde68a" strokeOpacity="0.55" strokeWidth="1.4" />
-          <rect x="192" y="252" width="16" height="11" rx="3" fill="#3b1d78" />
-          <path d="M190 232 L188 226 M210 232 L212 226" stroke="#2e1065" strokeWidth="3" strokeLinecap="round" />
+          <rect x="187" y="230" width="26" height="40" rx="7" fill="#ff6b3d" stroke="#ffd9a8" strokeOpacity="0.8" strokeWidth="1.2" />
+          <rect x="192" y="252" width="16" height="11" rx="3" fill="#e5532a" />
+          <path d="M190 232 L188 226 M210 232 L212 226" stroke="#c9461f" strokeWidth="3" strokeLinecap="round" />
         </g>
       </svg>
 
@@ -157,7 +155,7 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
           <span
             key={i}
             className="book-glyph absolute bottom-0 font-semibold"
-            style={{ left: `${(i * 37) % 90}%`, animationDelay: `${(i * 0.61) % 6}s`, fontSize: `${12 + ((i * 7) % 10)}px`, color: i % 3 === 0 ? "#fde68a" : i % 3 === 1 ? "#c4b5fd" : "#67e8f9" }}
+            style={{ left: `${(i * 37) % 90}%`, animationDelay: `${(i * 0.61) % 6}s`, fontSize: `${12 + ((i * 7) % 10)}px`, color: i % 3 === 0 ? "#ff6b3d" : i % 3 === 1 ? "#1f5eff" : "#0e1b2e" }}
           >
             {ch}
           </span>

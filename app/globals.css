@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 /*
-  Hapi theme: deep space black, violet to cyan glow, glass panels.
-  The neutral and accent scales are remapped once here, so every page shares the same dark look.
-  Light = text, dark = surfaces. ".paper" restores the light palette for printed documents (the CV).
+  Hapi theme: clean and light, like a boarding pass.
+  Paper #F7F5F0, white cards, navy ink #0E1B2E, airline blue #1F5EFF, sunset orange #FF6B3D.
+  "teal" is the brand blue; "violet" and "cyan" are blue accents; the neutral "slate" scale is a warm grey.
 */
 @theme inline {
   --font-sans: var(--font-geist-sans);
@@ -11,72 +11,58 @@
 }
 
 @theme {
+  --color-panel: #ffffff;
+  --color-paper: #f7f5f0;
+  --color-ink: #0e1b2e;
+  --color-brand: #1f5eff;
+  --color-sunset: #ff6b3d;
 
-  --color-panel: rgb(20 16 40 / 0.62);
-  --color-glow: #8b5cf6;
+  --color-slate-50: #faf9f6;
+  --color-slate-100: #f1eee8;
+  --color-slate-200: #e4e0d7;
+  --color-slate-300: #cfcac0;
+  --color-slate-400: #8c919c;
+  --color-slate-500: #5f6675;
+  --color-slate-600: #4a5161;
+  --color-slate-700: #333a48;
+  --color-slate-800: #1e2533;
+  --color-slate-900: #0e1b2e;
 
-  --color-slate-50: #05040b;
-  --color-slate-100: #161229;
-  --color-slate-200: #2a2547;
-  --color-slate-300: #3d3666;
-  --color-slate-400: #6f6a92;
-  --color-slate-500: #918cb2;
-  --color-slate-600: #aca7cb;
-  --color-slate-700: #cbc7e2;
-  --color-slate-800: #e5e2f6;
-  --color-slate-900: #f5f3ff;
+  --color-teal-50: #eef3ff;
+  --color-teal-100: #dde7ff;
+  --color-teal-200: #bccfff;
+  --color-teal-400: #5b8bff;
+  --color-teal-600: #1f5eff;
+  --color-teal-700: #1f5eff;
+  --color-teal-800: #1747c8;
+  --color-teal-900: #0f2f86;
 
-  --color-teal-50: #1a1236;
-  --color-teal-100: #23194a;
-  --color-teal-200: #3f2d7c;
-  --color-teal-400: #a78bfa;
-  --color-teal-600: #7c3aed;
-  --color-teal-700: #8b5cf6;
-  --color-teal-800: #c4b5fd;
-  --color-teal-900: #ddd6fe;
-
-  --color-emerald-50: #072821;
-  --color-emerald-100: #0b3529;
-  --color-emerald-700: #34d399;
-  --color-emerald-800: #6ee7b7;
-  --color-emerald-900: #a7f3d0;
-
-  --color-amber-50: #261b06;
-  --color-amber-100: #36270a;
-  --color-amber-200: #5a4210;
-  --color-amber-300: #7a5a14;
-  --color-amber-700: #fbbf24;
-  --color-amber-800: #fcd34d;
-  --color-amber-900: #fde68a;
-
-  --color-rose-100: #3a0d1b;
-  --color-rose-700: #fb7185;
-  --color-rose-800: #fda4af;
-  --color-rose-900: #fecdd3;
-
-  --color-sky-100: #0b2940;
-  --color-sky-900: #bae6fd;
-  --color-violet-100: #2a1752;
-  --color-violet-900: #ddd6fe;
+  /* Accents from the dark theme, now readable on white: light shades became the dark ones. */
+  --color-violet-100: #eef3ff;
+  --color-violet-200: #1747c8;
+  --color-violet-300: #1f5eff;
+  --color-violet-400: #3b74ff;
+  --color-violet-500: #1f5eff;
+  --color-violet-600: #1f5eff;
+  --color-violet-700: #1747c8;
+  --color-violet-900: #0f2f86;
+  --color-indigo-500: #2f6bff;
+  --color-cyan-100: #e0f2fe;
+  --color-cyan-200: #1747c8;
+  --color-cyan-300: #1f5eff;
+  --color-cyan-400: #4f8bff;
+  --color-cyan-500: #4f8bff;
+  --color-emerald-300: #047857;
+  --color-pink-200: #be185d;
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-/* Light palette again, for documents that are printed on white paper. */
+/* The CV keeps the plain light palette when printed. */
 .paper {
   color-scheme: light;
-  --color-slate-50: oklch(98.4% 0.003 247.858);
-  --color-slate-100: oklch(96.8% 0.007 247.896);
-  --color-slate-200: oklch(92.9% 0.013 255.508);
-  --color-slate-300: oklch(86.9% 0.022 252.894);
-  --color-slate-400: oklch(70.4% 0.04 256.788);
-  --color-slate-500: oklch(55.4% 0.046 257.417);
-  --color-slate-600: oklch(44.6% 0.043 257.281);
-  --color-slate-700: oklch(37.2% 0.044 257.287);
-  --color-slate-800: oklch(27.9% 0.041 260.031);
-  --color-slate-900: oklch(20.8% 0.042 265.755);
 }
 
 html,
@@ -86,11 +72,8 @@ body {
 
 body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  background-color: #05040b;
-  background-image:
-    radial-gradient(ellipse 70% 40% at 50% -10%, rgb(124 58 237 / 0.22), transparent 65%),
-    radial-gradient(ellipse 50% 35% at 100% 100%, rgb(34 211 238 / 0.06), transparent 70%);
-  background-attachment: fixed;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
 }
 
 h1,
@@ -98,23 +81,23 @@ h2,
 h3,
 .font-display {
   font-family: var(--font-sora), var(--font-geist-sans), sans-serif;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  color: var(--color-ink);
 }
 
-/* Glass panels */
+/* Cards: white with a fine border and a soft shadow */
 .bg-panel {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 2px rgb(14 27 46 / 0.04), 0 4px 16px -8px rgb(14 27 46 / 0.08);
 }
 
-/* Inputs and selects on dark */
+/* Inputs and selects */
 input,
 select,
 textarea {
   max-width: 100%;
   min-width: 0;
-  background-color: rgb(10 8 22 / 0.7);
-  color: var(--color-slate-900);
+  background-color: #ffffff;
+  color: var(--color-ink);
 }
 input::placeholder,
 textarea::placeholder {
@@ -124,30 +107,26 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--color-glow) !important;
-  box-shadow: 0 0 0 3px rgb(139 92 246 / 0.25);
-}
-option {
-  background: #110d22;
+  border-color: var(--color-brand) !important;
+  box-shadow: 0 0 0 3px rgb(31 94 255 / 0.18);
 }
 input[type="checkbox"] {
-  accent-color: #8b5cf6;
+  accent-color: var(--color-brand);
 }
 
-/* Primary buttons: violet to cyan with a soft glow */
+/* Primary buttons: solid airline blue */
 .bg-teal-700 {
-  background-image: linear-gradient(135deg, #7c3aed, #6366f1 60%, #0891b2);
-  box-shadow: 0 0 18px -4px rgb(139 92 246 / 0.7);
+  background-color: var(--color-brand);
+  box-shadow: 0 1px 2px rgb(14 27 46 / 0.1);
+  transition: background-color 0.15s ease, transform 0.15s ease;
 }
 .bg-teal-700:hover {
-  filter: brightness(1.12);
+  background-color: #1747c8;
 }
 
+/* Highlighted words: sunset orange, no gradient */
 .text-gradient {
-  background-image: linear-gradient(90deg, #ddd6fe, #a78bfa 35%, #22d3ee);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #dc4a14;
 }
 
 .glow-card {
@@ -155,12 +134,12 @@ input[type="checkbox"] {
 }
 .glow-card:hover {
   transform: translateY(-2px);
-  border-color: rgb(139 92 246 / 0.7);
-  box-shadow: 0 10px 40px -12px rgb(139 92 246 / 0.6);
+  border-color: var(--color-slate-300);
+  box-shadow: 0 12px 30px -16px rgb(14 27 46 / 0.25);
 }
 
 ::selection {
-  background: rgb(139 92 246 / 0.45);
+  background: rgb(31 94 255 / 0.18);
 }
 
 /* Choice cards: cursor spotlight, a light that runs around the border, line art that draws itself */
@@ -185,7 +164,7 @@ input[type="checkbox"] {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: radial-gradient(420px circle at var(--x, 50%) var(--y, 50%), rgb(139 92 246 / 0.22), transparent 45%);
+  background: radial-gradient(420px circle at var(--x, 50%) var(--y, 50%), rgb(31 94 255 / 0.07), transparent 45%);
   opacity: 0;
   transition: opacity 0.35s ease;
 }
@@ -195,7 +174,7 @@ input[type="checkbox"] {
   inset: 0;
   border-radius: inherit;
   padding: 1.5px;
-  background: conic-gradient(from var(--angle), transparent 0deg 220deg, #8b5cf6 280deg, #22d3ee 330deg, transparent 360deg);
+  background: conic-gradient(from var(--angle), transparent 0deg 220deg, #1f5eff 280deg, #ff6b3d 330deg, transparent 360deg);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -206,7 +185,7 @@ input[type="checkbox"] {
 }
 .choice-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 60px -20px rgb(139 92 246 / 0.7);
+  box-shadow: 0 18px 40px -20px rgb(14 27 46 / 0.3);
 }
 .choice-card:hover::before,
 .choice-card:hover::after {
@@ -244,10 +223,10 @@ input[type="checkbox"] {
 }
 .choice-card:hover .go {
   transform: translateX(6px);
-  color: #67e8f9;
+  color: #ff6b3d;
 }
 
-/* Premium button: gold to violet, with a light that sweeps across every few seconds */
+/* Premium button: sunset orange, with a light that sweeps across every few seconds */
 @keyframes hapi-shine {
   0%,
   60% {
@@ -258,19 +237,20 @@ input[type="checkbox"] {
   }
 }
 .premium-btn {
-  background-image: linear-gradient(120deg, #f59e0b, #ec4899 45%, #8b5cf6 75%, #6366f1);
-  box-shadow: 0 0 28px -6px rgb(236 72 153 / 0.75), 0 0 0 1px rgb(253 230 138 / 0.35) inset;
+  background-color: var(--color-sunset);
+  box-shadow: 0 6px 16px -8px rgb(255 107 61 / 0.8);
 }
 .premium-btn::after {
   content: "";
   position: absolute;
   inset: 0;
   width: 40%;
-  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.55), transparent);
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.4), transparent);
   animation: hapi-shine 4s ease-in-out infinite;
 }
 .premium-btn:hover {
-  box-shadow: 0 0 40px -4px rgb(236 72 153 / 0.95), 0 0 0 1px rgb(253 230 138 / 0.6) inset;
+  background-color: #f2551f;
+  box-shadow: 0 8px 20px -8px rgb(255 107 61 / 0.9);
 }
 
 /* Welcome screen */
@@ -319,22 +299,22 @@ input[type="checkbox"] {
 }
 .pass-card[data-depth="1"] {
   transform: translate(14px, 14px) rotate(4deg) scale(0.96);
-  filter: brightness(0.7);
+  filter: brightness(0.97);
 }
 .pass-card[data-depth="2"] {
   transform: translate(-10px, 26px) rotate(-7deg) scale(0.92);
-  filter: brightness(0.5);
+  filter: brightness(0.93);
 }
 .pass-stack:hover .pass-card[data-depth="0"] {
   transform: translateY(-6px) rotate(0deg);
 }
 .pass-stack:hover .pass-card[data-depth="1"] {
   transform: translate(40px, 30px) rotate(9deg) scale(0.95);
-  filter: brightness(0.8);
+  filter: brightness(0.98);
 }
 .pass-stack:hover .pass-card[data-depth="2"] {
   transform: translate(-36px, 40px) rotate(-12deg) scale(0.92);
-  filter: brightness(0.6);
+  filter: brightness(0.95);
 }
 @keyframes hapi-fly {
   0%,
@@ -352,10 +332,9 @@ input[type="checkbox"] {
 
 /* Split-flap digits: a hinge line through the middle */
 .flap {
-  color: #ffe8a3;
-  background: linear-gradient(#2c2640 0 50%, #241f35 50% 100%);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.12), 0 2px 0 #0a0812, 0 6px 14px -6px rgb(0 0 0 / 0.8);
-  text-shadow: 0 0 12px rgb(251 191 36 / 0.55);
+  color: #ffd56b;
+  background: linear-gradient(#1d2c47 0 50%, #172440 50% 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 2px 0 #08111f;
 }
 .flap::after {
   content: "";
@@ -434,7 +413,7 @@ input[type="checkbox"] {
 }
 .book-glyph {
   opacity: 0;
-  text-shadow: 0 0 12px currentColor;
+  text-shadow: none;
   animation: hapi-rise 6s ease-out infinite;
 }
 .book-glyph:nth-child(2n) {

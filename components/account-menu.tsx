@@ -32,30 +32,30 @@ export function AccountMenu() {
     <div ref={box} className="relative shrink-0">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 py-1 pl-1 pr-3 text-sm text-slate-700 hover:border-violet-400/60"
+        className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 py-1 pl-1 pr-3 text-sm text-slate-700 hover:border-violet-400/60"
         aria-expanded={open}
       >
-        <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 text-xs font-bold text-white">
+        <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-teal-700 text-xs font-bold text-white">
           {initial}
-          {account.email && <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-[#070510] bg-emerald-400" />}
+          {account.email && <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-emerald-400" />}
         </span>
         <span className="hidden max-w-24 truncate xl:inline">{user.name || "Account"}</span>
       </button>
 
       {open && (
-        <div className="absolute right-0 top-11 z-50 w-72 space-y-3 rounded-2xl border border-white/10 bg-[#0d0a1ef2] p-4 text-sm shadow-[0_20px_60px_-15px_rgba(139,92,246,0.7)] backdrop-blur-xl">
+        <div className="absolute right-0 top-11 z-50 w-72 space-y-3 rounded-2xl border border-slate-200 bg-white p-4 text-sm shadow-xl backdrop-blur-xl">
           <div>
-            <p className="font-display font-semibold text-white">{user.name || "Your account"}</p>
+            <p className="font-display font-semibold text-slate-900">{user.name || "Your account"}</p>
             <p className="text-xs text-slate-500">{account.email ?? "Saved on this device only"}</p>
             {account.email && STATUS_TEXT[account.status] && (
               <p className={`mt-1 text-xs ${account.status === "error" ? "text-rose-700" : "text-emerald-700"}`}>{STATUS_TEXT[account.status]}</p>
             )}
           </div>
-          <Link href="/profile" onClick={() => setOpen(false)} className="block rounded-lg px-2 py-1.5 text-slate-700 hover:bg-white/5">
+          <Link href="/profile" onClick={() => setOpen(false)} className="block rounded-lg px-2 py-1.5 text-slate-700 hover:bg-slate-100">
             My profile
           </Link>
           {account.userId && (
-            <Link href={`/people?id=${account.userId}`} onClick={() => setOpen(false)} className="block rounded-lg px-2 py-1.5 text-slate-700 hover:bg-white/5">
+            <Link href={`/people?id=${account.userId}`} onClick={() => setOpen(false)} className="block rounded-lg px-2 py-1.5 text-slate-700 hover:bg-slate-100">
               My public page: likes and reviews
             </Link>
           )}
@@ -66,7 +66,7 @@ export function AccountMenu() {
                 <button onClick={() => { setDialog("signup"); setOpen(false); }} className="flex-1 rounded-lg bg-teal-700 py-1.5 text-xs font-medium text-white">
                   Create account
                 </button>
-                <button onClick={() => { setDialog("login"); setOpen(false); }} className="flex-1 rounded-lg border border-white/15 py-1.5 text-xs">
+                <button onClick={() => { setDialog("login"); setOpen(false); }} className="flex-1 rounded-lg border border-slate-200 py-1.5 text-xs">
                   Log in
                 </button>
               </div>
@@ -78,7 +78,7 @@ export function AccountMenu() {
                 setOpen(false);
                 await account.signOut();
               }}
-              className="w-full rounded-lg border border-white/10 py-1.5 text-slate-700 hover:border-rose-400/50 hover:text-rose-800"
+              className="w-full rounded-lg border border-slate-200 py-1.5 text-slate-700 hover:border-rose-400/50 hover:text-rose-800"
             >
               Sign out
             </button>
@@ -88,10 +88,10 @@ export function AccountMenu() {
 
       {dialog && (
         <div className="fixed inset-0 z-[90] flex items-center justify-center bg-black/60 px-4 backdrop-blur-sm" onMouseDown={(e) => e.target === e.currentTarget && setDialog(null)}>
-          <div className="welcome-in w-full max-w-sm space-y-4 rounded-3xl border border-violet-400/40 bg-[#0b0818f2] p-6 shadow-[0_0_80px_-20px_rgba(139,92,246,0.9)]">
+          <div className="welcome-in w-full max-w-sm space-y-4 rounded-3xl border border-violet-400/40 bg-white p-6 ">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold">Your Hapi account</h2>
-              <button onClick={() => setDialog(null)} className="text-slate-500 hover:text-white" aria-label="Close">
+              <button onClick={() => setDialog(null)} className="text-slate-500 hover:text-slate-900" aria-label="Close">
                 ✕
               </button>
             </div>

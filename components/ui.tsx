@@ -8,9 +8,8 @@ import { AuthForm } from "./auth-form";
 export function PageHero({ kicker, title, highlight, subtitle, children }: { kicker: string; title: string; highlight?: string; subtitle?: ReactNode; children?: ReactNode }) {
   return (
     <header className="relative flex flex-wrap items-end justify-between gap-6 pb-2 pt-4">
-      <div className="pointer-events-none absolute -left-20 -top-24 h-64 w-64 rounded-full bg-violet-600/25 blur-3xl" />
       <div className="relative max-w-3xl space-y-3">
-        <p className="welcome-in text-xs font-medium uppercase tracking-[0.3em] text-violet-300">{kicker}</p>
+        <p className="welcome-in text-xs font-semibold uppercase tracking-[0.25em] text-teal-700">{kicker}</p>
         <h1 className="welcome-in break-words text-[2rem] font-extrabold leading-tight tracking-tight sm:text-5xl" style={{ animationDelay: "80ms" }}>
           {title} {highlight && <span className="text-gradient">{highlight}</span>}
         </h1>

@@ -25,15 +25,15 @@ function Step({ s, today, last }: { s: RoadStep; today: string; last: boolean })
   return (
     <li className="relative flex gap-4 pb-6">
       {!last && <span className="absolute left-5 top-11 h-[calc(100%-2.75rem)] w-px bg-gradient-to-b from-violet-400/60 to-transparent" />}
-      <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${s.official ? "border-[#fcd34d]/60 bg-[#fcd34d]/10 text-[#fcd34d]" : "border-violet-400/40 bg-violet-500/10 text-violet-200"}`}>
+      <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${s.official ? "border-amber-300 bg-amber-50 text-amber-700" : "border-violet-400/40 bg-violet-500/10 text-violet-200"}`}>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d={ICON[s.key]} />
         </svg>
       </span>
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-          <p className="font-semibold text-white">{s.title}</p>
-          <p className={`text-sm font-medium ${late ? "text-rose-700" : soon ? "text-[#fcd34d]" : "text-slate-600"}`}>
+          <p className="font-semibold text-slate-900">{s.title}</p>
+          <p className={`text-sm font-medium ${late ? "text-rose-700" : soon ? "text-amber-700" : "text-slate-600"}`}>
             {s.due ? (late ? "Do it now" : `${s.official ? "Deadline" : "Suggested by"} ${formatDate(s.due)}`) : "Date not published yet"}
           </p>
         </div>
@@ -56,9 +56,9 @@ export function Roadmap() {
   const today = isoDay(now);
 
   return (
-    <section className="space-y-4 rounded-2xl border border-white/10 bg-panel p-5">
+    <section className="space-y-4 rounded-2xl border border-slate-200 bg-panel p-5">
       <div>
-        <h2 className="font-display text-xl font-semibold text-white">Your step-by-step plan</h2>
+        <h2 className="font-display text-xl font-semibold text-slate-900">Your step-by-step plan</h2>
         <p className="text-sm text-slate-600">From language certificate to your first day. Gold is the official deadline; the other dates are suggestions worked out backwards from it, for a start in autumn 2027.</p>
       </div>
       {starred.length === 0 ? (
@@ -78,7 +78,7 @@ export function Roadmap() {
                   key={p.id}
                   onClick={() => setPick(p.id)}
                   aria-pressed={p.id === current?.id}
-                  className={`rounded-full border px-3 py-1 text-xs ${p.id === current?.id ? "border-transparent bg-gradient-to-r from-violet-600 to-cyan-500 text-white" : "border-white/15 text-slate-600 hover:text-white"}`}
+                  className={`rounded-full border px-3 py-1 text-xs ${p.id === current?.id ? "border-transparent bg-slate-900 text-white" : "border-slate-200 text-slate-600 hover:text-slate-900"}`}
                 >
                   {p.university}
                   {p.program ? `: ${p.program}` : ""}

@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
     <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#7c3aed"/>
-      <stop offset="0.55" stop-color="#8b5cf6"/>
-      <stop offset="1" stop-color="#22d3ee"/>
+      <stop offset="0" stop-color="#5b8bff"/>
+      <stop offset="0.55" stop-color="#5b8bff"/>
+      <stop offset="1" stop-color="#ff6b3d"/>
     </linearGradient>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1a1236"/>
-      <stop offset="1" stop-color="#05040b"/>
+      <stop offset="0" stop-color="#0e1b2e"/>
+      <stop offset="1" stop-color="#0e1b2e"/>
     </linearGradient>
     <mask id="m">
       <rect width="64" height="64" fill="white"/>
@@ -16,7 +16,7 @@
     </mask>
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#8b5cf6" stroke-opacity="0.6" stroke-width="2"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#1e2f4d" stroke-opacity="1" stroke-width="2"/>
   <g mask="url(#m)" fill="#ffffff">
     <path d="M13 19 L25 13 L25 52 L13 58 Z"/>
     <path d="M37 13 L49 7 L49 46 L37 52 Z"/>

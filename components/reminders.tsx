@@ -58,11 +58,11 @@ export function Reminders() {
 
   if (soon.length === 0) return null;
   return (
-    <section className="space-y-3 rounded-2xl border border-[#fcd34d]/30 bg-[#fcd34d]/[0.06] p-5" aria-label="Coming up">
+    <section className="space-y-3 rounded-2xl border border-amber-300 bg-amber-50 p-5" aria-label="Coming up">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="font-display text-lg font-semibold text-white">Coming up in the next two weeks</h2>
+        <h2 className="font-display text-lg font-semibold text-slate-900">Coming up in the next two weeks</h2>
         {permission === "default" && (
-          <button onClick={() => Notification.requestPermission().then(setPermission)} className="rounded-full border border-[#fcd34d]/50 px-3 py-1 text-xs text-[#fde68a] hover:bg-[#fcd34d]/10">
+          <button onClick={() => Notification.requestPermission().then(setPermission)} className="rounded-full border border-amber-300 px-3 py-1 text-xs text-amber-700 hover:bg-amber-50">
             Turn on reminders
           </button>
         )}
@@ -73,9 +73,9 @@ export function Reminders() {
           <li key={e.id} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm">
             <span className="min-w-0">
               <span className="text-slate-500">{KIND_LABEL[e.kind]} · </span>
-              <span className="text-white">{e.title}</span>
+              <span className="text-slate-900">{e.title}</span>
             </span>
-            <span className={`shrink-0 font-medium ${e.left <= 3 ? "text-rose-700" : "text-[#fcd34d]"}`}>
+            <span className={`shrink-0 font-medium ${e.left <= 3 ? "text-rose-700" : "text-amber-700"}`}>
               {when(e.left)} · {formatDate(e.date)}
             </span>
           </li>
