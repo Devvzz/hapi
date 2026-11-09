@@ -1,6 +1,7 @@
 "use client";
 
 import { capitalizeName } from "@/lib/user";
+import { track } from "@/lib/track";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { formatDate } from "@/lib/dates";
@@ -121,7 +122,10 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
           <HeartIcon filled={liked} /> {liked ? "Liked" : "Like"} · {likes + (liked && !stats ? 1 : 0)}
         </button>
         <button
-          onClick={() => setSaved(inCalendar ? saved.filter((x) => x !== o.id) : [...saved, o.id])}
+          onClick={() => {
+            setSaved(inCalendar ? saved.filter((x) => x !== o.id) : [...saved, o.id]);
+            if (!inCalendar) track("save", o.type);
+          }}
           className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm transition ${inCalendar ? "border-cyan-300/60 bg-cyan-400/10 text-cyan-100" : "border-white/15 bg-panel hover:border-cyan-300/50"}`}
         >
           <CalendarIcon /> {inCalendar ? "In your calendar" : "Add to calendar"}

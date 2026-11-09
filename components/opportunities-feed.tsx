@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { track } from "@/lib/track";
 import Link from "next/link";
 import { opportunities } from "@/lib/data";
 import { formatDate } from "@/lib/dates";
@@ -90,6 +91,7 @@ export function OpportunitiesFeed() {
   function toggleSaved(o: Opportunity) {
     const isSaved = saved.includes(o.id);
     setSaved(isSaved ? saved.filter((id) => id !== o.id) : [...saved, o.id]);
+    if (!isSaved) track("save", o.type);
     setLog((l) => [logEntry(isSaved ? "Removed from calendar" : "Added to calendar", o.title), ...l]);
   }
 

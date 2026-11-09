@@ -2,6 +2,7 @@ import { BoardingPasses } from "@/components/boarding-passes";
 import { DepartureBoard } from "@/components/departure-board";
 import { HomeStart } from "@/components/home-start";
 import { Reminders } from "@/components/reminders";
+import { Survey } from "@/components/survey";
 import { WhatsChanged } from "@/components/whats-changed";
 import { opportunities, programs } from "@/lib/data";
 
@@ -52,6 +53,7 @@ export default function Home() {
       </section>
 
       <Reminders />
+      <Survey />
 
       <DepartureBoard rows={rows} />
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/track";
 import { EMPTY_LOG, EMPTY_PLAN, STORAGE, logEntry } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 import type { PlanRow } from "@/lib/types";
@@ -91,6 +92,7 @@ export function SponsorPanel() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "PayPal error");
       const sum = rows.reduce((s, r) => s + r.amount, 0);
+      track("invoice", rows[0]?.currency ?? null);
       setSent({ sponsorName: draft.sponsorName, items: rows.map((r) => r.item).join(", "), total: `${sum.toLocaleString("en-GB")} ${rows[0]?.currency ?? "EUR"}`, url: data.payerUrl });
       setPlan((all) => all.map((r) => (draft.rowIds.includes(r.id) ? { ...r, sponsor: draft.sponsorName, status: toPlanStatus(data.status), invoiceId: data.invoiceId } : r)));
       setLog((l) => [logEntry("Sent PayPal invoice", `${data.invoiceId} to ${draft.sponsorName} (${draft.sponsorEmail}), status ${data.status}`), ...l]);

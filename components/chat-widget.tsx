@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { track } from "@/lib/track";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { EMPTY_MARKS, EMPTY_PREMIUM, EMPTY_SAVED, STORAGE } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
@@ -63,6 +64,7 @@ export function ChatWidget() {
     setMessages(next);
     setInput("");
     setState("thinking");
+    track("chat");
     try {
       const res = await fetch("/api/chat", {
         method: "POST",

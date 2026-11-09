@@ -126,6 +126,7 @@ export default function AboutPage() {
             <li>Without an account, everything stays in your browser.</li>
             <li>With an account, your data is saved in one private row that only you can read.</li>
             <li>Reviews and comments show your first name only.</li>
+            <li>For the statistics page, Hapi counts actions anonymously: only what kind of action it was and your country, never your name, email or account.</li>
             <li>PayPal runs in sandbox mode for now: no real money moves.</li>
           </ul>
         </div>
@@ -144,6 +145,9 @@ export default function AboutPage() {
             <a href="https://github.com/Devvzz/hapi" target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/15 px-5 py-2.5 text-sm hover:border-violet-400/60">
               Source code on GitHub
             </a>
+            <Link href="/stats" className="rounded-xl border border-white/15 px-5 py-2.5 text-sm hover:border-violet-400/60">
+              Hapi in numbers
+            </Link>
           </div>
         </div>
       </section>

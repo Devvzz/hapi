@@ -4,6 +4,7 @@ import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { Suspense } from "react";
 import { AccountProvider } from "@/components/account-provider";
 import { ChatWidget } from "@/components/chat-widget";
+import { UsageCounter } from "@/components/usage-counter";
 import { Ambient } from "@/components/ambient";
 import { DemoBanner } from "@/components/demo-banner";
 import { HapiMark } from "@/components/logo";
@@ -44,11 +45,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link href="/about" className="text-violet-300 hover:text-cyan-200">
                 About Hapi
               </Link>{" "}
+              ·{" "}
+              <Link href="/stats" className="text-violet-300 hover:text-cyan-200">
+                Hapi in numbers
+              </Link>{" "}
               · Checked data with source links · &quot;check yourself&quot; means not confirmed · PayPal in sandbox mode, no real money moves
             </span>
           </div>
         </footer>
         <ChatWidget />
+        <UsageCounter />
         </AccountProvider>
       </body>
     </html>

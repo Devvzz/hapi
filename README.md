@@ -22,6 +22,10 @@ PayPal runs in **sandbox mode**. No real money moves.
 | Community | With an account, students can like opportunities, rate them, write reviews by the year they took part, and ask or answer questions. Each student has a public page with their first name, likes and reviews. Everyone can read; only the author can change their own posts (row-level security in Supabase). |
 | Weekly coach | Up to 5 steps for this week, built only from checked opportunities that the student is eligible for, their saved items and their unpaid costs. Every step links to its official page. |
 | Ask Hapi chat | A chat assistant for Premium users. The server checks the subscription, then gives the AI only the student's profile and the opportunities and programmes that code has already matched to them, so it answers from checked data and says when it does not know. The chat stays in the browser. |
+| Step-by-step plan | For every programme the student wants to apply to: language certificate, entry test, application, visa (only if their passport needs one), housing and arrival. The application deadline is official; the other dates are suggestions worked out backwards from it. |
+| Reminders | A "Coming up" list of everything due in the next two weeks, optional browser notifications three days before, and reminders in the calendar export. |
+| WhatsApp for sponsors | After a PayPal invoice is sent, the student can share the payment link with the sponsor on WhatsApp in one tap. |
+| Hapi in numbers | A statistics page (/stats): opportunities in the data, profiles by country, what students save, how often the AI features are used, what the weekly AI job checked and corrected, cost plans, sponsor invoices and a one-question survey. Usage is counted anonymously: only the kind of action and a country, never a name, email or account id. |
 | Calendar | Every saved deadline, starred programme and cost-plan payment in a month view, plus the steps of the step-by-step plan, with an .ics export that reminds the student two weeks, three days and one day before each deadline. Premium only. |
 | Europass CV | A CV builder in the structure of the EU's Europass CV: personal information, work experience, education with EQF levels, languages on the CEFR self-assessment grid, digital skills and more. "Improve with AI" rewrites the student's own words without adding facts, and asks what could be added. Print or save as PDF. Premium only, checked on the server. |
 | What changed this week | Every Saturday a Vercel Cron job re-reads the official page of a few open opportunities and reports changed dates, closed rounds and new editions. |
@@ -95,7 +99,7 @@ Fill in `.env.local`:
 | `CRON_SECRET` | for the job | Protects `/api/research`; Vercel sends it automatically |
 | `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | no | Stores the latest Saturday run; without them the app shows the saved example run |
 
-**Accounts (optional):** create a free [Supabase](https://supabase.com) project, turn off "Confirm email" under Authentication, run `supabase/setup.sql` and then `supabase/community.sql` in the SQL Editor, and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Without them, Hapi saves everything in the browser only.
+**Accounts (optional):** create a free [Supabase](https://supabase.com) project, turn off "Confirm email" under Authentication, run `supabase/setup.sql`, then `supabase/community.sql` and `supabase/stats.sql` in the SQL Editor, and set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Without them, Hapi saves everything in the browser only.
 
 To approve a Premium subscription in the sandbox you need a sandbox **personal** (buyer) account from the PayPal Developer dashboard. Demo mode unlocks the coach without one.
 

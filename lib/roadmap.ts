@@ -89,5 +89,6 @@ export function buildRoadmap(p: Program, profile: Profile): RoadStep[] {
     due: shift(START, -7),
     official: false,
   });
-  return steps;
+  // In date order; steps without a date keep their place.
+  return steps.map((s, i) => ({ s, i })).sort((a, b) => (a.s.due && b.s.due ? a.s.due.localeCompare(b.s.due) : 0) || a.i - b.i).map(({ s }) => s);
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/track";
 import { useProfile } from "@/lib/use-profile";
 
 type Found = {
@@ -22,6 +23,7 @@ export function FindMore() {
   async function search() {
     if (!topic.trim()) return;
     setState("loading");
+    track("find_more");
     try {
       const res = await fetch("/api/find-more", {
         method: "POST",

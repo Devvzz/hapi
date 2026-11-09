@@ -26,6 +26,10 @@ Then I saw that most young people around me had the same problem. They didn't kn
 - **Hapi Premium:** a €2.99/month PayPal subscription. The server checks that it is ACTIVE before the weekly coach or the CV AI answers.
 - **Weekly coach:** up to 5 steps for this week, built only from checked opportunities the student is eligible for, their saved items and unpaid costs, each linked to its official page.
 - **Ask Hapi chat (Premium):** a chat assistant that knows the student's profile and answers only from the opportunities and programmes code has matched to them. It never guesses a date or price.
+- **Step-by-step plan:** language certificate, entry test, application, visa (only if needed for the student's passport), housing and arrival, with the official deadline and suggested dates worked out backwards from it.
+- **Reminders:** a "Coming up" list for the next two weeks, optional browser notifications, and reminders in the calendar export.
+- **WhatsApp for sponsors:** share the PayPal payment link with a family member in one tap.
+- **Hapi in numbers (/stats):** live statistics about the data, the users (counted anonymously, by country), usage, the weekly AI job, the money side and a one-question survey.
 - **Calendar (Premium):** every saved deadline, starred programme and payment in one month view, plus the steps of the step-by-step plan, exported to the phone with reminders two weeks, three days and one day before.
 - **Europass CV (Premium):** a CV in the structure of the EU's Europass CV, with EQF levels and the CEFR language grid. AI polishes the student's own words without adding facts. Print or save as PDF.
 - **What changed this week:** a Saturday Vercel Cron job re-reads official pages and reports changed dates, closed rounds and new editions.
