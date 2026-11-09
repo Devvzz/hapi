@@ -117,7 +117,7 @@ export function CvBuilder() {
           <button type="button" onClick={downloadPdf} disabled={pdfState === "making"} className="rounded bg-teal-700 px-3 py-1 text-white disabled:opacity-50">
             {pdfState === "making" ? "Making PDF…" : "Download PDF"}
           </button>
-          <button type="button" onClick={() => window.print()} className="rounded border border-slate-300 px-3 py-1">
+          <button type="button" onClick={() => window.print()} className="rounded-lg border border-slate-300 bg-white px-3 py-1">
             Print
           </button>
           {pdfState === "error" && <span className="self-center text-xs text-rose-700">Could not make the PDF. Try Print instead.</span>}
@@ -213,7 +213,7 @@ export function CvBuilder() {
                 {(["listening", "reading", "production", "interaction", "writing"] as const).map((k) => (
                   <label key={k} className="space-y-0.5">
                     <span className="block capitalize text-slate-600">{k === "production" ? "Speaking" : k === "interaction" ? "Conversation" : k}</span>
-                    <select className="w-full rounded border border-slate-300" value={l[k]} onChange={(e) => setList("languages", update(cv.languages, i, { [k]: e.target.value as Cefr }))}>
+                    <select className="w-full rounded-lg border border-slate-300 bg-white" value={l[k]} onChange={(e) => setList("languages", update(cv.languages, i, { [k]: e.target.value as Cefr }))}>
                       {CEFR.map((c) => <option key={c}>{c}</option>)}
                     </select>
                   </label>

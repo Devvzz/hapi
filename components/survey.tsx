@@ -32,7 +32,7 @@ export function Survey() {
   return (
     <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-cyan-400/30 bg-cyan-500/[0.07] p-4" aria-label="Quick question">
       <p className="text-sm text-slate-900">
-        <span className="mr-2 text-xs font-semibold uppercase tracking-wider text-teal-700">Quick question</span>
+        <span className="mr-2 text-xs font-semibold uppercase tracking-wider text-teal-800">Quick question</span>
         Did Hapi show you something you did not know about before?
       </p>
       <div className="flex gap-2">

@@ -40,6 +40,7 @@ function Dock({ path }: { path: string }) {
             key={l.href}
             href={l.href}
             aria-current={active ? "page" : undefined}
+            title={l.label}
             className={`group relative flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full px-3 py-2 text-[13px] font-medium xl:px-3.5 transition-all duration-300 ${
  active
  ? "bg-slate-900 text-white "
@@ -47,7 +48,7 @@ function Dock({ path }: { path: string }) {
  }`}
           >
             <span className={`transition-all duration-300 ${active ? "text-white" : "text-slate-500 group-hover:-translate-y-px group-hover:text-teal-700"}`}>{l.icon}</span>
-            {l.label}
+            <span className={active ? "" : "lg:max-xl:sr-only"}>{l.label}</span>
             {l.premium && (
               <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-label="Premium" className={active ? "text-[#ffd56b]" : "text-[#ff6b3d]"}>
                 <path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z" />

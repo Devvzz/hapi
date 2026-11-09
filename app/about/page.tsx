@@ -73,7 +73,7 @@ export default function AboutPage() {
           <p>
             Then friends started asking for it. Most young people around me had never heard that chances like these existed. There are so many students with the will to grow who are simply lost, so I turned my tool into an app that anyone can use.
           </p>
-          <p className="font-display text-xl font-semibold text-slate-900">
+          <p className="font-display text-xl font-bold text-slate-900">
             Discover. Apply. <span className="text-gradient">Grow.</span>
           </p>
         </div>

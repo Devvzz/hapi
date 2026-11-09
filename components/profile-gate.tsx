@@ -20,7 +20,7 @@ export function ProfileGate({ what, children }: { what: string; children: React.
         <Link href="/profile" className="rounded bg-teal-700 px-4 py-2 text-sm font-medium text-white">
           Set up my profile
         </Link>
-        <button onClick={() => setBrowse(true)} className="rounded border border-slate-300 px-4 py-2 text-sm">
+        <button onClick={() => setBrowse(true)} className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm">
           Just browse
         </button>
       </div>

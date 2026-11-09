@@ -22,11 +22,11 @@ export function DemoBanner() {
 
   if (!demo) return null;
   return (
-    <div className="border-b border-amber-300/30 bg-gradient-to-r from-amber-500/15 via-violet-500/15 to-cyan-500/15 px-4 py-2 text-center text-sm text-amber-900 print:hidden">
+    <aside aria-label="Demo mode" className="border-b border-amber-300/30 bg-gradient-to-r from-amber-500/15 via-violet-500/15 to-cyan-500/15 px-4 py-2 text-center text-sm text-amber-900 print:hidden">
       Demo mode: a made-up sample student, and Premium is unlocked without PayPal.{" "}
       <a href="?demo=0" className="font-medium underline">
         Leave demo
       </a>
-    </div>
+    </aside>
   );
 }

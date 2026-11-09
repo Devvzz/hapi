@@ -49,7 +49,7 @@ export function FindMore() {
       <p className="text-sm text-slate-600">Gemini searches the web with Google Search. Results are unverified until you check the link, and they are never added to the checked list.</p>
       <div className="flex flex-wrap gap-2">
         <input
-          className="min-w-60 flex-1 rounded border border-slate-300 px-2 py-1 text-sm"
+          className="min-w-60 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm"
           placeholder="e.g. AI summer school, robotics competition, free certificates"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}

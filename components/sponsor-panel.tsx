@@ -142,11 +142,11 @@ export function SponsorPanel() {
         Ask Hapi in your own words, e.g. &quot;Ask Uncle Arben (arben@example.com) to pay the visa fee&quot;. Hapi drafts a PayPal invoice. Nothing is sent before you press Approve.
       </p>
       <div className="flex flex-wrap gap-2">
-        <input className="min-w-64 flex-1 rounded border border-slate-300 px-2 py-1 text-sm" value={command} onChange={(e) => setCommand(e.target.value)} placeholder="Who should sponsor which cost?" />
+        <input className="min-w-64 flex-1 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm" value={command} onChange={(e) => setCommand(e.target.value)} placeholder="Who should sponsor which cost?" />
         <button onClick={makeDraft} disabled={!command.trim() || unpaid.length === 0 || busy !== null} className="rounded bg-teal-700 px-3 py-1.5 text-sm text-white disabled:opacity-50">
           {busy === "draft" ? "Drafting…" : "Draft invoice"}
         </button>
-        <button onClick={refresh} disabled={invoiceIds.length === 0 || busy !== null} className="rounded border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50">
+        <button onClick={refresh} disabled={invoiceIds.length === 0 || busy !== null} className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm disabled:opacity-50">
           {busy === "refresh" ? "Refreshing…" : "Refresh payments"}
         </button>
       </div>
@@ -188,11 +188,11 @@ export function SponsorPanel() {
           <div className="grid gap-3 sm:grid-cols-2">
             <label className="space-y-1">
               <span className="font-medium">Sponsor</span>
-              <input className="w-full rounded border border-slate-300 px-2 py-1" value={draft.sponsorName} onChange={(e) => setDraft({ ...draft, sponsorName: e.target.value })} />
+              <input className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={draft.sponsorName} onChange={(e) => setDraft({ ...draft, sponsorName: e.target.value })} />
             </label>
             <label className="space-y-1">
               <span className="font-medium">Sponsor email</span>
-              <input className="w-full rounded border border-slate-300 px-2 py-1" value={draft.sponsorEmail} onChange={(e) => setDraft({ ...draft, sponsorEmail: e.target.value })} placeholder="needed to send the invoice" />
+              <input className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={draft.sponsorEmail} onChange={(e) => setDraft({ ...draft, sponsorEmail: e.target.value })} placeholder="needed to send the invoice" />
             </label>
           </div>
           <fieldset className="space-y-1">
@@ -210,14 +210,14 @@ export function SponsorPanel() {
           </fieldset>
           <label className="block space-y-1">
             <span className="font-medium">Message preview</span>
-            <textarea className="w-full rounded border border-slate-300 px-2 py-1" rows={3} value={draft.message} onChange={(e) => setDraft({ ...draft, message: e.target.value })} />
+            <textarea className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" rows={3} value={draft.message} onChange={(e) => setDraft({ ...draft, message: e.target.value })} />
           </label>
           <p className="font-medium">Total: {total.toLocaleString("en-GB")} {currency} · PayPal sandbox, no real money</p>
           <div className="flex gap-2">
             <button onClick={approve} disabled={busy !== null || selected.length === 0 || !validEmail || new Set(selected.map((r) => r.currency)).size > 1} className="rounded bg-emerald-700 px-3 py-1.5 text-white disabled:opacity-50">
               {busy === "send" ? "Sending…" : "Approve and send"}
             </button>
-            <button onClick={() => { setDraft(null); setLog((l) => [logEntry("Cancelled draft", draft.sponsorName), ...l]); }} className="rounded border border-slate-300 px-3 py-1.5">
+            <button onClick={() => { setDraft(null); setLog((l) => [logEntry("Cancelled draft", draft.sponsorName), ...l]); }} className="rounded-lg border border-slate-300 bg-white px-3 py-1.5">
               Cancel
             </button>
           </div>

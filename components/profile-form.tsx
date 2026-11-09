@@ -46,7 +46,7 @@ function MoneyField(props: { label: string; hint: string; value: number | null; 
       <span className="font-medium">{props.label}</span>
       <p className="text-xs text-slate-500">{props.hint}</p>
       <div className="flex flex-wrap items-center gap-2">
-        <div className="flex items-center rounded border border-slate-300 px-2 py-1">
+        <div className="flex items-center rounded-lg border border-slate-300 bg-white px-3 py-1.5">
           <span className="text-slate-500">€</span>
           <input
             className="w-28 px-1 outline-none"
@@ -94,7 +94,7 @@ function NationalityField({ value, onChange }: { value: string; onChange: (v: st
     <div className="space-y-1">
       <span className="font-medium">Nationality (passport)</span>
       <input
-        className="w-full rounded border border-slate-300 px-2 py-1"
+        className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5"
         placeholder="Start typing, e.g. Albania"
         value={text}
         onChange={(e) => {
@@ -145,7 +145,7 @@ export function ProfileForm() {
         <label className="space-y-1">
           <span className="font-medium">Age</span>
           <input
-            className="w-full rounded border border-slate-300 px-2 py-1"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5"
             inputMode="numeric"
             placeholder="e.g. 17"
             value={profile.age ?? ""}
@@ -157,7 +157,7 @@ export function ProfileForm() {
         </label>
         <label className="space-y-1 sm:col-span-2">
           <span className="font-medium">Where are you now?</span>
-          <select className="w-full rounded border border-slate-300 px-2 py-1" value={profile.schoolType} onChange={(e) => update({ schoolType: e.target.value })}>
+          <select className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={profile.schoolType} onChange={(e) => update({ schoolType: e.target.value })}>
             {EDUCATION.map((e) => (
               <option key={e.value} value={e.value}>
                 {e.label}
@@ -168,7 +168,7 @@ export function ProfileForm() {
         <label className="space-y-1 sm:col-span-2">
           <span className="font-medium">Which school-leaving diploma will you have?</span>
           <select
-            className="w-full rounded border border-slate-300 px-2 py-1"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5"
             value={profile.diploma ?? "national"}
             onChange={(e) => update({ diploma: e.target.value, austrianSchool: e.target.value === "austrian-matura" })}
           >
@@ -200,12 +200,12 @@ export function ProfileForm() {
         <legend className="font-medium">Languages</legend>
         {profile.languages.map((l, i) => (
           <div key={i} className="flex flex-wrap gap-2">
-            <select aria-label={`Language ${i + 1}`} className="rounded border border-slate-300 px-2 py-1" value={l.language} onChange={(e) => setLanguage(i, { language: e.target.value })}>
+            <select aria-label={`Language ${i + 1}`} className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={l.language} onChange={(e) => setLanguage(i, { language: e.target.value })}>
               {LANGUAGE_OPTIONS.map((o) => (
                 <option key={o}>{o}</option>
               ))}
             </select>
-            <select aria-label={`Level in language ${i + 1}`} className="rounded border border-slate-300 px-2 py-1" value={l.level} onChange={(e) => setLanguage(i, { level: e.target.value as LanguageSkill["level"] })}>
+            <select aria-label={`Level in language ${i + 1}`} className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={l.level} onChange={(e) => setLanguage(i, { level: e.target.value as LanguageSkill["level"] })}>
               {LEVELS.map((lv) => (
                 <option key={lv} value={lv}>
                   {LEVEL_LABEL[lv]}

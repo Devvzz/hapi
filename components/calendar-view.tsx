@@ -101,14 +101,14 @@ export function CalendarView() {
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-2">
-        <button onClick={() => move(-1)} className="rounded border border-slate-300 bg-panel px-2 py-1 text-sm">
+        <button onClick={() => move(-1)} className="rounded-lg border border-slate-300 bg-panel px-3 py-1.5 text-sm">
           ‹
         </button>
         <h2 className="w-44 text-center font-semibold">{first.toLocaleDateString("en-GB", { month: "long", year: "numeric" })}</h2>
-        <button onClick={() => move(1)} className="rounded border border-slate-300 bg-panel px-2 py-1 text-sm">
+        <button onClick={() => move(1)} className="rounded-lg border border-slate-300 bg-panel px-3 py-1.5 text-sm">
           ›
         </button>
-        <button onClick={() => { setCursor(null); setPicked(today); }} className="rounded border border-slate-300 bg-panel px-2 py-1 text-sm">
+        <button onClick={() => { setCursor(null); setPicked(today); }} className="rounded-lg border border-slate-300 bg-panel px-3 py-1.5 text-sm">
           Today
         </button>
         <button onClick={exportIcs} disabled={events.length === 0} className="ml-auto rounded bg-teal-700 px-3 py-1.5 text-sm text-white disabled:opacity-50">
@@ -127,10 +127,12 @@ export function CalendarView() {
         <div className="grid grid-cols-7">
           {cells.map((d, i) => {
             const list = d ? byDay.get(d) ?? [] : [];
+            if (!d) return <div key={i} className="min-h-20 border-b border-r border-slate-100 bg-slate-50" aria-hidden="true" />;
             return (
               <button
                 key={i}
-                disabled={!d}
+                aria-label={`${formatDate(d)}${list.length ? `, ${list.length} ${list.length === 1 ? "event" : "events"}` : ""}`}
+                aria-pressed={d === picked}
                 onClick={() => d && setPicked(d === picked ? null : d)}
                 className={`min-h-20 border-b border-r border-slate-100 p-1 text-left align-top ${d === picked ? "bg-teal-50" : ""} ${!d ? "bg-slate-50" : "hover:bg-slate-50"}`}
               >
@@ -186,9 +188,9 @@ export function CalendarView() {
         <aside className="space-y-4">
           <section className="space-y-2 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
             <h3 className="font-semibold">Add your own</h3>
-            <input className="w-full rounded border border-slate-300 px-2 py-1" placeholder="e.g. IELTS exam, school exams" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} />
-            <input type="date" className="w-full rounded border border-slate-300 px-2 py-1" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })} />
-            <input className="w-full rounded border border-slate-300 px-2 py-1" placeholder="Note (optional)" value={form.note} onChange={(e) => setForm({ ...form, note: e.target.value })} />
+            <input className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" placeholder="e.g. IELTS exam, school exams" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} />
+            <input type="date" aria-label="Date" className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })} />
+            <input className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5" placeholder="Note (optional)" value={form.note} onChange={(e) => setForm({ ...form, note: e.target.value })} />
             <button onClick={addCustom} disabled={!form.title.trim() || !form.date} className="rounded bg-violet-600 px-3 py-1 text-white disabled:opacity-50">
               Add
             </button>

@@ -34,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Nav />
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 print:max-w-none print:p-0">{children}</main>
         <footer className="mt-10 border-t border-slate-200 print:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 pb-24 pt-6 text-xs sm:pr-24 sm:pb-6 text-slate-500 sm:flex-row sm:items-center sm:justify-between">
             <span className="flex items-center gap-2 text-slate-600">
               <HapiMark size={18} />
               <span>

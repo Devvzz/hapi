@@ -131,7 +131,7 @@ export function BoardingPasses() {
 
   if (passes.length === 0) return <div className="h-64 w-full max-w-md" />;
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full max-w-md px-2 sm:px-0">
       <div className="pass-stack relative h-52 sm:h-56" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
         {passes.map((p, i) => {
           const depth = (i - front + passes.length) % passes.length;
