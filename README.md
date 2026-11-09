@@ -11,10 +11,10 @@ PayPal runs in **sandbox mode**. No real money moves.
 | Feature | What it does |
 |---|---|
 | Profile first | Nationality (with spelling help, so "Alllbaniii" or "shqiperi" becomes Albania), age, 13 education stages from middle school and HTL to PhD and working, Austrian school abroad, languages with CEFR levels, a university budget and a budget per opportunity. Then the student chooses universities or opportunities. |
-| Opportunities feed | 191 checked opportunities, each with its source link, every known date and the real price. Unknown dates show "TBA". Sort by best match, deadline or price; filters for type, free or paid, within my budget, travel paid, certificate, online and closing soon. |
+| Opportunities feed | 210 checked opportunities, each with its source link, every known date and the real price. Unknown dates show "TBA". Sort by best match, deadline or price; filters for type, free or paid, within my budget, travel paid, certificate, online and closing soon. |
 | Matching | Code first applies the hard rules: age, nationality (worldwide, EU, Western Balkans, single-country and other rules) and who can apply (school pupils, bachelor, master, PhD, graduates). Items above the student's budget are flagged. Only then does it score interests and deadlines, so what the student can apply to always comes first. Gemini writes one "why this fits you" line from those facts only. |
 | Find more with AI | Gemini with Google Search suggests more. Each result must point to one of the search sources, and stays marked "unverified". |
-| Universities | 555 bachelor programmes, mostly in Austria, Germany and Italy, grouped by university. Each shows the fee this student would pay: EU or non-EU by nationality, equal status for Austrian schools abroad, income-based fees in Italy. Code checks language level and that fee against the budget, and flags data that still needs checking. |
+| Universities | 596 bachelor programmes at 142 universities in 35 countries, mostly in Austria, Germany and Italy, grouped by university. Each shows the fee this student would pay: EU or non-EU by nationality, equal status for Austrian schools abroad, income-based fees in Italy. Code checks language level and that fee against the budget, and flags data that still needs checking. |
 | Scholarships | A separate view per country: scholarships the student applies to directly, checked against their profile, plus the scholarship notes for each university. |
 | Cost plan | An editable AG Grid table with totals per currency and a sponsored progress bar. A paid opportunity, or a university's one-off fees, can be added with one click. |
 | Family sponsorship | The student describes the request in their own words. Gemini drafts a PayPal invoice, and an approval card shows exactly what will be sent. Only the Approve button sends it. The status (sent, paid) can be refreshed. |
@@ -108,8 +108,8 @@ To approve a Premium subscription in the sandbox you need a sandbox **personal**
 
 The data was researched and checked by hand before the build (31 Oct – 6 Nov 2026), with a source link and a `lastChecked` date on every item.
 
-- `data/opportunities.json`: 191 opportunities. Each says who can apply by education level, and 59 have a nationality rule read from the official page, with a quote as evidence. Pages that set no nationality limit count as open to everyone. By default the app shows only what a student can apply to; the rest is listed as "does not apply to you" and can be shown on request.
-- `data/programs.json`: 555 bachelor programmes (10 checked in detail, 545 from an earlier atlas, cleaned, with a confidence level for tuition)
+- `data/opportunities.json`: 210 opportunities. Each says who can apply by education level, and 78 have a nationality rule read from the official page, with a quote as evidence. Pages that set no nationality limit count as open to everyone. By default the app shows only what a student can apply to; the rest is listed as "does not apply to you" and can be shown on request.
+- `data/programs.json`: 596 bachelor programmes in 35 countries (10 checked in detail, the rest from an earlier atlas plus 41 newly researched programmes, cleaned, with a confidence level for tuition)
 - `data/costs.json`: 22 official fees and costs
 - `data/example-run.json`: a real run of the Saturday job, shown until storage is set up
 

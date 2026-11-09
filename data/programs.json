@@ -29195,5 +29195,1916 @@
     "entryTest": "no",
     "applicationFeeShort": "$85 (waiver possible)",
     "applyBy": "2027-01-05"
+  },
+  {
+    "id": "university-of-ljubljana-business-and-economics",
+    "universityId": "university-of-ljubljana",
+    "university": "University of Ljubljana",
+    "program": "Business and Economics (English track)",
+    "officialName": "University Degree Programme in Business and Economics (English track), UL School of Economics and Business",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business, economics",
+    "language": "English",
+    "years": 3,
+    "description": "Core economics, management, accounting and finance, with a specialisation chosen in year 2 (English-track students get priority, e.g. International Business).",
+    "tuitionNonEuPerYear": {
+      "min": 3400,
+      "max": 3400,
+      "currency": "EUR",
+      "note": "UL SEB price list 2026/27, full-time undergraduate tuition",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": 61.6,
+    "feeRule": "EU/EEA/Swiss citizens and citizens of Bosnia and Herzegovina, North Macedonia, Montenegro, Kosovo and Serbia study full-time without tuition; other non-EU citizens (Albania is not on the list) pay tuition.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Online application via eVS portal with recognition of foreign secondary education; English B2 proof; ranking by final exam (60%) and grades of last two years (40%) if places are limited; mandatory in-person interview for applicants from visa-required countries.",
+    "entryTest": "no",
+    "deadline": "First non-EU application period mid-February to mid-March (2026: 18 Feb to 18 Mar); second period early September only for remaining places.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.ef.uni-lj.si/assets/Studij/Ceniki/26-27/CENIK_ULEF_2026-27.pdf",
+      "https://www.ef.uni-lj.si/assets/Studij/Ceniki/26-27/Instructions-for-implementing-the-Price-List-of-the-UL-SEB-2026-27.pdf",
+      "https://www.uni-lj.si/en/study/tuition-fees-and-other-study-contributions",
+      "https://www.ef.uni-lj.si/en/study/bachelors-programmes/prijava-in-vpis"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Exact 2027/28 application dates (expected mid-February 2027)",
+      "2027/28 tuition (2026/27 figure shown)",
+      "Whether Albania gets any exemption (not listed)",
+      "Interview fee for visa-required applicants"
+    ]
+  },
+  {
+    "id": "university-of-primorska-computer-science",
+    "universityId": "university-of-primorska",
+    "university": "University of Primorska",
+    "program": "Computer Science",
+    "officialName": "Computer Science (first-cycle, in Slovenian/English), UP FAMNIT",
+    "country": "Slovenia",
+    "city": "Koper",
+    "citySize": "Small",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Programming, algorithms, data structures, mathematics and software/computer systems at the Faculty of Mathematics, Natural Sciences and IT.",
+    "tuitionNonEuPerYear": {
+      "min": 3150,
+      "max": 3150,
+      "currency": "EUR",
+      "note": "UP FAMNIT price list 2026/27, undergraduate tuition for non-EU citizens",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": 40.4,
+    "feeRule": "Free for EU/EEA citizens and citizens of Bosnia and Herzegovina, Montenegro, Kosovo, North Macedonia and Serbia; other non-EU citizens (Albania is not listed) pay tuition.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Application via the national eVS portal with recognition of foreign secondary school certificate; possible interview for applicants from higher migration-risk countries (separate UP price list).",
+    "entryTest": null,
+    "deadline": "Slovenian national call: first period for non-EU applicants usually February to March.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.famnit.upr.si/wp-content/uploads/2026/06/FAMNIT_Price-List_2026-27.pdf",
+      "https://www.famnit.upr.si/en/about-the-faculty/price-list-of-services/",
+      "https://www.upr.si/en/enrolment/tuition-fees",
+      "https://www.famnit.upr.si/en/important-information-for-candidates/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Programme length (3 years assumed) and that the English version runs in 2027",
+      "Exact 2027 application dates",
+      "Exempt-country list is from the UP tuition page (2021/22 table)",
+      "Scholarships or tuition waivers for international students"
+    ]
+  },
+  {
+    "id": "university-of-primorska-mathematics",
+    "universityId": "university-of-primorska",
+    "university": "University of Primorska",
+    "program": "Mathematics",
+    "officialName": "Mathematics (first-cycle, in Slovenian/English), UP FAMNIT",
+    "country": "Slovenia",
+    "city": "Koper",
+    "citySize": "Small",
+    "type": "Public uni",
+    "fields": "Mathematics",
+    "language": "English",
+    "years": 3,
+    "description": "Analysis, algebra, discrete mathematics and applied/computational mathematics.",
+    "tuitionNonEuPerYear": {
+      "min": 3150,
+      "max": 3150,
+      "currency": "EUR",
+      "note": "UP FAMNIT price list 2026/27, undergraduate tuition for non-EU citizens",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": 40.4,
+    "feeRule": "Free for EU/EEA citizens and citizens of Bosnia and Herzegovina, Montenegro, Kosovo, North Macedonia and Serbia; other non-EU citizens (Albania is not listed) pay tuition.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Application via the national eVS portal with recognition of foreign secondary school certificate; possible interview for applicants from higher migration-risk countries.",
+    "entryTest": null,
+    "deadline": "Slovenian national call: first period for non-EU applicants usually February to March.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.famnit.upr.si/wp-content/uploads/2026/06/FAMNIT_Price-List_2026-27.pdf",
+      "https://www.upr.si/en/enrolment/tuition-fees"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Programme length (3 years assumed)",
+      "Exact 2027 application dates",
+      "Scholarships for international students"
+    ]
+  },
+  {
+    "id": "slovak-university-of-technology-informatics",
+    "universityId": "slovak-university-of-technology",
+    "university": "Slovak University of Technology in Bratislava",
+    "program": "Informatics",
+    "officialName": "Informatics (B-INFOxA), Faculty of Informatics and Information Technologies (FIIT STU)",
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Programming, software engineering, computer systems and mathematics for informatics, taught fully in English.",
+    "tuitionNonEuPerYear": {
+      "min": 7500,
+      "max": 7500,
+      "currency": "EUR",
+      "note": "FIIT page for 2027/28: tuition 4,000 + administrative fee 3,500 per year",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 7500,
+      "max": 7500,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Fee is set for the English-language programme; the page shows no difference between EU and non-EU students.",
+    "applicationFee": "60 EUR admission fee, paid before applying",
+    "applicationFeeShort": "€60",
+    "admission": "Online application in the university system (UIS); secondary school certificate with recognition; English certificate unless schooled in English; mandatory online maths test (12 Mar 2027) and interview (15-17 Mar 2027). 50 places.",
+    "entryTest": "yes",
+    "deadline": "28 February 2027, 23:59 CET",
+    "applyBy": "2027-02-28",
+    "scholarships": null,
+    "sources": [
+      "https://www.fiit.stuba.sk/2229"
+    ],
+    "checkYourself": [
+      "Whether EU/non-EU fees really are identical",
+      "Minimum English level",
+      "Scholarships"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "comenius-university-management",
+    "universityId": "comenius-university",
+    "university": "Comenius University Bratislava",
+    "program": "Management",
+    "officialName": "Management (Am21), Faculty of Management",
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business, management",
+    "language": "English",
+    "years": 3,
+    "description": "Business management basics: economics, marketing, finance, accounting, HR and strategy.",
+    "tuitionNonEuPerYear": {
+      "min": 1990,
+      "max": 1990,
+      "currency": "EUR",
+      "note": "Faculty of Management study page, English bachelor fee listed with 2027/28 admission info",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 1990,
+      "max": 1990,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Fee applies to the English-taught programme; no EU/non-EU difference stated.",
+    "applicationFee": "80 EUR admission fee",
+    "applicationFeeShort": "€80",
+    "admission": "Application with annexes and fee; entrance examination and admission interview (March to May 2027).",
+    "entryTest": "yes",
+    "deadline": "Round 1: 28 February 2027; Round 2: 31 March 2027 (if places remain)",
+    "applyBy": "2027-02-28",
+    "scholarships": null,
+    "sources": [
+      "https://fm.uniba.sk/en/study"
+    ],
+    "checkYourself": [
+      "The same page also mentions 2,490 EUR (likely the master's fee); confirm 1,990 EUR is the 2027/28 bachelor fee",
+      "Content of the entrance exam"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "university-of-economics-bratislava-business-economics-and-management",
+    "universityId": "university-of-economics-bratislava",
+    "university": "University of Economics in Bratislava",
+    "program": "Business Economics and Management",
+    "officialName": "Bachelor in Business Economics and Management (BEM, bEMa_15), Faculty of Business Management",
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business, economics",
+    "language": "English",
+    "years": 3,
+    "description": "Business economics, management, finance, marketing and company operations.",
+    "tuitionNonEuPerYear": {
+      "min": 0,
+      "max": 1500,
+      "currency": "EUR",
+      "note": "Admission site shows 0 EUR; EUBA fee regulation 2026/27 lists 1,500 EUR for English-taught bachelors (wording ambiguous)",
+      "confidence": "needs-check"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 1500,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Fees depend on study form and language, not nationality; sources conflict on whether the English bachelor is free or 1,500 EUR/year.",
+    "applicationFee": "90 EUR admission fee (English-taught programmes)",
+    "applicationFeeShort": "€90",
+    "admission": "Complete secondary education plus written entrance exam in English: general study prerequisites test and English test, at least 60th percentile in each (late March 2027).",
+    "entryTest": "yes",
+    "deadline": "Applications 1 January to 28 February 2027",
+    "applyBy": "2027-02-28",
+    "scholarships": null,
+    "sources": [
+      "https://admission.euba.sk/programmes/bachelor-in-business-economics-and-management",
+      "https://www.euba.sk/en/applicant/fees-related-to-the-study"
+    ],
+    "checkYourself": [
+      "Tuition: 0 vs 1,500 EUR per year",
+      "Scholarships"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "politehnica-bucharest-computers-and-information-technology",
+    "universityId": "politehnica-bucharest",
+    "university": "National University of Science and Technology POLITEHNICA Bucharest",
+    "program": "Computers and Information Technology",
+    "officialName": "Computers and Information Technology (in English), Faculty of Engineering in Foreign Languages (FILS)",
+    "country": "Romania",
+    "city": "Bucharest",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer engineering",
+    "language": "English",
+    "years": 4,
+    "description": "Computer engineering: programming, computer architecture, networks, operating systems and software, taught in English at FILS.",
+    "tuitionNonEuPerYear": {
+      "min": 2600,
+      "max": 2600,
+      "currency": "EUR",
+      "note": "UPB non-EU fee table (Feb 2026): undergraduate technology fields, per 9-month academic year",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Non-EU students pay the EUR fee (one year in advance within 20 days of acceptance) plus a 100 EUR one-off enrolment fee; EU citizens apply like Romanians (state-funded or RON fee places).",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Non-EU: online file on apply.upb.ro, checked by the Ministry of Education (30-60 days), then Letter of Acceptance and student visa; no exam stated for non-EU.",
+    "entryTest": null,
+    "deadline": "Non-EU online registration roughly February to July (2026 cycle)",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.international.upb.ro/assets/docs/2026/regulations/POLITEHNICA_Bucharest_tuition_fees.pdf",
+      "https://international.upb.ro/admission/applying/students-from-non-eu-countries",
+      "https://fils.upb.ro/?p=6890"
+    ],
+    "checkYourself": [
+      "Exact FILS programme name and that it is 4 years",
+      "2027 application dates",
+      "EU/Romanian fee in RON",
+      "Application/processing fee",
+      "English certificate requirement"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "politehnica-bucharest-electronics-and-telecommunications",
+    "universityId": "politehnica-bucharest",
+    "university": "National University of Science and Technology POLITEHNICA Bucharest",
+    "program": "Electronics, Telecommunications and Information Technology",
+    "officialName": "Electronics, Telecommunications and Information Technology (in English), Faculty of Engineering in Foreign Languages (FILS)",
+    "country": "Romania",
+    "city": "Bucharest",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Electronics, telecommunications",
+    "language": "English",
+    "years": 4,
+    "description": "Electronic circuits, signal processing, telecommunications and embedded systems.",
+    "tuitionNonEuPerYear": {
+      "min": 2600,
+      "max": 2600,
+      "currency": "EUR",
+      "note": "UPB non-EU fee table (Feb 2026): undergraduate technology fields",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Non-EU students pay the EUR fee plus a 100 EUR one-off enrolment fee; EU citizens apply like Romanians.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Non-EU: online file on apply.upb.ro, Ministry approval, Letter of Acceptance, visa.",
+    "entryTest": null,
+    "deadline": "Non-EU online registration roughly February to July (2026 cycle)",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.international.upb.ro/assets/docs/2026/regulations/POLITEHNICA_Bucharest_tuition_fees.pdf",
+      "https://international.upb.ro/admission/applying/students-from-non-eu-countries"
+    ],
+    "checkYourself": [
+      "Programme name and English availability at FILS (not confirmed on a programme page)",
+      "2027 dates",
+      "EU fee in RON"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "babes-bolyai-university-mathematics-for-computer-science",
+    "universityId": "babes-bolyai-university",
+    "university": "Babeș-Bolyai University",
+    "program": "Mathematics for Computer Science",
+    "officialName": "Mathematics for Computer Science (English), Faculty of Mathematics and Computer Science",
+    "country": "Romania",
+    "city": "Cluj-Napoca",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer science, mathematics",
+    "language": "English",
+    "years": 3,
+    "description": "Mathematics with a strong computer-science side: algorithms, programming and mathematical foundations of computing.",
+    "tuitionNonEuPerYear": {
+      "min": 7000,
+      "max": 7000,
+      "currency": "EUR",
+      "note": "UBB International Cooperation Centre, bachelor offer 2026-2027",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Self-funded non-EU students pay EUR tuition; EU/EEA/Swiss citizens apply like Romanians (state-funded or RON fee places).",
+    "applicationFee": "50 EUR non-refundable processing fee (non-EU online application)",
+    "applicationFeeShort": "€50",
+    "admission": "Online file: diploma and transcripts (certified translations), passport, accepted English certificate, motivation letter, birth and medical certificates; three relevant subjects at least 60%.",
+    "entryTest": "no",
+    "deadline": "Non-EU online registration 1 April to 31 July (2026 cycle), first come first served",
+    "applyBy": null,
+    "scholarships": "Romanian Government scholarships for non-EU students (separate call); tuition refund page for self-funded non-EU students",
+    "sources": [
+      "https://cci.ubbcluj.ro/?p=710"
+    ],
+    "checkYourself": [
+      "2027 dates (probably again 1 April - 31 July)",
+      "EU fee in RON",
+      "Required English level",
+      "Standard Computer Science in English is offered via the Romanian/EU admission, not on the non-EU list"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "babes-bolyai-university-international-business-and-economics",
+    "universityId": "babes-bolyai-university",
+    "university": "Babeș-Bolyai University",
+    "program": "International Business and Economics",
+    "officialName": "Economics and International Business (English), Faculty of Economics and Business Administration (FSEGA)",
+    "country": "Romania",
+    "city": "Cluj-Napoca",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Economics, business",
+    "language": "English",
+    "years": 3,
+    "description": "International economics, trade, international business management and finance.",
+    "tuitionNonEuPerYear": {
+      "min": 2500,
+      "max": 2500,
+      "currency": "EUR",
+      "note": "UBB International Cooperation Centre, bachelor offer 2026-2027",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Self-funded non-EU students pay EUR tuition; EU/EEA/Swiss citizens apply like Romanians.",
+    "applicationFee": "50 EUR non-refundable processing fee (non-EU online application)",
+    "applicationFeeShort": "€50",
+    "admission": "Online file: diploma and transcripts, passport, accepted English certificate, motivation letter, birth and medical certificates.",
+    "entryTest": "no",
+    "deadline": "Non-EU online registration 1 April to 31 July (2026 cycle)",
+    "applyBy": null,
+    "scholarships": "Romanian Government scholarships for non-EU students (separate call)",
+    "sources": [
+      "https://cci.ubbcluj.ro/?p=710"
+    ],
+    "checkYourself": [
+      "2027 dates",
+      "EU fee in RON",
+      "Exact official programme name"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "sofia-university-international-trade-and-investment",
+    "universityId": "sofia-university",
+    "university": "Sofia University St. Kliment Ohridski",
+    "program": "International Trade and Investment",
+    "officialName": "International Trade and Investment (in English), Faculty of Economics and Business Administration",
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Economics, business",
+    "language": "English",
+    "years": 4,
+    "description": "Interdisciplinary economics and business: international trade, investment, finance, accounting and business law.",
+    "tuitionNonEuPerYear": {
+      "min": 3300,
+      "max": 3300,
+      "currency": "EUR",
+      "note": "Sofia University non-EU fee table 2026/2027, bachelor full-time, paid in two halves",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Non-EU students pay the EUR fee for foreigners (dual Bulgarian citizens half); EU citizens are admitted and charged like Bulgarians.",
+    "applicationFee": "25 EUR application fee (bank transfer)",
+    "applicationFeeShort": "€25",
+    "admission": "Non-EU: in-person or proxy submission of diploma with legalised translations, NACID grade conversion, Ministry recognition, English B2 certificate; no entrance exam mentioned.",
+    "entryTest": "no",
+    "deadline": "For the October intake documents accepted 27 July to 11 September (2026 cycle); recognition should start 6 months earlier",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.uni-sofia.bg/index.php/eng/content/download/364790/2335688/version/3/file/Fees+2026-2027+Bulgarian+%26+English.pdf",
+      "https://uni-sofia.bg/index.php/eng/admission/international_students/bachelor_s_degree_programs_in_english",
+      "https://uni-sofia.bg/index.php/eng/admission/international_students/application_procedure/applicants_from_non_eu_member_countries/application_procedure"
+    ],
+    "checkYourself": [
+      "2027 application dates",
+      "EU/Bulgarian fee amount",
+      "Scholarships (e.g. Bulgarian government scholarships for Albanian/Western Balkan students)"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "sofia-university-accounting-finance-and-digital-applications",
+    "universityId": "sofia-university",
+    "university": "Sofia University St. Kliment Ohridski",
+    "program": "Accounting, Finance and Digital Applications",
+    "officialName": "Accounting, Finance and Digital Applications (in English), Faculty of Economics and Business Administration",
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Accounting, finance, business IT",
+    "language": "English",
+    "years": 4,
+    "description": "Accounting and finance combined with digital tools and data applications for business.",
+    "tuitionNonEuPerYear": {
+      "min": 3300,
+      "max": 3300,
+      "currency": "EUR",
+      "note": "Sofia University non-EU fee table 2026/2027, bachelor full-time",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Non-EU students pay the EUR fee for foreigners; EU citizens are admitted and charged like Bulgarians.",
+    "applicationFee": "25 EUR application fee (bank transfer)",
+    "applicationFeeShort": "€25",
+    "admission": "Non-EU: diploma with NACID conversion and recognition, English B2 and good maths grades; applicants without English proof take a university English exam.",
+    "entryTest": "no",
+    "deadline": "For the October intake documents accepted 27 July to 11 September (2026 cycle)",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.uni-sofia.bg/index.php/eng/content/download/364790/2335688/version/3/file/Fees+2026-2027+Bulgarian+%26+English.pdf",
+      "https://uni-sofia.bg/index.php/eng/admission/international_students/bachelor_s_degree_programs_in_english",
+      "https://uni-sofia.bg/index.php/eng/admission/international_students/application_procedure/applicants_from_non_eu_member_countries/application_procedure"
+    ],
+    "checkYourself": [
+      "2027 application dates",
+      "EU/Bulgarian fee amount"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "unwe-international-economic-relations",
+    "universityId": "unwe",
+    "university": "University of National and World Economy (UNWE)",
+    "program": "International Economic Relations",
+    "officialName": "International Economic Relations (in English)",
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Economics, international business",
+    "language": "English",
+    "years": 4,
+    "description": "International economics, trade, finance and international business relations.",
+    "tuitionNonEuPerYear": {
+      "min": 3800,
+      "max": 3800,
+      "currency": "EUR",
+      "note": "UNWE international fees page 2026/2027: English-language study 3,800/year (1,900/semester); seen only in a search snippet of the official page",
+      "confidence": "needs-check"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Self-paying non-EU foreigners pay 3,800 EUR (English) or 3,300 EUR (Bulgarian); EU citizens study under Bulgarian rules.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": null,
+    "entryTest": null,
+    "deadline": "Not confirmed on official page; enrolment for first semester 14 Sept to 12 Oct (2026)",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://www.unwe.bg/international/en/pages/3656/fees.html",
+      "https://international.unwe.bg/Bachelors"
+    ],
+    "checkYourself": [
+      "Whether this programme is actually offered in English for 2027",
+      "Tuition (fees page blocked automated access)",
+      "Admission requirements and application deadline",
+      "Application fee"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "metu-computer-engineering",
+    "universityId": "metu",
+    "university": "Middle East Technical University (METU)",
+    "program": "Computer Engineering",
+    "officialName": "Computer Engineering (BS), Faculty of Engineering, METU Ankara",
+    "country": "Turkey",
+    "city": "Ankara",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer engineering",
+    "language": "English",
+    "years": 4,
+    "description": "Algorithms, programming, computer systems, software engineering and AI at one of Turkey's top technical universities.",
+    "tuitionNonEuPerYear": {
+      "min": 2208,
+      "max": 2208,
+      "currency": "EUR",
+      "note": "Official: USD 2,400 a year, shown in euro at an approximate rate. METU 2026-2027 fee table, international quota, Faculty of Engineering 1,200 USD per semester, paid in TRY at the central bank rate",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 2208,
+      "max": 2208,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "All foreign nationals admitted via the international student quota pay the USD fee (EU citizens too); English prep year costs the same as the faculty fee.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "International quota application on METU's online system with accepted international exam/diploma scores (e.g. SAT, A-level, national exams); English proficiency or English preparatory year.",
+    "entryTest": null,
+    "deadline": "Main international window June 1 to July 12 (2026 cycle), plus a short extra round late August",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://iso.metu.edu.tr/en/system/files/2026-2027_tuition_fees_14092026.pdf",
+      "https://oidb.metu.edu.tr/en/node/39",
+      "https://iso.metu.edu.tr/en/node/382"
+    ],
+    "checkYourself": [
+      "Accepted exams and minimum scores (e.g. SAT) for 2027",
+      "2027 application window",
+      "Application fee",
+      "Turkish government (Turkiye Burslari) scholarship as an alternative route"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "metu-economics",
+    "universityId": "metu",
+    "university": "Middle East Technical University (METU)",
+    "program": "Economics",
+    "officialName": "Economics (BS), Faculty of Economic and Administrative Sciences, METU Ankara",
+    "country": "Turkey",
+    "city": "Ankara",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Economics",
+    "language": "English",
+    "years": 4,
+    "description": "Micro- and macroeconomics, econometrics, economic policy and quantitative methods.",
+    "tuitionNonEuPerYear": {
+      "min": 1472,
+      "max": 1472,
+      "currency": "EUR",
+      "note": "Official: USD 1,600 a year, shown in euro at an approximate rate. METU 2026-2027 fee table, international quota, Faculty of Economic and Administrative Sciences 800 USD per semester",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 1472,
+      "max": 1472,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "All foreign nationals admitted via the international student quota pay the USD fee (EU citizens too); English prep year costs the same as the faculty fee.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "International quota application with accepted exam/diploma scores; English proficiency or prep year.",
+    "entryTest": null,
+    "deadline": "Main international window June 1 to July 12 (2026 cycle)",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://iso.metu.edu.tr/en/system/files/2026-2027_tuition_fees_14092026.pdf",
+      "https://iso.metu.edu.tr/en/node/382"
+    ],
+    "checkYourself": [
+      "Accepted exams and minimum scores",
+      "2027 application window",
+      "Application fee"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "bogazici-university-computer-engineering",
+    "universityId": "bogazici-university",
+    "university": "Boğaziçi University",
+    "program": "Computer Engineering",
+    "officialName": "Computer Engineering (BS), Faculty of Engineering",
+    "country": "Turkey",
+    "city": "Istanbul",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer engineering",
+    "language": "English",
+    "years": 4,
+    "description": "Programming, algorithms, computer systems, networks and AI, taught in English in Istanbul.",
+    "tuitionNonEuPerYear": {
+      "min": 9200,
+      "max": 9200,
+      "currency": "EUR",
+      "note": "Official: USD 10,000 a year, shown in euro at an approximate rate. Bogazici tuition table for international undergraduates, 2026-2027 intake: Faculty of Engineering 5,000 USD per semester",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 9200,
+      "max": 9200,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "All students admitted via the international quota pay the USD fee; English prep school is 5,000 USD per semester.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "International quota online application with accepted international exams/diplomas (e.g. SAT, sent with code 0796); English proficiency (BUEPT or accepted tests) or prep school.",
+    "entryTest": null,
+    "deadline": null,
+    "applyBy": null,
+    "scholarships": "University reportedly offers no scholarships or financial aid to international degree students",
+    "sources": [
+      "https://mediastore.cc.bogazici.edu.tr/web/userfiles/files/T121621-tuition_fees_for_international_undergraduate_and_graduate_students_2026-2027_intake(1).pdf",
+      "https://globalstudents.bogazici.edu.tr/en/pages/undergraduate-applications/5659"
+    ],
+    "checkYourself": [
+      "2027 application period",
+      "Accepted exams and minimum scores",
+      "Application fee",
+      "No-scholarship statement"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "bogazici-university-economics",
+    "universityId": "bogazici-university",
+    "university": "Boğaziçi University",
+    "program": "Economics",
+    "officialName": "Economics (BA), Faculty of Economics and Administrative Sciences",
+    "country": "Turkey",
+    "city": "Istanbul",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Economics",
+    "language": "English",
+    "years": 4,
+    "description": "Economic theory, econometrics, economic history and policy.",
+    "tuitionNonEuPerYear": {
+      "min": 9200,
+      "max": 9200,
+      "currency": "EUR",
+      "note": "Official: USD 10,000 a year, shown in euro at an approximate rate. Bogazici tuition table 2026-2027 intake: Faculty of Economics and Administrative Sciences 5,000 USD per semester",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 9200,
+      "max": 9200,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "All students admitted via the international quota pay the USD fee; English prep school is 5,000 USD per semester.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "International quota online application with accepted international exams/diplomas; English proficiency or prep school.",
+    "entryTest": null,
+    "deadline": null,
+    "applyBy": null,
+    "scholarships": "University reportedly offers no scholarships or financial aid to international degree students",
+    "sources": [
+      "https://mediastore.cc.bogazici.edu.tr/web/userfiles/files/T121621-tuition_fees_for_international_undergraduate_and_graduate_students_2026-2027_intake(1).pdf",
+      "https://globalstudents.bogazici.edu.tr/en/pages/undergraduate-applications/5659"
+    ],
+    "checkYourself": [
+      "2027 application period",
+      "Accepted exams and minimum scores",
+      "Application fee"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "trinity-college-dublin-computer-science",
+    "universityId": "trinity-college-dublin",
+    "university": "Trinity College Dublin",
+    "program": "Computer Science",
+    "officialName": "Computer Science B.A. (Moderatorship), CAO code TR033 (optional 5th year M.C.S.)",
+    "country": "Ireland",
+    "city": "Dublin",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 4,
+    "description": "Programming, algorithms, computer systems, networks and AI in an Engineers Ireland accredited degree, with an optional integrated master's year.",
+    "tuitionNonEuPerYear": {
+      "min": 30450,
+      "max": 30450,
+      "currency": "EUR",
+      "note": "TCD undergraduate fee schedule, new entrants 2027/28, year 1 (later years rise per fee-certainty policy, 3%/yr for 2027 intake)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 2350,
+      "max": 7332,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU students eligible for free fees pay only the 2,350 EUR student contribution (full EU rate 7,332); non-EU students, including Albanians and Western Balkans, pay the non-EU fee; plus an annual student levies charge.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Non-EU: direct online application to Trinity with school-leaving results (maths requirement, e.g. A-level C / IB HL5 equivalent) and English proof; EU: via CAO. 100 places.",
+    "entryTest": "no",
+    "deadline": "Non-EU applications: 31 May 2027 (places may fill earlier)",
+    "applyBy": "2027-05-31",
+    "scholarships": "Trinity undergraduate scholarships for non-EU students (e.g. Global Excellence Undergraduate Scholarship, a partial year-1 tuition reduction)",
+    "sources": [
+      "https://www.tcd.ie/courses/undergraduate/fees/",
+      "https://www.tcd.ie/courses/undergraduate/courses/computer-science/",
+      "https://www.tcd.ie/academicregistry/fees-and-payments/annual-fee-rate/",
+      "https://www.tcd.ie/study/international/scholarships/"
+    ],
+    "checkYourself": [
+      "Albanian State Matura equivalence for maths",
+      "Application fee",
+      "Student levies amount",
+      "Scholarship amount and deadline for 2027"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "trinity-college-dublin-business-economic-and-social-studies",
+    "universityId": "trinity-college-dublin",
+    "university": "Trinity College Dublin",
+    "program": "Business, Economic and Social Studies (BESS)",
+    "officialName": "Business, Economic and Social Studies (B.E.S.S. / B.B.S.), CAO code TR081",
+    "country": "Ireland",
+    "city": "Dublin",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business, economics",
+    "language": "English",
+    "years": 4,
+    "description": "Flexible degree combining business, economics, political science and sociology, narrowing to one or two subjects later.",
+    "tuitionNonEuPerYear": {
+      "min": 23250,
+      "max": 23250,
+      "currency": "EUR",
+      "note": "TCD undergraduate fee schedule, new entrants 2027/28, year 1",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 2350,
+      "max": 5681,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU students eligible for free fees pay only the 2,350 EUR student contribution (full EU rate 5,681); non-EU students pay the non-EU fee; plus annual student levies.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Non-EU: direct online application with school-leaving results (maths requirement, e.g. IB HL5/SL7) and English proof; EU: via CAO. 236 places.",
+    "entryTest": "no",
+    "deadline": "Non-EU applications: 31 May 2027 (places may fill earlier)",
+    "applyBy": "2027-05-31",
+    "scholarships": "Trinity undergraduate scholarships for non-EU students (e.g. Global Excellence Undergraduate Scholarship)",
+    "sources": [
+      "https://www.tcd.ie/courses/undergraduate/fees/",
+      "https://www.tcd.ie/courses/undergraduate/courses/business-economic-and-social-studies/",
+      "https://www.tcd.ie/study/international/scholarships/"
+    ],
+    "checkYourself": [
+      "Albanian State Matura equivalence",
+      "Application fee",
+      "Scholarship details for 2027"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "university-college-dublin-computer-science",
+    "universityId": "university-college-dublin",
+    "university": "University College Dublin",
+    "program": "Computer Science",
+    "officialName": "BSc Computer Science (DN201)",
+    "country": "Ireland",
+    "city": "Dublin",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 4,
+    "description": "Software development, algorithms, data structures, systems and AI with work placement options.",
+    "tuitionNonEuPerYear": {
+      "min": 30095,
+      "max": 30095,
+      "currency": "EUR",
+      "note": "UCD non-EU undergraduate fee table 2027/28, DN201",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Non-EU applicants (incl. Albania and Western Balkans) apply directly to UCD and pay the non-EU fee; EU-fee students apply only via CAO and pay the student contribution under the Free Fees Initiative.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Direct application to UCD Global; Albanian State Matura (2027 entry): average 9.0 and maths 7 in Diplome or 10 in Deftese; English proficiency per UCD minimums; International Foundation Year as alternative route.",
+    "entryTest": "no",
+    "deadline": null,
+    "applyBy": null,
+    "scholarships": "UCD Global Excellence Scholarship and other UCD international scholarships",
+    "sources": [
+      "https://sisweb.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=FEESLEVEL&RESD=NONEU&DGLEV=UG&ACYR=2027",
+      "https://www.ucd.ie/students/fees/noneucoursefees/internationalnon-euundergraduatefees202728/",
+      "https://www.ucd.ie/global/study-at-ucd/undergraduate/entryrequirements/albania/",
+      "https://www.ucd.ie/global/study-at-ucd/scholarshipsfinances/"
+    ],
+    "checkYourself": [
+      "Non-EU application deadline for 2027",
+      "Application fee",
+      "EU student contribution amount for 2027/28"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "university-college-dublin-commerce",
+    "universityId": "university-college-dublin",
+    "university": "University College Dublin",
+    "program": "Commerce",
+    "officialName": "Bachelor of Commerce (DN650)",
+    "country": "Ireland",
+    "city": "Dublin",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business",
+    "language": "English",
+    "years": 3,
+    "description": "Accounting, finance, marketing, management and economics at the UCD Quinn School of Business.",
+    "tuitionNonEuPerYear": {
+      "min": 23635,
+      "max": 23635,
+      "currency": "EUR",
+      "note": "UCD non-EU undergraduate fee table 2027/28, Commerce DN650",
+      "confidence": "verified"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Non-EU applicants (incl. Albania and Western Balkans) apply directly to UCD and pay the non-EU fee; EU-fee students apply via CAO and pay the student contribution.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "Direct application to UCD Global; Albanian State Matura (2027 entry): average 9.0 and maths 7 in Diplome or 10 in Deftese; English proficiency.",
+    "entryTest": "no",
+    "deadline": null,
+    "applyBy": null,
+    "scholarships": "UCD Global Excellence Scholarship and other UCD international scholarships",
+    "sources": [
+      "https://sisweb.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=FEESLEVEL&RESD=NONEU&DGLEV=UG&ACYR=2027",
+      "https://www.ucd.ie/global/study-at-ucd/undergraduate/entryrequirements/albania/",
+      "https://www.ucd.ie/global/study-at-ucd/scholarshipsfinances/"
+    ],
+    "checkYourself": [
+      "Duration: 3 years assumed, 4 with international/internship options",
+      "Non-EU application deadline",
+      "Application fee"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08"
+  },
+  {
+    "id": "university-of-gothenburg-software-engineering-and-management",
+    "universityId": "university-of-gothenburg",
+    "university": "University of Gothenburg",
+    "program": "Software Engineering and Management",
+    "officialName": "Software Engineering and Management Bachelor's Programme",
+    "country": "Sweden",
+    "city": "Gothenburg",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Software development and engineering combined with project management and the business side of building software.",
+    "tuitionNonEuPerYear": {
+      "min": 12789,
+      "max": 12789,
+      "currency": "EUR",
+      "note": "Official: SEK 147,000 a year, shown in euro at an approximate rate. Full education cost SEK 441,000 for the autumn 2027 intake (first payment SEK 73,500); per year = total / 3",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR",
+      "note": "Official: SEK 0 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU/EEA citizens and Swedish residence permit holders pay nothing; non-EU students pay tuition plus the application fee.",
+    "applicationFee": "SEK 900 paid to University Admissions in Sweden by most non-EU/EEA applicants, once per semester",
+    "applicationFeeShort": "SEK 900",
+    "admission": "Apply via universityadmissions.se: school-leaving certificate and grades, proof of English 6 and Mathematics 3b/3c level; selection on grades (SweSAT optional, Swedish only). No interview.",
+    "entryTest": "no",
+    "deadline": "15 January 2027 (round 1, code GU-86007); round 2 15 April 2027",
+    "applyBy": "2027-01-15",
+    "scholarships": "Axel Adler Scholarship, School of Business, Economics and Law scholarships, SI Scholarship Women in STEM",
+    "sources": [
+      "https://www.gu.se/en/study-gothenburg/N1SOF",
+      "https://www.universityadmissions.se/en/fees-scholarships-residence-permit/pay-your-application-fee/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Instalment schedule after the first payment",
+      "Whether round 2 is open to non-EU applicants in time for a visa"
+    ]
+  },
+  {
+    "id": "jonkoping-university-international-management",
+    "universityId": "jonkoping-university",
+    "university": "Jönköping University",
+    "program": "International Management",
+    "officialName": "Bachelor in International Management",
+    "country": "Sweden",
+    "city": "Jönköping",
+    "citySize": "Medium",
+    "type": "Private uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 3,
+    "description": "Business administration with an international focus at Jönköping International Business School (BSc in Business and Economics).",
+    "tuitionNonEuPerYear": {
+      "min": 10440,
+      "max": 10440,
+      "currency": "EUR",
+      "note": "Official: SEK 120,000 a year, shown in euro at an approximate rate. SEK 120,000 per year (2027/2028 JIBS fee table); programme page: SEK 60,000 first semester, SEK 360,000 total",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR",
+      "note": "Official: SEK 0 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "No tuition for EU/EEA/Swiss citizens; non-EU students pay tuition in two instalments per year plus the SEK 900 application fee.",
+    "applicationFee": "SEK 900 (about EUR 80) per admission period for non-EU/EEA/Swiss applicants, non-refundable",
+    "applicationFeeShort": "SEK 900",
+    "admission": "School-leaving certificate and grades, Mathematics 3b/3c, Civics 1b and English 6 equivalents (country-specific rules); rolling admission via JU Direct. No exam or interview.",
+    "entryTest": "no",
+    "deadline": "JU Direct Application 16 Oct 2026 to 2 May 2027 (recommended); universityadmissions.se until 15 Jan 2027",
+    "applyBy": "2027-05-02",
+    "scholarships": "JU Scholarship for new non-EU applicants, deducted from the tuition invoice",
+    "sources": [
+      "https://ju.se/en/study-at-ju/our-programmes/bachelor-programmes/international-management-autumn-2027-ku101.html",
+      "https://ju.se/en/study-at-ju/application-and-admission/application-and-tuition-fees.html"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Jönköping University is a non-profit foundation university (state-recognised, not a state agency)",
+      "JU Scholarship amount/percentage not stated",
+      "Rolling admission: applying early is safer for visa timing"
+    ]
+  },
+  {
+    "id": "jonkoping-university-industrial-engineering-and-management",
+    "universityId": "jonkoping-university",
+    "university": "Jönköping University",
+    "program": "Industrial Engineering and Management",
+    "officialName": "Industrial Engineering and Management: Sustainable Supply Chain Management",
+    "country": "Sweden",
+    "city": "Jönköping",
+    "citySize": "Medium",
+    "type": "Private uni",
+    "fields": "Engineering",
+    "language": "English",
+    "years": 3,
+    "description": "Industrial engineering with a specialisation in sustainable supply chain and logistics management.",
+    "tuitionNonEuPerYear": {
+      "min": 14790,
+      "max": 14790,
+      "currency": "EUR",
+      "note": "Official: SEK 170,000 a year, shown in euro at an approximate rate. SEK 170,000 per year (2027/2028 School of Engineering fee table); programme page: SEK 85,000 first semester, SEK 510,000 total",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR",
+      "note": "Official: SEK 0 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "No tuition for EU/EEA/Swiss citizens; non-EU students pay tuition in two instalments per year plus the SEK 900 application fee.",
+    "applicationFee": "SEK 900 (about EUR 80) per admission period for non-EU/EEA/Swiss applicants, non-refundable",
+    "applicationFeeShort": "SEK 900",
+    "admission": "School-leaving certificate and grades, Mathematics 3b and English 6 equivalents (country-specific rules); rolling admission via JU Direct. No exam or interview.",
+    "entryTest": "no",
+    "deadline": "JU Direct Application 16 Oct 2026 to 2 May 2027 (recommended); universityadmissions.se until 15 Jan 2027",
+    "applyBy": "2027-05-02",
+    "scholarships": "JU Scholarship for new non-EU applicants, deducted from the tuition invoice",
+    "sources": [
+      "https://ju.se/en/study-at-ju/our-programmes/bachelor-programmes/industrial-engineering-and-management-sustainable-supply-chain-management-autumn-2027-ku019.html",
+      "https://ju.se/en/study-at-ju/application-and-admission/application-and-tuition-fees.html"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Jönköping University is a non-profit foundation university",
+      "JU Scholarship amount not stated"
+    ]
+  },
+  {
+    "id": "blekinge-institute-of-technology-software-engineering",
+    "universityId": "blekinge-institute-of-technology",
+    "university": "Blekinge Institute of Technology",
+    "program": "Software Engineering",
+    "officialName": "Bachelor's Programme in Software Engineering and Technology, 180 credits",
+    "country": "Sweden",
+    "city": "Karlskrona",
+    "citySize": "Small",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Software engineering: programming, software design, testing and team-based development (BSc with a major in Software Engineering).",
+    "tuitionNonEuPerYear": {
+      "min": null,
+      "max": null,
+      "currency": "EUR",
+      "note": "Not published on the official page.",
+      "confidence": "needs-check"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR",
+      "note": "Official: SEK 0 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "No tuition for EU/EEA/Swiss citizens; non-EU students pay tuition per semester in advance plus the application fee.",
+    "applicationFee": "SEK 900 paid to University Admissions in Sweden by most non-EU/EEA applicants, once per semester",
+    "applicationFeeShort": "SEK 900",
+    "admission": "Apply via universityadmissions.se (code BTH-50001): school-leaving certificate, English proficiency and Mathematics 3b/3c equivalent. No exam or interview.",
+    "entryTest": "no",
+    "deadline": "Via universityadmissions.se; national autumn round 1 deadline is normally 15 January (not stated on the BTH page)",
+    "applyBy": null,
+    "scholarships": "BTH scholarship for fee-paying non-EU students on campus programmes, covers part of the tuition only",
+    "sources": [
+      "https://www.bth.se/english/education/programmes/bachelors-programme-in-software-engineering-and-technology-180-credits",
+      "https://www.bth.se/english/education/application-and-admission/tuition-fees/general-information"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Tuition fee amount (not on the official page)",
+      "Exact deadline for autumn 2027",
+      "Scholarship details (in BTH PDF on tuition fees and scholarships)"
+    ]
+  },
+  {
+    "id": "copenhagen-business-school-international-business",
+    "universityId": "copenhagen-business-school",
+    "university": "Copenhagen Business School",
+    "program": "International Business",
+    "officialName": "BSc in International Business",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 3,
+    "description": "International business: strategy, finance, marketing, organisation and economics with a global focus.",
+    "tuitionNonEuPerYear": {
+      "min": 13000,
+      "max": 13000,
+      "currency": "EUR",
+      "note": "EUR 6,500 per semester / EUR 13,000 per year (or DKK 98,000), CBS bachelor fee table on the admission page, year not stated",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU/EEA and Swiss citizens pay nothing; other citizens pay tuition and an application fee.",
+    "applicationFee": "EUR 150 (about DKK 1,125) per applicant per admission round for non-EU/EEA/Swiss applicants",
+    "applicationFeeShort": "EUR 150",
+    "admission": "Apply via optagelse.dk: Albanian Matura diploma (GPA min 6) plus verification form for specific requirements; Quota 2 selection on motivational essay, activities and grades; English e.g. IELTS 7.0 (min 6.0 each). No exam or interview.",
+    "entryTest": "no",
+    "deadline": "15 March at 12:00 (applicants needing a student residence permit)",
+    "applyBy": "2027-03-15",
+    "scholarships": "None: CBS offers scholarships only for master programmes",
+    "sources": [
+      "https://www.cbs.dk/en/study-programmes/bachelor-programmes/bsc-international-business",
+      "https://www.cbs.dk/en/study-programmes/bachelor-programmes/application-and-admission"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Admission page standard assessments say valid for the 2026 round; confirm 2027 rules",
+      "Fee table year not stated"
+    ]
+  },
+  {
+    "id": "copenhagen-business-school-business-administration-and-digital-management",
+    "universityId": "copenhagen-business-school",
+    "university": "Copenhagen Business School",
+    "program": "Business Administration and Digital Management",
+    "officialName": "BSc in Business Administration and Digital Management",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 3,
+    "description": "Business administration combined with digital technologies, data and IT management.",
+    "tuitionNonEuPerYear": {
+      "min": 13000,
+      "max": 13000,
+      "currency": "EUR",
+      "note": "EUR 6,500 per semester / EUR 13,000 per year (or DKK 98,000), CBS bachelor fee table on the admission page, year not stated",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU/EEA and Swiss citizens pay nothing; other citizens pay tuition and an application fee.",
+    "applicationFee": "EUR 150 (about DKK 1,125) per applicant per admission round for non-EU/EEA/Swiss applicants",
+    "applicationFeeShort": "EUR 150",
+    "admission": "Apply via optagelse.dk: Albanian Matura diploma (GPA min 6) plus verification form for specific requirements; Quota 2 selection on motivational essay, activities and grades; English e.g. IELTS 7.0 (min 6.0 each). No exam or interview.",
+    "entryTest": "no",
+    "deadline": "15 March at 12:00 (applicants needing a student residence permit)",
+    "applyBy": "2027-03-15",
+    "scholarships": "None: CBS offers scholarships only for master programmes",
+    "sources": [
+      "https://www.cbs.dk/en/study-programmes/bachelor-programmes/bsc-business-administration-and-digital-management",
+      "https://www.cbs.dk/en/study-programmes/bachelor-programmes/application-and-admission"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Specific maths requirement for this programme (programme page not read in detail)",
+      "Fee table year not stated"
+    ]
+  },
+  {
+    "id": "technical-university-of-denmark-general-engineering",
+    "universityId": "technical-university-of-denmark",
+    "university": "Technical University of Denmark (DTU)",
+    "program": "General Engineering",
+    "officialName": "Bachelor of Science (BSc) in General Engineering",
+    "country": "Denmark",
+    "city": "Kongens Lyngby",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Engineering",
+    "language": "English",
+    "years": 3,
+    "description": "Broad, science-based engineering degree (maths, physics, programming) with a choice of engineering specialisation; DTU's only English-taught bachelor.",
+    "tuitionNonEuPerYear": {
+      "min": 15000,
+      "max": 15000,
+      "currency": "EUR",
+      "note": "EUR 15,000 per academic year, paid EUR 7,500 per semester up front (current DTU fee page, year not stated)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU/EEA students pay nothing; most non-EU/EEA citizens pay tuition per semester in advance and a EUR 100 application fee.",
+    "applicationFee": "EUR 100 for non-EU/EEA applicants, due by 15 March; deducted from the first tuition payment if admitted",
+    "applicationFeeShort": "EUR 100",
+    "admission": "Apply via optagelse.dk (Quota 2): upper secondary diploma, personal statement, transcript (documents by 1 April), English test if required. No entry exam or interview mentioned.",
+    "entryTest": "no",
+    "deadline": "15 March at 12:00 noon (Quota 2, international diploma); fee also due",
+    "applyBy": "2027-03-15",
+    "scholarships": "None: DTU offers no scholarships or fee waivers at undergraduate level",
+    "sources": [
+      "https://www.dtu.dk/english/education/undergraduate/general-engineering",
+      "https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/fees-funding-and-permits",
+      "https://www.dtu.dk/english/education/undergraduate/general-engineering/admission-and-deadlines/deadlines-and-important-dates"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-08",
+    "checkYourself": [
+      "Deadline page lists dates without 2027; 15 March is the yearly rule",
+      "Specific maths/physics/chemistry requirements"
+    ]
+  },
+  {
+    "id": "university-of-inland-norway-game-technology",
+    "universityId": "university-of-inland-norway",
+    "university": "University of Inland Norway (INN)",
+    "program": "Game Technology and Simulation",
+    "officialName": "Bachelor in Game Technology",
+    "country": "Norway",
+    "city": "Hamar",
+    "citySize": "Small",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Programming and computer science applied to game development, game engines and simulation.",
+    "tuitionNonEuPerYear": {
+      "min": 7752,
+      "max": 7752,
+      "currency": "EUR",
+      "note": "Official: NOK 91,200 a year, shown in euro at an approximate rate. NOK 91,200 per year, INN tuition table for 2027/28 (adjusted yearly)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR",
+      "note": "Official: NOK 0 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": 2000,
+    "feeRule": "EU/EEA/Swiss students pay only the semester fee; students from outside pay tuition (first year due 1 June) plus the semester fee.",
+    "applicationFee": null,
+    "applicationFeeShort": "Free",
+    "admission": "Higher Education Entrance Qualification incl. English proficiency and maths equivalent to Norwegian R1; no Norwegian needed. No test or interview mentioned.",
+    "entryTest": "no",
+    "deadline": "1 December 2026 for applicants from outside the EU/EEA (applications open 1 November)",
+    "applyBy": "2026-12-01",
+    "scholarships": "None: INN offers no scholarships that cover tuition",
+    "sources": [
+      "https://www.inn.no/english/study-options/our-studies/game-technology/index.html",
+      "https://www.inn.no/english/study-options/incoming-full-degree-students/application-guidelines/tuition/",
+      "https://www.inn.no/english/study-options/incoming-full-degree-students/application-guidelines/english-taught-programmes/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "applyBy is 1 Dec 2026, before the 2027 calendar year",
+      "Semester fee about NOK 1,000 per semester (otherFeesPerYear is 2 x approx.)",
+      "Residence permit needs proof of funds (about NOK 167,000)",
+      "Application fee: none mentioned on INN pages"
+    ]
+  },
+  {
+    "id": "bi-norwegian-business-school-business-administration",
+    "universityId": "bi-norwegian-business-school",
+    "university": "BI Norwegian Business School",
+    "program": "Business Administration",
+    "officialName": "Bachelor in Business Administration (BBA)",
+    "country": "Norway",
+    "city": "Oslo",
+    "citySize": "Big",
+    "type": "Private uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 3,
+    "description": "International business administration: economics, finance, marketing, strategy and leadership.",
+    "tuitionNonEuPerYear": {
+      "min": 12240,
+      "max": 12240,
+      "currency": "EUR",
+      "note": "Official: NOK 144,000 a year, shown in euro at an approximate rate. NOK 144,000 per year for 2027-28 (outside EU/EEA/Switzerland)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 9410,
+      "max": 9410,
+      "currency": "EUR",
+      "note": "Official: NOK 110,700 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Private school: everyone pays; non-EU/EEA/Swiss students pay about 30% more than EU/EEA students.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "General BI bachelor admission requirements (upper secondary diploma, English proficiency); Pathway to Bachelor's if not met. No test or interview mentioned.",
+    "entryTest": "no",
+    "deadline": "1 March priority deadline for international applicants; later applications if places remain",
+    "applyBy": "2027-03-01",
+    "scholarships": "BI scholarships listed on a separate page",
+    "sources": [
+      "https://www.bi.no/en/programmes-and-individual-courses/bachelor-programmes/business-administration/",
+      "https://www.bi.no/en/programmes-and-individual-courses/admissions/tuition-fees/tuition-fee-bachelor-of-business-administration/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Campus assumed Oslo (page lists Oslo, Bergen, Trondheim, Stavanger)",
+      "Albanian diploma requirements",
+      "Application fee not mentioned",
+      "Scholarship details"
+    ]
+  },
+  {
+    "id": "bi-norwegian-business-school-data-science-for-business",
+    "universityId": "bi-norwegian-business-school",
+    "university": "BI Norwegian Business School",
+    "program": "Data Science for Business",
+    "officialName": "Bachelor in Data Science for Business",
+    "country": "Norway",
+    "city": "Oslo",
+    "citySize": "Big",
+    "type": "Private uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Programming, statistics and machine learning applied to business decisions.",
+    "tuitionNonEuPerYear": {
+      "min": 12240,
+      "max": 12240,
+      "currency": "EUR",
+      "note": "Official: NOK 144,000 a year, shown in euro at an approximate rate. NOK 144,000 per year for 2027-28 (outside EU/EEA/Switzerland)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 9410,
+      "max": 9410,
+      "currency": "EUR",
+      "note": "Official: NOK 110,700 a year, shown in euro at an approximate rate."
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Private school: everyone pays; non-EU/EEA/Swiss students pay about 30% more than EU/EEA students.",
+    "applicationFee": null,
+    "applicationFeeShort": null,
+    "admission": "General BI bachelor admission requirements (upper secondary diploma, English proficiency); maths requirement not stated on the page. No test or interview mentioned.",
+    "entryTest": "no",
+    "deadline": "1 March priority deadline for international applicants; later applications if places remain",
+    "applyBy": "2027-03-01",
+    "scholarships": "BI scholarships listed on a separate page",
+    "sources": [
+      "https://bi.no/en/programmes-and-individual-courses/bachelor-programmes/Data-Science-for-Business",
+      "https://www.bi.no/en/programmes-and-individual-courses/admissions/tuition-fees/tuition-fee-bachelor-of-business-administration/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Teaching language not explicitly stated on the programme page (assumed English)",
+      "Campus assumed Oslo",
+      "Maths requirement",
+      "Application fee not mentioned"
+    ]
+  },
+  {
+    "id": "university-of-malta-computing-science",
+    "universityId": "university-of-malta",
+    "university": "University of Malta",
+    "program": "Computing Science",
+    "officialName": "Bachelor of Science (Honours) (Computing Science)",
+    "country": "Malta",
+    "city": "Msida",
+    "citySize": "Small",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 3,
+    "description": "Core computer science: algorithms, operating systems, networks, compilers, software engineering and a final-year project.",
+    "tuitionNonEuPerYear": {
+      "min": 10800,
+      "max": 10800,
+      "currency": "EUR",
+      "note": "EUR 10,800 per academic year on the 2026-7 course page; 2027-8 page not yet published",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU/EEA nationals pay no tuition; non-EU nationals pay the course fee per academic year.",
+    "applicationFee": "EUR 100 processing fee for overseas qualifications until the first deadline, EUR 200 for late applications",
+    "applicationFeeShort": "EUR 100",
+    "admission": "Online application with secondary qualifications equivalent to two A-level passes (grade C+) incl. Pure Mathematics plus an Intermediate pass; Secure English Language Test result for overseas schooling. No interview.",
+    "entryTest": "no",
+    "deadline": "1 July 2027 at 14:00 for non-EU applicants needing a visa (general deadline 21 July 2027)",
+    "applyBy": "2027-07-01",
+    "scholarships": null,
+    "sources": [
+      "https://www.um.edu.mt/courses/overview/ubschicgcft-2026-7-o/",
+      "https://www.um.edu.mt/study/datesdeadlines/",
+      "https://www.um.edu.mt/study/feesfunding/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Fee for the October 2027 intake (2027-8 page not out yet)",
+      "How the Albanian Matura maps to the A-level requirement",
+      "Course starts in October"
+    ]
+  },
+  {
+    "id": "university-of-malta-business-and-information-technology",
+    "universityId": "university-of-malta",
+    "university": "University of Malta",
+    "program": "Business and Information Technology",
+    "officialName": "Bachelor of Science (Honours) in Business and Information Technology",
+    "country": "Malta",
+    "city": "Msida",
+    "citySize": "Small",
+    "type": "Public uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 3,
+    "description": "Business management combined with applied information technology for enterprises.",
+    "tuitionNonEuPerYear": {
+      "min": 8500,
+      "max": 8500,
+      "currency": "EUR",
+      "note": "EUR 8,500 per academic year on the 2026-7 course page; 2027-8 page not yet published",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "EU/EEA nationals pay no tuition; non-EU nationals pay the course fee per academic year.",
+    "applicationFee": "EUR 100 processing fee for overseas qualifications until the first deadline, EUR 200 for late applications",
+    "applicationFeeShort": "EUR 100",
+    "admission": "Online application with secondary qualifications (A-level equivalent) and Secure English Language Test result for overseas schooling. No interview.",
+    "entryTest": "no",
+    "deadline": "1 July 2027 at 14:00 for non-EU applicants needing a visa (general deadline 21 July 2027)",
+    "applyBy": "2027-07-01",
+    "scholarships": null,
+    "sources": [
+      "https://www.um.edu.mt/courses/overview/ubscbusift-2026-7-o/",
+      "https://www.um.edu.mt/study/datesdeadlines/",
+      "https://www.um.edu.mt/study/feesfunding/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Fee for the October 2027 intake",
+      "Exact subject requirements for overseas applicants"
+    ]
+  },
+  {
+    "id": "university-of-nicosia-computer-science",
+    "universityId": "university-of-nicosia",
+    "university": "University of Nicosia",
+    "program": "Computer Science",
+    "officialName": "Computer Science (BSc, 4 Years)",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "citySize": "Medium",
+    "type": "Private uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 4,
+    "description": "Programming, algorithms, software engineering, networks and data, over a four-year 240 ECTS degree.",
+    "tuitionNonEuPerYear": {
+      "min": 10800,
+      "max": 10800,
+      "currency": "EUR",
+      "note": "EUR 10,800 per year (60 ECTS x EUR 180), UNIC Non-EU fee table 2026-2027",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 10740,
+      "max": 10740,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": 305,
+    "feeRule": "Private university: everyone pays; non-EU students pay a slightly higher table and must prepay the first semester for the visa.",
+    "applicationFee": "EUR 60 application fee (non-refundable) plus EUR 150 visa application fee and EUR 400 refundable international student guarantee",
+    "applicationFeeShort": "EUR 60",
+    "admission": "Recognised secondary school leaving certificate with grades, IELTS 6.0+ (or UNIC placement test), attested documents and police clearance for the visa. No entrance exam.",
+    "entryTest": "no",
+    "deadline": "Late June for the September (fall) intake",
+    "applyBy": null,
+    "scholarships": "Merit, athletic and need-based scholarships for non-EU students; CyprusAid 100% tuition scholarships for students from selected countries",
+    "sources": [
+      "https://www.unic.ac.cy/wp-content/uploads/2026/04/NIC-Tuition-Fees-NonEU-EN-26-27.pdf",
+      "https://www.unic.ac.cy/wp-content/uploads/2026/04/NIC-Tuition-Fees-Cyprus-EU-EN-26-27.pdf",
+      "https://www.unic.ac.cy/nicosia/study-at-unic/admission-requirements/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "2027-2028 fee table not out yet",
+      "otherFeesPerYear = registration 60 + insurance 175 + activities 40 + technology 30",
+      "Whether Albania is in the CyprusAid country list",
+      "Albanian Matura not in the grade table: ask admissions"
+    ]
+  },
+  {
+    "id": "university-of-nicosia-business-administration",
+    "universityId": "university-of-nicosia",
+    "university": "University of Nicosia",
+    "program": "Business Administration",
+    "officialName": "Business Administration (BBA, 4 Years)",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "citySize": "Medium",
+    "type": "Private uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 4,
+    "description": "General business administration: management, accounting, finance, marketing and economics.",
+    "tuitionNonEuPerYear": {
+      "min": 10320,
+      "max": 10320,
+      "currency": "EUR",
+      "note": "EUR 10,320 per year (60 ECTS x EUR 172), UNIC Non-EU fee table 2026-2027",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 10200,
+      "max": 10200,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": 305,
+    "feeRule": "Private university: everyone pays; non-EU students pay a slightly higher table and must prepay the first semester for the visa.",
+    "applicationFee": "EUR 60 application fee (non-refundable) plus EUR 150 visa application fee and EUR 400 refundable international student guarantee",
+    "applicationFeeShort": "EUR 60",
+    "admission": "Recognised secondary school leaving certificate with grades, IELTS 6.0+ (or UNIC placement test), attested documents and police clearance for the visa. No entrance exam.",
+    "entryTest": "no",
+    "deadline": "Late June for the September (fall) intake",
+    "applyBy": null,
+    "scholarships": "Merit, athletic and need-based scholarships for non-EU students; CyprusAid 100% tuition scholarships for students from selected countries",
+    "sources": [
+      "https://www.unic.ac.cy/wp-content/uploads/2026/04/NIC-Tuition-Fees-NonEU-EN-26-27.pdf",
+      "https://www.unic.ac.cy/wp-content/uploads/2026/04/NIC-Tuition-Fees-Cyprus-EU-EN-26-27.pdf",
+      "https://www.unic.ac.cy/nicosia/study-at-unic/admission-requirements/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "2027-2028 fee table not out yet",
+      "Whether Albania is in the CyprusAid country list"
+    ]
+  },
+  {
+    "id": "european-university-cyprus-computer-science",
+    "universityId": "european-university-cyprus",
+    "university": "European University Cyprus",
+    "program": "Computer Science",
+    "officialName": "Computer Science, Bachelor of Science (BSc)",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "citySize": "Medium",
+    "type": "Private uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 4,
+    "description": "Four-year computer science degree: programming, data structures, networks and web technologies, software development.",
+    "tuitionNonEuPerYear": {
+      "min": 9240,
+      "max": 9240,
+      "currency": "EUR",
+      "note": "EUR 9,240 per year / 60 ECTS on the programme page (current, year not stated; reductions possible)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 9240,
+      "max": 9240,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Private university: same listed fee for all; non-EU students must send a EUR 3,000 tuition deposit.",
+    "applicationFee": "EUR 80 non-refundable application fee",
+    "applicationFeeShort": "EUR 80",
+    "admission": "Online form, high school leaving certificate and marksheet in English, passport copy and photo, English proof at CEFR B2 (or extra English classes). No entrance exam mentioned.",
+    "entryTest": "no",
+    "deadline": null,
+    "applyBy": null,
+    "scholarships": "Scholarships for high-performing international students and other financial aid",
+    "sources": [
+      "https://euc.ac.cy/en/programs/bachelor-computer-science/",
+      "https://euc.ac.cy/en/admissions/frequently-asked-questions-faqs/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Application deadline for September 2027 (not stated)",
+      "EUR 3,000 deposit read from FAQ search snippet",
+      "Fee year not stated"
+    ]
+  },
+  {
+    "id": "european-university-cyprus-business-studies",
+    "universityId": "european-university-cyprus",
+    "university": "European University Cyprus",
+    "program": "Business Studies",
+    "officialName": "Business Studies, Bachelor of Business Administration (BBA)",
+    "country": "Cyprus",
+    "city": "Nicosia",
+    "citySize": "Medium",
+    "type": "Private uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 4,
+    "description": "Business administration covering management, marketing, finance and human resources.",
+    "tuitionNonEuPerYear": {
+      "min": 9240,
+      "max": 9240,
+      "currency": "EUR",
+      "note": "EUR 9,240 per year / 60 ECTS on the programme page (current, year not stated; reductions possible)",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 9240,
+      "max": 9240,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "Private university: same listed fee for all; non-EU students must send a EUR 3,000 tuition deposit.",
+    "applicationFee": "EUR 80 non-refundable application fee",
+    "applicationFeeShort": "EUR 80",
+    "admission": "Online form, high school leaving certificate and marksheet in English, passport copy and photo, English proof at CEFR B2. No entrance exam mentioned.",
+    "entryTest": "no",
+    "deadline": null,
+    "applyBy": null,
+    "scholarships": "Scholarships for high-performing international students and other financial aid",
+    "sources": [
+      "https://euc.ac.cy/en/programs/bachelor-business-studies/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Page lists language as English | Greek: confirm English track runs",
+      "Application deadline not stated"
+    ]
+  },
+  {
+    "id": "university-of-belgrade-fon-information-systems-and-technologies",
+    "universityId": "university-of-belgrade-fon",
+    "university": "University of Belgrade, Faculty of Organizational Sciences (FON)",
+    "program": "Information Systems and Technologies",
+    "officialName": "Information Systems and Technologies (study in English)",
+    "country": "Serbia",
+    "city": "Belgrade",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 4,
+    "description": "IT and information systems with modules such as software engineering, business analytics, information engineering and e-business technologies.",
+    "tuitionNonEuPerYear": {
+      "min": 5900,
+      "max": 5900,
+      "currency": "EUR",
+      "note": "EUR 5,900 per year for the English programmes (Enrollment 26/27 page); payable in full or two instalments",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 5900,
+      "max": 5900,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "English-taught track is self-financed only: international students pay EUR 5,900 a year, domestic students pay the RSD equivalent; Serbia is not in the EU so there is no EU rate.",
+    "applicationFee": "EUR 85 for one programme, EUR 100 for two or more; enrolment fees EUR 60 in total",
+    "applicationFeeShort": "EUR 85",
+    "admission": "Online application at prijava.fon.bg.ac.rs with diploma, transcripts and ID; mathematics entrance exam in Belgrade (60 points) plus school grades (40 points), min 30 points; foreign diplomas: contact study.bsc@fon.bg.ac.rs.",
+    "entryTest": "yes",
+    "deadline": "Several admission rounds June to September; 2026 second round exam was 1 September 2026. 2027 dates not yet published.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://bsc.fon.bg.ac.rs/tuition-and-fees/",
+      "https://bsc.fon.bg.ac.rs/application-process/",
+      "https://en.fon.bg.ac.rs/third-admission-round-for-the-first-cohort-of-undergraduate-students-studying-in-english/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "New programme: first English cohort started 2026/27",
+      "Duration assumed 4 years / 240 ECTS (not stated on the pages read)",
+      "2027 rounds and exam dates",
+      "English proficiency requirement and diploma recognition for Albanian applicants"
+    ]
+  },
+  {
+    "id": "university-of-belgrade-fon-management-and-organization",
+    "universityId": "university-of-belgrade-fon",
+    "university": "University of Belgrade, Faculty of Organizational Sciences (FON)",
+    "program": "Management and Organization",
+    "officialName": "Management and Organization (study in English)",
+    "country": "Serbia",
+    "city": "Belgrade",
+    "citySize": "Big",
+    "type": "Public uni",
+    "fields": "Business / economics",
+    "language": "English",
+    "years": 4,
+    "description": "Management degree with modules in financial, marketing, operations, project and quality management.",
+    "tuitionNonEuPerYear": {
+      "min": 5900,
+      "max": 5900,
+      "currency": "EUR",
+      "note": "EUR 5,900 per year for the English programmes (Enrollment 26/27 page); payable in full or two instalments",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 5900,
+      "max": 5900,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "English-taught track is self-financed only: international students pay EUR 5,900 a year, domestic students pay the RSD equivalent; Serbia is not in the EU so there is no EU rate.",
+    "applicationFee": "EUR 85 for one programme, EUR 100 for two or more; enrolment fees EUR 60 in total",
+    "applicationFeeShort": "EUR 85",
+    "admission": "Online application at prijava.fon.bg.ac.rs with diploma, transcripts and ID; mathematics entrance exam in Belgrade (60 points) plus school grades (40 points), min 30 points.",
+    "entryTest": "yes",
+    "deadline": "Several admission rounds June to September; 2027 dates not yet published.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://bsc.fon.bg.ac.rs/tuition-and-fees/",
+      "https://bsc.fon.bg.ac.rs/application-process/",
+      "https://bsc.fon.bg.ac.rs/management-and-organization/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "New programme: first English cohort started 2026/27",
+      "Duration assumed 4 years / 240 ECTS",
+      "2027 rounds and exam dates"
+    ]
+  },
+  {
+    "id": "university-of-novi-sad-ftn-software-engineering-and-information-technologies",
+    "universityId": "university-of-novi-sad-ftn",
+    "university": "University of Novi Sad, Faculty of Technical Sciences (FTN)",
+    "program": "Software Engineering and Information Technologies",
+    "officialName": "Software Engineering and Information Technologies (Softversko inženjerstvo i informacione tehnologije)",
+    "country": "Serbia",
+    "city": "Novi Sad",
+    "citySize": "Medium",
+    "type": "Public uni",
+    "fields": "Computer science",
+    "language": "English",
+    "years": 4,
+    "description": "Software engineering, programming, databases, web and information systems.",
+    "tuitionNonEuPerYear": {
+      "min": 3000,
+      "max": 3000,
+      "currency": "EUR",
+      "note": "2026/27 call: foreigners EUR 2,000 (Serbian-taught); English teaching is +50% = EUR 3,000",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 3000,
+      "max": 3000,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "No EU rate (Serbia): Serbian self-financing students pay RSD 140,000, foreign citizens pay EUR 2,000 in Serbian or EUR 3,000 in English, in two instalments.",
+    "applicationFee": "EUR 180 application and entrance-exam fee for foreign citizens in English-taught studies (EUR 120 Serbian-taught); enrolment EUR 225",
+    "applicationFeeShort": "EUR 180",
+    "admission": "Nostrified 4-year secondary school diploma, proof of the language of instruction, entrance exam in mathematics (can be taken in the teaching language on request) plus school grades.",
+    "entryTest": "yes",
+    "deadline": "2026 call: online applications 11 to 26 June 2026, exam end of June. 2027 call not yet published.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://ftn.uns.ac.rs/wp-content/uploads/2026/05/OAS-OSS_2026-27.pdf",
+      "https://ftn.uns.ac.rs/konkurs-za-upis-u-i-godinu-svih-stepena-studija-2026/",
+      "https://www.uns.ac.rs/index.php/en/international-cooperation/students-exchange/study-programs-in-english-language"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "FTN says all programmes are accredited for English, but confirm an English group actually runs in 2027/28 (ask studsluzba@uns.ac.rs)",
+      "tuitionEuPerYear holds the Serbian-citizen fee in RSD",
+      "Diploma nostrification needed before enrolment",
+      "Duration assumed 4 years / 240 ECTS"
+    ]
+  },
+  {
+    "id": "university-of-novi-sad-ftn-engineering-management",
+    "universityId": "university-of-novi-sad-ftn",
+    "university": "University of Novi Sad, Faculty of Technical Sciences (FTN)",
+    "program": "Engineering Management",
+    "officialName": "Engineering Management (Inženjerski menadžment)",
+    "country": "Serbia",
+    "city": "Novi Sad",
+    "citySize": "Medium",
+    "type": "Public uni",
+    "fields": "Engineering",
+    "language": "English",
+    "years": 4,
+    "description": "Management of engineering and industrial systems: production, projects, quality, finance and organisation.",
+    "tuitionNonEuPerYear": {
+      "min": 3000,
+      "max": 3000,
+      "currency": "EUR",
+      "note": "2026/27 call: foreigners EUR 2,000 (Serbian-taught); English teaching is +50% = EUR 3,000",
+      "confidence": "verified"
+    },
+    "tuitionEuPerYear": {
+      "min": 3000,
+      "max": 3000,
+      "currency": "EUR"
+    },
+    "otherFeesPerYear": null,
+    "feeRule": "No EU rate (Serbia): Serbian self-financing students pay RSD 120,000, foreign citizens pay EUR 2,000 in Serbian or EUR 3,000 in English, in two instalments.",
+    "applicationFee": "EUR 180 application and entrance-exam fee for foreign citizens in English-taught studies (EUR 120 Serbian-taught); enrolment EUR 225",
+    "applicationFeeShort": "EUR 180",
+    "admission": "Nostrified 4-year secondary school diploma, proof of the language of instruction, entrance exam (mathematics or general test) plus school grades.",
+    "entryTest": "yes",
+    "deadline": "2026 call: online applications 11 to 26 June 2026. 2027 call not yet published.",
+    "applyBy": null,
+    "scholarships": null,
+    "sources": [
+      "https://ftn.uns.ac.rs/wp-content/uploads/2026/05/OAS-OSS_2026-27.pdf",
+      "https://ftn.uns.ac.rs/konkurs-za-upis-u-i-godinu-svih-stepena-studija-2026/"
+    ],
+    "dataset": "bachelor-atlas",
+    "lastChecked": "2026-11-09",
+    "checkYourself": [
+      "Confirm an English group actually runs in 2027/28",
+      "tuitionEuPerYear holds the Serbian-citizen fee in RSD",
+      "Which entrance exam applies to this programme"
+    ]
   }
 ]

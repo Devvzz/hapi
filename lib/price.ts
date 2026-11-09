@@ -11,6 +11,8 @@ export type Price = {
 
 type Range = { min: number | null; max: number | null } | null;
 
+const SLOVENIA_LOCAL_FEE = ["Bosnia and Herzegovina", "Kosovo", "Montenegro", "North Macedonia", "Serbia"];
+
 function range(p: Program, eu: boolean): Range {
   if (eu) {
     if (p.tuitionEuPerYear) return { min: p.tuitionEuPerYear.min, max: p.tuitionEuPerYear.max };
@@ -35,6 +37,13 @@ export function priceFor(p: Program, profile: Profile): Price {
     if (r && euRange) r = { min: euRange.min, max: r.max };
     basis = "non-EU fee, lower with equal status";
     notes.push("Graduates of Austrian schools abroad can ask for equal status, which can mean EU fees. Confirm with the university.");
+  }
+  // Slovenian public universities let citizens of these Western Balkan countries study for the EU (local) fee.
+  if (!eu && p.country === "Slovenia" && SLOVENIA_LOCAL_FEE.includes(profile.nationality)) {
+    const euRange = range(p, true);
+    if (euRange) r = euRange;
+    basis = "local fee (Western Balkans agreement)";
+    notes.push(`Citizens of ${profile.nationality} pay the same as Slovenian and EU students here.`);
   }
   if (p.country === "Italy") notes.push("In Italy the fee usually depends on family income (ISEE), so you may pay less.");
   if (p.country === "Switzerland") notes.push("Most Swiss universities charge more if your school diploma is from abroad.");

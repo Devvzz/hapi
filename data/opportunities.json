@@ -7270,5 +7270,919 @@
     "sourceUrl": "https://www.ets.org/gre/test-takers/general-test/register/fees.html",
     "lastChecked": "2026-11-06",
     "note": "Needed by some master's programmes and scholarships (e.g. TOPoliTO)."
+  },
+  {
+    "id": "gks-undergraduate-2027",
+    "type": "scholarship",
+    "title": "Global Korea Scholarship (GKS) for Undergraduate Degrees",
+    "provider": "NIIED, Ministry of Education of Korea",
+    "mode": "onsite",
+    "location": "South Korea",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Tuition, 1 year Korean course, return airfare, monthly allowance (about 1.2 million KRW)",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": 24,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "The UIC program has 100 spots and is open to applicants from all countries worldwide.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "full-scholarship",
+      "korea"
+    ],
+    "sourceUrl": "https://www.studyinkorea.go.kr/",
+    "lastChecked": "2026-11-08",
+    "note": "Embassy track for 2027 closed in September; the university track (incl. UIC for science/engineering) runs until about end of November 2026 with deadlines per university, so check quickly or plan for the 2028 round opening in September 2027. The list of eligible countries for 2027 was not confirmed on the official page; check it before applying."
+  },
+  {
+    "id": "aubg-albanian-scholarship",
+    "type": "scholarship",
+    "title": "AUBG Albanian Scholarship",
+    "provider": "American University in Bulgaria",
+    "mode": "onsite",
+    "location": "Bulgaria",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Up to 10 awards of 4,000 EUR for the first year, need-based",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Albania",
+          "Kosovo",
+          "North Macedonia"
+        ],
+        "regions": [],
+        "evidence": "incoming students of Albanian descent from Albania, Kosovo, and Macedonia, based on financial need",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "need-based",
+      "partial-scholarship"
+    ],
+    "sourceUrl": "https://www.aubg.edu/scholarships",
+    "lastChecked": "2026-11-08",
+    "note": "Tick need-based aid in the AUBG application and submit the financial aid form; AUBG also has merit awards up to full tuition that you are considered for automatically."
+  },
+  {
+    "id": "tcd-global-excellence",
+    "type": "scholarship",
+    "title": "Trinity Global Excellence Undergraduate Scholarship",
+    "provider": "Trinity College Dublin",
+    "mode": "onsite",
+    "location": "Ireland",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "2,000 to 5,000 EUR off first-year tuition",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "China"
+        ],
+        "regions": [],
+        "evidence": "must have a course offer to commence year one of a full-time undergraduate degree programme (non-EU fee status)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "merit",
+      "partial-scholarship"
+    ],
+    "sourceUrl": "https://www.tcd.ie/study/international/scholarships/Undergraduate/geug.php",
+    "lastChecked": "2026-11-08",
+    "note": "Awarded on a rolling basis once you hold a Trinity offer; last round's deadline for most regions was mid-June, and some courses (medicine, engineering, computer science) are excluded."
+  },
+  {
+    "id": "constructor-talent",
+    "type": "scholarship",
+    "title": "Constructor University Bachelor Scholarships (Academic Achievement and Talent)",
+    "provider": "Constructor University Bremen",
+    "mode": "onsite",
+    "location": "Germany",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Automatic merit award up to 11,000 EUR/year; Talent scholarships up to full tuition",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Academic Achievement Scholarship: First-year bachelor's and master's applicants; automatic, based on school GPA",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "merit",
+      "germany"
+    ],
+    "sourceUrl": "https://constructor.university/scholarships",
+    "lastChecked": "2026-11-08",
+    "note": "Everyone admitted is checked for the automatic GPA award; full-tuition Talent scholarships need the Global Talent Examination (the 2027 exam slot closed 29 Oct 2026). Living costs are not covered."
+  },
+  {
+    "id": "brunei-bdgs",
+    "type": "scholarship",
+    "title": "Government of Brunei Darussalam Scholarship (BDGS)",
+    "provider": "Ministry of Foreign Affairs, Brunei Darussalam",
+    "mode": "onsite",
+    "location": "Brunei",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Tuition, accommodation, monthly allowance, books, insurance and return flights",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": 25,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor"
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "Brunei"
+        ],
+        "regions": [],
+        "evidence": "Bruneians, Brunei Permanent Residents and international students studying/who have studied in Brunei are NOT eligible.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "master",
+      "full-scholarship"
+    ],
+    "sourceUrl": "https://www.mfa.gov.bn/pages/online-bdgs.aspx",
+    "lastChecked": "2026-11-08",
+    "note": "Max age 25 for bachelor and 35 for master on 1 July of the start year; the last round closed 15 February, so watch for the 2027/2028 call around December to February."
+  },
+  {
+    "id": "nyuad-need-aid",
+    "type": "scholarship",
+    "title": "NYU Abu Dhabi Need-Based Financial Aid",
+    "provider": "New York University Abu Dhabi",
+    "mode": "onsite",
+    "location": "United Arab Emirates",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Need-based grants that can cover up to the full cost of attendance",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "NYU Abu Dhabi accepts applications for financial aid from all students, regardless of citizenship.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "need-based",
+      "full-scholarship"
+    ],
+    "sourceUrl": "https://nyuad.nyu.edu/en/apply/undergraduate/scholarships-and-financial-aid/apply-for-financial-aid.html",
+    "lastChecked": "2026-11-08",
+    "note": "Submit the CSS Profile together with your application (aid deadlines: 10 January for Early Decision II, 1 February for Regular Decision); aid depends on family need, not grades."
+  },
+  {
+    "id": "kaist-undergrad",
+    "type": "scholarship",
+    "title": "KAIST Scholarship for International Undergraduates",
+    "provider": "KAIST",
+    "mode": "onsite",
+    "location": "South Korea",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Full tuition for 8 semesters, 350,000 KRW per month and health insurance",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "Open to applicants of International Student Admission; admitted students are automatically awarded the scholarship.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "full-scholarship",
+      "korea",
+      "stem"
+    ],
+    "sourceUrl": "https://admission.kaist.ac.kr/intl-undergraduate/support/scholarships/kaist",
+    "lastChecked": "2026-11-08",
+    "note": "No separate form: tick 'KAIST scholarship' in the admission application; Fall 2027 admission dates are on the KAIST admissions calendar, so check it now."
+  },
+  {
+    "id": "deutschlandstipendium",
+    "type": "scholarship",
+    "title": "Deutschlandstipendium",
+    "provider": "German Federal Ministry of Research (BMFTR) and German universities",
+    "mode": "onsite",
+    "location": "Germany",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "300 EUR per month, at least two semesters",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor",
+        "master"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "supports students of every nationality at German universities whose record suggests outstanding academic performance",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "master",
+      "merit",
+      "germany"
+    ],
+    "sourceUrl": "https://www.deutschlandstipendium.de/deutschlandstipendium/de/services/english/the-deutschlandstipendium-best-of-both-worlds-for-students.html",
+    "lastChecked": "2026-11-08",
+    "note": "You apply through your German university (usually right after admission, often in spring or summer); grades, volunteering and overcoming obstacles all count."
+  },
+  {
+    "id": "ergo-dsu-scholarship",
+    "type": "scholarship",
+    "title": "ER.GO Regional Scholarship (Emilia-Romagna)",
+    "provider": "ER.GO, Emilia-Romagna Regional Agency for the Right to Study",
+    "mode": "onsite",
+    "location": "Italy",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Need-based cash grant plus meals/housing support and tuition fee exemption",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor",
+        "master"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "International students, coming from Non-EU countries, must provide the complete documentation about economic and financial conditions",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "master",
+      "need-based",
+      "italy"
+    ],
+    "sourceUrl": "https://www.er-go.it/cosa-fare-per/bandi-di-concorso/leggi-il-bando",
+    "lastChecked": "2026-11-08",
+    "note": "For students at universities in Bologna, Modena, Parma or Ferrara; the call opens around June and closed 24 August last year, and you need family income documents legalised by the Italian embassy."
+  },
+  {
+    "id": "edisu-piemonte",
+    "type": "scholarship",
+    "title": "EDISU Piemonte Scholarship and Accommodation",
+    "provider": "EDISU Piemonte",
+    "mode": "onsite",
+    "location": "Italy",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Need-based cash grant, housing and tuition exemption; 6 million EUR set aside for non-EU students",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor",
+        "master"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "a 6 million euro grant for disadvantaged non-EU international students (with an ISEE of up to half the maximum limit)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "master",
+      "need-based",
+      "italy"
+    ],
+    "sourceUrl": "https://www.edisu.piemonte.it/en/international-students",
+    "lastChecked": "2026-11-08",
+    "note": "For students at universities in Turin and Piedmont (e.g. PoliTo, UniTo); last call ran from 22 July to 4 September, and consular income documents are required."
+  },
+  {
+    "id": "laziodisco",
+    "type": "scholarship",
+    "title": "Lazio DiSCo Right to Study Scholarship",
+    "provider": "DiSCo Lazio",
+    "mode": "onsite",
+    "location": "Italy",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Need-based cash grant, housing and meals for students in Rome and Lazio",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor",
+        "master"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "at least 20% of the accommodation places assigned to first-year students go to non-EU international students",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "master",
+      "need-based",
+      "italy"
+    ],
+    "sourceUrl": "https://laziodisco.it/wp-content/uploads/2026/07/BANDO-DIRITTO-ALLO-STUDIO-ENG-26-27.pdf",
+    "lastChecked": "2026-11-08",
+    "note": "For students at universities in Rome (e.g. Sapienza, Tor Vergata); the call usually opens in June with a first deadline in July, so prepare your income documents early."
+  },
+  {
+    "id": "ubc-international-scholars",
+    "type": "scholarship",
+    "title": "UBC International Scholars Program",
+    "provider": "University of British Columbia",
+    "mode": "onsite",
+    "location": "Canada",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Need-and-merit awards up to the full cost of the programme and living expenses",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "Canada"
+        ],
+        "regions": [],
+        "evidence": "High academic achievers with significant financial need (international students entering UBC directly from secondary school)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-25",
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "need-based",
+      "full-scholarship",
+      "canada"
+    ],
+    "sourceUrl": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+    "lastChecked": "2026-11-08",
+    "note": "Deadline extended to 25 November 2026 (12:00 Pacific) for both the UBC and award applications; you need a school nominator and a separate teacher referee."
+  },
+  {
+    "id": "uoft-pearson",
+    "type": "scholarship",
+    "title": "Lester B. Pearson International Scholarship",
+    "provider": "University of Toronto",
+    "mode": "onsite",
+    "location": "Canada",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Tuition, books, incidental fees and full residence for four years",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [
+          "Canada"
+        ],
+        "regions": [],
+        "evidence": "an international student (i.e. a non-Canadian requiring a study permit)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2028/2029",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "full-scholarship",
+      "canada"
+    ],
+    "sourceUrl": "https://future.utoronto.ca/pearson/about/",
+    "lastChecked": "2026-11-08",
+    "note": "Your school must nominate you (one student per school); the 2027 round closed on 6 November 2026, so pupils now in the second-to-last year should prepare for the nomination around early October 2027."
+  },
+  {
+    "id": "slovenia-western-balkans-master",
+    "type": "scholarship",
+    "title": "Slovenian Scholarships for Western Balkan Citizens (Master's)",
+    "provider": "Public Scholarship, Development, Disability and Maintenance Fund of Slovenia",
+    "mode": "onsite",
+    "location": "Slovenia",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "9,600 EUR per year for living costs",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "bachelor",
+        "graduate"
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Bosnia and Herzegovina",
+          "Montenegro",
+          "Kosovo",
+          "North Macedonia",
+          "Serbia"
+        ],
+        "regions": [
+          "Western Balkans"
+        ],
+        "evidence": "citizens of Bosnia and Herzegovina, Montenegro, Kosovo, North Macedonia and Serbia",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "master",
+      "western-balkans"
+    ],
+    "sourceUrl": "https://www.srips-rs.si/vsi-razpisi/razpis/javni-razpis-za-dodelitev-stipendij-tujim-drzavljanom-za-studij-v-sloveniji-za-leto-2026-380-javni-razpis",
+    "lastChecked": "2026-11-08",
+    "note": "Albania is not on the list; the last call (No. 380) closed on 2 September 2026, so expect the next one in summer 2027 for a Slovenian master's place."
+  },
+  {
+    "id": "kosovo-bachelor-abroad",
+    "type": "scholarship",
+    "title": "Kosovo Ministry Scholarship for Bachelor Studies Abroad",
+    "provider": "Ministry of Education, Science, Technology and Innovation of Kosovo (MESTI)",
+    "mode": "onsite",
+    "location": "Abroad (top 100 universities)",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Up to 5,000 EUR per student per year",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor"
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Kosovo"
+        ],
+        "regions": [],
+        "evidence": "Aplikuesit duhet të jenë shtetas të Republikës së Kosovës (only for studies at THE top 100 universities)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026/2027",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "government",
+      "need-based"
+    ],
+    "sourceUrl": "https://masht.rks-gov.net/wp-content/uploads/2025/10/Konkursi-per-Bursat-Bachelor-jashte-vendit-2025.pdf",
+    "lastChecked": "2026-11-08",
+    "note": "Only for full-time, on-campus bachelor students at a Times Higher Education top 100 university; apply via e-Kosova, and lower-income students get priority. The 2025 call came out in autumn, so watch for the 2026 call."
+  },
+  {
+    "id": "hku-entrance",
+    "type": "scholarship",
+    "title": "HKU Entrance Scholarships for Non-local Students",
+    "provider": "The University of Hong Kong",
+    "mode": "onsite",
+    "location": "Hong Kong",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Merit awards up to full tuition plus accommodation and a living allowance",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "not stated",
+        "countries": [],
+        "regions": [],
+        "evidence": "All applicants will be considered for entrance scholarships. Separate application is not required.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": "2026-11-25",
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "merit",
+      "full-scholarship"
+    ],
+    "sourceUrl": "https://admissions.hku.hk/sites/default/files/2026-09/HKU_General_Information_NJ_2027.pdf",
+    "lastChecked": "2026-11-08",
+    "note": "Apply through the non-JUPAS route by the first-round deadline of 25 November 2026 (noon HK time) for the best scholarship chances; later applications run until 25 August 2027 on a rolling basis."
+  },
+  {
+    "id": "harvard-college-aid",
+    "type": "scholarship",
+    "title": "Harvard College Need-Based Financial Aid",
+    "provider": "Harvard College",
+    "mode": "onsite",
+    "location": "United States",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Meets 100% of demonstrated need with grants (no loans), up to the full cost",
+    "travelPaid": null,
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school"
+      ],
+      "nationality": {
+        "rule": "all",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [],
+        "evidence": "Our financial aid policies are the same for all applicants, regardless of nationality or citizenship.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "need-based",
+      "full-scholarship",
+      "usa"
+    ],
+    "sourceUrl": "https://college.harvard.edu/admissions/apply/international-applicants",
+    "lastChecked": "2026-11-08",
+    "note": "Admission is need-blind for international students too; Regular Decision is usually due 1 January, and you file the CSS Profile with the application (check exact dates on the Harvard page)."
+  },
+  {
+    "id": "kosovo-master-abroad",
+    "type": "scholarship",
+    "title": "Kosovo Ministry Scholarship for Master Studies Abroad",
+    "provider": "Ministry of Education, Science, Technology and Innovation of Kosovo (MESTI)",
+    "mode": "onsite",
+    "location": "Abroad (top 200 universities)",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Up to 7,000 EUR per student",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "bachelor",
+        "graduate"
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Kosovo"
+        ],
+        "regions": [],
+        "evidence": "Aplikuesit duhet të jenë shtetas të Republikës së Kosovës (master at THE top 200 universities)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2026/2027",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "master",
+      "government",
+      "need-based"
+    ],
+    "sourceUrl": "https://masht.rks-gov.net/wp-content/uploads/2025/10/Konkursi-per-Bursat-Master-jashte-vendit-2025.pdf",
+    "lastChecked": "2026-11-08",
+    "note": "For on-campus master students at a Times Higher Education top 200 university; apply via e-Kosova, and lower-income students get priority. The 2025 call came out in autumn, so watch for the 2026 call."
+  },
+  {
+    "id": "azerbaijan-heydar-aliyev-grant",
+    "type": "scholarship",
+    "title": "Heydar Aliyev International Education Grant (Azerbaijan)",
+    "provider": "Ministry of Science and Education of Azerbaijan",
+    "mode": "onsite",
+    "location": "Azerbaijan",
+    "costType": "free",
+    "price": null,
+    "discountNote": "Tuition, accommodation, meals/allowance, health insurance and a return flight",
+    "travelPaid": "full",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": 35,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "school",
+        "bachelor",
+        "graduate"
+      ],
+      "nationality": {
+        "rule": "only",
+        "basis": "nationality",
+        "countries": [
+          "Albania"
+        ],
+        "regions": [
+          "OIC member states"
+        ],
+        "evidence": "Programit të granteve studimore për shtetasit e vendeve anëtare të Organizatës për Bashkim Islamik (OBI)",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "bachelor",
+      "master",
+      "full-scholarship",
+      "government"
+    ],
+    "sourceUrl": "https://studyinazerbaijan.edu.az/financial-support",
+    "lastChecked": "2026-11-08",
+    "note": "Albanians apply through the Albanian Ministry of Education (last round 16 Feb to 15 Apr 2026); max age 35 for bachelor, so expect the next call in spring 2027."
+  },
+  {
+    "id": "lund-global-scholarship",
+    "type": "scholarship",
+    "title": "Lund University Global Scholarship",
+    "provider": "Lund University",
+    "mode": "onsite",
+    "location": "Sweden",
+    "costType": "discount",
+    "price": null,
+    "discountNote": "Part or all of the tuition fee (no living costs)",
+    "travelPaid": "none",
+    "certificateIncluded": null,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": true,
+      "levels": [
+        "bachelor",
+        "graduate"
+      ],
+      "nationality": {
+        "rule": "except",
+        "basis": "nationality",
+        "countries": [],
+        "regions": [
+          "EU",
+          "EEA",
+          "Switzerland"
+        ],
+        "evidence": "You must be a citizen of a country from outside the EU/EEA (and Switzerland) and be required to pay tuition fees.",
+        "checked": "2026-11-08"
+      }
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "2027/2028",
+    "resultsDate": null,
+    "tags": [
+      "study-abroad",
+      "master",
+      "merit",
+      "sweden"
+    ],
+    "sourceUrl": "https://www.lunduniversity.lu.se/study/admission-degree-studies/scholarships-and-awards/lund-university-global-scholarship",
+    "lastChecked": "2026-11-08",
+    "note": "Mainly for master's programmes (bachelor only in a few subjects); first apply to the programme by 15 January 2027, then the scholarship form usually opens in early February."
   }
 ]

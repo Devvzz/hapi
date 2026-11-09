@@ -15,11 +15,11 @@ Then I saw that most young people around me had the same problem. They didn't kn
 
 ## What it does
 
-- **Opportunities feed:** 191 checked opportunities, free and paid, each with its source link, dates and price. Unknown dates show "TBA".
+- **Opportunities feed:** 210 checked opportunities, free and paid, each with its source link, dates and price. Unknown dates show "TBA".
 - **Profile first:** nationality with spelling help, 13 education stages from middle school and HTL to PhD and working, languages, and two budgets. Then the student chooses universities or opportunities.
 - **Matching:** code applies the hard rules first (age, nationality, who can apply, budget), so what the student can really apply to comes first. Then Gemini writes a short "why this fits you" line from those facts only.
 - **Find more with AI:** Gemini with Google Search suggests more, always tied to a source and marked "unverified".
-- **Universities:** 555 bachelor programmes, mostly in Austria, Germany and Italy, grouped by university, each with the fee this student would pay (EU or non-EU, Austrian school abroad, income-based in Italy), checked against language level and budget.
+- **Universities:** 596 bachelor programmes at 142 universities in 35 countries, mostly in Austria, Germany and Italy, grouped by university, each with the fee this student would pay (EU or non-EU, Austrian school abroad, income-based in Italy), checked against language level and budget.
 - **Scholarships:** a view per country with scholarships the student can apply to, plus each university's scholarship notes.
 - **Real total cost:** an editable AG Grid plan with totals and a sponsored progress bar.
 - **Family sponsorship with PayPal:** the student asks in their own words, Gemini drafts the invoice, and an approval card shows exactly what will be sent. Only the Approve button sends it through the PayPal Agent Toolkit. The status (sent, paid) updates in the plan.
@@ -51,7 +51,7 @@ Rules come first and AI second: code decides eligibility, deadlines and prices, 
 
 I built this solo: no team, no investors. In a few days it went from a tool for me to an app any student can use:
 
-- 191 checked opportunities and 555 bachelor programmes, every one with a source link
+- 210 checked opportunities and 596 bachelor programmes, every one with a source link
 - eligibility and real-cost planning in one place
 - family sponsorship through PayPal invoices that the student approves first
 - a PayPal subscription that unlocks a weekly coach
