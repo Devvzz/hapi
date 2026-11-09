@@ -4,10 +4,10 @@ import { useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { GlyphField } from "./glyph-field";
-import { MagicBook } from "./magic-book";
+import { AbroadDoor } from "./abroad-door";
 
-// Where the book sits on the welcome screen, so the floating characters stream into it.
-const BOOK_POINT = { x: 0.5, y: 0.22 };
+// Where the doorway sits on the welcome screen, so the floating characters stream into it.
+const BOOK_POINT = { x: 0.5, y: 0.2 };
 import { DEMO_KEY } from "@/lib/demo";
 import { useStored } from "@/lib/storage";
 import { useUser, type HapiUser } from "@/lib/user";
@@ -72,7 +72,7 @@ export function Welcome() {
       <div className="relative z-10 flex h-full items-center justify-center px-5">
         <div className="w-full max-w-md text-center">
           <div className="welcome-in mx-auto mb-2 flex justify-center">
-            <MagicBook size={220} />
+            <AbroadDoor size={230} />
           </div>
 
           {step === "name" ? (

@@ -1,7 +1,7 @@
 import { BoardingPasses } from "@/components/boarding-passes";
 import { DepartureBoard } from "@/components/departure-board";
 import { HomeStart } from "@/components/home-start";
-import { MagicBook } from "@/components/magic-book";
+import { AbroadDoor } from "@/components/abroad-door";
 import { Reminders } from "@/components/reminders";
 import { Survey } from "@/components/survey";
 import { WhatsChanged } from "@/components/whats-changed";
@@ -49,7 +49,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-center md:justify-end">
-          <MagicBook size={380} className="max-w-full scale-[0.85] sm:scale-100" />
+          <AbroadDoor size={420} />
         </div>
       </section>
 
