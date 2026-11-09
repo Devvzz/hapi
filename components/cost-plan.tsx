@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AgGridReact } from "ag-grid-react";
-import { AllCommunityModule, ModuleRegistry, colorSchemeDark, themeQuartz, type CellValueChangedEvent, type ColDef, type ICellRendererParams } from "ag-grid-community";
+import { AllCommunityModule, ModuleRegistry, themeQuartz, type CellValueChangedEvent, type ColDef, type ICellRendererParams } from "ag-grid-community";
 import { opportunities } from "@/lib/data";
 import { formatDate } from "@/lib/dates";
 import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
@@ -12,16 +12,19 @@ import { SponsorPanel } from "./sponsor-panel";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
-// Dark grid that matches the Hapi theme
-const gridTheme = themeQuartz.withPart(colorSchemeDark).withParams({
-  backgroundColor: "#0c0919",
-  foregroundColor: "#ece9ff",
-  headerBackgroundColor: "#16112b",
-  accentColor: "#8b5cf6",
-  borderColor: "#2a2547",
-  rowHoverColor: "#1c1638",
-  oddRowBackgroundColor: "#0f0b20",
+// Light grid in the Hapi colours: paper header, navy text, blue accent
+const gridTheme = themeQuartz.withParams({
+  backgroundColor: "#ffffff",
+  foregroundColor: "#0e1b2e",
+  headerBackgroundColor: "#f7f5f0",
+  headerTextColor: "#4a5161",
+  accentColor: "#1f5eff",
+  borderColor: "#e4e0d7",
+  rowHoverColor: "#f2f5ff",
+  oddRowBackgroundColor: "#fbfaf7",
+  wrapperBorderRadius: 16,
   fontFamily: "inherit",
+  fontSize: 14,
 });
 
 type GridRow = PlanRow & { isTotal?: boolean };
@@ -52,17 +55,31 @@ export function CostPlan() {
     () => [
       { field: "item", headerName: "Item", flex: 2, editable: (p) => !p.data?.isTotal },
       { field: "amount", headerName: "Amount", flex: 1, editable: (p) => !p.data?.isTotal, cellDataType: "number", valueFormatter: (p) => (p.value == null ? "" : Number(p.value).toLocaleString("en-GB", { minimumFractionDigits: 2 })) },
-      { field: "currency", headerName: "Cur.", width: 80, editable: (p) => !p.data?.isTotal },
+      { field: "currency", headerName: "Cur.", width: 76, editable: (p) => !p.data?.isTotal },
       { field: "dueDate", headerName: "Due", flex: 1, editable: (p) => !p.data?.isTotal, valueFormatter: (p) => (p.data?.isTotal ? "" : formatDate(p.value ?? null)) },
       { field: "sponsor", headerName: "Sponsor", flex: 1, editable: (p) => !p.data?.isTotal },
-      { field: "status", headerName: "Status", width: 110, valueFormatter: (p) => (p.data?.isTotal ? "" : p.value) },
       {
-        headerName: "",
-        width: 90,
+        field: "status",
+        headerName: "Status",
+        width: 120,
+        cellRenderer: (p: ICellRendererParams<GridRow>) =>
+          p.data && !p.data.isTotal ? (
+            <button
+              onClick={() => toggleStatus(p.data!.id)}
+              title="Click to switch between paid and unpaid"
+              className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${p.data.status === "paid" ? "bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200" : "bg-amber-50 text-amber-800 ring-1 ring-amber-200"}`}
+            >
+              {p.data.status === "paid" ? "Paid" : "Unpaid"}
+            </button>
+          ) : null,
+      },
+      {
+        headerName: "Edit",
+        width: 92,
         sortable: false,
         cellRenderer: (p: ICellRendererParams<GridRow>) =>
           p.data && !p.data.isTotal ? (
-            <button className="text-xs text-rose-700" onClick={() => removeRow(p.data!.id)}>Remove</button>
+            <button className="rounded-full px-2 py-0.5 text-xs font-medium text-rose-700 hover:bg-rose-50" onClick={() => removeRow(p.data!.id)}>Remove</button>
           ) : null,
       },
     ],
@@ -70,6 +87,10 @@ export function CostPlan() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
   );
+
+  function toggleStatus(id: string) {
+    setPlan((rows) => rows.map((r) => (r.id === id ? { ...r, status: r.status === "paid" ? "unpaid" : "paid" } : r)));
+  }
 
   function removeRow(id: string) {
     setPlan((rows) => rows.filter((r) => r.id !== id));
@@ -99,17 +120,19 @@ export function CostPlan() {
         {totals.map(([currency, t]) => (
           <div key={currency} className="space-y-1">
             <div className="flex justify-between text-sm">
-              <span>Sponsored and paid ({currency})</span>
+              <span className="font-medium text-slate-700">Sponsored and paid ({currency})</span>
               <span>{t.paid.toLocaleString("en-GB")} of {t.total.toLocaleString("en-GB")}</span>
             </div>
-            <div className="h-2 rounded bg-slate-200">
-              <div className="h-2 rounded bg-teal-600" style={{ width: `${t.total ? Math.round((t.paid / t.total) * 100) : 0}%` }} />
+            <div className="h-2 overflow-hidden rounded-full bg-slate-200">
+              <div className="h-2 rounded-full bg-teal-600 transition-all" style={{ width: `${t.total ? Math.round((t.paid / t.total) * 100) : 0}%` }} />
             </div>
           </div>
         ))}
-        <div className="h-96 w-full">
+        <div className="w-full">
           <AgGridReact<GridRow>
             theme={gridTheme}
+            domLayout="autoHeight"
+            defaultColDef={{ minWidth: 72, resizable: false }}
             rowData={plan}
             columnDefs={columns}
             pinnedBottomRowData={pinned}
@@ -119,9 +142,9 @@ export function CostPlan() {
           />
         </div>
         <div className="flex flex-wrap gap-2 text-sm">
-          <input className="flex-1 rounded border border-slate-300 px-2 py-1" placeholder="Own cost, e.g. visa fee" value={newItem} onChange={(e) => setNewItem(e.target.value)} />
-          <input className="w-32 rounded border border-slate-300 px-2 py-1" type="number" min={0} placeholder="EUR" value={newAmount} onChange={(e) => setNewAmount(e.target.value)} />
-          <button onClick={addRow} className="rounded bg-violet-600 px-3 py-1 text-white">Add cost</button>
+          <input aria-label="Own cost" className="min-w-0 flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2" placeholder="Own cost, e.g. visa fee" value={newItem} onChange={(e) => setNewItem(e.target.value)} />
+          <input aria-label="Amount in euro" className="w-32 rounded-xl border border-slate-300 bg-white px-3 py-2" type="number" min={0} placeholder="EUR" value={newAmount} onChange={(e) => setNewAmount(e.target.value)} />
+          <button onClick={addRow} className="rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800">Add cost</button>
         </div>
       </section>
 
