@@ -12,6 +12,17 @@ const CITY: [number, number, number][] = [
   [207, 10, 28], [216, 15, 46], [230, 9, 36], [238, 13, 58], [250, 11, 30], [260, 14, 42],
 ];
 
+// Birds far away over the city: [x, y, size].
+const BIRDS: [number, number, number][] = [
+  [158, 168, 1],
+  [176, 158, 0.8],
+  [146, 154, 0.65],
+];
+
+// One bird with its wings out, as a small filled shape.
+const bird = (x: number, y: number, k: number) =>
+  `M${x - 8 * k} ${y - 1 * k} Q${x - 4 * k} ${y - 5 * k} ${x} ${y + 1 * k} Q${x + 4 * k} ${y - 5 * k} ${x + 8 * k} ${y - 1 * k} Q${x + 4 * k} ${y - 2 * k} ${x} ${y + 3 * k} Q${x - 4 * k} ${y - 2 * k} ${x - 8 * k} ${y - 1 * k} Z`;
+
 // Lit windows in the buildings: [x, y]. Some of them blink.
 const WINDOWS: [number, number][] = [
   [144, 222], [144, 230], [168, 208], [168, 216], [168, 226], [176, 228], [219, 214], [223, 224], [241, 202], [241, 212], [245, 222], [263, 218], [267, 228],
@@ -88,10 +99,10 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
             <ellipse cx="248" cy="150" rx="22" ry="5" />
             <ellipse cx="262" cy="145" rx="12" ry="5" />
           </g>
-          <g className="ad-birds" fill="none" stroke="#1e2f4d" strokeWidth="1.6" strokeLinecap="round">
-            <path className="ad-bird" d="M160 170 q4 -4 8 0 q4 -4 8 0" />
-            <path className="ad-bird" d="M178 160 q3 -3 6 0 q3 -3 6 0" style={{ animationDelay: "0.3s" }} />
-            <path className="ad-bird" d="M150 158 q2.5 -2.5 5 0 q2.5 -2.5 5 0" style={{ animationDelay: "0.6s" }} />
+          <g className="ad-birds" fill="#1e2f4d">
+            {BIRDS.map(([x, y, k], i) => (
+              <path key={i} className="ad-bird" style={{ animationDelay: `${i * 0.23}s` }} d={bird(x, y, k)} />
+            ))}
           </g>
           {/* hills and the city on the horizon */}
           <path d="M120 250 Q150 222 182 244 Q205 228 232 242 Q258 226 280 246 V380 H120 Z" fill="#6f95f0" opacity="0.45" />
@@ -136,10 +147,11 @@ export function AbroadDoor({ size = 380, className = "" }: { size?: number; clas
           {/* legs: the front foot is further away, so it sits a little higher */}
           <path d="M184 292 L199 294 L197.5 330 L196 359 L187 359 L185.5 330 Z" fill="#2c4470" />
           <path d="M201 294 L216 292 L215.5 330 L214.5 366 L205 366 L203 330 Z" fill="#33507f" />
-          {/* sneakers */}
-          <path d="M185 358 h12.5 q2 0 2 2.5 v1.5 q0 2 -2 2 h-12.5 q-2.5 0 -2.5 -3 q0 -3 2.5 -3 z" fill="#f4f1ea" stroke="#0e1b2e" strokeWidth="1" />
-          <path d="M203.5 365 h12.5 q2.5 0 2.5 3 v2 q0 2.5 -2.5 2.5 h-12.5 q-2.5 0 -2.5 -2.5 v-2 q0 -3 2.5 -3 z" fill="#f4f1ea" stroke="#0e1b2e" strokeWidth="1" />
-          <path d="M202 371 h16" stroke="#cfcac0" strokeWidth="1.6" />
+          {/* sneakers, seen from the heel */}
+          <path d="M186.5 355 h10 q2 0 2 2 v3 q0 4.5 -5 4.5 h-4 q-5 0 -5 -4.5 v-3 q0 -2 2 -2 z" fill="#f4f1ea" stroke="#0e1b2e" strokeWidth="1" />
+          <path d="M185.6 361.5 q5.9 2.5 11.8 0" fill="none" stroke="#ff6b3d" strokeWidth="1.4" />
+          <path d="M205 362 h10 q2.2 0 2.2 2 v3.5 q0 4.5 -5 4.5 h-4.4 q-5 0 -5 -4.5 v-3.5 q0 -2 2.2 -2 z" fill="#f4f1ea" stroke="#0e1b2e" strokeWidth="1" />
+          <path d="M203.9 369 q6.2 2.5 12.4 0" fill="none" stroke="#ff6b3d" strokeWidth="1.4" />
 
           {/* jacket */}
           <path d="M182 232 Q200 224 218 232 Q223 236 222 252 L218.5 297 Q200 300 181.5 297 L178 252 Q177 236 182 232 Z" fill="#1d2b45" stroke="#ffd9a8" strokeOpacity="0.6" strokeWidth="1" />

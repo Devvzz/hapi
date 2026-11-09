@@ -485,13 +485,13 @@ input[type="checkbox"] {
     transform: scaleY(1);
   }
   50% {
-    transform: scaleY(-0.6);
+    transform: scaleY(0.35);
   }
 }
 .ad-bird {
   transform-box: fill-box;
   transform-origin: center;
-  animation: ad-flap 0.6s ease-in-out infinite;
+  animation: ad-flap 0.9s ease-in-out infinite;
 }
 @keyframes ad-blink {
   0%,
