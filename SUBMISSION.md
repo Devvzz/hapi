@@ -30,6 +30,7 @@ Then I saw that most young people around me had the same problem. They didn't kn
 - **Reminders:** a "Coming up" list for the next two weeks, optional browser notifications, and reminders in the calendar export.
 - **WhatsApp for sponsors:** share the PayPal payment link with a family member in one tap.
 - **Hapi in numbers (/stats):** live statistics about the data, the users (counted anonymously, by country), usage, the weekly AI job, the money side and a one-question survey.
+- **Accessibility:** checked with axe (WCAG 2.1 AA) on 10 pages, no violations after the fixes; animations stop when the device asks for reduced motion.
 - **Calendar (Premium):** every saved deadline, starred programme and payment in one month view, plus the steps of the step-by-step plan, exported to the phone with reminders two weeks, three days and one day before.
 - **Europass CV (Premium):** a CV in the structure of the EU's Europass CV, with EQF levels and the CEFR language grid. AI polishes the student's own words without adding facts. Print or save as PDF.
 - **What changed this week:** a Saturday Vercel Cron job re-reads official pages and reports changed dates, closed rounds and new editions.
