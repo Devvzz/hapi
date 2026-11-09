@@ -21,6 +21,14 @@ export const metadata: Metadata = {
   description: "Built by a student, for students. Find opportunities you can really apply to, check universities, plan the real cost and let family sponsor it with PayPal.",
 };
 
+const FOOTER_LINKS = [
+  { href: "/about", label: "About Hapi" },
+  { href: "/stats", label: "Hapi in numbers" },
+  { href: "/premium", label: "Premium" },
+];
+
+const FOOTER_NOTES = ["Every fact links to its official source", "“Check yourself” means not confirmed yet", "PayPal runs in sandbox mode, no real money moves"];
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} h-full antialiased`}>
@@ -33,24 +41,34 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Welcome />
         <Nav />
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 print:max-w-none print:p-0">{children}</main>
-        <footer className="mt-10 border-t border-slate-200 print:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 pb-24 pt-6 text-xs sm:pr-24 sm:pb-6 text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-            <span className="flex items-center gap-2 text-slate-600">
-              <HapiMark size={18} />
-              <span>
-                <span className="font-display font-semibold text-slate-800">Built by a student, for students.</span> Discover. Apply. Grow.
-              </span>
-            </span>
-            <span>
-              <Link href="/about" className="text-violet-300 underline underline-offset-2 hover:text-teal-800">
-                About Hapi
-              </Link>{" "}
-              ·{" "}
-              <Link href="/stats" className="text-violet-300 underline underline-offset-2 hover:text-teal-800">
-                Hapi in numbers
-              </Link>{" "}
-              · Checked data with source links · &quot;check yourself&quot; means not confirmed · PayPal in sandbox mode, no real money moves
-            </span>
+        <footer className="mt-16 border-t border-slate-200 bg-white/60 print:hidden">
+          <div className="mx-auto max-w-6xl px-4 pb-24 pt-8 sm:pb-8 sm:pr-24">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-3">
+                <HapiMark size={28} />
+                <div>
+                  <p className="font-display text-sm font-bold text-slate-900">Built by a student, for students.</p>
+                  <p className="text-xs text-slate-500">
+                    Discover<span className="text-teal-700">.</span> Apply<span className="text-teal-700">.</span> Grow<span className="text-[#dc4a14]">.</span>
+                  </p>
+                </div>
+              </div>
+              <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
+                {FOOTER_LINKS.map((l) => (
+                  <Link key={l.href} href={l.href} className="text-slate-700 hover:text-teal-800">
+                    {l.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+            <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 pt-4 text-xs text-slate-500">
+              {FOOTER_NOTES.map((n) => (
+                <li key={n} className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-slate-400" aria-hidden="true" />
+                  {n}
+                </li>
+              ))}
+            </ul>
           </div>
         </footer>
         <ChatWidget />
