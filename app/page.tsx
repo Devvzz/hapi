@@ -1,6 +1,7 @@
 import { BoardingPasses } from "@/components/boarding-passes";
 import { DepartureBoard } from "@/components/departure-board";
 import { HomeStart } from "@/components/home-start";
+import { MagicBook } from "@/components/magic-book";
 import { Reminders } from "@/components/reminders";
 import { Survey } from "@/components/survey";
 import { WhatsChanged } from "@/components/whats-changed";
@@ -48,7 +49,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-center md:justify-end">
-          <BoardingPasses />
+          <MagicBook size={380} className="max-w-full scale-[0.85] sm:scale-100" />
         </div>
       </section>
 
@@ -56,6 +57,17 @@ export default function Home() {
       <Survey />
 
       <DepartureBoard rows={rows} />
+
+      <section className="grid items-center gap-8 md:grid-cols-[1fr_1.1fr]">
+        <div className="space-y-2">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">Next real deadlines</p>
+          <h2 className="text-3xl font-extrabold">Your ticket out</h2>
+          <p className="text-slate-600">The closest deadlines in Hapi, as boarding passes. They shuffle on their own; tap one to open it.</p>
+        </div>
+        <div className="flex justify-center md:justify-end">
+          <BoardingPasses />
+        </div>
+      </section>
 
       <HomeStart />
       <WhatsChanged />

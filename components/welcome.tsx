@@ -3,8 +3,11 @@
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { HapiMark } from "./logo";
-import { Starfield } from "./starfield";
+import { GlyphField } from "./glyph-field";
+import { MagicBook } from "./magic-book";
+
+// Where the book sits on the welcome screen, so the floating characters stream into it.
+const BOOK_POINT = { x: 0.5, y: 0.22 };
 import { DEMO_KEY } from "@/lib/demo";
 import { useStored } from "@/lib/storage";
 import { useUser, type HapiUser } from "@/lib/user";
@@ -64,12 +67,12 @@ export function Welcome() {
     <div className={`fixed inset-0 z-[100] overflow-hidden bg-[#05040b] transition-opacity duration-500 ${leaving ? "opacity-0" : "opacity-100"}`}>
       <div className="welcome-orb left-[-10%] top-[-15%] h-[55vmax] w-[55vmax] bg-violet-600/30" />
       <div className="welcome-orb welcome-orb-2 bottom-[-20%] right-[-10%] h-[50vmax] w-[50vmax] bg-cyan-500/20" />
-      <Starfield />
+      <GlyphField density={20000} target={BOOK_POINT} />
 
       <div className="relative z-10 flex h-full items-center justify-center px-5">
         <div className="w-full max-w-md text-center">
-          <div className="welcome-in mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-3xl border border-violet-400/40 bg-[#0b0818cc] shadow-[0_0_60px_-8px_rgba(139,92,246,0.9)]">
-            <HapiMark size={64} />
+          <div className="welcome-in mx-auto mb-2 flex justify-center">
+            <MagicBook size={220} />
           </div>
 
           {step === "name" ? (
