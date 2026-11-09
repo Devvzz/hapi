@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { track } from "@/lib/track";
 import Link from "next/link";
 import { opportunities } from "@/lib/data";
-import { formatDate } from "@/lib/dates";
+import { formatDate, formatEventDates } from "@/lib/dates";
 import { compareMatches, matchOpportunity, type Match, type SortKey } from "@/lib/match";
 import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
 import { useNow, useStored } from "@/lib/storage";
@@ -13,6 +13,8 @@ import { useStats } from "@/lib/social";
 import type { Opportunity, OpportunityType } from "@/lib/types";
 import { FindMore } from "./find-more";
 import { CalendarIcon, HeartIcon, Stars } from "./ui";
+
+const MODE = { online: "Online", onsite: "On site", hybrid: "Hybrid" } as const;
 
 const TYPES: OpportunityType[] = [
   "hackathon", "competition", "certificate", "course", "summer-school", "internship", "job",
@@ -139,17 +141,17 @@ export function OpportunitiesFeed() {
       )}
 
       <div className="grid gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
-        <input className="rounded border border-slate-300 px-2 py-1" placeholder="Search (e.g. AI, Vienna, scholarship)" value={query} onChange={(e) => setQuery(e.target.value)} />
-        <select aria-label="Type of opportunity" className="rounded border border-slate-300 px-2 py-1" value={type} onChange={(e) => setType(e.target.value)}>
+        <input className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" placeholder="Search (e.g. AI, Vienna, scholarship)" value={query} onChange={(e) => setQuery(e.target.value)} />
+        <select aria-label="Type of opportunity" className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={type} onChange={(e) => setType(e.target.value)}>
           <option value="all">All types</option>
           {TYPES.map((t) => <option key={t} value={t}>{t}</option>)}
         </select>
-        <select aria-label="Cost" className="rounded border border-slate-300 px-2 py-1" value={cost} onChange={(e) => setCost(e.target.value as typeof cost)}>
+        <select aria-label="Cost" className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={cost} onChange={(e) => setCost(e.target.value as typeof cost)}>
           <option value="all">Free and paid</option>
           <option value="free">Free only</option>
           <option value="paid">Paid or discounted</option>
         </select>
-        <select aria-label="Sort opportunities" className="rounded border border-slate-300 px-2 py-1" value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)}>
+        <select aria-label="Sort opportunities" className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)}>
           <option value="match">Sort: best match</option>
           <option value="deadline">Sort: deadline soonest</option>
           <option value="cost">Sort: cheapest</option>
@@ -197,14 +199,14 @@ export function OpportunitiesFeed() {
               <dl className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-slate-600">
                 <div><dt className="inline font-medium">Opens: </dt><dd className="inline">{formatDate(o.applyOpens)}</dd></div>
                 <div><dt className="inline font-medium">Deadline: </dt><dd className="inline">{formatDate(o.deadline)}</dd></div>
-                <div><dt className="inline font-medium">Event: </dt><dd className="inline">{o.eventDates ?? "TBA"}</dd></div>
+                <div><dt className="inline font-medium">Event: </dt><dd className="inline">{formatEventDates(o.eventDates)}</dd></div>
                 <div><dt className="inline font-medium">Results: </dt><dd className="inline">{formatDate(o.resultsDate)}</dd></div>
               </dl>
               <div className="flex flex-wrap gap-2 text-xs">
                 <span className="rounded bg-slate-100 px-2 py-0.5">{costLabel(o)}</span>
                 {travel && <span className="rounded bg-slate-100 px-2 py-0.5">{travel}</span>}
                 {o.certificateIncluded && <span className="rounded bg-slate-100 px-2 py-0.5">Certificate</span>}
-                <span className="rounded bg-slate-100 px-2 py-0.5">{o.mode ?? "mode TBA"}{o.location ? ` · ${o.location}` : ""}</span>
+                <span className="rounded bg-slate-100 px-2 py-0.5">{o.mode ? MODE[o.mode] : "Format TBA"}{o.location ? ` · ${o.location}` : ""}</span>
               </div>
               {why[o.id] && <p className="rounded bg-teal-50 p-2 text-sm text-teal-900">{why[o.id]}</p>}
               {m.reasons.length > 0 && <p className="text-xs text-slate-600">{m.reasons.join(" · ")}</p>}
@@ -239,7 +241,7 @@ export function OpportunitiesFeed() {
         })}
       </ul>
       {ranked.length > limit && (
-        <button onClick={() => setLimit(limit + 30)} className="rounded border border-slate-300 bg-panel px-4 py-2 text-sm">
+        <button onClick={() => setLimit(limit + 30)} className="rounded-lg border border-slate-300 bg-panel px-4 py-2 text-sm">
           Show more
         </button>
       )}

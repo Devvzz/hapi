@@ -4,7 +4,7 @@ import { capitalizeName } from "@/lib/user";
 import { track } from "@/lib/track";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { formatDate } from "@/lib/dates";
+import { formatDate, formatEventDates } from "@/lib/dates";
 import { GROUP_LABEL } from "@/lib/education";
 import { matchOpportunity } from "@/lib/match";
 import { EMPTY_SAVED, STORAGE } from "@/lib/profile";
@@ -14,6 +14,9 @@ import { useProfile } from "@/lib/use-profile";
 import type { Opportunity } from "@/lib/types";
 import { useAccount } from "./account-provider";
 import { CalendarIcon, ChatIcon, ExternalIcon, HeartIcon, PageHero, SignInPrompt, StarPicker, Stars } from "./ui";
+
+const MODE = { online: "Online", onsite: "On site", hybrid: "Hybrid" } as const;
+const sentence = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 const VERDICT = { fits: ["You can apply", "border-emerald-400/50 bg-emerald-500/10 text-emerald-800"], check: ["Check first", "border-amber-300/50 bg-amber-500/10 text-amber-800"], "not-eligible": ["Not open to you", "border-rose-400/50 bg-rose-500/10 text-rose-800"] } as const;
 
@@ -91,12 +94,12 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
   const facts: [string, string][] = [
     ["Applications open", formatDate(o.applyOpens)],
     ["Deadline", formatDate(o.deadline)],
-    ["Event", o.eventDates ?? "TBA"],
+    ["Event", formatEventDates(o.eventDates)],
     ["Results", formatDate(o.resultsDate)],
     ["Cost", cost(o)],
     ["Travel", o.travelPaid === "full" ? "Paid by organiser" : o.travelPaid === "partial" ? "Partly paid" : o.travelPaid === "none" ? "Not covered" : "Check yourself"],
-    ["Format", [o.mode ?? "TBA", o.location].filter(Boolean).join(" · ")],
-    ["Who can apply", o.eligibility.levels ? o.eligibility.levels.map((l) => GROUP_LABEL[l]).join(", ") : "Not limited by education level"],
+    ["Format", [o.mode ? MODE[o.mode] : "TBA", o.location].filter(Boolean).join(" · ")],
+    ["Who can apply", o.eligibility.levels ? sentence(o.eligibility.levels.map((l) => GROUP_LABEL[l]).join(", ")) : "Not limited by education level"],
   ];
 
   return (
