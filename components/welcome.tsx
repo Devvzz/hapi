@@ -3,7 +3,7 @@
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { AbroadDoor } from "./abroad-door";
+import { WelcomePass } from "./welcome-pass";
 
 import { DEMO_KEY } from "@/lib/demo";
 import { useStored } from "@/lib/storage";
@@ -65,10 +65,10 @@ export function Welcome() {
       <div className="welcome-orb left-[-10%] top-[-15%] h-[55vmax] w-[55vmax] bg-[#dde7ff]/70" />
       <div className="welcome-orb welcome-orb-2 bottom-[-20%] right-[-10%] h-[50vmax] w-[50vmax] bg-[#ffd9c9]/60" />
 
-      <div className="relative z-10 flex h-full items-center justify-center px-5">
-        <div className="w-full max-w-md text-center">
-          <div className="welcome-in mx-auto mb-2 flex justify-center">
-            <AbroadDoor size={230} />
+      <div className="relative z-10 flex h-full overflow-y-auto px-5">
+        <div className="m-auto w-full max-w-md py-10 text-center">
+          <div className="welcome-in mb-8">
+            <WelcomePass name={clean} />
           </div>
 
           {step === "name" ? (

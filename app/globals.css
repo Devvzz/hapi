@@ -397,143 +397,48 @@ input[type="checkbox"] {
   height: 100%;
 }
 
-/* Rising characters (used by the doorway scene) */
-@keyframes hapi-rise {
-  0% {
-    transform: translate(0, 0) scale(0.6);
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(var(--drift, 10px), -7em) scale(1.15);
-    opacity: 0;
-  }
-}
-.book-glyph {
-  opacity: 0;
-  text-shadow: none;
-  animation: hapi-rise 6s ease-out infinite;
-}
-.book-glyph:nth-child(2n) {
-  --drift: -18px;
-}
-.book-glyph:nth-child(3n) {
-  --drift: 22px;
-}
-
-/* The doorway scene: a student stepping into a new country at sunrise */
-@keyframes ad-breathe {
-  0%,
-  100% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.7;
-  }
-}
-.ad-breathe,
-.ad-spill {
-  animation: ad-breathe 5s ease-in-out infinite;
-}
-@keyframes ad-sun {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.12);
-  }
-}
-.ad-sun {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: ad-sun 6s ease-in-out infinite;
-}
-@keyframes ad-clouds {
-  0% {
-    transform: translateX(-30px);
-  }
-  100% {
-    transform: translateX(30px);
-  }
-}
-.ad-clouds {
-  animation: ad-clouds 14s ease-in-out infinite alternate;
-}
-@keyframes ad-birds {
-  0% {
-    transform: translate(-60px, 10px);
-    opacity: 0;
-  }
-  10%,
-  80% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(130px, -30px);
-    opacity: 0;
-  }
-}
-.ad-birds {
-  animation: ad-birds 11s linear infinite;
-}
-@keyframes ad-flap {
-  0%,
-  100% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(0.35);
-  }
-}
-.ad-bird {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: ad-flap 0.9s ease-in-out infinite;
-}
-@keyframes ad-blink {
-  0%,
-  45%,
-  100% {
-    opacity: 1;
-  }
-  50%,
-  70% {
-    opacity: 0.15;
-  }
-}
-.ad-window {
-  animation: ad-blink 5s steps(1) infinite;
-}
-@keyframes ad-bob {
+/* Welcome boarding pass: floats gently, and the destination tiles flip in */
+@keyframes wp-float {
   0%,
   100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1.5px);
+    transform: translateY(-6px);
   }
 }
-.ad-walker {
-  animation: ad-bob 2.6s ease-in-out infinite;
+.wp-float {
+  animation: wp-float 5s ease-in-out infinite;
+}
+@keyframes wp-flip {
+  0% {
+    transform: perspective(200px) rotateX(-80deg);
+  }
+  100% {
+    transform: perspective(200px) rotateX(0);
+  }
+}
+.wp-flap {
+  color: #ffd56b !important;
+  background: linear-gradient(#1d2c47 0 50%, #172440 50% 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 2px 0 #08111f;
+  transform-origin: 50% 0;
+  animation: wp-flip 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+.wp-flap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgb(0 0 0 / 0.45);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .book-glyph,
-  .ad-breathe,
-  .ad-spill,
-  .ad-sun,
-  .ad-clouds,
-  .ad-birds,
-  .ad-bird,
-  .ad-window,
-  .ad-walker {
+  .wp-float,
+  .wp-flap {
     animation: none !important;
-  }
-  .book-glyph {
-    opacity: 0.8;
   }
   .pass-card,
   .pass-plane,
