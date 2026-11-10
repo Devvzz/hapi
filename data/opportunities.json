@@ -3013,9 +3013,9 @@
       "english",
       "language-test"
     ],
-    "sourceUrl": "https://britishcouncil.al/en/exam/ielts/dates-fees-locations",
-    "lastChecked": "2026-11-08",
-    "note": "A 2026 aggregator lists EUR 226; the official fee page was not read. Price: check yourself."
+    "sourceUrl": "https://www.britishcouncil.al/en/exam/ielts/dates-fees-locations",
+    "lastChecked": "2026-11-10",
+    "note": "Official fee €235 since 4 Mar 2026 (Academic and General Training). Taken on computer at the British Council test centre in Tirana, with dates through the year; pick one in the British Council booking system. Under 18 needs a parent consent form."
   },
   {
     "id": "toefl-ibt",
@@ -3025,7 +3025,10 @@
     "mode": "online",
     "location": null,
     "costType": "paid",
-    "price": null,
+    "price": {
+      "amount": 260,
+      "currency": "USD"
+    },
     "discountNote": null,
     "travelPaid": "n/a",
     "certificateIncluded": true,
@@ -3044,9 +3047,9 @@
       "english",
       "language-test"
     ],
-    "sourceUrl": "https://www.ets.org/toefl",
-    "lastChecked": "2026-11-06",
-    "note": "Fee varies by country; not read from ETS. Price: check yourself."
+    "sourceUrl": "https://www.ets.org/toefl/test-takers/ibt/register/fees.html",
+    "lastChecked": "2026-11-10",
+    "note": "Fee for Albania US$260 (official ETS fee page). Booking within 7 days of the test costs US$49 extra; rescheduling US$69. Dates are offered through the year at test centres or at home."
   },
   {
     "id": "aws-educate",
@@ -3621,16 +3624,48 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": null,
+    "eventDates": "Paper 2027: 2027-03-06, 2027-05-15, 2027-06-05, 2027-06-11, 2027-11-25, 2027-12-11",
     "resultsDate": null,
     "tags": [
       "english",
       "language-test",
       "c2"
     ],
-    "sourceUrl": "https://www.cambridgeenglish.org/Images/608146-c2-proficiency-information-for-candidates-booklet.pdf",
-    "lastChecked": "2026-11-06",
-    "note": "Paper or computer, same certificate. Accepted by most UK universities. Fee set by each authorised centre. Price: check yourself."
+    "sourceUrl": "https://www.cambridgeenglish.org/Images/743891-examination-dates-2027.pdf",
+    "lastChecked": "2026-11-10",
+    "note": "6 paper-based dates in 2027; the digital exam runs through the year. Accepted by most UK universities. Each authorised centre sets the fee, Speaking date and registration deadline."
+  },
+  {
+    "id": "cambridge-b2-first",
+    "type": "certificate",
+    "title": "Cambridge B2 First",
+    "provider": "Cambridge University Press & Assessment",
+    "mode": "onsite",
+    "location": null,
+    "costType": "paid",
+    "price": null,
+    "discountNote": null,
+    "travelPaid": null,
+    "certificateIncluded": true,
+    "eligibility": {
+      "minAge": null,
+      "maxAge": null,
+      "countries": null,
+      "students": null,
+      "levels": null
+    },
+    "applyOpens": null,
+    "deadline": null,
+    "eventDates": "Paper 2027: 2027-02-27, 2027-03-12, 2027-04-17, 2027-05-15, 2027-05-29, 2027-06-08, 2027-06-19, 2027-07-29, 2027-08-26, 2027-10-09, 2027-11-06, 2027-11-23, 2027-12-11",
+    "resultsDate": null,
+    "tags": [
+      "english",
+      "language-test",
+      "b2"
+    ],
+    "sourceUrl": "https://www.cambridgeenglish.org/Images/743891-examination-dates-2027.pdf",
+    "lastChecked": "2026-11-10",
+    "note": "The B2 level most bachelor programmes ask for. 13 paper-based dates in 2027 (the schools version has more); the digital exam runs through the year. Each authorised centre sets the fee and registration deadline."
   },
   {
     "id": "cambridge-c1",
@@ -3653,16 +3688,16 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": null,
+    "eventDates": "Paper 2027: 2027-01-23, 2027-02-17, 2027-03-06, 2027-03-13, 2027-04-17, 2027-05-08, 2027-05-11, 2027-05-15, 2027-06-05, 2027-06-09, 2027-06-19, 2027-06-26, 2027-07-03, 2027-07-30, 2027-08-27, 2027-09-11, 2027-10-23, 2027-11-13, 2027-11-24, 2027-11-27, 2027-12-04, 2027-12-11",
     "resultsDate": null,
     "tags": [
       "english",
       "language-test",
       "c1"
     ],
-    "sourceUrl": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/advanced/",
-    "lastChecked": "2026-11-06",
-    "note": "Digital or paper. Fee set by each authorised centre. Price: check yourself."
+    "sourceUrl": "https://www.cambridgeenglish.org/Images/743891-examination-dates-2027.pdf",
+    "lastChecked": "2026-11-10",
+    "note": "22 paper-based dates in 2027; the digital exam runs through the year. Each authorised centre picks which dates it offers, sets the Speaking date, the fee and the registration deadline, so book through a centre in Tirana."
   },
   {
     "id": "plida",
@@ -3685,16 +3720,16 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": null,
+    "eventDates": "B2/C1/C2: 2026-11-19; B1: 2026-11-18",
     "resultsDate": null,
     "tags": [
       "italian",
       "language-test",
       "study-in-italy"
     ],
-    "sourceUrl": "https://plida.dante.global/en/plida-exams",
-    "lastChecked": "2026-11-06",
-    "note": "2026 had C1 and C2 sessions in March, June and November. 2027 calendar not yet published. Centres set prices under a central maximum. Price: check yourself."
+    "sourceUrl": "https://cms.plida.dante.global/wp-content/uploads/2025/11/Calendario-esami-PLIDA-2026-per-il-sito-1.pdf",
+    "lastChecked": "2026-11-10",
+    "note": "Next session 19 Nov 2026 (B2, C1, C2); registration at most centres closes weeks before, so it is likely too late now. In 2026 B2 and C1 ran on 18 Mar, 10 Jun and 19 Nov, and C2 on 20 May and 19 Nov. The 2027 calendar is not published yet. Register through a PLIDA centre; each centre sets its own price."
   },
   {
     "id": "cils-2027",
@@ -3787,7 +3822,7 @@
     },
     "applyOpens": null,
     "deadline": null,
-    "eventDates": "Next: 2026-11-12, 2026-12-10, 2027-01-20",
+    "eventDates": "Next: 2026-12-10, 2027-01-20",
     "resultsDate": null,
     "tags": [
       "german",
@@ -3795,8 +3830,8 @@
       "study-in-germany"
     ],
     "sourceUrl": "https://www.testdaf.de/de/teilnehmende/mein-testdaf/testdaf-termine-und-anmeldung/",
-    "lastChecked": "2026-11-06",
-    "note": "Recognised by all German universities, does not expire. Registration closes about 8 days before. Results in about 3 weeks."
+    "lastChecked": "2026-11-10",
+    "note": "Recognised by all German universities, does not expire. Registration for 12 Nov 2026 has closed; 10 Dec 2026 is open at many centres until about 27 Nov. Fees differ by centre (about €155–215). Results in about 3 weeks. 2027 dates beyond January are not published yet."
   },
   {
     "id": "osd-c1",
