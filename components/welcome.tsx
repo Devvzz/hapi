@@ -3,7 +3,8 @@
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { WelcomePass } from "./welcome-pass";
+import { WelcomeAside } from "./welcome-aside";
+import { HapiMark, Wordmark } from "./logo";
 
 import { DEMO_KEY } from "@/lib/demo";
 import { useStored } from "@/lib/storage";
@@ -61,24 +62,26 @@ export function Welcome() {
   }
 
   return (
-    <div className={`fixed inset-0 z-[100] overflow-hidden bg-[#f7f5f0] transition-opacity duration-500 ${leaving ? "opacity-0" : "opacity-100"}`}>
-      <div className="welcome-orb left-[-10%] top-[-15%] h-[55vmax] w-[55vmax] bg-[#dde7ff]/70" />
-      <div className="welcome-orb welcome-orb-2 bottom-[-20%] right-[-10%] h-[50vmax] w-[50vmax] bg-[#ffd9c9]/60" />
+    <div className={`fixed inset-0 z-[100] grid bg-[#f7f5f0] transition-opacity duration-500 md:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] ${leaving ? "opacity-0" : "opacity-100"}`}>
+      <div className="hidden md:block">
+        <WelcomeAside />
+      </div>
 
-      <div className="relative z-10 flex h-full overflow-y-auto px-5">
-        <div className="m-auto w-full max-w-md py-10 text-center">
-          <div className="welcome-in mb-8">
-            <WelcomePass name={clean} />
+      <div className="flex h-full overflow-y-auto px-6">
+        <div className="m-auto w-full max-w-md py-10 text-center md:text-left">
+          <div className="mb-10 flex items-center justify-center gap-2 md:hidden">
+            <HapiMark size={30} />
+            <Wordmark className="text-2xl" />
           </div>
 
           {step === "name" ? (
             <form onSubmit={next} key="name" className="space-y-6">
               <div className="welcome-in space-y-2" style={{ animationDelay: "120ms" }}>
-                <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-300">Built by a student, for students</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-teal-800">Your next step abroad</p>
                 <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
                   Welcome to <span className="text-gradient">hapi</span>
                 </h1>
-                <p className="text-slate-600">Your next step abroad starts here. What should we call you?</p>
+                <p className="text-slate-600">Let&apos;s start with your first name.</p>
               </div>
               <div className="welcome-in space-y-3" style={{ animationDelay: "260ms" }}>
                 <input
@@ -88,7 +91,7 @@ export function Welcome() {
                   placeholder="Your first name"
                   autoComplete="given-name"
                   maxLength={40}
-                  className="w-full rounded-2xl border border-violet-400/40 px-5 py-4 text-center text-lg"
+                  className="w-full rounded-2xl border border-slate-300 bg-white px-5 py-4 text-center text-lg md:text-left"
                 />
                 <button type="submit" disabled={clean.length < 2} className="w-full rounded-2xl bg-teal-700 px-5 py-3.5 font-semibold text-white transition disabled:opacity-40">
                   Continue

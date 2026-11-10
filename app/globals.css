@@ -397,49 +397,7 @@ input[type="checkbox"] {
   height: 100%;
 }
 
-/* Welcome boarding pass: floats gently, and the destination tiles flip in */
-@keyframes wp-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-.wp-float {
-  animation: wp-float 5s ease-in-out infinite;
-}
-@keyframes wp-flip {
-  0% {
-    transform: perspective(200px) rotateX(-80deg);
-  }
-  100% {
-    transform: perspective(200px) rotateX(0);
-  }
-}
-.wp-flap {
-  color: #ffd56b !important;
-  background: linear-gradient(#1d2c47 0 50%, #172440 50% 100%);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 2px 0 #08111f;
-  transform-origin: 50% 0;
-  animation: wp-flip 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
-}
-.wp-flap::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 1px;
-  background: rgb(0 0 0 / 0.45);
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .wp-float,
-  .wp-flap {
-    animation: none !important;
-  }
   .pass-card,
   .pass-plane,
   .stamp,
