@@ -6,7 +6,7 @@ import Link from "next/link";
 import { opportunities } from "@/lib/data";
 import { formatDate, formatEventDates } from "@/lib/dates";
 import { compareMatches, matchOpportunity, type Match, type SortKey } from "@/lib/match";
-import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry } from "@/lib/profile";
+import { EMPTY_LOG, EMPTY_PLAN, EMPTY_SAVED, STORAGE, logEntry, profileIsSet } from "@/lib/profile";
 import { useNow, useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
 import { useStats } from "@/lib/social";
@@ -83,11 +83,14 @@ export function OpportunitiesFeed() {
         return true;
       })
       .sort((a, b) => compareMatches(a, b, sortKey));
+    // Without a profile Hapi cannot say what fits, so everything is shown without labels.
+    if (!profileIsSet(profile)) return { ranked: filtered, hidden: 0 };
     const sure = filtered.filter(({ m }) => m.verdict === "fits");
     return { ranked: showAll ? filtered : sure, hidden: filtered.length - sure.length };
   }, [now, profile, type, cost, sortKey, showAll, travelOnly, certOnly, onlineOnly, soonOnly, hideClosed, query]);
 
   const visible = ranked.slice(0, limit);
+  const known = profileIsSet(profile);
   const profileEmpty = !profile.nationality && profile.age === null && profile.interests.length === 0;
 
   function toggleSaved(o: Opportunity) {
@@ -171,10 +174,17 @@ export function OpportunitiesFeed() {
       </div>
 
       <div className="flex flex-wrap items-center gap-3 text-sm">
-        <span className="text-slate-600">{now ? (showAll ? `${ranked.length} results, including ones to check` : `${ranked.length} you can apply to`) : "Loading…"}</span>
-        <button onClick={explainTop} disabled={whyState === "loading" || visible.length === 0} className="rounded bg-teal-700 px-3 py-1.5 text-white disabled:opacity-50">
+        <span className="text-slate-600">
+          {!now ? "Loading…" : !known ? `${ranked.length} opportunities` : showAll ? `${ranked.length} results, including ones to check` : `${ranked.length} you can apply to`}
+        </span>
+        {!known && (
+          <Link href="/profile" className="font-medium text-teal-700 underline">
+            Add your profile to see which ones you can apply to
+          </Link>
+        )}
+        {known && <button onClick={explainTop} disabled={whyState === "loading" || visible.length === 0} className="rounded bg-teal-700 px-3 py-1.5 text-white disabled:opacity-50">
           {whyState === "loading" ? "Writing…" : "Why do my top matches fit me?"}
-        </button>
+        </button>}
         {whyState === "error" && <span className="text-rose-700">AI is busy. The rule-based reasons below still apply.</span>}
       </div>
 
@@ -194,7 +204,7 @@ export function OpportunitiesFeed() {
                     </Link>
                   </h2>
                 </div>
-                <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs ${VERDICT_STYLE[m.verdict]}`}>{VERDICT_TEXT[m.verdict]}</span>
+                {known && <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs ${VERDICT_STYLE[m.verdict]}`}>{VERDICT_TEXT[m.verdict]}</span>}
               </div>
               <dl className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-slate-600">
                 <div><dt className="inline font-medium">Opens: </dt><dd className="inline">{formatDate(o.applyOpens)}</dd></div>
@@ -209,7 +219,7 @@ export function OpportunitiesFeed() {
                 <span className="rounded bg-slate-100 px-2 py-0.5">{o.mode ? MODE[o.mode] : "Format TBA"}{o.location ? ` · ${o.location}` : ""}</span>
               </div>
               {why[o.id] && <p className="rounded bg-teal-50 p-2 text-sm text-teal-900">{why[o.id]}</p>}
-              {m.reasons.length > 0 && <p className="text-xs text-slate-600">{m.reasons.join(" · ")}</p>}
+              {known && m.reasons.length > 0 && <p className="text-xs text-slate-600">{m.reasons.join(" · ")}</p>}
               {o.discountNote && <p className="text-xs text-slate-600">{o.discountNote}</p>}
               {o.note && <p className="text-xs text-slate-500">{o.note}</p>}
               <div className="mt-auto flex flex-wrap items-center gap-2 pt-2 text-sm">

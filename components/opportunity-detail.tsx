@@ -7,7 +7,7 @@ import Link from "next/link";
 import { formatDate, formatEventDates } from "@/lib/dates";
 import { GROUP_LABEL } from "@/lib/education";
 import { matchOpportunity } from "@/lib/match";
-import { EMPTY_SAVED, STORAGE } from "@/lib/profile";
+import { EMPTY_SAVED, STORAGE, profileIsSet } from "@/lib/profile";
 import { addComment, deleteComment, deleteReview, fetchComments, fetchReviews, myLikes, saveReview, setLike, timeAgo, useStats, type Comment, type Review } from "@/lib/social";
 import { useNow, useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
@@ -74,7 +74,7 @@ export function OpportunityDetail({ o }: { o: Opportunity }) {
     if (uid) void myLikes(uid).then((s) => setLiked(s.has(o.id)));
   }, [uid, o.id]);
 
-  const m = now ? matchOpportunity(o, profile, now) : null;
+  const m = now && profileIsSet(profile) ? matchOpportunity(o, profile, now) : null;
   const inCalendar = saved.includes(o.id);
   const likes = stats?.likes ?? 0;
 
