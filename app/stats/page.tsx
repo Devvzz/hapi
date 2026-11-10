@@ -18,7 +18,6 @@ export default function StatsPage() {
   const universities = new Set(programs.map((p) => p.universityId)).size;
   const countries = new Set(programs.map((p) => p.country)).size;
   const nationalityChecked = opportunities.filter((o) => o.eligibility.nationality).length;
-  const pct = (n: number) => Math.round((n / opportunities.length) * 100);
 
   return (
     <div className="space-y-10">
@@ -34,8 +33,8 @@ export default function StatsPage() {
         <div className="grid gap-3 sm:grid-cols-4">
           {[
             { n: opportunities.length, l: "in the database" },
-            { n: `${free} · ${pct(free)}%`, l: "free to take part" },
-            { n: `${travel} · ${pct(travel)}%`, l: "with travel fully or partly paid" },
+            { n: free, l: "free to take part" },
+            { n: travel, l: "with travel fully or partly paid" },
             { n: nationalityChecked, l: "nationality rules read from the official page" },
           ].map((t) => (
             <div key={t.l} className="rounded-2xl border border-slate-200 bg-panel p-4">

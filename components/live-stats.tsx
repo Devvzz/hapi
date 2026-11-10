@@ -26,7 +26,7 @@ function Bar({ label, n, total, tone = "from-violet-500 to-cyan-400" }: { label:
       <div className="flex justify-between text-sm">
         <span className="text-slate-900">{label}</span>
         <span className="text-slate-600">
-          {pct}% · {n}
+          {n}
         </span>
       </div>
       <div className="h-2 overflow-hidden rounded-full bg-slate-100">
