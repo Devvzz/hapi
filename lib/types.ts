@@ -113,6 +113,8 @@ export type Profile = {
   // Most the student can pay for one opportunity (fees and travel)
   opportunityBudget?: number | null;
   interests: string[];
+  // Study areas picked on the Universities page, see lib/fields.ts
+  studyFields?: string[];
 };
 
 export type PlanRow = {

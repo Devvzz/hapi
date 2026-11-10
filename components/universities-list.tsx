@@ -1,12 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { costs, FOCUS_COUNTRIES, programs } from "@/lib/data";
 import { checkProgram, type Eligibility } from "@/lib/eligibility";
 import { formatPrice } from "@/lib/price";
 import { formatDate } from "@/lib/dates";
 import { diplomaLabel } from "@/lib/education";
-import { EMPTY_LOG, EMPTY_MARKS, EMPTY_PLAN, STORAGE, logEntry, type UniMark } from "@/lib/profile";
+import { STUDY_FIELDS, fieldScore } from "@/lib/fields";
+import { EMPTY_LOG, EMPTY_MARKS, EMPTY_PLAN, STORAGE, logEntry, profileIsSet, type UniMark } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
 import type { PlanRow, Program } from "@/lib/types";
@@ -35,13 +37,35 @@ function hasScholarships(note: string | null): boolean {
 type Row = { p: Program; e: Eligibility };
 type Uni = { id: string; name: string; city?: string; country: string; type?: string; rows: Row[]; best: Eligibility["status"]; cheapest: number | null; cheapestLabel: string | null; scholarships: string | null; feeRule: string | null };
 
+const chip = (on: boolean) =>
+  `rounded-full border px-3 py-1 text-sm transition-all duration-200 ${
+    on ? "border-transparent bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-700 hover:border-slate-400 hover:text-slate-900"
+  }`;
+
+// Pick one or many study areas. Nothing picked means "not sure yet": every programme is shown.
+function FieldPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
+  const toggle = (f: string) => onChange(value.includes(f) ? value.filter((x) => x !== f) : [...value, f]);
+  return (
+    <div className="space-y-2 rounded-2xl border border-slate-200 bg-panel p-4">
+      <p className="text-xs font-medium uppercase tracking-[0.2em] text-violet-300">What do you want to study? Pick what you like</p>
+      <div className="flex flex-wrap items-center gap-2">
+        <button onClick={() => onChange([])} className={chip(value.length === 0)} aria-pressed={value.length === 0}>
+          Not sure yet, show all
+        </button>
+        {STUDY_FIELDS.map((f) => (
+          <button key={f.value} onClick={() => toggle(f.value)} className={chip(value.includes(f.value))} aria-pressed={value.includes(f.value)}>
+            {f.label}
+            {value.includes(f.value) && <span className="ml-1.5 opacity-80">×</span>}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // Pick one or many countries. Nothing picked means "not sure yet": every country is shown.
 function CountryPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
   const toggle = (c: string) => onChange(value.includes(c) ? value.filter((x) => x !== c) : [...value, c]);
-  const chip = (on: boolean) =>
-    `rounded-full border px-3 py-1 text-sm transition-all duration-200 ${
-      on ? "border-transparent bg-slate-900 text-white" : "border-white/15 text-slate-600 hover:border-violet-400/60 hover:text-white"
-    }`;
   const extra = value.filter((c) => !FOCUS_COUNTRIES.includes(c));
   const left = OTHER_COUNTRIES.filter((c) => !value.includes(c));
   return (
@@ -77,8 +101,9 @@ function CountryPicker({ value, onChange }: { value: string[]; onChange: (v: str
 
 export function UniversitiesList() {
   const [tab, setTab] = useState<"unis" | "scholarships">("unis");
-  const [profile] = useProfile();
+  const [profile, setProfile] = useProfile();
   const [countries, setCountries] = useState<string[]>([]);
+  const fields = profile.studyFields ?? [];
 
   return (
     <div className="space-y-4">
@@ -98,19 +123,30 @@ export function UniversitiesList() {
           </button>
         ))}
       </div>
+      {tab === "unis" && <FieldPicker value={fields} onChange={(studyFields) => setProfile({ ...profile, studyFields })} />}
       <CountryPicker value={countries} onChange={setCountries} />
+      {!profileIsSet(profile) ? (
+        <p className="rounded-xl border border-dashed border-slate-300 px-4 py-2.5 text-sm text-slate-600">
+          You are browsing without a profile, so prices are the general ones and Hapi cannot tell yet what is open to you.{" "}
+          <Link href="/profile" className="font-medium text-teal-700 underline">
+            Add your profile
+          </Link>
+        </p>
+      ) : (
       <p className="text-xs text-slate-500">
         Prices are for you: {profile.nationality ? `${profile.nationality} passport` : "add your nationality"}
         {profile.diploma && profile.diploma !== "national" ? `, ${diplomaLabel(profile.diploma).split(" (")[0]}` : ""}
         {profile.budgetPerYear !== null ? `, budget €${profile.budgetPerYear.toLocaleString("en-GB")}/year` : ""}.
       </p>
-      {tab === "unis" ? <Universities countries={countries} /> : <ScholarshipsList countries={countries} />}
+      )}
+      {tab === "unis" ? <Universities countries={countries} fields={fields} /> : <ScholarshipsList countries={countries} />}
     </div>
   );
 }
 
-function Universities({ countries }: { countries: string[] }) {
+function Universities({ countries, fields }: { countries: string[]; fields: string[] }) {
   const [profile] = useProfile();
+  const known = profileIsSet(profile);
   const [plan, setPlan] = useStored(STORAGE.plan, EMPTY_PLAN);
   const [, setLog] = useStored(STORAGE.log, EMPTY_LOG);
   const [marks, setMarks] = useStored(STORAGE.uniMarks, EMPTY_MARKS);
@@ -127,6 +163,7 @@ function Universities({ countries }: { countries: string[] }) {
     const groups = new Map<string, Row[]>();
     for (const p of programs) {
       if (countries.length > 0 && !countries.includes(p.country)) continue;
+      if (fields.length > 0 && fieldScore(p, fields) === 0) continue;
       if (q && !`${p.university} ${p.program ?? ""} ${p.fields ?? ""} ${p.city ?? ""}`.toLowerCase().includes(q)) continue;
       const e = checkProgram(p, profile);
       if (status === "ok" && e.status !== "ok") continue;
@@ -138,7 +175,7 @@ function Universities({ countries }: { countries: string[] }) {
       groups.set(p.universityId, list);
     }
     const out: Uni[] = [...groups.entries()].map(([id, rows]) => {
-      rows.sort((a, b) => RANK[a.e.status] - RANK[b.e.status] || (a.e.price.min ?? 1e9) - (b.e.price.min ?? 1e9));
+      rows.sort((a, b) => fieldScore(b.p, fields) - fieldScore(a.p, fields) || RANK[a.e.status] - RANK[b.e.status] || (a.e.price.min ?? 1e9) - (b.e.price.min ?? 1e9));
       const first = rows[0].p;
       const priced = rows.filter((r) => r.e.price.min !== null).sort((a, b) => a.e.price.min! - b.e.price.min!);
       return {
@@ -160,7 +197,7 @@ function Universities({ countries }: { countries: string[] }) {
       if (sort === "name") return a.name.localeCompare(b.name);
       return RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
     });
-  }, [profile, countries, status, sort, query, withScholarships, marks]);
+  }, [profile, countries, fields, status, sort, query, withScholarships, marks]);
 
   function mark(p: Program, value: UniMark) {
     const next = { ...marks };
@@ -209,12 +246,12 @@ function Universities({ countries }: { countries: string[] }) {
       <div className="flex flex-wrap gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
         <select aria-label="Which programmes to show" className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={status} onChange={(e) => setStatus(e.target.value as typeof status)}>
           <option value="all">All programmes</option>
-          <option value="ok">Only where I can apply</option>
-          <option value="warn">Open + check the rules</option>
+          {known && <option value="ok">Only where I can apply</option>}
+          {known && <option value="warn">Open + check the rules</option>}
           <option value="mine">My list: want to apply ({myCount})</option>
         </select>
         <select aria-label="Sort universities" className="rounded-lg border border-slate-300 bg-white px-3 py-1.5" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)}>
-          <option value="fit">Sort: best fit</option>
+          <option value="fit">{known ? "Sort: best fit" : "Sort: cheapest first"}</option>
           <option value="price">Sort: cheapest for me</option>
           <option value="name">Sort: name</option>
         </select>
@@ -234,15 +271,15 @@ function Universities({ countries }: { countries: string[] }) {
           const okCount = u.rows.filter((r) => r.e.status === "ok").length;
           const isOpen = open[u.id] ?? false;
           return (
-            <li key={u.id} className={`welcome-in relative overflow-hidden rounded-2xl border border-slate-200 bg-panel before:absolute before:inset-y-0 before:left-0 before:w-1 ${STATUS[u.best].bar}`} style={{ animationDelay: `${(i % 15) * 35}ms` }}>
+            <li key={u.id} className={`welcome-in relative overflow-hidden rounded-2xl border border-slate-200 bg-panel before:absolute before:inset-y-0 before:left-0 before:w-1 ${known ? STATUS[u.best].bar : "before:bg-slate-200"}`} style={{ animationDelay: `${(i % 15) * 35}ms` }}>
               <button onClick={() => setOpen((o) => ({ ...o, [u.id]: !isOpen }))} className="flex w-full flex-wrap items-start justify-between gap-3 p-4 text-left">
                 <div>
                   <div className="flex flex-wrap items-center gap-2">
                     <h2 className="font-semibold">{u.name}</h2>
-                    <StatusPill status={u.best} />
+                    {known && <StatusPill status={u.best} />}
                   </div>
                   <p className="text-sm text-slate-600">
-                    {[u.city, u.country, u.type].filter(Boolean).join(" · ")} · {okCount} of {u.rows.length} programmes open to you
+                    {[u.city, u.country, u.type].filter(Boolean).join(" · ")} · {known ? `${okCount} of ${u.rows.length} programmes open to you` : `${u.rows.length} ${u.rows.length === 1 ? "programme" : "programmes"}`}
                     {u.rows.some((r) => marks[r.p.id] === "apply") ? ` · ${u.rows.filter((r) => marks[r.p.id] === "apply").length} on your list` : ""}
                   </p>
                 </div>
@@ -269,12 +306,12 @@ function Universities({ countries }: { countries: string[] }) {
                     const ex = explained[p.id];
                     const planned = plan.some((r) => r.id === `tuition-${p.id}`);
                     return (
-                      <div key={p.id} className={`relative overflow-hidden rounded-lg border border-slate-200 p-3 pl-4 before:absolute before:inset-y-0 before:left-0 before:w-0.5 ${STATUS[e.status].bar}`}>
+                      <div key={p.id} className={`relative overflow-hidden rounded-lg border border-slate-200 p-3 pl-4 before:absolute before:inset-y-0 before:left-0 before:w-0.5 ${known ? STATUS[e.status].bar : "before:bg-slate-200"}`}>
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div>
                             <div className="flex flex-wrap items-center gap-2">
                               <h3 className="font-medium">{p.program ?? "Programme to choose"}</h3>
-                              <StatusPill status={e.status} />
+                              {known && <StatusPill status={e.status} />}
                             </div>
                             <p className="text-xs text-slate-600">
                               {p.language ?? "language: check yourself"}
