@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { programs } from "@/lib/data";
 import { groupOf } from "@/lib/education";
-import { SUBJECT_GROUPS, subjectLabel, subjectsFromText, subjectsOf } from "@/lib/fields";
+import { SUBJECT_GROUPS, degreeOf, subjectLabel, subjectsFromText, subjectsOf } from "@/lib/fields";
 import type { Profile } from "@/lib/types";
 
 export type Degree = "bachelor" | "master";
@@ -15,9 +15,10 @@ export function degreeFor(profile: Profile): Degree {
   return g === "bachelor" || g === "graduate" || g === "master" ? "master" : "bachelor";
 }
 
-const COUNTS: Record<string, number> = (() => {
-  const c: Record<string, number> = {};
-  for (const p of programs) for (const s of subjectsOf(p)) c[s] = (c[s] ?? 0) + 1;
+// Programmes per subject, separately for bachelor and master.
+const COUNTS: Record<Degree, Record<string, number>> = (() => {
+  const c: Record<Degree, Record<string, number>> = { bachelor: {}, master: {} };
+  for (const p of programs) for (const s of subjectsOf(p)) c[degreeOf(p)][s] = (c[degreeOf(p)][s] ?? 0) + 1;
   return c;
 })();
 
@@ -94,7 +95,7 @@ export function StudyPicker({ profile, onChange, startOpen = false }: { profile:
               <p className="text-sm font-semibold text-slate-900">{g.label}</p>
               <div className="flex flex-wrap gap-1.5">
                 {g.subjects.map((s) => {
-                  const n = COUNTS[s.value] ?? 0;
+                  const n = COUNTS[degree][s.value] ?? 0;
                   return (
                     <button type="button" key={s.value} onClick={() => toggle(s.value)} aria-pressed={picked.includes(s.value)} className={chip(picked.includes(s.value), n === 0)} title={n === 0 ? "No programmes in Hapi yet" : `${n} programmes in Hapi`}>
                       {s.label}

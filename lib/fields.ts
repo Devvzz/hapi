@@ -147,6 +147,10 @@ export function studyScore(p: Program, picked: string[], wish = ""): number {
   return score;
 }
 
+export function degreeOf(p: Program): "bachelor" | "master" {
+  return p.degree ?? "bachelor";
+}
+
 export function wantsSomething(picked: string[], wish = ""): boolean {
   return picked.length > 0 || wish.trim().length >= 2;
 }

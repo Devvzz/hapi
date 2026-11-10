@@ -7,7 +7,7 @@ import { checkProgram, type Eligibility } from "@/lib/eligibility";
 import { formatPrice } from "@/lib/price";
 import { formatDate } from "@/lib/dates";
 import { diplomaLabel } from "@/lib/education";
-import { studyScore, subjectLabel, wantsSomething } from "@/lib/fields";
+import { degreeOf, studyScore, subjectLabel, wantsSomething } from "@/lib/fields";
 import { EMPTY_LOG, EMPTY_MARKS, EMPTY_PLAN, STORAGE, logEntry, profileIsSet, type UniMark } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
@@ -26,6 +26,7 @@ function StatusPill({ status }: { status: Eligibility["status"] }) {
   return <span className={`inline-flex shrink-0 items-center rounded-full border px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wider ${s.pill}`}>{s.label}</span>;
 }
 const RANK: Record<Eligibility["status"], number> = { ok: 0, warn: 1, no: 2 };
+const HAS_MASTERS = programs.some((p) => degreeOf(p) === "master");
 const OTHER_COUNTRIES = [...new Set(programs.map((p) => p.country))].filter((c) => !FOCUS_COUNTRIES.includes(c)).sort();
 
 type Explanation = { summary: string; nextSteps: string[] };
@@ -145,6 +146,7 @@ function Universities({ countries, fields, wish, degree }: { countries: string[]
     const groups = new Map<string, Row[]>();
     const wanting = wantsSomething(fields, wish);
     for (const p of programs) {
+      if (degreeOf(p) !== degree) continue;
       if (countries.length > 0 && !countries.includes(p.country)) continue;
       if (wanting && studyScore(p, fields, wish) === 0) continue;
       if (q && !`${p.university} ${p.program ?? ""} ${p.fields ?? ""} ${p.city ?? ""}`.toLowerCase().includes(q)) continue;
@@ -182,7 +184,7 @@ function Universities({ countries, fields, wish, degree }: { countries: string[]
         studyScore(b.rows[0].p, fields, wish) - studyScore(a.rows[0].p, fields, wish) || RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9)
       );
     });
-  }, [profile, countries, fields, wish, status, sort, query, withScholarships, marks]);
+  }, [profile, countries, fields, wish, degree, status, sort, query, withScholarships, marks]);
 
   function mark(p: Program, value: UniMark) {
     const next = { ...marks };
@@ -226,7 +228,7 @@ function Universities({ countries, fields, wish, degree }: { countries: string[]
 
   const totalProgrammes = unis.reduce((n, u) => n + u.rows.length, 0);
 
-  if (degree === "master") {
+  if (degree === "master" && !HAS_MASTERS) {
     return (
       <div className="rounded-2xl border border-dashed border-slate-300 bg-panel p-6 text-center">
         <p className="font-display text-lg font-bold text-slate-900">Master programmes are coming</p>

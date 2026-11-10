@@ -50,6 +50,8 @@ export type Program = {
   universityId: string;
   university: string;
   program: string | null;
+  // Missing means bachelor (every programme before masters were added)
+  degree?: "bachelor" | "master";
   country: string;
   city?: string;
   language: string | null;
