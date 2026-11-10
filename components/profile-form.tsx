@@ -5,6 +5,7 @@ import Link from "next/link";
 import { resolveCountry, suggestCountries } from "@/lib/countries";
 import { DIPLOMAS, EDUCATION } from "@/lib/education";
 import { EMPTY_PROFILE, INTERESTS, LEVELS, profileIsSet } from "@/lib/profile";
+import { StudyPicker } from "./study-picker";
 import { useProfile } from "@/lib/use-profile";
 import type { LanguageSkill, Profile } from "@/lib/types";
 
@@ -221,6 +222,8 @@ export function ProfileForm() {
           + Add language
         </button>
       </fieldset>
+
+      <StudyPicker profile={profile} onChange={setProfile} />
 
       <fieldset className="space-y-2">
         <legend className="font-medium">Interests</legend>

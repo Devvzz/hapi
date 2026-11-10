@@ -115,6 +115,10 @@ export type Profile = {
   interests: string[];
   // Study areas picked on the Universities page, see lib/fields.ts
   studyFields?: string[];
+  // What the student typed, e.g. "English literature"
+  studyText?: string;
+  // Bachelor or master; empty means it follows from schoolType
+  degree?: "bachelor" | "master";
 };
 
 export type PlanRow = {

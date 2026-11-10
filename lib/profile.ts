@@ -1,4 +1,5 @@
 import { isStudent, migrateEducation } from "./education";
+import { SUBJECTS } from "./fields";
 import { resolveCountry } from "./countries";
 import type { ActivityEntry, PlanRow, Profile } from "./types";
 
@@ -16,6 +17,13 @@ export const EMPTY_PROFILE: Profile = {
 };
 
 // Brings profiles saved by older versions up to date and keeps derived fields in sync.
+// Subjects picked with the first, shorter list are mapped to the new names; unknown ones are dropped.
+const OLD_SUBJECTS: Record<string, string> = { cs: "computer-science", engineering: "engineering-general", math: "mathematics" };
+function migrateSubjects(list: string[] | undefined): string[] {
+  const known = new Set(SUBJECTS.map((s) => s.value));
+  return [...new Set((list ?? []).map((v) => OLD_SUBJECTS[v] ?? v).filter((v) => known.has(v)))];
+}
+
 export function normalizeProfile(p: Profile): Profile {
   const schoolType = migrateEducation(p.schoolType);
   const nationality = p.nationality ? (resolveCountry(p.nationality) ?? p.nationality) : "";
@@ -29,6 +37,7 @@ export function normalizeProfile(p: Profile): Profile {
     austrianSchool: diploma === "austrian-matura",
     opportunityBudget: p.opportunityBudget ?? null,
     student: isStudent(schoolType),
+    studyFields: migrateSubjects(p.studyFields),
   };
 }
 

@@ -7,12 +7,13 @@ import { checkProgram, type Eligibility } from "@/lib/eligibility";
 import { formatPrice } from "@/lib/price";
 import { formatDate } from "@/lib/dates";
 import { diplomaLabel } from "@/lib/education";
-import { STUDY_FIELDS, fieldScore } from "@/lib/fields";
+import { studyScore, subjectLabel, wantsSomething } from "@/lib/fields";
 import { EMPTY_LOG, EMPTY_MARKS, EMPTY_PLAN, STORAGE, logEntry, profileIsSet, type UniMark } from "@/lib/profile";
 import { useStored } from "@/lib/storage";
 import { useProfile } from "@/lib/use-profile";
 import type { PlanRow, Program } from "@/lib/types";
 import { ScholarshipsList } from "./scholarships-list";
+import { StudyPicker, degreeFor } from "./study-picker";
 
 const STATUS: Record<Eligibility["status"], { label: string; pill: string; bar: string }> = {
   ok: { label: "Open to you", pill: "border-emerald-400/40 bg-emerald-500/10 text-emerald-300", bar: "before:bg-emerald-400" },
@@ -41,27 +42,6 @@ const chip = (on: boolean) =>
   `rounded-full border px-3 py-1 text-sm transition-all duration-200 ${
     on ? "border-transparent bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-700 hover:border-slate-400 hover:text-slate-900"
   }`;
-
-// Pick one or many study areas. Nothing picked means "not sure yet": every programme is shown.
-function FieldPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
-  const toggle = (f: string) => onChange(value.includes(f) ? value.filter((x) => x !== f) : [...value, f]);
-  return (
-    <div className="space-y-2 rounded-2xl border border-slate-200 bg-panel p-4">
-      <p className="text-xs font-medium uppercase tracking-[0.2em] text-violet-300">What do you want to study? Pick what you like</p>
-      <div className="flex flex-wrap items-center gap-2">
-        <button onClick={() => onChange([])} className={chip(value.length === 0)} aria-pressed={value.length === 0}>
-          Not sure yet, show all
-        </button>
-        {STUDY_FIELDS.map((f) => (
-          <button key={f.value} onClick={() => toggle(f.value)} className={chip(value.includes(f.value))} aria-pressed={value.includes(f.value)}>
-            {f.label}
-            {value.includes(f.value) && <span className="ml-1.5 opacity-80">×</span>}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 // Pick one or many countries. Nothing picked means "not sure yet": every country is shown.
 function CountryPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
@@ -104,6 +84,8 @@ export function UniversitiesList() {
   const [profile, setProfile] = useProfile();
   const [countries, setCountries] = useState<string[]>([]);
   const fields = profile.studyFields ?? [];
+  const wish = profile.studyText ?? "";
+  const degree = degreeFor(profile);
 
   return (
     <div className="space-y-4">
@@ -123,7 +105,7 @@ export function UniversitiesList() {
           </button>
         ))}
       </div>
-      {tab === "unis" && <FieldPicker value={fields} onChange={(studyFields) => setProfile({ ...profile, studyFields })} />}
+      {tab === "unis" && <StudyPicker profile={profile} onChange={setProfile} />}
       <CountryPicker value={countries} onChange={setCountries} />
       {!profileIsSet(profile) ? (
         <p className="rounded-xl border border-dashed border-slate-300 px-4 py-2.5 text-sm text-slate-600">
@@ -139,12 +121,12 @@ export function UniversitiesList() {
         {profile.budgetPerYear !== null ? `, budget €${profile.budgetPerYear.toLocaleString("en-GB")}/year` : ""}.
       </p>
       )}
-      {tab === "unis" ? <Universities countries={countries} fields={fields} /> : <ScholarshipsList countries={countries} />}
+      {tab === "unis" ? <Universities countries={countries} fields={fields} wish={wish} degree={degree} /> : <ScholarshipsList countries={countries} />}
     </div>
   );
 }
 
-function Universities({ countries, fields }: { countries: string[]; fields: string[] }) {
+function Universities({ countries, fields, wish, degree }: { countries: string[]; fields: string[]; wish: string; degree: "bachelor" | "master" }) {
   const [profile] = useProfile();
   const known = profileIsSet(profile);
   const [plan, setPlan] = useStored(STORAGE.plan, EMPTY_PLAN);
@@ -161,9 +143,10 @@ function Universities({ countries, fields }: { countries: string[]; fields: stri
   const unis = useMemo(() => {
     const q = query.trim().toLowerCase();
     const groups = new Map<string, Row[]>();
+    const wanting = wantsSomething(fields, wish);
     for (const p of programs) {
       if (countries.length > 0 && !countries.includes(p.country)) continue;
-      if (fields.length > 0 && fieldScore(p, fields) === 0) continue;
+      if (wanting && studyScore(p, fields, wish) === 0) continue;
       if (q && !`${p.university} ${p.program ?? ""} ${p.fields ?? ""} ${p.city ?? ""}`.toLowerCase().includes(q)) continue;
       const e = checkProgram(p, profile);
       if (status === "ok" && e.status !== "ok") continue;
@@ -175,7 +158,7 @@ function Universities({ countries, fields }: { countries: string[]; fields: stri
       groups.set(p.universityId, list);
     }
     const out: Uni[] = [...groups.entries()].map(([id, rows]) => {
-      rows.sort((a, b) => fieldScore(b.p, fields) - fieldScore(a.p, fields) || RANK[a.e.status] - RANK[b.e.status] || (a.e.price.min ?? 1e9) - (b.e.price.min ?? 1e9));
+      rows.sort((a, b) => studyScore(b.p, fields, wish) - studyScore(a.p, fields, wish) || RANK[a.e.status] - RANK[b.e.status] || (a.e.price.min ?? 1e9) - (b.e.price.min ?? 1e9));
       const first = rows[0].p;
       const priced = rows.filter((r) => r.e.price.min !== null).sort((a, b) => a.e.price.min! - b.e.price.min!);
       return {
@@ -195,9 +178,11 @@ function Universities({ countries, fields }: { countries: string[]; fields: stri
     return out.filter((u) => !withScholarships || hasScholarships(u.scholarships)).sort((a, b) => {
       if (sort === "price") return (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
       if (sort === "name") return a.name.localeCompare(b.name);
-      return RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9);
+      return (
+        studyScore(b.rows[0].p, fields, wish) - studyScore(a.rows[0].p, fields, wish) || RANK[a.best] - RANK[b.best] || (a.cheapest ?? 1e9) - (b.cheapest ?? 1e9)
+      );
     });
-  }, [profile, countries, fields, status, sort, query, withScholarships, marks]);
+  }, [profile, countries, fields, wish, status, sort, query, withScholarships, marks]);
 
   function mark(p: Program, value: UniMark) {
     const next = { ...marks };
@@ -241,6 +226,19 @@ function Universities({ countries, fields }: { countries: string[]; fields: stri
 
   const totalProgrammes = unis.reduce((n, u) => n + u.rows.length, 0);
 
+  if (degree === "master") {
+    return (
+      <div className="rounded-2xl border border-dashed border-slate-300 bg-panel p-6 text-center">
+        <p className="font-display text-lg font-bold text-slate-900">Master programmes are coming</p>
+        <p className="mx-auto mt-1 max-w-lg text-sm text-slate-600">
+          Hapi has checked bachelor programmes so far. Your subjects are saved, so the right master programmes show up here as soon as they are added. Switch to Bachelor above to see what is in Hapi now.
+        </p>
+      </div>
+    );
+  }
+
+  const wanted = [...fields.map(subjectLabel), ...(wish.trim() ? [`"${wish.trim()}"`] : [])];
+
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap gap-3 rounded-xl border border-slate-200 bg-panel p-4 text-sm">
@@ -265,6 +263,15 @@ function Universities({ countries, fields }: { countries: string[]; fields: stri
           {hiddenCount > 0 && status !== "mine" ? ` · ${hiddenCount} marked not interested are hidden` : ""}
         </span>
       </div>
+
+      {unis.length === 0 && wanted.length > 0 && (
+        <div className="rounded-2xl border border-dashed border-slate-300 bg-panel p-6 text-center">
+          <p className="font-display text-lg font-bold text-slate-900">No programmes for {wanted.join(", ")} in Hapi yet</p>
+          <p className="mx-auto mt-1 max-w-lg text-sm text-slate-600">
+            Hapi started with computer science, engineering, business, maths and sport. Your choice is saved, so new programmes in your subject will show up here when they are added.
+          </p>
+        </div>
+      )}
 
       <ul className="space-y-3">
         {unis.slice(0, limit).map((u, i) => {
